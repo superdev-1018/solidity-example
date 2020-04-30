@@ -1,0 +1,13 @@
+{
+  "name": "murshid",
+  "version": "1.0.0",
+  "description": "A lightening fast personal website",
+  "main": "index.js",
+  "private": true,
+  "scripts": {
+    "start": "hugo server --watch --disableFastRender",
+    "build": "hugo --verbose"
+  },
+  "author": "Murshid Azher",
+  "license": "MIT"
+}
