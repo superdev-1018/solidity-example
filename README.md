@@ -1,2 +1,7 @@
-# murshid
-⚡️ My personal website
+# murshidazher.com
+
+Personal website
+
+## Features
+
+- [Hugo](https://gohugo.io/)
