@@ -6,6 +6,7 @@
   "private": true,
   "scripts": {
     "start": "hugo server --watch --disableFastRender",
+    "clean": "rm -rf public/*",
     "build": "hugo --verbose"
   },
   "author": "Murshid Azher",
