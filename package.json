@@ -5,10 +5,13 @@
   "main": "index.js",
   "private": true,
   "scripts": {
-    "start": "hugo server --watch --disableFastRender",
+    "start": "open-cli http://localhost:1313 && hugo server --watch --disableFastRender",
     "clean": "rm -rf public/*",
     "build": "hugo --verbose"
   },
   "author": "Murshid Azher",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "open-cli": "^6.0.1"
+  }
 }
