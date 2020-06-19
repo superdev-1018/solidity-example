@@ -10,7 +10,8 @@ hugo server -D
 
 - you can use in the title `slug: abooot` so that would make the link redirect to `abooot` when clicked. `slug` only change the end part of the file.
 - for specific page renders look into [this](https://gohugo.io/content-management/front-matter/).
-
+- `.` passes the context
+- we use hugo `pipes` for cache busting. 
 ## Features
 
 - [Hugo](https://gohugo.io/)
