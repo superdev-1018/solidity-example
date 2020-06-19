@@ -7,6 +7,7 @@ Personal website
 
 - [Hugo](https://gohugo.io/)
 - [nvm](https://github.com/nvm-sh/nvm#installation-and-update)
+- [autoprefixer](https://github.com/postcss/autoprefixer) - to use PostCSS vendor prefixes
 - `omf install nvm` > `nvm install stable`
 - remove the function from `~/.config/fish/config.fish`
 - add this in ` ~/.config/fish/functions/nvm.fish`
