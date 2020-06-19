@@ -1,4 +1,5 @@
 baseURL = "http://example.org/"
+theme="murshid-starter"
 languageCode = "en"
 title = "Murshid Azher"
 pluralizelisttitles = false
