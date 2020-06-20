@@ -1,0 +1,59 @@
+  <!-- <footer class="Footer" role="contentinfo">
+    <nav class="FooterNav" aria-label="Footer Navigation">
+      {{ $currentPage := . }}
+      {{ range .Site.Menus.footer }}
+      <a class="FooterNav-link{{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }} active{{end}}"
+        href="{{.URL}}">{{ .Name }}</a>
+      {{ end }}
+    </nav>
+    <p>Content &copy;{{ now.Format "2006"}} Harry Cresswell, unless otherwise specified. Subscribe to RSS Feeds for <a
+        href="{{ $.Site.BaseURL }}feed.xml">all content</a>, <a
+        href="{{ $.Site.BaseURL }}articles/feed.xml">articles</a> or <a
+        href="{{ $.Site.BaseURL }}notes/feed.xml">notes</a>.</p>
+  </footer> -->
+  </div>
+  <div class="fixed bottom-0 left-0 z-20 w-full h-32 pointer-events-none gradient-y-transparent-night"></div>
+  <div class="fixed top-0 left-0 z-20 w-full h-32 pointer-events-none gradient-y-night-transparent"></div>
+  <div dir="ltr" class="resize-sensor"
+    style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;">
+    <div class="resize-sensor-expand"
+      style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;">
+      <div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1439px; height: 10px;">
+      </div>
+    </div>
+    <div class="resize-sensor-shrink"
+      style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;">
+      <div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;">
+      </div>
+    </div>
+  </div>
+
+  <!-- Store JS files independently -->
+  {{ $cloudinary := resources.Get "js/cloudinary-core-shrinkwrap.min.js" }}
+  {{ $lazysizes := resources.Get "js/lazysizes.js" }}
+  {{ $likes := resources.Get "js/likes.js" }}
+
+  <!-- Concat JS, generate default app.js and app-likes -->
+  {{ $defaultJS := slice $cloudinary $lazysizes | resources.Concat "app.js" }}
+  {{ $likesJS := slice $cloudinary $lazysizes $likes | resources.Concat "app-likes.js" }}
+  <!-- Set default -->
+  {{ $script := $defaultJS }}
+  <!-- Where type = likes in frontmatter, override default with likesJS -->
+  {{if eq .Type "likes" }}
+  {{ $script = $likesJS }}
+  {{ end }}
+  <!-- Assign script to global, minify and fingerprint -->
+  {{ $globalJS := $script | resources.Minify | resources.Fingerprint  }}
+  <!-- Load script and authenticate hashed file -->
+  <script src="{{ $globalJS.Permalink }}" integrity="{{ $globalJS.Data.Integrity }}" media="screen"></script>
+  <script>
+    var cl = cloudinary.Cloudinary.new({
+      cloud_name: "harrycresswell"
+    });
+
+    cl.responsive();
+
+  </script>
+  </body>
+
+  </html>

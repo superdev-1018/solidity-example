@@ -1,0 +1,32 @@
+/*------------------------------------*\
+    #COMPONENTS: FOOTER
+\*------------------------------------*/
+
+/**
+ * Component Block
+ */
+
+.Footer {
+  max-width: 1600px;
+  margin: 0 auto;
+  @include margin-top(1);
+  padding-bottom: 64px;
+
+  p {
+    @include margin-top(1);
+  }
+}
+
+.FooterNav {
+  a {
+    color: var(--color-dark);
+    text-decoration: none;
+    font-weight: 500;
+    margin-right: 16px;
+
+    &:hover {
+      background-color: unset;
+      text-decoration: underline;
+    }
+  }
+}

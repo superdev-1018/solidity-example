@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    #OBJECTS: AVATAR
+\*------------------------------------*/
+
+/**
+ * Component Block
+ */
+
+.Avatar {
+  display: inline-block;
+  position: relative;
+  margin-right: 30px;
+}
+
+/**
+ * Component Modifier
+ */
+
+.Avatar--m {
+  font-size: 1.25rem;
+  width: 80px;
+  height: 80px;
+  line-height: 80px;
+}
+
+.Avatar--round {
+  border-radius: 50%;
+}

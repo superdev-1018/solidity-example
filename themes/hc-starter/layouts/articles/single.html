@@ -1,0 +1,24 @@
+{{ define "main" }}
+
+<article id="content" class="Post h-entry">
+  <header class="PostHeader">
+    <h1 class="PostHeader-title p-name">{{ .Title }}</h1>
+  </header>
+
+  <section class="PostMeta">
+    <time class="PostMeta-date dt-published" datetime="{{ .Date }}"
+      >{{ .Date.Format "Mon, Jan 2, 2006" }}</time
+    >
+    — {{ partial "post/tags.html" . }}
+
+  </section>
+
+  <section class="PostBody e-content">
+    {{ partial "heading-anchor.html" .Content }}
+
+    {{ partialCached "post/author.html" . }}
+
+  </section>
+</article>
+<!--/.Content -->
+{{ end }}

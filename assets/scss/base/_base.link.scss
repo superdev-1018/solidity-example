@@ -1,0 +1,42 @@
+/*------------------------------------*\
+    #BASE: LINKS
+\*------------------------------------*/
+
+a {
+  color: var(--color-link);
+  text-decoration: underline;
+  //transition: color .2s ease-in-out;
+
+  &:hover {
+    //color: darken($color-link, 25%);
+    // color: var(--color-white);
+    // background-color: var(--color-link);
+    text-decoration: none;
+  }
+
+  &:active,
+  &:focus {
+    outline: 1px dotted;
+    outline-offset: 4px;
+  }
+
+  &:visited {
+    // text-decoration: underline;
+  }
+
+  &:before {
+    -webkit-transition: all 300ms ease-in-out;
+    -moz-transition: all 300ms ease-in-out;
+    -ms-transition: all 300ms ease-in-out;
+    -o-transition: all 300ms ease-in-out;
+    transition: all 300ms ease-in-out;
+  }
+}
+
+a .no-focus {
+  &:active,
+  &:focus {
+    outline: none;
+    outline-offset: none;
+  }
+}

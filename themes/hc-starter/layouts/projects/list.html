@@ -1,0 +1,62 @@
+{{ define "main" }}
+
+<header id="talks">
+  <!-- <h2 class="sticky top-0 z-40 pt-24 text-sm font-bold tracking-widest uppercase md:sr-only text-zenith">
+    Projects
+  </h2> -->
+  <h2 class="top-0 z-40 my-8 text-sm font-bold tracking-widest text-zenith uppercase">
+    Projects
+  </h2>
+  <h2 class="u-visually-hidden mb-16">A collection of recent project case studies</h2>
+</header>
+<section class="PostList">
+  {{ range .Data.Pages }}
+  <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork"
+    class="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x my-8 br-2">
+    <a
+      href="{{ .Permalink }}" rel="noopener" class="block p-40">
+      <p class="text-xs font-bold tracking-widest uppercase text-zenith">
+        Javascript
+      </p>
+      <h3 itemprop="name" class="mt-8 text-lg font-semibold leading-tight text-zenith">
+        {{ .Title }}
+      </h3>
+      <p class="mt-8">{{ .Description | markdownify }}</p>
+      <div hidden>
+        <a rel="author" class="p-author h-card" href="{{ $.Site.BaseURL }}">Murshid Azher</a>
+      </div>
+    </a>
+  </article>
+  <!-- <article class="PostListItem h-entry">
+    <h3 class="PostListItem-title p-name">
+      <a href="{{ .Permalink }}" class="u-url">{{ .Title }}</a>
+    </h3>
+    <p class="PostDescription">{{ .Description | markdownify }}</p>
+    <div hidden>
+      <a rel="author" class="p-author h-card" href="{{ $.Site.BaseURL }}">Harry Cresswell</a>
+    </div>
+  </article> -->
+  {{ end }}
+  {{ range .Site.Data.projects }}
+  <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork"
+    class="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x my-8 br-2">
+    <div class="block p-40">
+      <a
+        href="{{ .link }}" target="_blank" rel="noopener">
+        <p class="text-xs font-bold tracking-widest uppercase text-zenith">
+          Javascript
+        </p>
+        <h3 itemprop="name" class="mt-8 text-lg font-semibold leading-tight text-zenith">
+          {{ .title }}
+        </h3>
+        <div class="mt-8"><a class="no-focus">{{ .description | markdownify }}</a></div>
+        <div hidden>
+          <a rel="author" class="p-author h-card" href="{{ $.Site.BaseURL }}">Murshid Azher</a>
+        </div>
+      </a>
+    </div>
+  </article>
+  {{ end }}
+</section>
+
+{{ end }}

@@ -5,15 +5,16 @@
 $color-link: #542bff;
 
 :root {
-    --color-dark: #222;
-    --color-body: #373a3c;
-    --color-light: #767676;
-    --color-lighter: #888;
-    --color-lightest: #f5f5f5;
-    --color-link: #542bff;
-    --color-teal: #287088;
-    --color-sea: #396ca0;
-    /* #542bff in decimal RGB */
-    --color-link-rgb: 84, 43, 255;
-    --color-white: #fff;
+  --bg-opacity: 1;
+  --color-dark: #151515;
+  --color-body: #f5f5f5;
+  --color-light: #767676;
+  --color-lighter: #888;
+  --color-lightest: #f5f5f5;
+  --color-link: #542bff;
+  --color-teal: #287088;
+  --color-sea: #396ca0;
+  /* #542bff in decimal RGB */
+  --color-link-rgb: 84, 43, 255;
+  --color-white: #fff;
 }

@@ -18,10 +18,12 @@
 
   @if $u1 == $u2 and $u1 == $u3 and $u1 == $u4 {
     & {
-
       font-size: $min-font-size;
       @media screen and (min-width: $min-vw) {
-        font-size: calc(#{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} * ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)}));
+        font-size: calc(
+          #{$min-font-size} + #{strip-unit($max-font-size - $min-font-size)} *
+            ((100vw - #{$min-vw}) / #{strip-unit($max-vw - $min-vw)})
+        );
       }
 
       @media screen and (min-width: $max-vw) {
@@ -32,9 +34,14 @@
 }
 
 // Fonts
-$font-system-rg: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font-system-md: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-$font-system-mn: "SF Mono", "Monaco", "Inconsolata", "Fira Mono", "Droid Sans Mono", "Source Code Pro", monospace;
+$font-system-rg: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+  Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-system-md: Gothic A1, -apple-system, BlinkMacSystemFont, "Segoe UI",
+  Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
+  "Segoe UI Symbol";
+$font-system-mn: Gothic A1, "SF Mono", "Monaco", "Inconsolata", "Fira Mono",
+  "Droid Sans Mono", "Source Code Pro", monospace;
 
 $font-weight-regular: 400;
 $font-weight-medium: 500;
@@ -49,8 +56,8 @@ $baseline: 1.6;
 $min_width: 320px;
 $max_width: 675px;
 $min_font: 15px;
-$max_font: 20px;
+$max_font: 17px;
 
 // Modular scale settings
 $mod_1: 1.2; // mobile
-$mod_2: 1.55; // desktop
+$mod_2: 1.325; // desktop

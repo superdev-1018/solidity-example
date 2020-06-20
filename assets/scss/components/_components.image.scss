@@ -1,0 +1,98 @@
+/*------------------------------------*\
+    #COMPONENTS: IMAGE
+\*------------------------------------*/
+
+/**
+ * Component Block
+ */
+
+.Image {
+  figcaption {
+    line-height: 20px;
+    @include margin-top(0.5);
+  }
+}
+
+.Image + p,
+p + .Image {
+  @include margin-top(1.5);
+}
+
+.ImageCover {
+  object-fit: cover;
+  height: 350px;
+}
+
+@include breakpoint(sm) {
+  .ImageCover {
+    object-fit: fill;
+    height: auto;
+  }
+}
+
+/**
+ * Component Modifier
+ */
+
+.Image--pullRight {
+  @include breakpoint(sm) {
+    width: 55%;
+    float: right;
+    margin-left: 48px;
+    margin-bottom: 32px;
+    margin-top: 0;
+  }
+}
+
+/**
+ * Component Utility
+ */
+
+/* Animate the lazyloading */
+.lazyload,
+.lazyloading {
+  opacity: 0;
+}
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms;
+}
+
+// rounded
+
+.Ratio--rounded {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 999%;
+  overflow: hidden;
+  display: block;
+  position: relative;
+
+  & > img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 999%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+}
+
+.rounded-circle {
+  border-radius: 50%;
+  width: 8em;
+  height: 8em;
+  margin-bottom: 32px;
+
+  @include breakpoint(sm) {
+    width: 10em;
+    height: 10em;
+  }
+}
+img,
+svg {
+  vertical-align: middle;
+}

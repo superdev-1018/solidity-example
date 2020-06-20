@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <!-- Titles -->
+  <title>{{ if .IsHome -}}{{ .Site.Title }} &middot; {{ $.Site.Params.strapline }}{{- else -}}{{ .Title }} |
+    {{ .Site.Title }} &middot; {{ $.Site.Params.strapline }} {{- end }}</title>
+  <meta name="title"
+    content="{{ if .IsHome -}}{{ .Site.Title }} &middot; {{ $.Site.Params.strapline }}{{- else -}}{{ .Title }} | {{ .Site.Title }} &middot; {{ $.Site.Params.strapline }} {{- end }}">
+  <!-- Descriptions -->
+  <meta name="description"
+    content="{{ with .Params.Description }}{{ . }}{{ else }}{{ $.Site.Params.Description }}{{ end }}">
+  {{ with .Site.Params.keywords }}
+  <meta name="keywords" content="{{ . }}">{{ end }}
+  {{ with .Site.LanguageCode }}
+  <meta http-equiv="content-language" content="{{ . }}" />{{ end }}
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title"
+    content="{{ if .IsHome -}}{{ .Site.Title }} &middot; {{ $.Site.Params.strapline }}{{- else -}}{{ .Title }} | {{ .Site.Title }} &middot; {{ $.Site.Params.strapline }} {{- end }}">
+  <meta property="og:description"
+    content="{{ with .Params.Description }}{{ . }}{{ else }}{{ $.Site.Params.Description }}{{ end }}">
+  <meta property="og:site_name"
+    content="{{ if .IsHome -}}{{ .Site.Title }} &middot; {{ $.Site.Params.strapline }}{{- else -}}{{ .Title }} | {{ .Site.Title }} &middot; {{ $.Site.Params.strapline }} {{- end }}">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ .Permalink }}">
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="{{ .Permalink }}">
+  <meta property="twitter:title"
+    content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}">
+  <meta property="twitter:description"
+    content="{{ if eq $isHomePage false }} {{ .Description }}{{ end }} {{ $isHomePage := eq .Title .Site.Title }}{{ .Site.Params.description }}">
+  <link rel="canonical" href="{{ .Permalink }}">
+  <!-- if featured image exists in file frontmatter, use for open graph data -->
+  {{ if isset .Params "feature" }}
+  <meta property="og:image" content="{{ .Params.feature }}">
+  <!-- else if no image in frontmatter, and sections are not equal to articles or notes, then display image -->
+  {{ else if and (ne .Section "articles") (ne .Section "notes") }}
+  <meta property="og:image"
+    content="https://res.cloudinary.com/harrycresswell/image/upload/w_700,dpr_2.0,c_scale,f_auto,q_auto/v1550264713/hc/harry-cresswell-about-me.jpg">
+  {{ end }}
+  <!-- Pinterest Verification -->
+  <meta name="p:domain_verify" content="c60dc1e9be844be29f0fb5525b9afe6f" />
+  <!-- Google Verification -->
+  <meta name="google-site-verification" content="9G-wiIrmxQgDxbcs3a3xPW--q3Mxb1VGFN7BsEfJdDk" />
+  <!-- Disable save to Pintrest button on images -->
+  <meta name="pinterest" content="nopin" />
+  <!-- Me -->
+  {{ with .Site.Author.name }}
+  <meta name="author" content="{{ . }}">{{ end }}
+  <link href="mailto:{{ .Site.Author.email }}" rel="me">
+  <link href="{{ .Site.Author.twitter }}" rel="me">
+  <link href="{{ .Site.Author.github }}" rel="me">
+  <link href="{{ .Site.Author.linkedin }}" rel="me">
+  <!-- IndieCert -->
+  <link rel="webmention" href="https://webmention.io/harrycresswell.com/webmention" />
+  <link rel="pingback" href="https://webmention.io/harrycresswell.com/xmlrpc" />
+  <!-- Styles -->
+  {{ if .Site.IsServer }}
+  <!-- Pipe Sass to CSS, include options, enable sourcemaps -->
+  {{ $styles := resources.Get "scss/main.scss" | toCSS (dict "enableSourceMap" true) }}
+  <!-- Load main.css-->
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
+  {{ else }}
+  <!-- Set target path -->
+  {{ $cssOpts := (dict "targetPath" "css/main.css" ) }}
+  <!-- Pipe Sass to CSS, include options, add postCSS autoprefixer, minify and hash -->
+  {{ $styles := resources.Get "scss/main.scss" | toCSS $cssOpts | postCSS (dict "use" "autoprefixer") | minify | fingerprint }}
+  <!-- Load main.css and authenticate hashed file -->
+  <link rel="stylesheet" href="{{ $styles.Permalink }}" integrity="{{ $styles.Data.Integrity }}" media="screen">
+  {{ end }}
+  <!-- Icons -->
+  <link rel="apple-touch-icon" href="{{ .Site.BaseURL }}img/apple-touch-icon.png" sizes="180x180">
+  <link rel="icon" href="{{ .Site.BaseURL }}img/favicon-32x32.png" sizes="32x32" type="image/png">
+  <link rel="icon" href="{{ .Site.BaseURL }}img/favicon-16x16.png" sizes="16x16" type="image/png">
+  <link rel="shortcut icon" href="{{ .Site.BaseURL }}img/favicon.ico" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <!-- RSS -->
+  {{ with .OutputFormats.Get "rss" -}}
+  {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+  {{ end -}}
+</head>
+
+<body class="bg-night overflow-x-hidden">
+  <div id="app" class="relative flex flex-col w-screen mx-auto font-sans text-base max-w-1440 text-dawn md:flex-row">
+    <div class="md:hidden">
+      <div class="fixed top-0 left-0 z-30 w-full h-64 transition bg-dusk -shift-y-64"></div>
+      <div class="fixed top-0 left-0 z-50 w-full h-64 transition -shift-y-64">
+        <div class="absolute top-0 w-full h-24 gradient-y-dusk-transparent"></div>
+        <div class="absolute bottom-0 w-full h-24 gradient-y-transparent-dusk"></div>
+      </div>
+      <div class="fixed top-0 left-0 z-50 w-full h-32 mt-64 transition gradient-y-night-transparent -shift-y-96"></div>
+    </div>
+    <div
+      class="static flex flex-col justify-between w-full p-32 md:max-w-408 lg:max-w-496 md:fixed md:h-screen lg:py-72 lg:pl-72 md:pr-0">
+      <div class="flex flex-col">
+        <div>
+          <h1 class="text-2xl font-bold leading-tight text-zenith ch-12">
+            Hello, I’m {{ .Site.Title }}
+          </h1>
+          <div class="leading-loose">
+            <p class="mt-32">
+              I’m a Staff Software Engineer currently working as Tech Lead of
+              the Doc Squad at
+              <a href="https://www.algolia.com/" target="_blank" rel="noopener"
+                class="underline text-zenith">Algolia</a>. I mostly do front-end development, and I’m a
+              <a href="https://vuejs.org/" rel="noopener" class="underline text-zenith">Vue.js</a>
+              and CSS nerd. I can't shut up about test-driven development and
+              utility-first CSS. I also share what I learn on my blog
+              <a href="http://frontstuff.io" target="_blank" rel="noopener"
+                class="underline text-zenith">frontstuff.io</a>, or at meetups and conferences.
+            </p>
+          </div>
+        </div>
+        <nav class="text-sm font-bold uppercase text-widest hidden mt-72 md:block">
+          <ul class="flex flex-row md:flex-col md:-my-16">
+            {{ $.Scratch.Set "counter" 0 }}
+             {{ $currentPage := . }}
+
+              {{ range .Site.Menus.main }}
+              {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+              {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .)}}
+              <li class="md:my-8">
+                <a href="{{.URL}}"
+                  class="inline-flex items-center hover:text-zenith transition group {{ if $active }}text-zenith active{{end}}">
+                  <span class="text-xs tracking-wide">0{{$.Scratch.Get "counter"}}</span>
+                    <span
+                    class="inline-block w-24 h-px mx-16 -mt-px group-hover:w-48 bg-dawn group-hover:bg-zenith transition {{ if $active }}w-48 bg-zenith{{end}}"></span>
+                    <span
+                    class="text-xs tracking-widest uppercase">{{ .Name }}</span>
+                  </a>
+                </li>
+            {{ end }}
+          </ul>
+        </nav>
+      </div>
+      <div class="flex items-center w-full mt-32 md:mt-72"><img alt="Sarah Dayan's headshot" src="/img/hc.jpg"
+          width="400" data-src="/img/hc.jpg" data-srcset="/img/hc.jpg 400w" data-sizes="(max-width: 400px) 100vw, 400px"
+          class="w-48 h-48 mr-32 rounded-full g-image g-image--lazy g-image--loaded" srcset="/img/hc.jpg 400w"
+          sizes="(max-width: 400px) 100vw, 400px"><noscript><img src="/img/hc.jpg"
+            class="w-48 h-48 mr-32 rounded-full g-image g-image--loaded" width="400"
+            alt="Sarah Dayan's headshot"></noscript>
+        <ul class="flex -mx-16 text-zenith">
+          <li class="mx-16"><a href="https://twitter.com/frontstuff_io" rel="noopener" target="_blank"
+              class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"
+                class="w-16 h-16 mr-16 fill-current">
+                <title>Twitter icon</title>
+                <path
+                  d="M24 4.557a9.83 9.83 0 01-2.828.775 4.932 4.932 0 002.165-2.724 9.864 9.864 0 01-3.127 1.195 4.916 4.916 0 00-3.594-1.555c-3.179 0-5.515 2.966-4.797 6.045A13.978 13.978 0 011.671 3.149a4.93 4.93 0 001.523 6.574 4.903 4.903 0 01-2.229-.616c-.054 2.281 1.581 4.415 3.949 4.89a4.935 4.935 0 01-2.224.084 4.928 4.928 0 004.6 3.419A9.9 9.9 0 010 19.54a13.94 13.94 0 007.548 2.212c9.142 0 14.307-7.721 13.995-14.646A10.025 10.025 0 0024 4.557z">
+                </path>
+              </svg><span class="mt-px">Twitter</span>
+              <div class="w-16 p-2 ml-8"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 12 12" aria-hidden="true"
+                  class="flex-none stroke-current">
+                  <title>External link icon</title>
+                  <path
+                    d="M10.976 1.193A.314.314 0 0010.687 1H6.312a.313.313 0 000 .625h3.62L5.467 6.091a.313.313 0 00.443.442l4.466-4.466v3.62a.313.313 0 00.625 0V1.313a.328.328 0 00-.024-.119z">
+                  </path>
+                  <path
+                    d="M3.5 1v.625H2.25a.625.625 0 00-.625.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625V8.5H11v1.875c0 .345-.28.625-.625.625h-8.75A.625.625 0 011 10.375v-8.75C1 1.28 1.28 1 1.625 1H3.5z">
+                  </path>
+                </svg></div>
+            </a></li>
+          <li class="mx-16"><a href="https://github.com/sarahdayan/" rel="noopener" target="_blank"
+              class="flex items-center"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true"
+                class="w-16 h-16 mr-16 fill-current">
+                <title>GitHub icon</title>
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12">
+                </path>
+              </svg><span class="mt-px">GitHub</span>
+              <div class="w-16 p-2 ml-8"><svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor"
+                  stroke-linecap="round" stroke-linejoin="round" viewBox="0 0 12 12" aria-hidden="true"
+                  class="flex-none stroke-current">
+                  <title>External link icon</title>
+                  <path
+                    d="M10.976 1.193A.314.314 0 0010.687 1H6.312a.313.313 0 000 .625h3.62L5.467 6.091a.313.313 0 00.443.442l4.466-4.466v3.62a.313.313 0 00.625 0V1.313a.328.328 0 00-.024-.119z">
+                  </path>
+                  <path
+                    d="M3.5 1v.625H2.25a.625.625 0 00-.625.625v7.5c0 .345.28.625.625.625h7.5c.345 0 .625-.28.625-.625V8.5H11v1.875c0 .345-.28.625-.625.625h-8.75A.625.625 0 011 10.375v-8.75C1 1.28 1.28 1 1.625 1H3.5z">
+                  </path>
+                </svg></div>
+            </a></li>
+        </ul>
+      </div>
+      <!-- <div>
+        <header class="Header">
+          <div class="Title">
+            <a class="p-name u-url" rel="me" href="{{ .Site.BaseURL }}">{{ .Site.Title }}</a>
+            <span class="p-name u-url" rel="me">{{ if ne .Title "Design & Code" }} / {{ end }}</span>
+            <a class="p-name u-url" rel="me">{{ if ne .Title "Design & Code" }}{{ .Title }}{{ end }}</a>
+            <div hidden>
+                <img class="u-photo" src="https://harrycresswell.com/img/hc.jpg" alt="Harry Cresswell">
+                <p class="p-note">{{ .Site.Params.Strapline }}</p>
+                <a href="mailto:studio@harrycresswell.com" rel="me" class="u-email">studio@harrycresswell.com</a>
+            </div>
+          </div>
+          <nav class="Nav" aria-label="Main Navigation">
+            <ul class="Nav-list flex-col">
+             {{ $.Scratch.Set "counter" 0 }}
+             {{ $currentPage := . }}
+              {{ range .Site.Menus.main }}
+              {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+              <li class="Nav-listItem ">
+                <a class="nav--link inline-flex items-center text-dawn hover:text-zenith transition group  {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}text-zenith active{{end}}" href="{{.URL}}">
+                  <span>{{$.Scratch.Get "counter"}}</span>
+                  <span class="inline-block h-px mx-16 -mt-px group-hover:w-48 {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}w-48 bg-zenith   group-hover:bg-white transition{{ else }}w-24 bg-dawn group-hover:w-24  group-hover:bg-zenith transition{{end}}"></span>
+                  <span>{{ .Name }}</span>
+                </a>
+              </li>
+            {{ end }}
+            </ul>
+          </nav>
+        </header>
+      </div> -->
+
+    </div>
