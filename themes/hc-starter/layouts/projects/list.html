@@ -1,18 +1,15 @@
 {{ define "main" }}
 
-<header id="talks">
-  <!-- <h2 class="sticky top-0 z-40 pt-24 text-sm font-bold tracking-widest uppercase md:sr-only text-zenith">
-    Projects
-  </h2> -->
-  <h2 class="top-0 z-40 my-8 text-sm font-bold tracking-widest text-zenith uppercase">
+<header id="projects">
+  <h2 class="z-40 my-8 mt-8 text-lg font-semibold leading-tight text-zenith">
     Projects
   </h2>
-  <h2 class="u-visually-hidden mb-16">A collection of recent project case studies</h2>
+  <h2 class="u-visually-hidden mb-16 ch-60">A collection of recent project case studies</h2>
 </header>
 <section class="PostList">
   {{ range .Data.Pages }}
   <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork"
-    class="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x my-8 br-2">
+    class="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x mb-16 br-2">
     <a
       href="{{ .Permalink }}" rel="noopener" class="block p-40">
       <p class="text-xs font-bold tracking-widest uppercase text-zenith">
@@ -39,7 +36,7 @@
   {{ end }}
   {{ range .Site.Data.projects }}
   <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork"
-    class="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x my-8 br-2">
+    class="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x mb-16 br-2">
     <div class="block p-40">
       <a
         href="{{ .link }}" target="_blank" rel="noopener">

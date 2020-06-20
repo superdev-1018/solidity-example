@@ -1,13 +1,11 @@
 {{ define "main" }}
 
-<div
-  class="static p-32 md:max-w-536 lg:max-w-736 md:absolute md:right-0 lg:py-88 lg:pr-88 md:pl-0"
->
-  <header class="PostHeader">
-    <h1 class="PostHeader-title">Articles</h1>
-    <h2 class="u-visually-hidden">
-      Articles on designing and coding things for the web
+
+  <header id="notes">
+    <h2 class="z-40 my-8 mt-8 text-lg font-semibold leading-tight text-zenith">
+      Articles
     </h2>
+    <h2 class="u-visually-hidden mb-16 ch-45">Articles on designing and coding things for the web.</h2>
   </header>
   <section class="PostList">
     {{ range .Data.Pages }}
@@ -41,6 +39,5 @@
     {{ end }}
 
   </section>
-</div>
 
 {{ end }}

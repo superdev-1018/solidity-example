@@ -33,7 +33,9 @@ a {
   }
 }
 
-a .no-focus {
+.no-focus {
+  outline: none;
+    outline-offset: none;
   &:active,
   &:focus {
     outline: none;

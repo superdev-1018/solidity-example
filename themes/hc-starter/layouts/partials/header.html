@@ -77,7 +77,8 @@
   <link rel="icon" href="{{ .Site.BaseURL }}img/favicon-32x32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="{{ .Site.BaseURL }}img/favicon-16x16.png" sizes="16x16" type="image/png">
   <link rel="shortcut icon" href="{{ .Site.BaseURL }}img/favicon.ico" type="image/x-icon">
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap" rel="stylesheet">
+  <!-- Custom Fonts-->
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;600;700&display=swap" rel="stylesheet">
   <!-- RSS -->
   {{ with .OutputFormats.Get "rss" -}}
@@ -99,21 +100,28 @@
       class="static flex flex-col justify-between w-full p-32 md:max-w-408 lg:max-w-496 md:fixed md:h-screen lg:py-72 lg:pl-72 md:pr-0">
       <div class="flex flex-col">
         <div>
+          <!-- I’m {{ .Site.Title }} -->
           <h1 class="text-2xl font-bold leading-tight text-zenith ch-12">
-            Hello, I’m {{ .Site.Title }}
+            Hello,
           </h1>
           <div class="leading-loose">
-            <p class="mt-32">
-              I’m a Staff Software Engineer currently working as Tech Lead of
-              the Doc Squad at
-              <a href="https://www.algolia.com/" target="_blank" rel="noopener"
-                class="underline text-zenith">Algolia</a>. I mostly do front-end development, and I’m a
-              <a href="https://vuejs.org/" rel="noopener" class="underline text-zenith">Vue.js</a>
-              and CSS nerd. I can't shut up about test-driven development and
-              utility-first CSS. I also share what I learn on my blog
-              <a href="http://frontstuff.io" target="_blank" rel="noopener"
-                class="underline text-zenith">frontstuff.io</a>, or at meetups and conferences.
+            <p class="mt-32 ch-60 lg:ch-48">
+              I’m <a class="underline text-zenith" href="https://www.algolia.com/" target="_blank" rel="noopener">Murshid Azher</a>, a Software Engineer from Colombo, Sri Lanka. I write <a href="https://www.algolia.com/" target="_blank" rel="noopener"
+              class="underline text-zenith">articles on design and code</a> and also <a href="https://www.algolia.com/" target="_blank" rel="noopener"
+              class="underline text-zenith">keep notes on things I’m learning</a> from books, courses and interesting things I find from various places on the internet.
             </p>
+            <p class="mt-8 ch-60 lg:ch-48">
+              You can find out more about me by click just right <a href="https://www.algolia.com/" target="_blank" rel="noopener"
+              class="underline text-zenith">here</a>. Alternatively, if you are here to take a look at <a href="https://www.algolia.com/" target="_blank" rel="noopener"
+              class="underline text-zenith">my CV</a> to get an idea of my experience.
+            </p>
+            <!-- <p class="mt-8 ch-60 lg:ch-48">
+              You can find out <a href="https://www.algolia.com/" target="_blank" rel="noopener"
+              class="underline text-zenith">what I’m up to right now</a>, check out a few of my <a href="https://www.algolia.com/" target="_blank" rel="noopener"
+              class="underline text-zenith">recent projects</a> or read about some of the ways you can <a href="https://www.algolia.com/" target="_blank" rel="noopener"
+              class="underline text-zenith">work with me</a>. Alternatively, take a look at <a href="https://www.algolia.com/" target="_blank" rel="noopener"
+              class="underline text-zenith">my CV</a> to get an idea of my experience.
+            </p> -->
           </div>
         </div>
         <nav class="text-sm font-bold uppercase text-widest hidden mt-72 md:block">
@@ -123,22 +131,22 @@
 
               {{ range .Site.Menus.main }}
               {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
-              {{ $active := or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .)}}
+              {{ $active := or (eq $currentPage.Title .Name) (or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .)) }}
               <li class="md:my-8">
                 <a href="{{.URL}}"
                   class="inline-flex items-center hover:text-zenith transition group {{ if $active }}text-zenith active{{end}}">
-                  <span class="text-xs tracking-wide">0{{$.Scratch.Get "counter"}}</span>
+                  <span class="text-sm tracking-wide">0{{$.Scratch.Get "counter"}}</span>
                     <span
                     class="inline-block w-24 h-px mx-16 -mt-px group-hover:w-48 bg-dawn group-hover:bg-zenith transition {{ if $active }}w-48 bg-zenith{{end}}"></span>
                     <span
-                    class="text-xs tracking-widest uppercase">{{ .Name }}</span>
+                    class="text-sm tracking-widest uppercase">{{ .Name }}</span>
                   </a>
                 </li>
             {{ end }}
           </ul>
         </nav>
       </div>
-      <div class="flex items-center w-full mt-32 md:mt-72"><img alt="Sarah Dayan's headshot" src="/img/hc.jpg"
+      <div class="flex items-center w-full mt-32 md:mt-64"><img alt="Sarah Dayan's headshot" src="/img/hc.jpg"
           width="400" data-src="/img/hc.jpg" data-srcset="/img/hc.jpg 400w" data-sizes="(max-width: 400px) 100vw, 400px"
           class="w-48 h-48 mr-32 rounded-full g-image g-image--lazy g-image--loaded" srcset="/img/hc.jpg 400w"
           sizes="(max-width: 400px) 100vw, 400px"><noscript><img src="/img/hc.jpg"
