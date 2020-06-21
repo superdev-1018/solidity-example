@@ -11,15 +11,18 @@
             </span> -->
 
 
-            <!-- {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "/" }}
-            <ul class="breadcrumbs">
-              <li><a href="/">home</a></li>
+            {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "/" }}
+            <ul class="breadcrumbs inline flex mb-16 uppercase ">
+              <li class="mr-8 font-semibold text-zenith">
+                <a href="{{ .Site.BaseURL }}">home</a>
+              </li>
               {{ range $index, $element := split $url "/" }}
                 {{ if ne $element "" }}
-                  <li><a href="{{ . | absURL }}">{{ . }}</a></li>
+                <li class=""> / </li>
+                  <li class="mx-8 font-semibold text-zenith"><a href="{{ . | absURL }}">{{ . }}</a></li>
                 {{ end }}
               {{ end }}
-            </ul> -->
+            </ul>
 
           <h2 class="z-40 my-8 mt-8 text-lg font-semibold leading-tight text-zenith">
             {{ .Title }}
