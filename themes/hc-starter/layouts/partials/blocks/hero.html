@@ -7,8 +7,8 @@
     </div><!-- /.ImageRatio -->
   </div><!-- /.Image -->
   {{- with .Params.image_caption -}}
-  <figure class="Grid">
-    <figcaption class="Grid-7-6 mono">{{ markdownify . }}</figcaption>
+  <figure class="flex items-center justify-center">
+    <figcaption class="mono">{{ markdownify . }}</figcaption>
   </figure>
   {{- end -}}
 </section>

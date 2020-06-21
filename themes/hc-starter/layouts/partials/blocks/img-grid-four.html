@@ -1,5 +1,5 @@
-<section class="Section Grid Grid--2col">
-  <div class="Grid-1-3">
+<section class="Section grid grid--2col">
+  <div class="">
     <div class="Image">
       <div class="Ratio Ratio--{{- with .Params.image_ratio -}}{{ markdownify . }}{{- end -}}">
         <img
@@ -13,7 +13,7 @@
     </figure>
     {{- end -}}
   </div>
-  <div class="Grid-4-3">
+  <div class="">
     <div class="Image">
       <div class="Ratio Ratio--{{- with .Params.image_ratio -}}{{ markdownify . }}{{- end -}}">
         <img
@@ -27,7 +27,7 @@
     </figure>
     {{- end -}}
   </div>
-  <div class="Grid-7-3">
+  <div class="">
     <div class="Image">
       <div class="Ratio Ratio--{{- with .Params.image_ratio -}}{{ markdownify . }}{{- end -}}">
         <img
@@ -42,13 +42,13 @@
     </figure>
     {{- end -}}
   </div>
-  <div class="Grid-10-3">
+  <div class="">
     <div class="Image">
       <div class="Ratio Ratio--{{- with .Params.image_ratio -}}{{ markdownify . }}{{- end -}}">
         <img
           data-src="https://res.cloudinary.com/harrycresswell/image/upload/w_auto,dpr_auto,c_scale,f_auto,q_auto/{{- with .Params.image_four -}}{{ markdownify . }}{{- end -}}"
           class="cld-responsive lazyload" alt="{{- with .Params.image_four_alt -}}{{ markdownify . }}{{- end -}}">
-      </div><!-- /.ImageRatio -->
+      </div><!-- /.ImageRatio-->
     </div><!-- /.Image -->
     {{- with .Params.image_four_caption -}}
     <figure>

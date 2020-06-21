@@ -1,5 +1,5 @@
-<section class="Section Grid">
-  <figure class="Grid-1-6 Grid-as-center">
+<section class="section flex lg:flex-row">
+  <figure class="flex">
     <blockquote class="PullQuote PullQuote--left">
       <p>
       {{- with .Params.quote_text -}}
@@ -9,12 +9,12 @@
       {{- with .Params.quote_caption -}}<figcaption>&mdash; {{ markdownify . }}</figcaption>{{- end -}}
     </blockquote>
   </figure>
-   <div class="Grid-7-6">
+   <div class="">
     <div class="Image">
-      <div class="Ratio Ratio--{{- with .Params.image_ratio -}}{{ markdownify . }}{{- end -}}">
+      <div class="block relative bg-light Ratio--{{- with .Params.image_ratio -}}{{ markdownify . }}{{- end -}}">
         <img
           data-src="https://res.cloudinary.com/harrycresswell/image/upload/w_auto,dpr_auto,c_scale,f_auto,q_auto/{{- with .Params.image -}}{{ markdownify . }}{{- end -}}"
-          class="cld-responsive lazyload " alt="{{- with .Params.image_alt -}}{{ markdownify . }}{{- end -}}">
+          class="block h-full w-full absolute top-0 left-0 cld-responsive lazyload" alt="{{- with .Params.image_alt -}}{{ markdownify . }}{{- end -}}">
       </div><!-- /.ImageRatio -->
     </div><!-- /.Image -->
     {{- with .Params.image_caption -}}
