@@ -1,4 +1,4 @@
-<section class="Section Grid">
+<section class="my-32 Grid">
   <div class="Grid-7-6">
     <div class="Image">
       <div class="Ratio Ratio--{{- with .Params.iframe_ratio -}}{{ markdownify . }}{{- end -}}">
@@ -6,7 +6,7 @@
       </div><!-- /.Ratio -->
     </div><!-- /.Image -->
     {{- with .Params.iframe_caption -}}
-    <figure>
+    <figure class="flex items-center justify-center">
       <figcaption class="mono">{{ markdownify . }}</figcaption>
     </figure>
     {{- end -}}

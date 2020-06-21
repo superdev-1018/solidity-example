@@ -1,6 +1,6 @@
-<section class="section flex lg:flex-row">
-  <figure class="flex">
-    <blockquote class="PullQuote PullQuote--left">
+<section class="my-32 sm:flex md-min:block lg:flex lg:flex-row">
+  <figure class="md:flex">
+    <blockquote class="bl-none ch-60 my-0 mx-0 sm:mb-16">
       <p>
       {{- with .Params.quote_text -}}
         {{ markdownify . }}
@@ -18,7 +18,7 @@
       </div><!-- /.ImageRatio -->
     </div><!-- /.Image -->
     {{- with .Params.image_caption -}}
-    <figure>
+    <figure class="flex items-center justify-center">
       <figcaption class="mono">{{ markdownify . }}</figcaption>
     </figure>
     {{- end -}}

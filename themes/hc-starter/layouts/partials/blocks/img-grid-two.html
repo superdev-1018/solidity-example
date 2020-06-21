@@ -1,4 +1,4 @@
-<section class="Section grid">
+<section class="my-32 grid">
   <div class="grid-1-6">
     <div class="Image">
       <div class="Ratio Ratio--{{- with .Params.image_ratio -}}{{ markdownify . }}{{- end -}}">
@@ -8,7 +8,7 @@
       </div><!-- /.ImageRatio -->
     </div><!-- /.Image -->
     {{- with .Params.image_one_caption -}}
-    <figure>
+    <figure class="flex items-center justify-center">
       <figcaption class="mono">{{ markdownify . }}</figcaption>
     </figure>
     {{- end -}}
@@ -22,7 +22,7 @@
       </div><!-- /.ImageRatio -->
     </div><!-- /.Image -->
     {{- with .Params.image_two_caption -}}
-    <figure>
+    <figure class="flex items-center justify-center">
       <figcaption class="mono">{{ markdownify . }}</figcaption>
     </figure>
     {{- end -}}

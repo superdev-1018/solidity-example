@@ -1,7 +1,7 @@
 <section class="section flex">
   <div class="">
       <h3 class="font-semibold dark text-md text-zenith">{{ markdownify .Params.heading }}</h3>
-      {{- with .Params.subheading -}}<h4 class="is-body light">{{ markdownify . }}</h4>{{- end -}}
+      {{- with .Params.subheading -}}<h4 class="">{{ markdownify . }}</h4>{{- end -}}
   </div>
   {{- with .Params.content -}}
   <div class="">
