@@ -24,3 +24,4 @@ end
 - `node -v > .nvmrc`
 - `nvm use` to use the file
 - `husky` node version problem, see this [link](https://github.com/typicode/husky/issues/247) to upgrade `lint-staged`
+

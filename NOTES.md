@@ -19,3 +19,5 @@ hugo server -D
 - [Hugo](https://gohugo.io/)
 - [Commit Messages](https://www.conventionalcommits.org/en/v1.0.0-beta.2/)
 - [Release Automations](https://medium.com/@jsilvax/automate-semantic-versioning-with-conventional-commits-d76a9f45f2fa)
+- `https://jsfiddle.net/133rr51u/` for two column layout more responsive
+- `https://github.com/mourner/dead-simple-grid` for css grid
