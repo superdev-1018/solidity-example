@@ -2,7 +2,7 @@
   <article id="content" class="Post h-entry">
 
       <header class="PostHeader">
-          <h1 class="PostHeader-title p-name">{{ .Title }}</h1>
+        <h1 class="z-40 my-8 mt-8 text-lg font-semibold leading-tight text-zenith">{{ .Title }}</h1>
       </header>
 
       <section class="PostMeta">
@@ -11,12 +11,7 @@
       </section>
 
       <section class="PostBody e-content">
-        {{ partial "heading-anchor.html" .Content }} 
+        {{ partial "heading-anchor.html" .Content }}
       </section>
-
-      <footer>
-      {{ partialCached "post/author.html" . }}
-      </footer>
-
   </article><!--/.Content -->
 {{ end }}

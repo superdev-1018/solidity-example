@@ -18,7 +18,7 @@
       <h3 itemprop="name" class="mt-8 text-lg font-semibold leading-tight text-zenith">
         {{ .Title }}
       </h3>
-      <p class="mt-8">{{ .Description | markdownify }}</p>
+      <p class="mt-8 text-dawn">{{ .Description | markdownify }}</p>
       <div hidden>
         <a rel="author" class="p-author h-card" href="{{ $.Site.BaseURL }}">Murshid Azher</a>
       </div>
@@ -46,7 +46,7 @@
         <h3 itemprop="name" class="mt-8 text-lg font-semibold leading-tight text-zenith">
           {{ .title }}
         </h3>
-        <div class="mt-8"><a class="no-focus">{{ .description | markdownify }}</a></div>
+        <div class="mt-8 "><a class="no-focus text-dawn">{{ .description | markdownify }}</a></div>
         <div hidden>
           <a rel="author" class="p-author h-card" href="{{ $.Site.BaseURL }}">Murshid Azher</a>
         </div>
