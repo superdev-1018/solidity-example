@@ -16,7 +16,7 @@ There are two things that are hoisted in JavaScript; Function declarations and v
 
 Consider the following code:
 
-```
+```javascript
 sayHi();
 
 function sayHi() {
