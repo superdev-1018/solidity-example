@@ -96,3 +96,6 @@ enableEmoji = true
   name = "Likes"
   url = "/likes/"
   weight = 25
+
+[markup.goldmark.renderer]
+unsafe = true

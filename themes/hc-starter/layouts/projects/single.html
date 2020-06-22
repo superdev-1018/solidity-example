@@ -11,7 +11,7 @@
             </span> -->
 
 
-            {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "/" }}
+            <!-- {{ $url := replace .Permalink ( printf "%s" .Site.BaseURL) "/" }}
             <ul class="breadcrumbs inline flex mb-16 uppercase tracking-wide">
               <li class="mr-8 font-semibold text-zenith">
                 <a href="{{ .Site.BaseURL }}">home</a>
@@ -23,7 +23,7 @@
                   <li class="mx-8 font-semibold text-zenith"><a href="{{ . | absURL }}">{{ . }}</a></li>
                 {{ end }}
               {{ end }}
-            </ul>
+            </ul> -->
 
           <h2 class="z-40 my-8 mt-8 text-lg font-semibold leading-tight text-zenith">
             {{ .Title }}

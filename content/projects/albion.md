@@ -52,7 +52,7 @@ template = "iframe-full"
 [[blocks]]
 heading = "The Mission"
 subheading = ""
-content = "<p>We identified three core project requirements.</p><p><strong>1. Create a website and eCommerce platform</strong> that provides an easy and intuitive way for the team to manage content and a growing product inventory.</p><p><strong>2. Design an integrated weather app</strong> to help riders discover weather conditions for a given location and product suggestions to match.</p><p><strong>3. Set up an email marketing funnel</strong> and email templates, providing the team with a way to build a following and share content with their customers.</p>"
+content = "<p>We identified three core project requirements.</p><p class='mt-16'><strong>1. Create a website and eCommerce platform</strong> that provides an easy and intuitive way for the team to manage content and a growing product inventory.</p><p><strong>2. Design an integrated weather app</strong> to help riders discover weather conditions for a given location and product suggestions to match.</p><p><strong>3. Set up an email marketing funnel</strong> and email templates, providing the team with a way to build a following and share content with their customers.</p>"
 template = "body-copy"
 [[blocks]]
 quote_text = "Forget the rules and racing, it’s about having freedom to explore Britain by bike. Our best stories start and finish with the weather and we endeavour to make functional products to suit this ethos."

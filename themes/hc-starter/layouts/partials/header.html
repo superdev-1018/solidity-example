@@ -133,14 +133,14 @@
               {{ range .Site.Menus.main }}
               {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
               {{ $active := or (eq $currentPage.Title .Name) (or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .)) }}
-              <li class="md:my-8">
+              <li class="md:my-8 hover:text-zenith">
                 <a href="{{.URL}}"
                   class="inline-flex items-center hover:text-zenith transition group text-dawn {{ if $active }}text-zenith active{{end}}">
-                  <span class="text-sm tracking-wide">0{{$.Scratch.Get "counter"}}</span>
-                    <span
-                    class="inline-block w-24 h-px mx-16 -mt-px group-hover:w-48 bg-dawn group-hover:bg-zenith transition {{ if $active }}w-48 bg-zenith{{end}}"></span>
-                    <span
-                    class="text-sm tracking-widest uppercase text-dawn hover:text-zenith {{ if $active }}text-zenith active{{end}}">{{ .Name }}</span>
+                  <span class="text-sm tracking-wide ">0{{$.Scratch.Get "counter"}}</span>
+                  <span
+                  class="inline-block w-24 h-px mx-16 -mt-px group-hover:w-48 bg-dawn group-hover:bg-zenith transition {{ if $active }}w-48 bg-zenith{{end}}"></span>
+                  <span
+                  class="text-sm tracking-widest uppercase {{ if $active }}text-zenith active{{end}}">{{ .Name }}</span>
                   </a>
                 </li>
             {{ end }}
