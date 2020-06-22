@@ -1234,3 +1234,135 @@ img {
     @include margin-right(8);
   }
 }
+
+a {
+  --bg-opacity: 1;
+  color: rgba(255, 255, 255, var(--bg-opacity));
+}
+
+/* code */
+
+code,
+kbd,
+samp {
+  background: #f9f9f9;
+  color: var(--color-teal);
+  font-size: 0.9rem;
+}
+
+pre {
+  background: #f9f9f9;
+  font-size: 0.8rem;
+  overflow: auto;
+  overflow-x: scroll;
+  color: var(--color-dark);
+  overflow-wrap: normal;
+  padding: 2%;
+}
+
+pre + p {
+  @include margin-top(1);
+}
+
+p code,
+li code {
+  padding: 0.125rem 0.35rem;
+}
+
+code,
+pre {
+  font-family: Menlo, Monaco, "Courier New", monospace;
+}
+
+code {
+  font-size: 85%;
+  color: var(--color-teal);
+  background-color: #f9f9f9;
+  border-radius: 2px;
+}
+
+pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+pre code {
+  padding: 0;
+  font-size: 100%;
+  color: inherit;
+  background-color: transparent;
+}
+
+
+.articles_list--meta {
+  .post__meta-tag {
+    a {
+      --text-opacity: 1;
+      color: rgba(148, 148, 149, var(--text-opacity));
+    }
+  }
+}
+
+.PostBody {
+    h1,
+  .size-1 {
+    --bg-opacity: 1;
+    color: rgba(255, 255, 255, var(--bg-opacity));
+    font-size: $mod_1 * $mod_1 * $mod_1 * $mod_1 * 1rem;
+    @include fluid-type(
+      $min_width,
+      $max_width,
+      $mod_1 * $mod_1 * $mod_1 * $mod_1 * $min_font,
+      $mod_2 * $mod_2 * $mod_2 * $mod_2 * $min_font
+    );
+    line-height: 1;
+    @include margin-bottom(1);
+  }
+
+  h2,
+  .size-2 {
+    --bg-opacity: 1;
+    color: rgba(255, 255, 255, var(--bg-opacity));
+    font-size: $mod_1 * 0.1rem;
+    @include fluid-type(
+      $min_width,
+      $max_width,
+      $mod_1 * $min_font,
+      $mod_2 * $min_font
+    );
+    @include margin-top(1.5);
+    @include margin-bottom(0.5);
+  }
+
+  h3,
+  .size-3 {
+    --bg-opacity: 1;
+    color: rgba(255, 255, 255, var(--bg-opacity));
+    font-size: $mod_1 * $mod_1 * 1rem;
+    @include fluid-type(
+      $min_width,
+      $max_width,
+      $mod_1 * $min_font,
+      $mod_2 * $min_font
+    );
+    @include margin-top(1.5);
+    @include margin-bottom(0.5);
+  }
+
+  h4,
+  .size-4 {
+    --bg-opacity: 1;
+    color: rgba(255, 255, 255, var(--bg-opacity));
+    font-size: $mod_1 * 1rem;
+    @include fluid-type(
+      $min_width,
+      $max_width,
+      $min_font,
+      $min_font
+    );
+    @include margin-top(1.5);
+    @include margin-bottom(0.5);
+  }
+}
+
+

@@ -1,9 +1,9 @@
 <!-- Tags. -->
-<div class="PostMeta-tags">
-    <div class="PostMeta-tag">
+<div class="post__meta-tags">
+    <div class="post__meta-tag">
       {{ $baseurl := .Site.BaseURL }}
       {{ range .Params.tags }}
-        <a href="/tags/{{ . | urlize }}" class="p-category">{{ . }}</a>
+        <a href="/tags/{{ . | urlize }}" class="">{{ . }}</a>
       {{ end }}
     </div>
 </div>

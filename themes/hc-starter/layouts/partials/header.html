@@ -107,14 +107,14 @@
           </h1>
           <div class="leading-loose">
             <p class="mt-32 ch-60 lg:ch-48">
-              I’m <a class="underline text-zenith" href="/" rel="noopener">Murshid Azher</a>, a Software Engineer from Colombo, Sri Lanka. I write <a href="https://www.algolia.com/" target="_blank" rel="noopener"
-              class="underline text-zenith">articles on design and code</a> and also <a href="https://www.algolia.com/" target="_blank" rel="noopener"
-              class="underline text-zenith">keep notes on things I’m learning</a> from books, courses and interesting things I find from various places on the internet.
+              I’m <a class="text-zenith" href="/" rel="noopener">Murshid Azher</a>, a Software Engineer from Colombo, Sri Lanka. I write <a href="https://www.algolia.com/" target="_blank" rel="noopener"
+              class="text-zenith">articles on design and code</a> and also <a href="https://www.algolia.com/" target="_blank" rel="noopener"
+              class="text-zenith">keep notes on things I’m learning</a> from books, courses and interesting things I find from various places on the internet.
             </p>
             <p class="mt-8 ch-60 lg:ch-48">
               You can find out more about me by click just right <a href="https://www.algolia.com/" target="_blank" rel="noopener"
-              class="underline text-zenith">here</a>. Alternatively, if you are here to take a look at <a href="https://www.algolia.com/" target="_blank" rel="noopener"
-              class="underline text-zenith">my CV</a> to get an idea of my experience.
+              class="text-zenith">here</a>. Alternatively, if you are here to take a look at <a href="https://www.algolia.com/" target="_blank" rel="noopener"
+              class="text-zenith">my CV</a> to get an idea of my experience.
             </p>
             <!-- <p class="mt-8 ch-60 lg:ch-48">
               You can find out <a href="https://www.algolia.com/" target="_blank" rel="noopener"
@@ -135,12 +135,12 @@
               {{ $active := or (eq $currentPage.Title .Name) (or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .)) }}
               <li class="md:my-8">
                 <a href="{{.URL}}"
-                  class="inline-flex items-center hover:text-zenith transition group {{ if $active }}text-zenith active{{end}}">
+                  class="inline-flex items-center hover:text-zenith transition group text-dawn {{ if $active }}text-zenith active{{end}}">
                   <span class="text-sm tracking-wide">0{{$.Scratch.Get "counter"}}</span>
                     <span
                     class="inline-block w-24 h-px mx-16 -mt-px group-hover:w-48 bg-dawn group-hover:bg-zenith transition {{ if $active }}w-48 bg-zenith{{end}}"></span>
                     <span
-                    class="text-sm tracking-widest uppercase">{{ .Name }}</span>
+                    class="text-sm tracking-widest uppercase text-dawn hover:text-zenith {{ if $active }}text-zenith active{{end}}">{{ .Name }}</span>
                   </a>
                 </li>
             {{ end }}
