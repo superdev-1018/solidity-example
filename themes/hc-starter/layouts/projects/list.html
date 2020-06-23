@@ -9,7 +9,7 @@
 <section class="PostList">
   {{ range .Data.Pages }}
   <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork"
-    class="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x mb-16 br-2">
+    class="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x mb-16">
     <a
       href="{{ .Permalink }}" rel="noopener" class="block p-40">
       <p class="text-xs font-bold tracking-widest uppercase text-zenith">
@@ -36,7 +36,7 @@
   {{ end }}
   {{ range .Site.Data.projects }}
   <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork"
-    class="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x mb-16 br-2">
+    class="bg-dusk transition md:group-hover:opacity-50 md:hover:opacity-important md:hover:scale-11/10x mb-16">
     <div class="block p-40">
       <a
         href="{{ .link }}" target="_blank" rel="noopener">
