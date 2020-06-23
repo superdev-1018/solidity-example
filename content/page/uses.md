@@ -65,4 +65,4 @@ My office setup, and the tools I use from day to day.
 - [Netlify](https://www.netlify.com/)
 - [Cloudinary](https://cloudinary.com/)
 
-This page was inspired by [Wes Bos](https://wesbos.com/uses/).
+<p class="mt-32">This page was inspired by <a href="https://wesbos.com/uses/" target="_blank">Wes Bos</a>.</p>

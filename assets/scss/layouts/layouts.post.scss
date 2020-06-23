@@ -37,7 +37,7 @@
     @include margin-bottom(0.5);
   }
 
-  p:not(:first-child) {
+  p {
     max-width: 60ch;
     @include margin-top(1.2);
     @include margin-bottom(0.8);

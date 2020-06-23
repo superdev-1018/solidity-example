@@ -30,6 +30,6 @@ I’m in London, on lockdown due to the Covid-19 Coronavirus outbreak. I’m wel
 - [Sanity.io](https://www.sanity.io/), an API based CMS
 - German (this one might be here for a while)
 
-**Last Updated:** April 22, 2020.
+<p class="mt-32"><strong>Last Updated:</strong> April 22, 2020.</p>
 
-**Page inspired by:** [Zen Habits](https://zenhabits.net/now/) and [Derek Sivers](https://nownownow.com/about).
+<p class="mt-32"><strong>Page inspired by:</strong> <a href="https://zenhabits.net/now/" target="_blank">Zen Habits</a> and <a href="https://nownownow.com/about" target="_blank">Derek Sivers</a>.</p>

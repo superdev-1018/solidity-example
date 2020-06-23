@@ -1,9 +1,9 @@
 ---
-title: "Working with me"
+title: "Know more about me"
 date: 2018-03-27T20:36:08+01:00
-description: "This page will give you a clearer picture of how I work and whether I’m the right fit for your next project"
-slug: "how"
-url: "work-with-me"
+description: "This page will give you a clearer picture of who I am"
+slug: "me"
+url: "more-about-me"
 ---
 
 {{< intro >}}This page will give you a clear idea of ways we can work together and if I’m the right fit for your next project.{{< /intro >}}
@@ -56,4 +56,4 @@ If you are a non-profit organisation or charity then I will often waiver my fee 
 
 ## Get in touch
 
-If you have a project in mind, and you think I might be a good fit, then [let’s talk about it](/contact/) and we can take it from there.
+If you have any further questions [drop me an email](mailto:studio@harrycresswell.com) or a [tweet](https://twitter.com/harrycresswell/). I'd be more than happy to help.
