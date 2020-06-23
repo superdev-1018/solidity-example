@@ -1298,7 +1298,27 @@ pre code {
   .post__meta-tag {
     a {
       --text-opacity: 1;
-      color: rgba(148, 148, 149, var(--text-opacity));
+      color: rgba(255, 255, 255, var(--bg-opacity));
+    }
+
+    a:not(:last-child):not(.no-focus):after {
+      content: ',';
+    }
+  }
+}
+
+.tags {
+
+  .articles_list--meta {
+    .post__meta-tag {
+      a {
+        --text-opacity: 1;
+        color: rgba(255, 255, 255, var(--bg-opacity));
+      }
+
+      a:not(:last-child):after {
+        content: ',';
+      }
     }
   }
 }

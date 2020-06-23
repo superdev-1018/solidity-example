@@ -8,12 +8,12 @@
     </div>
   </header>
 
-  <section class="flex flex-row mb-16">
-    <time class="PostMeta-date dt-published" datetime="{{ .Date }}"
-      >{{ .Date.Format "Mon, Jan 2, 2006" }}</time
-    >
-    &nbsp;&nbsp;—&nbsp;&nbsp;{{ partial "post/tags.html" . }}
-
+  <section class="articles_list--meta flex flex-row mb-16">
+   <div class="tags flex flex-row items-center">
+    <time itemprop="datePublished"
+      class="inline-block" datetime="{{ .Date }}">{{ .Date.Format "Mon, Jan 2, 2006" }}
+    </time> &nbsp; — &nbsp; {{ partial "post/tags.html" . }}
+  </div>
   </section>
 
   <section class="PostBody e-content">
