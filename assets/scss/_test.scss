@@ -272,6 +272,10 @@ video {
   line-height: 1.375;
 }
 
+.leading-breathe {
+  line-height: 1.5;
+}
+
 .leading-loose {
   line-height: 2;
 }
@@ -730,6 +734,10 @@ video {
     clip: rect(0, 0, 0, 0);
     white-space: nowrap;
     border-width: 0;
+  }
+
+  .md\:pl-72 {
+    padding-left: 72px;
   }
 
   .md\:block {
@@ -1506,6 +1514,11 @@ pre code {
       background: none;
     }
   }
+}
+
+
+.PostList {
+  margin-top: 32px;
 }
 
 

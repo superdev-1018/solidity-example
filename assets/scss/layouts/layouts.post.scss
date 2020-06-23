@@ -21,7 +21,7 @@
 }
 
 .PostBody {
-  @include margin-top(2);
+  @include margin-top(0.5);
   max-width: 1600px;
   // margin: 0 auto;
 
@@ -37,8 +37,9 @@
     @include margin-bottom(0.5);
   }
 
-  p {
+  p:not(:first-child) {
     max-width: 60ch;
+    @include margin-top(1.2);
     @include margin-bottom(0.8);
   }
 
