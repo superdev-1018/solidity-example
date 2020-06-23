@@ -9,10 +9,10 @@
       {{ block "main" . }}{{ end }}
     </div>
   </div>
+  {{ partialCached "footer.html" . .Type }}
 </main>
 
 
 
 <!-- {{ partial "newsletter.html" . }} -->
 
-{{ partialCached "footer.html" . .Type }}

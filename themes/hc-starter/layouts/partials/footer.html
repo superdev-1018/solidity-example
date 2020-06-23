@@ -1,16 +1,12 @@
-  <!-- <footer class="Footer" role="contentinfo">
-    <nav class="FooterNav" aria-label="Footer Navigation">
+  <footer class="Footer mt-72" role="contentinfo">
+    <nav class="FooterNav mb-16" aria-label="Footer Navigation">
       {{ $currentPage := . }}
       {{ range .Site.Menus.footer }}
-      <a class="FooterNav-link{{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }} active{{end}}"
+      <a class="FooterNav-link{{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }} active{{end}} mr-8"
         href="{{.URL}}">{{ .Name }}</a>
       {{ end }}
     </nav>
-    <p>Content &copy;{{ now.Format "2006"}} Harry Cresswell, unless otherwise specified. Subscribe to RSS Feeds for <a
-        href="{{ $.Site.BaseURL }}feed.xml">all content</a>, <a
-        href="{{ $.Site.BaseURL }}articles/feed.xml">articles</a> or <a
-        href="{{ $.Site.BaseURL }}notes/feed.xml">notes</a>.</p>
-  </footer> -->
+    <p>Content &copy;{{ now.Format "2006"}} Murshid Azher, unless otherwise specified.
   </div>
   <div class="fixed bottom-0 left-0 z-20 w-full h-32 pointer-events-none gradient-y-transparent-night"></div>
   <div class="fixed top-0 left-0 z-20 w-full h-32 pointer-events-none gradient-y-night-transparent"></div>
