@@ -1,4 +1,4 @@
-baseurl = "https://harrycresswell.com/"
+baseurl = "https://murshidazher.com/"
 theme="hc-starter"
 languageCode = "en"
 title = "Murshid Azher"
@@ -21,11 +21,11 @@ pygmentsCodeFences = true
   author = "Harry Cresswell"
 
 [author]
-  name = "Harry Cresswell"
-  email = "studio@harrycresswell.com"
-  twitter = "https://twitter.com/harrycresswell"
-  github = "https://github.com/harrycresswell"
-  linkedin = "https://linkedin.com/in/harrycresswell/"
+  name = "Murshid Azher"
+  email = "studio@murshidazher.com"
+  twitter = "https://twitter.com/murshidazher"
+  github = "https://github.com/murshidazher"
+  linkedin = "https://linkedin.com/in/murshidazher/"
 
 [taxonomies]
   tag = "tags"
