@@ -946,9 +946,17 @@ video {
     width: 240px;
   }
 
+  .md\:w-2by1 {
+    width: calc(100% - 51.5%);
+  }
+
   .group-2:hover .md\:group-2-hover\:scale-11\/10x,
   .md\:hover\:scale-11\/10x:hover {
     transform: scale(1.1);
+  }
+
+  .md\:transform-up {
+    transform: translateY(-27.95px);
   }
 }
 
@@ -1037,6 +1045,12 @@ video {
   .lg\:w-320 {
     width: 320px;
   }
+
+  .lg\:w-2by1 {
+    width: calc(100% - 51.5%);
+  }
+
+
 }
 
 .br-2 {
