@@ -90,12 +90,12 @@
 <body class="bg-night overflow-x-hidden">
   <div id="app" class="relative flex flex-col w-screen mx-auto font-sans text-base max-w-1440 text-dawn md:flex-row">
     <div class="md:hidden">
-      <div class="fixed top-0 left-0 z-30 w-full h-64 transition bg-dusk -shift-y-64"></div>
-      <div class="fixed top-0 left-0 z-50 w-full h-64 transition -shift-y-64">
+      <div class="fixed top-0 left-0 z-30 w-full h-64 transition bg-dusk shift-0"></div>
+      <div class="fixed top-0 left-0 z-50 w-full h-64 transition shift-0">
         <div class="absolute top-0 w-full h-24 gradient-y-dusk-transparent"></div>
         <div class="absolute bottom-0 w-full h-24 gradient-y-transparent-dusk"></div>
       </div>
-      <div class="fixed top-0 left-0 z-50 w-full h-32 mt-64 transition gradient-y-night-transparent -shift-y-96"></div>
+      <div class="fixed top-0 left-0 z-50 w-full h-32 mt-64 transition gradient-y-night-transparent shift-0"></div>
     </div>
     <div
       class="static flex flex-col justify-between w-full p-32 md:max-w-408 lg:max-w-496 md:fixed md:h-screen lg:py-72 lg:pl-72 md:pr-0">
@@ -107,14 +107,17 @@
           </h1>
           <div class="leading-loose">
             <p class="mt-32 ch-60 lg:ch-48">
-              I’m <a class="text-zenith" href="/" rel="noopener">Murshid Azher</a>, a Software Engineer from Colombo, Sri Lanka. I write <a href="https://www.algolia.com/" target="_blank" rel="noopener"
-              class="text-zenith">articles on design and code</a> and also <a href="https://www.algolia.com/" target="_blank" rel="noopener"
-              class="text-zenith">keep notes on things I’m learning</a> from books, courses and interesting things I find from various places on the internet.
+              I’m <a class="text-zenith" href="/" rel="noopener">Murshid Azher</a>, a Software Engineer from Colombo,
+              Sri Lanka. I write <a href="https://www.algolia.com/" target="_blank" rel="noopener"
+                class="text-zenith">articles on design and code</a> and also <a href="https://www.algolia.com/"
+                target="_blank" rel="noopener" class="text-zenith">keep notes on things I’m learning</a> from books,
+              courses and interesting things I find from various places on the internet.
             </p>
             <p class="mt-8 ch-60 lg:ch-48">
-              You can find out more about me by click just right <a href="https://www.algolia.com/" target="_blank" rel="noopener"
-              class="text-zenith">here</a>. Alternatively, if you are here to take a look at <a href="https://www.algolia.com/" target="_blank" rel="noopener"
-              class="text-zenith">my CV</a> to get an idea of my experience.
+              You can find out more about me by click just right <a href="https://www.algolia.com/" target="_blank"
+                rel="noopener" class="text-zenith">here</a>. Alternatively, if you are here to take a look at <a
+                href="https://www.algolia.com/" target="_blank" rel="noopener" class="text-zenith">my CV</a> to get an
+              idea of my experience.
             </p>
             <!-- <p class="mt-8 ch-60 lg:ch-48">
               You can find out <a href="https://www.algolia.com/" target="_blank" rel="noopener"
@@ -128,21 +131,21 @@
         <nav class="text-sm font-semibold uppercase text-widest hidden mt-72 md:block">
           <ul class="flex flex-row md:flex-col md:-my-16">
             {{ $.Scratch.Set "counter" 0 }}
-             {{ $currentPage := . }}
+            {{ $currentPage := . }}
 
-              {{ range .Site.Menus.main }}
-              {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
-              {{ $active := or (eq $currentPage.Title .Name) (or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .)) }}
-              <li class="md:my-8 hover:text-zenith">
-                <a href="{{.URL}}"
-                  class="inline-flex items-center hover:text-zenith transition group text-dawn {{ if $active }}text-zenith active{{end}}">
-                  <span class="text-sm tracking-wide ">0{{$.Scratch.Get "counter"}}</span>
-                  <span
+            {{ range .Site.Menus.main }}
+            {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+            {{ $active := or (eq $currentPage.Title .Name) (or ($currentPage.HasMenuCurrent "main" .) ($currentPage.IsMenuCurrent "main" .)) }}
+            <li class="md:my-8 hover:text-zenith">
+              <a href="{{.URL}}"
+                class="inline-flex items-center hover:text-zenith transition group text-dawn {{ if $active }}text-zenith active{{end}}">
+                <span class="text-sm tracking-wide ">0{{$.Scratch.Get "counter"}}</span>
+                <span
                   class="inline-block w-24 h-px mx-16 -mt-px group-hover:w-48 bg-dawn group-hover:bg-zenith transition {{ if $active }}w-48 bg-zenith{{end}}"></span>
-                  <span
+                <span
                   class="text-sm tracking-widest uppercase {{ if $active }}text-zenith active{{end}}">{{ .Name }}</span>
-                  </a>
-                </li>
+              </a>
+            </li>
             {{ end }}
           </ul>
         </nav>
