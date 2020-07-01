@@ -1,5 +1,5 @@
 baseurl = "https://murshidazher.com/"
-theme="hc-starter"
+theme="murshid-starter"
 languageCode = "en"
 title = "Murshid Azher"
 pluralizelisttitles = false

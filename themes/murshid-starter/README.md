@@ -1,4 +1,4 @@
-# HC Starter
+# Murshid Starter
 
 A simple starter theme for Hugo.
 

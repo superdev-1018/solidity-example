@@ -1,4 +1,4 @@
-name = "HC Starter"
+name = "Murshid Starter"
 license = "MIT"
 licenselink = "Link to theme's license"
 description = "Theme description"
@@ -13,6 +13,6 @@ min_version = "0.55.0"
 
 # If porting an existing theme
 [original]
-    author = "Harry Cresswell"
-    homepage = "https:/harrycresswell.com"
+    author = "Murshid Azher"
+    homepage = "https://murshidazher.com"
     repo = "Link to source code of original theme"
