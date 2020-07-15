@@ -1000,6 +1000,10 @@ video {
     font-size: 48px;
   }
 
+  .lg\:ch-48 {
+    width: 48ch;
+  }
+
   .lg\:leading-none {
     line-height: 1;
   }
@@ -1077,9 +1081,7 @@ video {
 //   max-width: 60ch;
 // }
 
-.lg\:ch-48 {
-  width: 48ch;
-}
+
 
 
 .mono {
