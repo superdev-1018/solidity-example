@@ -1,0 +1,177 @@
+
+
+
+
+.intro {
+  height: 300px;
+}
+
+hr {
+  width: 90px;
+  border: 1px solid $very-light-grey;
+  margin: 0 auto 0 0;
+}
+
+.contact-bar {
+  border-radius: $radius-large;
+  padding: $padding;
+  background-color: $light-brown;
+  color: $brown;
+  font-size: 0.875rem;
+}
+
+a.email-button, a.email {
+  color: white;
+  font-weight: $font-weight-medium;
+  line-height: 1;
+  text-decoration: none;
+  border: none;
+  z-index: 2;
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+a.email-button {
+  border-radius: $radius;
+  padding: 11px;
+  background-color: $black;
+  img {
+    vertical-align: middle;
+  }
+}
+
+a.email {
+  border-radius: $radius;
+  padding: $button-padding;
+  background-color: $brown;
+}
+
+.thumbnails {
+  a {
+    border: none;
+    z-index: 2;
+    &:hover {
+      opacity: 0.8;
+    }
+    img {
+      border-radius: $radius-large;
+      width: ($width - $gutter * 2) / 3;
+      height: auto;
+    }
+  }
+}
+
+.thumbnails, .testimonials {
+  margin-bottom: $gutter * 2;
+}
+
+.question {
+  color: $black;
+  font-weight: $font-weight-regular;
+  margin-bottom: $gutter / 2;
+}
+
+mark {
+  border-radius: $radius;
+  color: $dark-grey;
+  background: $very-light-grey;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  color: $grey;
+  margin-top: $gutter / 2;
+  img {
+    margin-right: $gutter / 4;
+    border-radius: 100%;
+  }
+}
+
+
+// footer
+
+footer, footer a {
+  color: $grey;
+}
+
+
+// media
+
+@media screen and (min-width: 850px) {
+  .column {
+    flex: 1;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  body {
+    margin: $gutter 0;
+  }
+  header, main, footer {
+    max-width: 85%;
+  }
+  h1 {
+    font-size: 1.375rem;
+    width: 100%;
+  }
+  .thumbnails a {
+    width: 30%;
+    img {
+      width: 100%;
+    }
+  }
+  .contact-bar {
+    padding: $gutter * 0.75;
+    text-align: center;
+    justify-content: space-around;
+    .message {
+      width: 100%;
+    }
+    a.email {
+      margin-top: $gutter / 2;
+    }
+  }
+}
+
+@media screen and (max-width: 850px) {
+  .row {
+    margin: $gutter / 2 0;
+  }
+  .column {
+    margin: $gutter / 2 0;
+  }
+  .clients {
+    width: 400px;
+    margin: $gutter auto;
+    justify-content: space-around;
+    img {
+      padding: $gutter / 4;
+    }
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .intro {
+    height: 250px;
+  }
+  .clients {
+    width: 300px;
+  }
+  .thumbnails a {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .intro {
+    height: 200px;
+  }
+  .column {
+    margin: $gutter / 4 0;
+  }
+  .clients {
+    width: 100px;
+  }
+}

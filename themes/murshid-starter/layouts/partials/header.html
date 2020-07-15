@@ -78,10 +78,11 @@
   <link rel="icon" href="{{ .Site.BaseURL }}img/favicon-16x16.png" sizes="16x16" type="image/png">
   <link rel="shortcut icon" href="{{ .Site.BaseURL }}img/favicon.ico" type="image/x-icon">
   <!-- Custom Fonts-->
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript"></script>
+
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <!-- <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet"> -->
   <link href="https://fonts.googleapis.com/css2?family=Gothic+A1:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500&amp;subset=latin" media="all">
   <!-- RSS -->
   {{ with .OutputFormats.Get "rss" -}}
   {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
@@ -89,7 +90,7 @@
 </head>
 
 <body class="bg-night overflow-x-hidden">
-  <div id="app" class="relative flex flex-col w-screen mx-auto font-sans text-base max-w-1440 text-dawn md:flex-row">
+  <!-- <div id="app" class="relative flex flex-col w-screen mx-auto font-sans text-base max-w-1440 text-dawn md:flex-row">
     <div class="md:hidden">
       <div class="fixed top-0 left-0 z-30 w-full h-64 transition bg-dusk shift-0"></div>
       <div class="fixed top-0 left-0 z-50 w-full h-64 transition shift-0">
@@ -102,7 +103,6 @@
       class="static flex flex-col justify-between w-full p-32 md:max-w-408 lg:max-w-496 md:fixed md:h-screen lg:py-72 lg:pl-72 md:pr-0">
       <div class="flex flex-col">
         <div>
-          <!-- I’m {{ .Site.Title }} -->
           <h1 class="text-2xl font-bold leading-tight text-zenith ch-12">
             Hello,
           </h1>
@@ -120,13 +120,7 @@
                 href="https://www.algolia.com/" target="_blank" rel="noopener" class="text-zenith">my CV</a> to get an
               idea of my experience.
             </p>
-            <!-- <p class="mt-8 ch-60 lg:ch-48">
-              You can find out <a href="https://www.algolia.com/" target="_blank" rel="noopener"
-              class="underline text-zenith">what I’m up to right now</a>, check out a few of my <a href="https://www.algolia.com/" target="_blank" rel="noopener"
-              class="underline text-zenith">recent projects</a> or read about some of the ways you can <a href="https://www.algolia.com/" target="_blank" rel="noopener"
-              class="underline text-zenith">work with me</a>. Alternatively, take a look at <a href="https://www.algolia.com/" target="_blank" rel="noopener"
-              class="underline text-zenith">my CV</a> to get an idea of my experience.
-            </p> -->
+
           </div>
         </div>
         <nav class="text-sm font-semibold uppercase text-widest hidden mt-72 md:block">
@@ -178,7 +172,7 @@
               </svg><span class="mt-px">GitHub ↗</span>
             </a></li>
         </ul>
-      </div>
+      </div> -->
       <!-- <div>
         <header class="Header">
           <div class="Title">
@@ -210,4 +204,140 @@
         </header>
       </div> -->
 
-    </div>
+    <!-- </div> -->
+    <header role="banner">
+
+      <section class="row">
+        <img src="img/logo.svg" height="31" alt="Murshid Azher Logo">
+        <a href="mailto:contact@MurshidAzher.com" class="email-button" title="Send Murshid Azher an email" role="button"><img src="img/email.svg" width="15" alt="Email Button"></a>
+      </section>
+
+    </header>
+
+    <main>
+
+      <section class="row intro">
+        <div class="column">
+          <h1>I work with startups and top companies to design <mark>inclusive, effective, and impactful</mark> digital products.</h1>
+        </div>
+      </section>
+
+      <section class="row">
+        <div class="column">
+          <p>I'm Murshid, a Product Designer from the United Kingdom. I’ve been designing for over a decade.</p>
+        </div>
+        <div class="column">
+          <p>Throughout that time, I’ve worked remotely for a number of exciting startups and established companies.</p>
+        </div>
+        <div class="column">
+          <p>These have been located all over the world, from Hong Kong and Singapore, to Australia and the United States.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="row clients">
+          <img src="img/seatgeek.svg" height="22" alt="SeatGeek Logo">
+          <img src="img/ribose.svg" height="19" alt="Ribose Logo">
+          <img src="img/punch.svg" height="21" alt="Punch Logo">
+          <img src="img/envato.svg" height="17" alt="Envato Logo">
+          <img src="img/itf.svg" height="20" alt="Indian Type Foundry Logo">
+          <img src="img/lugg.svg" height="23" alt="Lugg Logo">
+          <img src="img/swiftype.svg" height="23" alt="Swiftype Logo">
+      </section>
+
+      <section class="row contact-bar"><span class="message">Send me an email about your project and I will prepare a detailed portfolio with relevant work samples.</span><a href="mailto:contact@MurshidAzher.com" class="email" title="Email Murshid Azher (contact@MurshidAzher.com)" role="button">Email me</a>
+      </section>
+
+      <section class="row thumbnails">
+        <a href="https://dribbble.com/shots/3489077-Messages-iPhone-App" title="View latest work samples on Dribbble" target="_blank">
+          <img srcset="
+              img/1.png 1x,
+              img/1@2x.png 2x,
+              img/1@3x.png 3x" alt="Latest work samples on Dribbble">
+        </a>
+        <a href="https://dribbble.com/MurshidAzher" title="View latest work samples on Dribbble" target="_blank">
+          <img srcset="
+              img/2.png 1x,
+              img/2@2x.png 2x,
+              img/2@3x.png 3x" alt="Latest work samples on Dribbble">
+        </a>
+        <a href="https://dribbble.com/shots/3846330-Google-Photos-for-Android" title="View latest work samples on Dribbble" target="_blank">
+          <img srcset="
+              img/3.png 1x,
+              img/3@2x.png 2x,
+              img/3@3x.png 3x" alt="Latest work samples on Dribbble">
+        </a>
+      </section>
+
+      <section class="row">
+        <div class="column">
+          <p>I provide product design services, working with startups and established companies to improve performance and ease-of-use of their products.</p>
+        </div>
+        <div class="column">
+          <p>My services include product analysis, through to full product design - from wireframing and prototyping, to interface design and front-end development.</p>
+        </div>
+        <div class="column">
+          <p>Previous experience includes designing products for startups with up to £100m in funding, and large corporations with market capitalisations of up to £200b.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="row">
+        <div class="column">
+          <p class="question">Q. Where can I see your work?</p>
+          <p><a href="mailto:contact@MurshidAzher.com" title="Email Murshid Azher (contact@MurshidAzher.com)">Email me</a> and I will prepare work samples relevant to your project with accompanying details.</p>
+        </div>
+        <div class="column">
+          <p class="question">Q. Are you currently available?</p>
+          <p>I am not currently available at this time for full-time positions or new product design projects.</p>
+        </div>
+        <div class="column">
+          <p class="question">Q. How much do you charge?</p>
+          <p><a href="mailto:contact@MurshidAzher.com" title="Email Murshid Azher (contact@MurshidAzher.com)">Email me</a> and I will compile a custom quote and provide details on my hourly rate and availability.</p>
+        </div>
+      </section>
+
+      <hr>
+
+      <section class="row testimonials">
+        <div class="column">
+          <blockquote>"Murshid's work is magic - he merges stunning user interface design with great user experience and designs products that give tangible results."</blockquote>
+          <div class="author">
+            <img srcset="
+              img/jan.png 1x,
+              img/jan@2x.png 2x,
+              img/jan@3x.png 3x" height="24" width="24" alt="Photo of Jan">Jan, Koncepted</div>
+        </div>
+        <div class="column">
+          <blockquote>"Murshid is one of our go-to designers. He's helped us with aspects from full mobile app designs, to screenshots for app store A/B testing."</blockquote>
+          <div class="author">
+          <img srcset="
+              img/gabe.png 1x,
+              img/gabe@2x.png 2x,
+              img/gabe@3x.png 3x" height="24" width="24" alt="Photo of Gabe">Gabe, Incipia</div>
+        </div>
+        <div class="column">
+          <blockquote>"Murshid is a great designer and a reliable resource. He has consistently helped bring significant value to a lot of our products in a timely manner."</blockquote>
+          <div class="author">
+          <img srcset="
+              img/daren.png 1x,
+              img/daren@2x.png 2x,
+              img/daren@3x.png 3x" height="24" width="24" alt="Photo of Daren">Daren, Fishermen Labs</div>
+        </div>
+      </section>
+
+      <section class="row contact-bar"><span class="message">Send me an email about your project and I will prepare a detailed portfolio with relevant work samples.</span><a href="mailto:contact@MurshidAzher.com" class="email" title="Email Murshid Azher (contact@MurshidAzher.com)" role="button">Email me</a>
+      </section>
+
+    </main>
+
+    <footer>
+
+      <section class="row">
+        <p>© 2020 Murshid Azher, unless otherwise specified.</p>
+        <p><a href="mailto:contact@MurshidAzher.com" title="Email Murshid Azher (contact@MurshidAzher.com)">contact@murshidazher.com</a></p>
+      </section>
+
+    </footer>
