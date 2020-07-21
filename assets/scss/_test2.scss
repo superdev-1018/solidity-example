@@ -38,16 +38,10 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-body {
-  width: 100%;
-  margin: 80px 0;
-  font-family: "Roboto", Arial, Helvetica, sans-serif;
-  color: #555;
-  font-size: 1rem;
-  line-height: 1.5; }
+
 
 h1 {
-  width: 600px;
+  // width: 600px;
   color: #000;
   font-size: 1.5rem;
   font-weight: 400; }
@@ -56,17 +50,7 @@ h2 {
   font-size: 1.25rem;
   font-weight: 400; }
 
-a {
-  color: #555;
-  text-decoration: none;
-  border-bottom: 1px solid #ebebeb;
-  transition: all .2s ease-in-out !important; }
-  a:hover {
-    border-bottom: 1px solid #9b9b9b; }
 
-header, main, footer {
-  max-width: 960px;
-  margin: 0 auto; }
 
 img {
   max-width: 100%; }
@@ -77,7 +61,8 @@ img {
   flex-wrap: wrap;
   justify-content: space-between;
   align-items: flex-start;
-  margin: 60px 0; }
+  margin: 60px 0;
+}
 
 .column {
   margin-right: 40px; }
@@ -90,8 +75,6 @@ header .row, .row .clients, .contact-bar {
 .intro {
   align-items: flex-end; }
 
-.intro {
-  height: 300px; }
 
 hr {
   width: 90px;
@@ -160,17 +143,27 @@ mark {
     border-radius: 100%; }
 
 footer, footer a {
-  color: #9b9b9b; }
+  color: #9b9b9b;
+}
 
 @media screen and (min-width: 850px) {
   .column {
     flex: 1; } }
 @media screen and (max-width: 1060px) {
   body {
-    margin: 40px 0; }
+    padding: 40px 0 0; }
 
-  header, main, footer {
-    max-width: 85%; }
+    footer {
+      padding: 40px 0;
+    }
+
+  header, main {
+    max-width: 85%;
+  }
+
+  .footer-nav {
+    max-width: 85%;
+  }
 
   h1 {
     font-size: 1.375rem;
@@ -227,18 +220,22 @@ footer, footer a {
 
 body {
   width: 100%;
-  margin: $gutter * 2 0;
+  padding: $gutter * 2 0 0;
   font-family: $font-primary;
   color: $color;
   font-size: 1rem;
   line-height: $font-height;
 }
 
+footer {
+  padding: $gutter * 2 0 $gutter ;
+}
+
 
 // typography
 
 h1 {
-  width: $width * 2/3 - $gutter;
+  // width: $width * 2/3 - $gutter;
   color: $black;
   font-size: 1.5rem;
   font-weight: $font-weight-regular;
@@ -252,20 +249,32 @@ h2 {
 a {
   color: $link-color;
   text-decoration: none;
-  border-bottom: 1px solid $light-grey;
+
+  // border-bottom: 1px solid $light-grey;
   transition: all .2s ease-in-out !important;
   &:hover {
-    border-bottom: 1px solid $grey;
+    // border-bottom: 1px solid $grey;
+  }
+
+  &:active {
+    color: inherit;
   }
 }
 
 
 // grid
 
-header, main, footer {
+header, main {
   max-width: $width;
   margin: 0 auto;
 }
+
+
+.footer-nav {
+  max-width: $width;
+  margin: 0 auto;
+}
+
 
 img {
   max-width: 100%;
@@ -309,5 +318,6 @@ header .row, .row .clients, .contact-bar {
 .intro {
   @extend %flex-end;
 }
+
 
 

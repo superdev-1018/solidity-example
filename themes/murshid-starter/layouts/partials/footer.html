@@ -1,4 +1,4 @@
-  <footer class="Footer pt-72" role="contentinfo">
+  <!-- <footer class="Footer pt-72" role="contentinfo">
     <nav class="FooterNav mb-16" aria-label="Footer Navigation">
       {{ $currentPage := . }}
       {{ range .Site.Menus.footer }}
@@ -22,7 +22,102 @@
       <div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;">
       </div>
     </div>
-  </div>
+  </div> -->
+
+  <footer class="">
+
+    <nav class="footer-nav mb-16" aria-label="Footer Navigation">
+      <div class="mb-80">
+
+        <div class="row-nm footer-nav__wrapper">
+
+          <div class="column">
+            <div class="footer-nav__list">
+                <a href="/work" active="false" class="footer-nav__list--header">About</a>
+                <ul class="footer-nav__list--body">
+                  {{ $currentPage := . }}
+                  {{ range .Site.Menus.footer }}
+                  <li class="footer-nav__list--child">
+                    <a class="FooterNav-link{{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }} active{{end}} mr-8"
+                      href="{{.URL}}" active="false">{{ .Name }}</a>
+                  </li>
+                  {{ end }}
+                </ul>
+            </div>
+          </div>
+          <div class="column">
+            <div class="footer-nav__list">
+                <a href="/work" active="false" class="footer-nav__list--header">Blog</a>
+                <ul class="footer-nav__list--body">
+                  <li class="footer-nav__list--child">
+                    <a class="" href="{{.URL}}" active="false">Twitter</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="{{.URL}}" active="false">LinkedIn</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="{{.URL}}" active="false">Dribbble</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="{{.URL}}" active="false">Github</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+
+          <div class="column">
+            <div class="footer-nav__list">
+                <a href="/work" active="false" class="footer-nav__list--header">Interest</a>
+                <ul class="footer-nav__list--body">
+                  <li class="footer-nav__list--child">
+                    <a class="" href="{{.URL}}" active="false">Spotify Playlist</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="{{.URL}}" active="false">LinkedIn</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="{{.URL}}" active="false">Dribbble</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="{{.URL}}" active="false">Github</a>
+                  </li>
+                </ul>
+            </div>
+
+          </div>
+          <div class="column">
+            <div class="footer-nav__list">
+                <a href="/work" active="false" class="footer-nav__list--header">Social</a>
+                <ul class="footer-nav__list--body">
+                  <li class="footer-nav__list--child">
+                    <a class="" href="{{.URL}}" active="false">Twitter</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="{{.URL}}" active="false">LinkedIn</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="{{.URL}}" active="false">Dribbble</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="{{.URL}}" active="false">Github</a>
+                  </li>
+                </ul>
+            </div>
+          </div>
+          <div class="scroll-up">
+            <img src="img/arrow-up.svg" alt="">
+          </div>
+        </div>
+      </div>
+
+      <section class="row-nm footer-copyright ">
+        <p>© 2020 Murshid Azher, unless otherwise specified.</p>
+        <p class="footer-copyright__mail"><a href="mailto:contact@murshidazher.com" title="Email Murshid Azher (contact@murshidazher.com)">contact@murshidazher.com</a></p>
+      </section>
+
+    </nav>
+  </footer>
+
 
   <!-- Store JS files independently -->
   {{ $cloudinary := resources.Get "js/cloudinary-core-shrinkwrap.min.js" }}

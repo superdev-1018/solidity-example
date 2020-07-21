@@ -1,110 +1,110 @@
-/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
-html {
-  line-height: 1.15;
-  -webkit-text-size-adjust: 100%;
-}
+// /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+// html {
+//   line-height: 1.15;
+//   -webkit-text-size-adjust: 100%;
+// }
 
-body {
-  // font-family: 'IBM Plex Sans', sans-serif;
-  font-family: Inter, sans-serif;
-  margin: 0;
-}
+// body {
+//   // font-family: 'IBM Plex Sans', sans-serif;
+//   font-family: Inter, sans-serif;
+//   margin: 0;
+// }
 
-body {
-  background-image: linear-gradient(90deg,transparent 239px,var(--color-4));
-  background-size: 240px 240px;
-}
+// body {
+//   background-image: linear-gradient(90deg,transparent 239px,var(--color-4));
+//   background-size: 240px 240px;
+// }
 
-main {
-  display: block;
-}
+// main {
+//   display: block;
+// }
 
-h1 {
-  font-size: 2em;
-  margin: 0.67em 0;
-}
+// h1 {
+//   font-size: 2em;
+//   margin: 0.67em 0;
+// }
 
-a {
-  background-color: transparent;
-}
+// a {
+//   background-color: transparent;
+// }
 
-img {
-  border-style: none;
-}
+// img {
+//   border-style: none;
+// }
 
-[type="number"]::-webkit-inner-spin-button,
-[type="number"]::-webkit-outer-spin-button {
-  height: auto;
-}
+// [type="number"]::-webkit-inner-spin-button,
+// [type="number"]::-webkit-outer-spin-button {
+//   height: auto;
+// }
 
-[hidden],
-template {
-  display: none;
-}
+// [hidden],
+// template {
+//   display: none;
+// }
 
-h1,
-h2,
-h3,
-h4 {
-  font-family: 'Graphik web', sans-serif;
-}
+// h1,
+// h2,
+// h3,
+// h4 {
+//   font-family: 'Graphik web', sans-serif;
+// }
 
 
-h1,
-h2,
-h3,
-h4,
-p,
-ul {
-  margin: 0;
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// p,
+// ul {
+//   margin: 0;
+// }
 
-ul {
-  list-style: none;
-  padding: 0;
-}
+// ul {
+//   list-style: none;
+//   padding: 0;
+// }
 
-html {
-  font-family: Gothic A1;
-  line-height: 1.5;
-}
+// html {
+//   font-family: Gothic A1;
+//   line-height: 1.5;
+// }
 
-*,
-:after,
-:before {
-  box-sizing: border-box;
-  border: 0 solid #e2e8f0;
-}
+// *,
+// :after,
+// :before {
+//   box-sizing: border-box;
+//   border: 0 solid #e2e8f0;
+// }
 
-img {
-  border-style: solid;
-}
+// img {
+//   border-style: solid;
+// }
 
-h1,
-h2,
-h3,
-h4 {
-  font-size: inherit;
-  font-weight: inherit;
-}
+// h1,
+// h2,
+// h3,
+// h4 {
+//   font-size: inherit;
+//   font-weight: inherit;
+// }
 
-a {
-  color: inherit;
-  text-decoration: inherit;
-}
+// a {
+//   color: inherit;
+//   text-decoration: inherit;
+// }
 
-img,
-svg,
-video {
-  display: block;
-  vertical-align: middle;
-}
+// img,
+// svg,
+// video {
+//   display: block;
+//   vertical-align: middle;
+// }
 
-img,
-video {
-  max-width: 100%;
-  height: auto;
-}
+// img,
+// video {
+//   max-width: 100%;
+//   height: auto;
+// }
 
 .sr-only {
   position: absolute;
