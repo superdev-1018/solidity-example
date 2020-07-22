@@ -777,6 +777,18 @@ small {
   margin-top: 120px;
 }
 
+.col-lg-2 {
+  flex: 0 0 16.666667%;
+  max-width: 16.666667%;
+}
+
+
+// @media (min-width: 576px)
+.col-sm-6 {
+  flex: 0 0 50%;
+  max-width: 50%;
+}
+
 
 
 

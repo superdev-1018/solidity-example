@@ -11,6 +11,8 @@
 // Layout styles
  @import "layouts/_all";
 
+
+
 // Object styles
 //  @import "objects/_all";
 
@@ -21,11 +23,13 @@
  @import "utilities/_all";
 
 @import "test4";
-@import "test2";
+
+
+ // Variables
+ @import "mixins/_all";
+
+ @import "test2";
 @import "test3";
-
-
-
 
 
 

@@ -3,7 +3,7 @@
       {{ $currentPage := . }}
       {{ range .Site.Menus.footer }}
       <a class="FooterNav-link{{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }} active{{end}} mr-8"
-        href="{{.URL}}">{{ .Name }}</a>
+        href="/">{{ .Name }}</a>
       {{ end }}
     </nav>
     <p>Content &copy;{{ now.Format "2006"}} Murshid Azher, unless otherwise specified.
@@ -45,112 +45,113 @@
                 </ul>
             </div>
           </div> -->
-         <din class="row-nm">
+          <din class="row-nm">
             <div class="column">
               <div class="footer-nav__list">
-                  <a href="/work" active="false" class="footer-nav__list--header">General</a>
-                  <ul class="footer-nav__list--body">
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">Home</a>
-                    </li>
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">About</a>
-                    </li>
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">Articles</a>
-                    </li>
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">Notes</a>
-                    </li>
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">Playlist</a>
-                    </li>
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">Contact</a>
-                    </li>
-                  </ul>
+                <a href="/work" active="false" class="footer-nav__list--header">General</a>
+                <ul class="footer-nav__list--body">
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">Home</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">About</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">Articles</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">Notes</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">Playlist</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">Contact</a>
+                  </li>
+                </ul>
               </div>
             </div>
 
             <div class="column">
               <div class="footer-nav__list">
-                  <a href="/work" active="false" class="footer-nav__list--header">Work</a>
-                  <ul class="footer-nav__list--body">
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">Playlist</a>
-                    </li>
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">LinkedIn</a>
-                    </li>
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">Dribbble</a>
-                    </li>
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">Github</a>
-                    </li>
-                  </ul>
+                <a href="/work" active="false" class="footer-nav__list--header">Work</a>
+                <ul class="footer-nav__list--body">
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">Playlist</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">LinkedIn</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">Dribbble</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">Github</a>
+                  </li>
+                </ul>
               </div>
 
             </div>
 
             <div class="column">
               <div class="footer-nav__list">
-                  <a href="/work" active="false" class="footer-nav__list--header">Disciplines</a>
-                  <ul class="footer-nav__list--body">
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">Product Design</a>
-                    </li>
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">Branding</a>
-                    </li>
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">Code</a>
-                    </li>
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">Content</a>
-                    </li>
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">Strategy</a>
-                    </li>
-                  </ul>
+                <a href="/work" active="false" class="footer-nav__list--header">Disciplines</a>
+                <ul class="footer-nav__list--body">
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">Product Design</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">Branding</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">Code</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">Content</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">Strategy</a>
+                  </li>
+                </ul>
               </div>
 
             </div>
             <div class="column">
               <div class="footer-nav__list">
-                  <a href="/work" active="false" class="footer-nav__list--header">Social</a>
-                  <ul class="footer-nav__list--body">
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">Twitter</a>
-                    </li>
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">Dribbble</a>
-                    </li>
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">LinkedIn</a>
-                    </li>
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">Instagram</a>
-                    </li>
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">Behance</a>
-                    </li>
-                    <li class="footer-nav__list--child">
-                      <a class="" href="{{.URL}}" active="false">Medium</a>
-                    </li>
-                  </ul>
+                <a href="/work" active="false" class="footer-nav__list--header">Social</a>
+                <ul class="footer-nav__list--body">
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">Twitter</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">Dribbble</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">LinkedIn</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">Instagram</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">Behance</a>
+                  </li>
+                  <li class="footer-nav__list--child">
+                    <a class="" href="/" active="false">Medium</a>
+                  </li>
+                </ul>
               </div>
             </div>
-         </din>
+          </din>
           <div class="scroll-up">
-            <img src="img/arrow-up.svg" alt="">
+            <img src="{{ .Site.BaseURL }}img/arrow-up.svg" alt="">
           </div>
         </div>
       </div>
 
       <section class="row-nm footer-copyright ">
         <p>© 2020 Murshid Azher, unless otherwise specified.</p>
-        <p class="footer-copyright__mail"><a href="mailto:contact@murshidazher.com" title="Email Murshid Azher (contact@murshidazher.com)">hello@murshidazher.com</a></p>
+        <p class="footer-copyright__mail"><a href="mailto:contact@murshidazher.com"
+            title="Email Murshid Azher (contact@murshidazher.com)">hello@murshidazher.com</a></p>
       </section>
 
     </nav>
@@ -178,18 +179,7 @@
     cl.responsive();
 
   </script>
-  <script>
-    WebFontConfig = {
-       google: { families: ['Roboto:400,500:latin'] }
-    };
 
-    (function(d) {
-       var wf = d.createElement('script'), s = d.scripts[0];
-       wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js';
-       wf.async = true;
-       s.parentNode.insertBefore(wf, s);
-    })(document);
- </script>
   </body>
 
   </html>
