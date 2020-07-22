@@ -290,7 +290,7 @@ a:active, a:hover {
 
   display: flex;
   justify-content: flex-end;
-  width: 30%;
+  // width: 30%;
 
   .img {
     margin: 1rem;
@@ -306,11 +306,41 @@ a:active, a:hover {
     flex: 1;
   }
 
+  .col-lg-8 {
+    @include make-col(8, 12);
+  }
+
+  .col-lg-9 {
+    @include make-col(9, 12);
+  }
+
+  .col-lg-10 {
+    @include make-col(10, 12);
+  }
+
+  .col-lg-4 {
+    @include make-col(4, 12);
+  }
+
+  .col-lg-3 {
+    @include make-col(3, 12);
+  }
+
+  .col-lg-2 {
+    @include make-col(2, 12);
+  }
+
+  .col-lg-1 {
+    @include make-col(1, 12);
+  }
+
 
 
 }
 
 @media screen and (max-width: 1060px) {
+
+
 
 
 .intro-sm {
@@ -373,6 +403,46 @@ a:active, a:hover {
 
 @media screen and (max-width: 850px) {
 
+  .col-md-8 {
+    @include make-col(8, 12);
+  }
+
+  .col-md-9 {
+    @include make-col(9, 12);
+  }
+
+  .col-md-10 {
+    @include make-col(10, 12);
+  }
+
+  .col-md-6 {
+    @include make-col(6, 12);
+  }
+
+  .col-md-7 {
+    @include make-col(7, 12);
+  }
+
+  .col-md-4 {
+    @include make-col(4, 12);
+  }
+
+  .col-md-3 {
+    @include make-col(3, 12);
+  }
+
+  .col-md-2 {
+    @include make-col(2, 12);
+  }
+
+  .col-md-1 {
+    @include make-col(1, 12);
+  }
+
+  .mb-32 {
+    margin-bottom: 32px;
+  }
+
 
 .intro-sm {
   height: 160px;
@@ -380,7 +450,7 @@ a:active, a:hover {
 }
 
   .scroll-up {
-    width: 16%;
+    // width: 16%;
   }
 
   .mt-32-md {
@@ -435,6 +505,45 @@ a:active, a:hover {
 // mobile
 @media screen and (max-width: 500px) {
 
+  .col-sm-8 {
+    @include make-col(8, 12);
+  }
+
+  .col-sm-9 {
+    @include make-col(9, 12);
+  }
+
+  .col-sm-10 {
+    @include make-col(10, 12);
+  }
+
+  .col-sm-12 {
+    @include make-col(12, 12);
+  }
+
+  .col-sm-6 {
+    @include make-col(6, 12);
+  }
+
+  .col-sm-7 {
+    @include make-col(7, 12);
+  }
+
+  .col-sm-4 {
+    @include make-col(4, 12);
+  }
+
+  .col-sm-3 {
+    @include make-col(3, 12);
+  }
+
+  .col-sm-2 {
+    @include make-col(2, 12);
+  }
+
+  .col-sm-1 {
+    @include make-col(1, 12);
+  }
 
 .intro-sm {
   height: 140px;
@@ -452,7 +561,7 @@ a:active, a:hover {
   }
 
   .scroll-up {
-    width: 8%;
+    // width: 8%;
   }
 
   .footer-copyright__mail {
@@ -777,10 +886,7 @@ small {
   margin-top: 120px;
 }
 
-.col-lg-2 {
-  flex: 0 0 16.666667%;
-  max-width: 16.666667%;
-}
+
 
 
 // @media (min-width: 576px)
