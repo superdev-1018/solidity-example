@@ -144,6 +144,14 @@ mark {
 
 footer, footer a {
   color: #9b9b9b;
+
+  &:active {
+    color: #9b9b9b;
+  }
+
+  &:visited {
+    color: #9b9b9b;
+  }
 }
 
 @media screen and (min-width: 850px) {
@@ -257,7 +265,11 @@ a {
   }
 
   &:active {
-    color: inherit;
+    color: $link-color;
+  }
+
+  &:visited {
+    color: $link-color;
   }
 }
 

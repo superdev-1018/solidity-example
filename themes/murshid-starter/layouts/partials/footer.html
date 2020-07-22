@@ -31,9 +31,9 @@
 
         <div class="row-nm footer-nav__wrapper">
 
-          <div class="column">
+          <!-- <div class="column">
             <div class="footer-nav__list">
-                <a href="/work" active="false" class="footer-nav__list--header">Go</a>
+                <a href="/work" active="false" class="footer-nav__list--header">General</a>
                 <ul class="footer-nav__list--body">
                   {{ $currentPage := . }}
                   {{ range .Site.Menus.footer }}
@@ -44,66 +44,104 @@
                   {{ end }}
                 </ul>
             </div>
-          </div>
-          <div class="column">
-            <div class="footer-nav__list">
-                <a href="/work" active="false" class="footer-nav__list--header">Resources</a>
-                <ul class="footer-nav__list--body">
-                  <li class="footer-nav__list--child">
-                    <a class="" href="{{.URL}}" active="false">Twitter</a>
-                  </li>
-                  <li class="footer-nav__list--child">
-                    <a class="" href="{{.URL}}" active="false">LinkedIn</a>
-                  </li>
-                  <li class="footer-nav__list--child">
-                    <a class="" href="{{.URL}}" active="false">Dribbble</a>
-                  </li>
-                  <li class="footer-nav__list--child">
-                    <a class="" href="{{.URL}}" active="false">Github</a>
-                  </li>
-                </ul>
-            </div>
-          </div>
-
-          <div class="column">
-            <div class="footer-nav__list">
-                <a href="/work" active="false" class="footer-nav__list--header">Interest</a>
-                <ul class="footer-nav__list--body">
-                  <li class="footer-nav__list--child">
-                    <a class="" href="{{.URL}}" active="false">Spotify Playlist</a>
-                  </li>
-                  <li class="footer-nav__list--child">
-                    <a class="" href="{{.URL}}" active="false">LinkedIn</a>
-                  </li>
-                  <li class="footer-nav__list--child">
-                    <a class="" href="{{.URL}}" active="false">Dribbble</a>
-                  </li>
-                  <li class="footer-nav__list--child">
-                    <a class="" href="{{.URL}}" active="false">Github</a>
-                  </li>
-                </ul>
+          </div> -->
+         <din class="row-nm">
+            <div class="column">
+              <div class="footer-nav__list">
+                  <a href="/work" active="false" class="footer-nav__list--header">General</a>
+                  <ul class="footer-nav__list--body">
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">Home</a>
+                    </li>
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">About</a>
+                    </li>
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">Articles</a>
+                    </li>
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">Notes</a>
+                    </li>
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">Playlist</a>
+                    </li>
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">Contact</a>
+                    </li>
+                  </ul>
+              </div>
             </div>
 
-          </div>
-          <div class="column">
-            <div class="footer-nav__list">
-                <a href="/work" active="false" class="footer-nav__list--header">Social</a>
-                <ul class="footer-nav__list--body">
-                  <li class="footer-nav__list--child">
-                    <a class="" href="{{.URL}}" active="false">Twitter</a>
-                  </li>
-                  <li class="footer-nav__list--child">
-                    <a class="" href="{{.URL}}" active="false">LinkedIn</a>
-                  </li>
-                  <li class="footer-nav__list--child">
-                    <a class="" href="{{.URL}}" active="false">Dribbble</a>
-                  </li>
-                  <li class="footer-nav__list--child">
-                    <a class="" href="{{.URL}}" active="false">Github</a>
-                  </li>
-                </ul>
+            <div class="column">
+              <div class="footer-nav__list">
+                  <a href="/work" active="false" class="footer-nav__list--header">Work</a>
+                  <ul class="footer-nav__list--body">
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">Playlist</a>
+                    </li>
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">LinkedIn</a>
+                    </li>
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">Dribbble</a>
+                    </li>
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">Github</a>
+                    </li>
+                  </ul>
+              </div>
+
             </div>
-          </div>
+
+            <div class="column">
+              <div class="footer-nav__list">
+                  <a href="/work" active="false" class="footer-nav__list--header">Disciplines</a>
+                  <ul class="footer-nav__list--body">
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">Product Design</a>
+                    </li>
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">Branding</a>
+                    </li>
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">Code</a>
+                    </li>
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">Content</a>
+                    </li>
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">Strategy</a>
+                    </li>
+                  </ul>
+              </div>
+
+            </div>
+            <div class="column">
+              <div class="footer-nav__list">
+                  <a href="/work" active="false" class="footer-nav__list--header">Social</a>
+                  <ul class="footer-nav__list--body">
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">Twitter</a>
+                    </li>
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">Dribbble</a>
+                    </li>
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">LinkedIn</a>
+                    </li>
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">Instagram</a>
+                    </li>
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">Behance</a>
+                    </li>
+                    <li class="footer-nav__list--child">
+                      <a class="" href="{{.URL}}" active="false">Medium</a>
+                    </li>
+                  </ul>
+              </div>
+            </div>
+         </din>
           <div class="scroll-up">
             <img src="img/arrow-up.svg" alt="">
           </div>
