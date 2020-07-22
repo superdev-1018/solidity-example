@@ -1,14 +1,21 @@
 {{ define "main" }}
 
 <article id="content" class="Post">
-  <header class="PostHeader">
-    <h1 class="z-40 my-8 mt-8 text-lg font-semibold leading-tight text-zenith">{{ .Title }}</h1>
+  <header id="{{ .Slug }}" class="row-nm m-32 center intro-sm">
+    <div class="column center w-full">
+      <h1 class="align-center">{{ .Title }}<span class="fs-large">{{ .Params.emoji }}</span> </h1>
+    </div>
   </header>
-  <section class="PostBody ch-60">
+  <section class="row-nm align-center j-center">
+    <div class="column-nm-sm w-full mx-60 ">
+      <h2 class="font-circular center">{{ .Params.description }}</h2>
+    </div>
+  </section>
+  <section class="m-120 mb-80">
     {{ .Content }}
-
   </section>
 </article>
+
 <!--/.Content -->
 
 {{ end }}

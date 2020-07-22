@@ -697,18 +697,19 @@ a:active, a:hover {
 .learn-more-button {
   position: relative;
   display: inline-block;
-  padding-top: 3px;
+  padding-top: 5px;
   padding-right: 30px;
-  padding-bottom: 3px;
+  padding-bottom: 5px;
   align-items: center;
   filter: brightness(0) invert(1);
   background-repeat: no-repeat;
   // background-image: url('../img/arrow-right.svg');
   background-position: 100% 50%;
-  background-size: 18px;
+  background-size: 20px;
   transition: padding .2s ease;
   color: white;
   text-decoration: none;
+  background-image: url(../img/arrow-right.svg);
 
   &:hover {
     transition: padding .2s ease;
@@ -896,10 +897,6 @@ small {
 }
 
 
-
-
-
-
-
-
-
+.filter-none {
+  filter: brightness(0) invert(0);
+}
