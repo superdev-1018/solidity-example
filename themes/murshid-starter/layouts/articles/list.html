@@ -1,12 +1,53 @@
 {{ define "main" }}
 
 
-  <header id="articles">
-    <h2 class="z-40 my-8 mt-8 text-lg font-semibold leading-tight text-zenith">
-      Articles
-    </h2>
-    <h2 class="u-visually-hidden mb-16 ch-45">Articles on designing and coding things for the web.</h2>
-  </header>
+<header id="tags" class="row-nm m-32 center intro-sm">
+  <div class="column center w-full">
+    <h1 class="align-center">I publish my thoughts occasionally <span class="fs-large">🤔</span> </h1>
+  </div>
+</header>
+<section class="row-nm align-center j-center">
+  <div class="column-nm-sm w-full mx-60 ">
+    <h2 class="font-circular center">I enjoy taking some time to think about how we work, design and live, whenever possible. Here are some of my recent ideas I've published on how to design and code things for the web.</h2>
+  </div>
+</section>
+
+
+<section class="row-nm thumbnails m-120">
+  <a href="https://dribbble.com/shots/3489077-Messages-iPhone-App" title="View latest work samples on Dribbble" target="_blank">
+    <img srcset="
+    ../img/1.png 1x,
+    ../img/1@2x.png 2x,
+    ../img/1@3x.png 3x" alt="Latest work samples on Dribbble">
+  </a>
+  <a href="https://dribbble.com/murshidazher" title="View latest work samples on Dribbble" target="_blank">
+    <img srcset="
+    ../img/1.png 1x,
+        ../img/1@2x.png 2x,
+        ../img/1@3x.png 3x" alt="Latest work samples on Dribbble">
+  </a>
+  <a href="https://dribbble.com/shots/3846330-Google-Photos-for-Android" title="View latest work samples on Dribbble" target="_blank">
+    <img srcset="
+    ../img/1.png 1x,
+    ../img/1@2x.png 2x,
+    ../img/1@3x.png 3x" alt="Latest work samples on Dribbble">
+  </a>
+</section>
+
+<section class="row">
+  <div class="column">
+    <p>I provide product design services, working with startups and established companies to improve performance and ease-of-use of their products.</p>
+  </div>
+  <div class="column">
+    <p>My services include product analysis, through to full product design - from wireframing and prototyping, to interface design and front-end development.</p>
+  </div>
+  <div class="column">
+    <p>Previous experience includes designing products for startups with up to £100m in funding, and large corporations with market capitalisations of up to £200b.</p>
+  </div>
+</section>
+
+<hr>
+
   <section id="articles_list" class="">
     {{ range .Data.Pages }}
 
@@ -14,13 +55,7 @@
       <a
       href="{{ .Permalink }}" rel="noopener"
       class="flex md:items-center md:group-hover:opacity-50 md:hover:opacity-important transition group-2 no-focus">
-      <div
-        class="flex items-center justify-center flex-none mr-24 rounded-full md:mr-40 w-80 h-80 md:w-120 md:h-120 bg-dusk text-zenith md:group-2-hover:scale-11/10x transition no-focus">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
-          stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true" class="h-24 stroke-current md:h-32">
-          <title>Quill icon</title>
-          <path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5zM16 8L2 22M17.5 15H9"></path>
-        </svg></div>
+
       <div class="articles_list--meta">
         {{ partial "post/tags.html" . }}
         <h3 itemprop="name" class="text-lg font-semibold leading-snug md:leading-tight text-zenith">

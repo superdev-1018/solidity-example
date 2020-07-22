@@ -1,53 +1,26 @@
 {{ define "main" }}
 
-<section class="row center intro-sm">
+<header id="tags" class="row-nm m-32 center intro-sm">
   <div class="column center w-full">
     <h1 class="align-center">Chips for all articles <span class="fs-large">👼</span> </h1>
   </div>
+</header>
+<section class="row-nm align-center j-center">
+  <div class="column-nm-sm w-full mx-60 ">
+    <h2 class="font-circular center">Assorted list of tags found throughout this website for your convenience.</h2>
+  </div>
 </section>
 
-<div class="tags__wrapper">
-  <div class="tags__child">
-    <div class="tags__child--number"><span>22</span></div>
-    <span class="tag__text">Future</span>
-  </div>
-</div>
-
-<header id="articles">
-  <h2 class="z-40 my-8 mt-8 text-lg font-semibold leading-tight text-zenith">
-    Tags
-  </h2>
-  <h2 class="u-visually-hidden mb-16 ch-45">Articles on designing and coding things for the web.</h2>
-</header>
-
-  <section class="flex flex-column flex-wrap mt-32">
-  {{ range .Site.Taxonomies.tags }}
-  <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork"
-      class="flex-none w-full md:w-280 my-4 md:m-4">
-      <!-- md:w-240 md:min-h-240 lg:w-320 lg:min-h-320  w-full-->
-      <a class="u-url" href="{{ .Page.Permalink }}">
-      <div
-        class="flex flex-row  w-full justify-between h-full p-16 min-h-inherit bg-dusk md:group-hover:opacity-50 md:hover:scale-11/10x md:hover:opacity-important transition">
-
-        <div class="flex flex-col items-center justify-center">
-          <h3 itemprop="name" class="text-md font-semibold leading-tight text-zenith">
-            {{ .Page.Title }}
-          </h3>
-        </div>
-
-        <div
-      class="flex items-center justify-center flex-none ml-16 rounded-full md:ml-16 w-32 h-32 md:w-32 md:h-32 bg-night text-zenith md:group-2-hover:scale-11/10x transition no-focus font-semibold">
-      {{ .Count }}</div>
-      </div>
-    </a>
+<section class="tags__wrapper m-120 mb-80">
+{{ range .Site.Taxonomies.tags }}
+  <a class="no-outline" href="{{ .Page.Permalink }}">
+    <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="tags__child">
+      <div class="tags__child--number"><span>{{ printf "%02d" .Count }}</span></div>
+      <span class="tag__text">{{ .Page.Title }}</span>
     </article>
-    <!-- <article class="TagListItem">
-      <h3 class="TagListItem-title">
-        <a class="u-url" href="{{ .Page.Permalink }}">{{ .Page.Title }}</a> {{ .Count }}
-      </h3>
-    </article> -->
-  {{ end }}
-  </section>
+  </a>
+{{ end }}
+</section>
 
 
 {{ end }}

@@ -18,6 +18,9 @@ body {
 
 
 
+
+
+
 hr {
   width: 90px;
   border: 1px solid $very-light-grey;
@@ -238,6 +241,11 @@ h1 {
   align-items: baseline;
 }
 
+.intro-sm {
+  height: 220px;
+  align-items: flex-end;
+}
+
 a {
   cursor: pointer;
 }
@@ -303,6 +311,13 @@ a:active, a:hover {
 }
 
 @media screen and (max-width: 1060px) {
+
+
+.intro-sm {
+  height: 200px;
+  align-items: flex-end;
+}
+
   body {
     padding: $gutter 0 0;
   }
@@ -357,6 +372,12 @@ a:active, a:hover {
 }
 
 @media screen and (max-width: 850px) {
+
+
+.intro-sm {
+  height: 160px;
+  align-items: flex-end;
+}
 
   .scroll-up {
     width: 16%;
@@ -413,6 +434,12 @@ a:active, a:hover {
 
 // mobile
 @media screen and (max-width: 500px) {
+
+
+.intro-sm {
+  height: 140px;
+  align-items: flex-end;
+}
 
   .github-project {
     &:not(:last-child) {
@@ -660,17 +687,13 @@ small {
   background-color: #49C5B6
 }
 
-.intro-sm {
-  height: 140px;
-  align-items: flex-end;
-}
 
 
 .tags__wrapper {
   flex-wrap: wrap;
     overflow: hidden;
 
-    max-height: 260px;
+    // max-height: 260px;
 
     margin-top: 45px;
 
@@ -712,18 +735,24 @@ small {
 
       .tags__child--number {
 
+        display: flex;
+        flex-direction: column;
         margin-right: 6px;
         padding: .25rem;
-        background-color: #8500ff;
+        background-color: #828282;
         border-radius: 100%;
         width: 24px;
         height: 24px;
         // display: flex;
 
           span {
-            margin-left: 0.1rem;
-            padding: .15rem;
-            color: aliceblue;
+            display: flex;
+            justify-content: center;
+            font-weight: 600;
+            font-family: Circularstd, sans-serif;
+            // margin-left: 0.1rem;
+            // padding: .15rem;
+            color: rgb(255, 255, 255);
           }
       }
   }
@@ -732,6 +761,20 @@ small {
 .fs-large {
   margin-left: .5rem;
   font-size: 1.5em;
+}
+
+.no-outline {
+
+  &:active,
+  &:focus {
+    outline: 0;
+    outline-offset: 0;
+  }
+
+}
+
+.m-120 {
+  margin-top: 120px;
 }
 
 
