@@ -7,7 +7,7 @@
    {{ if eq .id .currentPage.UniqueID }}
      {{ .currentPage.Title }}
    {{ else }}
-     <a href="{{ .currentPage.URL }}">{{ .currentPage.Title }}</a> >
+     <a href="{{ .Permalink }}">{{ .currentPage.Title }}</a> >
    {{ end }}
 {{ end }}
 {{ end }}
