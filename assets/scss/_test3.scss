@@ -900,3 +900,36 @@ small {
 .filter-none {
   filter: brightness(0) invert(0);
 }
+
+.articles_list {
+
+  &--item {
+    img {
+      border-radius: 8px;
+      height: auto;
+      margin-bottom: 24px;
+    }
+
+    &__body {
+
+      &--title {
+        font-family: Circularstd, sans-serif;
+        color: $black;
+        font-size: 1.125rem;
+        margin-bottom: $base-unit * 4;
+      }
+
+      &--desc {
+        white-space: initial;
+        font-size: .95em;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: 3; /* number of lines to show */
+        -webkit-box-orient: vertical;
+        margin-bottom: $base-unit;
+      }
+
+    }
+  }
+}
