@@ -13,77 +13,40 @@
 </section>
 
 <section id="articles_list" class="row-nm m-120 mb-80">
-  <article class="col-lg-4 articles_list--item">
-      <img class="" srcset="
+  {{ range .Data.Pages }}
+  <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="col-lg-4 col-md-6 col-sm-12 articles_list--item">
+      <!-- <img class="" srcset="
       ../img/1.png 1x,
       ../img/1@2x.png 2x,
-      ../img/1@3x.png 3x" alt="Latest work samples on Dribbble">
+      ../img/1@3x.png 3x" alt="Latest work samples on Dribbble">-->
       <div class="articles_list--item__body">
-        <div class="articles_list--item__body--title">Design tokens and styleguides with Eleventy</div>
-        <p class="articles_list--item__body--desc">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Architecto corporis facilis quibusdam nam sed voluptate culpa dolores modi reiciendis. Iusto at deserunt ad unde modi neque quibusdam veritatis eaque dolorem.</p>
+        <div class="hs-featured-image-wrapper">
+          <time itemprop="datePublished"
+          class="post-date-inner">{{ .Date.Format "Mon, Jan 2, 2006" }}
+        </time>
+          <!-- <span class="post-date-inner">May 15, 2020</span> -->
+            <div title="" class="hs-featured-image-link">
+              <span style="background:url(https://info.acloud.guru/hubfs/CostOptimization_BlogHeader.jpg) no-repeat;" class="hs-featured-image">
+              </span>
+
+            </div>
+        </div>
+
+
+
+
+        <div class="articles_list--item__body--title">{{ .Title }}</div>
+        <!-- <time itemprop="datePublished"
+          class="inline-block mt-8 text-xs font-bold tracking-widest uppercase text-zenith">{{ .Date.Format "Mon, Jan 2, 2006" }}
+        </time> -->
+        {{ partial "post/tags.html" . }}
+        <p class="articles_list--item__body--desc">{{ .Description | markdownify }}</p>
         <div class="github-project__link">
-          <a href="mailto:hello@murshidazher.com" class="learn-more-button w-inline-block filter-none" title="Email Murshid Azher (hello@murshidazher.com)">Read more</a>
+          <a href="{{ .Permalink }}" rel="noopener" class="learn-more-button w-inline-block filter-none" title="{{ .Title }}">Read more</a>
         </div>
       </div>
   </article>
+  {{ end }}
 </section>
-
-
-
-<hr>
-
-  <section id="articles_list" class="">
-    {{ range .Data.Pages }}
-
-    <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="flex my-48">
-      <a
-      href="{{ .Permalink }}" rel="noopener"
-      class="flex md:items-center md:group-hover:opacity-50 md:hover:opacity-important transition group-2 no-focus">
-
-      <div class="articles_list--meta">
-        {{ partial "post/tags.html" . }}
-        <h3 itemprop="name" class="text-lg font-semibold leading-snug md:leading-tight text-zenith">
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
-        </h3>
-        <!-- <p class="mt-8 mb-2"><span itemprop="publisher"></span> —
-          <span itemprop="author">
-            Murshid Azher
-          </span>
-        </p> -->
-        <p class="max-ch-60 mt-8">{{ .Description | markdownify }}</p>
-          <time itemprop="datePublished"
-          class="inline-block mt-8 text-xs font-bold tracking-widest uppercase text-zenith">{{ .Date.Format "Mon, Jan 2, 2006" }}
-        </time>
-      </div>
-    </a></article>
-
-    <!-- <article class="PostListItem h-entry">
-      <h3 class="PostListItem-title p-name">
-        {{ if isset .Params "affiliatelink" }}
-
-        <a href="{{ .Params.affiliatelink }}" target="_blank" class="u-url"
-          >{{ .Title }}</a
-        ><span>&#8599;</span> {{else}}
-
-        <a href="{{ .Permalink }}" class="u-url">{{ .Title }}</a> {{ end }}
-
-      </h3>
-      <div hidden>
-        <a rel="author" class="p-author h-card" href="{{ $.Site.BaseURL }}"
-          >Harry Cresswell</a
-        >
-      </div>
-      <div class="PostListItem-meta">
-        <time class="dt-published" datetime="{{ .Date }}"
-          >{{ .Date.Format "Mon, Jan 2, 2006" }}</time
-        >
-        — {{ partial "post/tags.html" . }}
-
-      </div>
-      <p>{{ .Description | markdownify }}</p>
-    </article> -->
-    {{ end }}
-
-  </section>
 
 {{ end }}
