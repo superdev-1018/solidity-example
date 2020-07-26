@@ -1,50 +1,52 @@
 {{ define "main" }}
-<header id="notes">
-  <h2 class="z-40 my-8 mt-8 text-lg font-semibold leading-tight text-zenith">
-    Notes
-  </h2>
-  <h2 class="u-visually-hidden mb-16 ch-45">Notes on interesting things I’m learning from courses, books, talks and articles on the
-    internet.</h2>
+
+
+<header id="notes" class="row-nm m-32 center intro-sm">
+  <div class="column center w-full">
+    <h1 class="align-center">I sometimes take-down notes <span class="fs-large">✍️</span> </h1>
+  </div>
 </header>
-<section id="notes_list" class="">
+<section class="row-nm align-center j-center">
+  <div class="column-nm-sm w-full mx-60 ">
+    <h2 class="font-circular center">Notes on interesting things I’m learning from courses, books, talks and articles on the
+      internet.</h2>
+  </div>
+</section>
+
+<section id="notes_list" class="row-nm m-120 mb-80">
   {{ range .Data.Pages }}
+  <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="articles_list--item">
+      <!-- <img class="" srcset="
+      ../img/1.png 1x,
+      ../img/1@2x.png 2x,
+      ../img/1@3x.png 3x" alt="Latest work samples on Dribbble">-->
+      <div class="articles_list--item__body">
+        <div class="hs-featured-image-wrapper">
+          <!-- <time itemprop="datePublished"
+          class="post-date-inner">{{ .Date.Format "Mon, Jan 2, 2006" }}
+        </time> -->
+          <!-- <span class="post-date-inner">May 15, 2020</span> -->
+            <div title="" class="hs-featured-image-link">
+              <span style="background:url(https://images.unsplash.com/photo-1534293507278-19b2539423f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80) no-repeat;" class="hs-featured-image">
+              </span>
 
-  <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="flex my-48">
-    <a
-    href="{{ .Permalink }}" rel="noopener"
-    class="flex md:items-center md:group-hover:opacity-50 md:hover:opacity-important transition group-2 no-focus">
-    <div
-      class="flex items-center justify-center flex-none mr-24 rounded-full md:mr-40 w-80 h-80 md:w-120 md:h-120 bg-dusk text-zenith md:group-2-hover:scale-11/10x transition no-focus">
-      <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
-        stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true" class="h-24 stroke-current md:h-32">
-        <title>Quill icon</title>
-        <path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5zM16 8L2 22M17.5 15H9"></path>
-      </svg></div>
-    <div class="">
-      <h3 itemprop="name" class="text-lg font-semibold leading-snug md:leading-tight text-zenith">
-        <a href="{{ .Permalink }}">{{ .Title }}</a>
-      </h3>
-      <!-- <p class="mt-8 mb-2"><span itemprop="publisher"></span> —
-        <span itemprop="author">
-          Murshid Azher
-        </span>
-      </p> -->
-      <p class="max-ch-60 mt-8">{{ .Description | markdownify }}</p>
-        <time itemprop="datePublished"
-        class="inline-block mt-8 text-xs font-bold tracking-widest uppercase text-zenith">{{ .Date.Format "Mon, Jan 2, 2006" }}
-      </time>
-    </div>
-  </a></article>
+            </div>
+        </div>
 
-  <!-- <article class="PostListItem h-entry">
-    <h3 class="PostListItem-title p-name"><a href="{{ .Permalink }}" class="u-url">{{ .Title }}</a></h3>
-    <div class="PostListItem-meta">
-      <time class="dt-published">{{ .Date.Format "Mon, Jan 2, 2006" }}</time> —
-      {{ partial "post/tags.html" . }}
-    </div>
-    <p>{{ .Description | markdownify }}</p>
-  </article> -->
-      {{ end }}
+        <hr>
+        {{ partial "post/tags.html" . }}
+        <div class="articles_list--item__body--title">{{ .Title }}</div>
+        <!-- <time itemprop="datePublished"
+          class="inline-block mt-8 text-xs font-bold tracking-widest uppercase text-zenith">{{ .Date.Format "Mon, Jan 2, 2006" }}
+        </time> -->
+
+        <p class="articles_list--item__body--desc">{{ .Description | markdownify }}</p>
+        <div class="github-project__link">
+          <a href="{{ .Permalink }}" rel="noopener" class="learn-more-button w-inline-block filter-none" title="{{ .Title }}">Read more</a>
+        </div>
+      </div>
+  </article>
+  {{ end }}
 </section>
 
 {{ end }}

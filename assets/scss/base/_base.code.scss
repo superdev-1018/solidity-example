@@ -3,16 +3,17 @@ kbd,
 samp {
   background: #f9f9f9;
   color: var(--color-light);
-  font-size: 0.9rem;
+  font-size: 0.8em;
 }
 
 pre {
   background: #f9f9f9;
-  font-size: 0.9rem;
+  font-size: 0.8em;
   overflow: auto;
   overflow-x: scroll;
   overflow-wrap: normal;
   padding: 3%;
+  border-radius: 8px;
 }
 
 pre + p {

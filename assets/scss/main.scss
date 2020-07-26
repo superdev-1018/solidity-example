@@ -2,6 +2,9 @@
   You can use import statements to include partials:
  */
 
+ @import "test4";
+ @import "test2";
+
 // Variables
 @import "abstracts/_all";
 
@@ -14,7 +17,7 @@
 
 
 // Object styles
-//  @import "objects/_all";
+ @import "objects/_all";
 
 // Component styles
 //  @import "components/_all";
@@ -22,13 +25,13 @@
 // Utility styles
  @import "utilities/_all";
 
-@import "test4";
+
 
 
  // Variables
  @import "mixins/_all";
 
- @import "test2";
+
 @import "test3";
 
 

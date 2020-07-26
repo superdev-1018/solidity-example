@@ -1,17 +1,48 @@
 {{ define "main" }}
-  <article id="content" class="Post h-entry">
+<article id="content" class="Post h-entry">
+  <header id="notes" class="row-nm m-32 center intro-sm">
+    <div class="column center w-full">
 
-      <header class="PostHeader">
-        <h1 class="z-40 my-8 mt-8 text-lg font-semibold leading-tight text-zenith">{{ .Title }}</h1>
-      </header>
+      <h1 class="align-center">
+      {{ .Title }}{{ if .Params.emoji }}<span class="fs-large">{{ .Params.emoji }}</span>{{ end }}
+      </h1>
+    </div>
+  </header>
+  <section class="row-nm align-center j-center">
+    <div class="column-nm-sm w-full mx-60 ">
+      <h2 class="font-circular center">{{ .Params.description }}</h2>
+    </div>
+  </section>
 
-      <section class="PostMeta">
-        <time class="PostMeta-date dt-published">{{ .Date.Format "Mon, Jan 2, 2006" }}</time> —
-        {{ partial "post/tags.html" . }}
-      </section>
+  <div class="center" >{{ partial "post/tags.html" . }}</div>
 
-      <section class="PostBody e-content">
-        {{ partial "heading-anchor.html" .Content }}
-      </section>
-  </article><!--/.Content -->
+  <section class="articles_list--meta flex flex-row mb-16 mt-16">
+   <div class="tags row-nm center">
+     <div class="column center w-full published-date" >
+       Published &nbsp;
+        <time itemprop="datePublished" class="inline-block" datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}
+        </time>
+     </div>
+    <!-- &nbsp; — &nbsp; {{ partial "post/tags.html" . }} -->
+  </div>
+  </section>
+
+  {{ if .Params.cover }}
+  <section class="article_img">
+    <div title="" class="hs-featured-image-link hs-full-height">
+      <span style="background:url({{ .Params.cover }}) no-repeat;" class="hs-featured-image">
+      </span>
+
+    </div>
+  </section>
+  {{ end }}
+
+  <section class="PostBody e-content {{ if not .Params.cover }}mt-48{{ end }}">
+    <div class="center-max">
+      {{ partial "heading-anchor.html" .Content }}
+      {{ partialCached "post/author.html" . }}
+    </div>
+
+  </section>
+</article><!--/.Content -->
 {{ end }}

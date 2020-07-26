@@ -3,6 +3,7 @@ title: "Design tokens and styleguides with Eleventy"
 date: 2020-06-05T09:50:37+01:00
 draft: false
 description: "A simple workflow showing you how to use Eleventy and NPM scripts to take YAML design tokens and generate CSS custom properties and a styleguide."
+cover: "https://images.unsplash.com/flagged/photo-1594811359576-476f9445fa0d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=80"
 slug: "design-tokens-styleguides-eleventy"
 tags: ["Eleventy"]
 syndicate: "false"
