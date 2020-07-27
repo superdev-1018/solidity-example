@@ -1266,3 +1266,66 @@ strong {
   font-family: sf mono,monaco,inconsolata,fira mono,droid sans mono,source code pro,monospace;
   font-size: .875em;
 }
+
+
+
+#header {
+  width:100vw;
+  height:60px;
+  line-height:60px;
+  border-bottom:1px solid #ececec;
+  background-color:white;
+  position:fixed;
+  top:0;
+  left:0;
+  font-weight:400;
+  z-index:10;
+}
+
+.header_wrap {
+  display:flex;
+  flex-shrink: 0;
+  position: relative;
+}
+
+#logo {
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: auto;
+    top: 7px;
+}
+
+#logo * {
+  fill: #282828;
+}
+
+#logo:hover * {
+  animation-name:logo;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+  0% { fill: hsl(0,80%,70%); }
+  25% { fill: hsl(90,80%,40%); }
+  50% { fill: hsl(180,80%,40%); }
+  75% { fill: hsl(270,80%,70%); }
+  100% { fill: hsl(0,80%,70%); }
+}
+
+#header a {
+  font-size:14px;
+  display:inline-block;
+  height:60px;
+  color:#282828;
+  text-decoration:none;
+  padding:0 14px;
+  border-bottom:0;
+  box-sizing:border-box;
+  cursor: pointer;
+}
+#header a:not(.logo):hover {
+  color:black;
+  border-bottom:1px solid #b7b7b7;
+}
