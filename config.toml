@@ -1,4 +1,4 @@
-baseurl = "https://murshidazher.com/"
+baseurl = "https://reverent-brattain-0761ea.netlify.app/"
 theme="murshid-starter"
 languageCode = "en"
 title = "Murshid Azher"
@@ -9,6 +9,9 @@ pygmentsUseClasses=true
 # Enable highlighting for code fences
 pygmentsCodeFences = true
 # pygmentsCodefencesGuessSyntax = true
+
+# Enable Emojis
+enableEmoji = true
 
 [params]
   keywords = "Product Design, UX Design, UI Design, Front-end Web Development, Small businesses, Automation, Typography"
@@ -45,10 +48,6 @@ pygmentsCodeFences = true
   projects = "/:section/:slug/"
   notes = "/:section/:slug/"
   page = "/:title/"
-
-# Enable Emojis
-enableEmoji = true
-
 
 [[menu.main]]
   name = "Articles"
