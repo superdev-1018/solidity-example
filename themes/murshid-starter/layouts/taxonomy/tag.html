@@ -1,40 +1,29 @@
 {{ define "main" }}
-  <header class="PostHeader">
-    <h2 class="z-40 my-8 mt-8 text-lg font-semibold leading-tight text-zenith">
-      <span class="u-visually-hidden">Posts tagged with</span>“{{ .Title }}”
-    </h2>
-  </header>
-  <section class="PostList">
-    {{ range .Data.Pages }}
-    <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="flex my-48">
-      <a
-      href="{{ .Permalink }}" rel="noopener"
-      class="flex md:items-center md:group-hover:opacity-50 md:hover:opacity-important transition group-2 no-focus">
-      <div
-        class="flex items-center justify-center flex-none mr-24 rounded-full md:mr-40 w-80 h-80 md:w-120 md:h-120 bg-dusk text-zenith md:group-2-hover:scale-11/10x transition no-focus">
-        <svg xmlns="http://www.w3.org/2000/svg" fill="none" stroke="currentColor" stroke-linecap="round"
-          stroke-linejoin="round" viewBox="0 0 24 24" aria-hidden="true" class="h-24 stroke-current md:h-32">
-          <title>Quill icon</title>
-          <path d="M20.24 12.24a6 6 0 00-8.49-8.49L5 10.5V19h8.5zM16 8L2 22M17.5 15H9"></path>
-        </svg></div>
-      <div class="articles_list--meta">
-        <h3 itemprop="name" class="text-lg font-semibold leading-snug md:leading-tight text-zenith">
-          {{ if isset .Params "affiliatelink" }}
-          <a href="{{ .Params.affiliatelink }}" target="_blank">{{ .Title }}</a><span>&#8599;</span>
-          {{ else }}
-          <a href="{{ .Permalink }}">{{ .Title }}</a>
-          {{ end }}
-        </h3>
-        <div class="tags flex flex-row items-center">
-          <time itemprop="datePublished"
-            class="inline-block mt-8 text-xs font-bold tracking-widest uppercase text-zenith">{{ .Date.Format "Mon, Jan 2, 2006" }}
-          </time> &nbsp; — &nbsp; {{ partial "post/tags.html" . }}
+<header id="tags" class="row-nm m-32 center intro-sm">
+  <div class="column center w-full">
+    <span class="u-visually-hidden">Posts tagged with</span><h1 class="align-center">“{{ .Title }}”</h1>
+  </div>
+</header>
+
+<section id="articles_list" class="row-nm m-120 mb-80 j-end">
+  {{ range .Data.Pages }}
+  <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="articles_list--item">
+      <div class="articles_list--item__body">
+        <div class="hs-featured-image-wrapper">
+            <div title="" class="hs-featured-image-link">
+              <span style="background:url(https://images.unsplash.com/photo-1534293507278-19b2539423f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80) no-repeat;" class="hs-featured-image">
+              </span>
+            </div>
         </div>
-        <p class="max-ch-60 mt-8">{{ .Description }}</p>
-
+        <hr>
+        {{ partial "post/tags.html" . }}
+        <div class="articles_list--item__body--title">{{ .Title }}</div>
+        <p class="articles_list--item__body--desc">{{ .Description | markdownify }}</p>
+        <div class="github-project__link">
+          <a href="{{ .Permalink }}" rel="noopener" class="learn-more-button w-inline-block filter-none" title="{{ .Title }}">Read more</a>
+        </div>
       </div>
-    </a></article>
-
-    {{ end }}
-  </section>
+  </article>
+  {{ end }}
+</section>
 {{ end }}

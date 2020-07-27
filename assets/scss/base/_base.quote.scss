@@ -6,13 +6,16 @@ blockquote {
   border-left: 1px solid #ddd;
   color: var(--color-light);
   font-weight: $font-weight-regular;
-  @include fluid-type($min_width, $max_width, $min_font, $max_font);
   line-height: 1.5;
   margin: 0;
   padding: 0;
 
   p {
     @include margin-left(1);
+  }
+
+  figcaption {
+    margin-left: 1.5rem;
   }
 
   cite,

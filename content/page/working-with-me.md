@@ -4,6 +4,7 @@ date: 2018-03-27T20:36:08+01:00
 description: "This page will give you a clearer picture of who I am"
 slug: "me"
 url: "more-about-me"
+draft: "true"
 ---
 
 {{< intro >}}This page will give you a clear idea of ways we can work together and if I’m the right fit for your next project.{{< /intro >}}

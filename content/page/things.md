@@ -2,7 +2,9 @@
 title = "Things I’ve made"
 date = "2019-02-20T22:30:25Z"
 description = "Things on the internet made by Murshid Azher"
-draft = "true"
+emoji = "📦"
+draft = "false"
+slug = "things"
 url = "/things/"
 +++
 
@@ -10,7 +12,7 @@ url = "/things/"
 
 [Remote Cards](https://remote.cards/) is a fun card generator tool for promoting live streaming events. I built this with my brother [Ben](https://benmclaren.xyz/) during the first week of the Covid-19 lockdown.
 
-[Albion Cycling](http://www.albioncycling.com/). A Wordpress build with custom theme, Shopify integration and custom weather app. I designed the site in collaboration with [Luke Harvey](https://lukeharvey.co.uk/). [Read the full case study](/projects/albion/) to find out the process.
+[Albion Cycling ](http://www.albioncycling.com/). A Wordpress build with custom theme, Shopify integration and custom weather app. I designed the site in collaboration with [Luke Harvey](https://lukeharvey.co.uk/). [Read the full case study](/projects/albion/) to find out the process.
 
 [AIN Jobs](https://jobs.angelinvestmentnetwork.co.uk). A Gatsby site which generates it’s content directly from markdown files. Simple as it gets with Gatsby and React.
 

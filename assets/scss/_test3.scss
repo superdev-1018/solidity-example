@@ -256,7 +256,7 @@ footer a {
 h1 {
   font-family: Circularstd, sans-serif;
   line-height: 1.33;
-  margin-bottom: $base-unit * 4;
+  margin-bottom: $base-unit * 2;
 }
 
 .logo {
@@ -1227,4 +1227,27 @@ strong {
 
 .mt-48 {
   margin-top: $base-unit * 28;
+}
+
+.j-end {
+  justify-content: end;
+}
+
+.post--body {
+
+
+  p {
+    margin-bottom: $base-unit * 8;
+
+    a {
+      position: relative;
+      margin-right: $base-unit * 4;
+      &::after {
+        padding-left: 1px;
+        // right: 8px;
+        content: '\2197';
+        position: absolute;
+      }
+    }
+  }
 }
