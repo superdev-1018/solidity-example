@@ -1,3 +1,5 @@
+![murshid](https://raw.githubusercontent.com/murshidazher/murshid/master/themes/murshid-starter/static/img/favicon.png)
+
 # [murshidazher.com](https://reverent-brattain-0761ea.netlify.app/)
 
 ![Netlify](https://img.shields.io/netlify/5bb22eef-8559-4079-be63-e42c63f63770?style=flat-square)
