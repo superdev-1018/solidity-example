@@ -10,9 +10,6 @@ pygmentsUseClasses=true
 pygmentsCodeFences = true
 # pygmentsCodefencesGuessSyntax = true
 
-# Enable Emojis
-enableEmoji = true
-
 [params]
   keywords = "Product Design, UX Design, UI Design, Front-end Web Development, Small businesses, Automation, Typography"
   description = "Murshid Azher is a professional designer and front-end web developer from Colombo, Sri Lanka. Read technical articles and notes on designing and coding websites."
@@ -48,6 +45,9 @@ enableEmoji = true
   projects = "/:section/:slug/"
   notes = "/:section/:slug/"
   page = "/:title/"
+
+# Enable Emojis
+enableEmoji = true
 
 [[menu.main]]
   name = "Articles"

@@ -10,10 +10,12 @@ pre {
   background: #f9f9f9;
   font-size: 0.8em;
   overflow: auto;
-  overflow-x: scroll;
+  // overflow-x: scroll;
   overflow-wrap: normal;
   padding: 3%;
   border-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 pre + p {
