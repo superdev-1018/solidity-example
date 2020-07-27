@@ -41,7 +41,7 @@ But here are a few reminders.
 
 Install Eleventy:
 
-```
+```zsh
 npm install --save-dev @11ty/eleventy
 ```
 
@@ -236,7 +236,7 @@ There are a couple of methods you can use to make this happen.
 
 The first method:
 
-```
+```scss
 :root {
   @each $color-name, $color-value in $colors {
     --color-#{$color-name}: #{$color-value};
