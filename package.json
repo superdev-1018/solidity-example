@@ -4,7 +4,7 @@
   "description": "A simple personal website",
   "main": "index.js",
   "author": "Murshid Azher",
-  "license": "ISC",
+  "license": "MIT",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "hugo server --watch --disableFastRender",
