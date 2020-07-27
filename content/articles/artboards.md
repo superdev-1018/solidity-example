@@ -102,7 +102,7 @@ Let's say our design isn't a mockup of the large desktop view (like in the examp
 
 In the example below you can see the Breakpoint is `960`. this, of course, stands for `960px` or our desktop size. Suggesting the Artboard shows how our website will look on a Desktop browser.
 
-{{< cld src="v1550264892/hc/naming-artboards-in-sketch-03.jpg" alt="Breaking down the identifier code" caption="Breaking down the identifier code" >}}
+{{< cld src="v1550264892/hc/naming-artboards-in-sketch-03.jpg" alt="Breaking down the identifier code" caption="Nº01 Breaking down the identifier code" >}}
 
 ### The Flow
 

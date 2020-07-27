@@ -1196,7 +1196,7 @@ a.hs-featured-image-link {
   margin-top: $base-unit * 4;
 }
 
-.PostAuthor-text {
+.post-author__text {
   h4 {
     margin-top: 0;
     font-weight: 600;
@@ -1250,4 +1250,19 @@ strong {
       }
     }
   }
+}
+
+.PostBody .intro {
+  height: auto;
+}
+
+.Image {
+  figcaption {
+    text-align: center;
+  }
+}
+
+.mono {
+  font-family: sf mono,monaco,inconsolata,fira mono,droid sans mono,source code pro,monospace;
+  font-size: .875em;
 }
