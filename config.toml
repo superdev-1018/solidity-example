@@ -8,7 +8,7 @@ pluralizelisttitles = false
 pygmentsUseClasses=true
 # Enable highlighting for code fences
 pygmentsCodeFences = true
-pygmentsCodefencesGuessSyntax = true
+# pygmentsCodefencesGuessSyntax = true
 
 [params]
   keywords = "Product Design, UX Design, UI Design, Front-end Web Development, Small businesses, Automation, Typography"
