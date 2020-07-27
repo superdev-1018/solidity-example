@@ -5,7 +5,7 @@ date = "2017-04-02T21:34:41+01:00"
 slug = "artboards"
 description = "A naming system to help you name your Sketch Artboards and create scaleable, maintainable Sketch projects you’re entire team can understand."
 Author = "Harry Cresswell"
-feature = "https://res.cloudinary.com/harrycresswell/image/upload/v1550264893/hc/naming-artboards-in-sketch-organised-albion-03.jpg"
+feature = "https://res.cloudinary.com/murshidazher/image/upload/v1550264893/hc/naming-artboards-in-sketch-organised-albion-03.jpg"
 +++
 
 {{< intro >}}Naming Artboards might not be the most exciting subject, but non the less, it's an important one. If it's not already, a solid Artboard naming system should be a critical part of your design process.{{< /intro >}}

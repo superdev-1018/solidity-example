@@ -8,9 +8,9 @@ description: "Implement Instantsearch.js on your Hugo site and provide users wit
 
 {{< intro >}}This is Part 2 in a short series on getting started with Algolia search on a site built with Hugo, the static site generator.{{< /intro >}}
 
-<p class="Message">You can download <a href="https://github.com/harrycresswell/hugolia">the project files</a> for this article over on Github.</p>
+<p class="Message">You can download <a href="https://github.com/murshidazher/hugolia">the project files</a> for this article over on Github.</p>
 
-In [Part 1](https://harrycresswell.com/articles/hugo-algolia/) we configured Algolia’s search API to index content from a Hugo site and provide instantaneous search results, whenever a search takes place.
+In [Part 1](https://murshidazher.com/articles/hugo-algolia/) we configured Algolia’s search API to index content from a Hugo site and provide instantaneous search results, whenever a search takes place.
 
 In this part we’ll implement [Algolia Instantsearch.js](https://community.algolia.com/instantsearch.js/), a framework of prepackaged widgets which will help us design the perfect search experience.
 
@@ -129,7 +129,7 @@ Notice I’ve specified the variable `hitTemplate` for my template item. Setting
 var hitTemplate =
   '<a href="{{ permalink }}" class="List-item">' +
   '<div class="List-image">' +
-  '<img src="https://res.cloudinary.com/harrycresswell/image/upload/w_auto,dpr_auto,c_scale/{{{featuredimage}}}" />' +
+  '<img src="https://res.cloudinary.com/murshidazher/image/upload/w_auto,dpr_auto,c_scale/{{{featuredimage}}}" />' +
   "</div>" +
   '<div class="List-title">{{{_highlightResult.title.value}}}</div>' +
   "</a>" +

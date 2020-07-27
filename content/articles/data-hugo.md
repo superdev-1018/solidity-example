@@ -8,7 +8,7 @@ description: "Learn how to utilise Data in Hugo to keep your code clean and your
 
 {{< intro >}}This articles demonstrates a practical use case of working with data files in Hugo. It will show you where to store your data and how to call your data into a template in order to render it on your site.{{< /intro >}}
 
-Whilst front-end prototyping the design of a [system of content search filters](http://www.harrycresswell.co.uk/client/ain/ain-filters/), I found myself in a situation where I needed to list the major countries in each inhabited Continent. The countries would take the form of checkboxes in a filter dropdown.
+Whilst front-end prototyping the design of a [system of content search filters](http://www.murshidazher.co.uk/client/ain/ain-filters/), I found myself in a situation where I needed to list the major countries in each inhabited Continent. The countries would take the form of checkboxes in a filter dropdown.
 
 A basic solution might be to list each country manually in an unordered list on the page. But that sound like a time consuming task and unnecessarily repetitive. No one wants a cluttered template with a verbose amount of code.
 
@@ -92,7 +92,7 @@ To retrieve data from my `africa.yaml` data file I used the following code:
 
 Where `{{ .name }}` prints out the name of the country.
 
-To see this in action [check out this prototype](http://www.harrycresswell.co.uk/client/ain/ain-filters/) and hit the filter button above the search called `country`.
+To see this in action [check out this prototype](http://www.murshidazher.co.uk/client/ain/ain-filters/) and hit the filter button above the search called `country`.
 
 If you are applying this to your own data be sure to update `countries.continent.africa.country` with your specific data structure.
 

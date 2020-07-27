@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}">
-
+<html lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}" dir="ltr">
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -40,7 +39,7 @@
   <!-- else if no image in frontmatter, and sections are not equal to articles or notes, then display image -->
   {{ else if and (ne .Section "articles") (ne .Section "notes") }}
   <meta property="og:image"
-    content="https://res.cloudinary.com/harrycresswell/image/upload/w_700,dpr_2.0,c_scale,f_auto,q_auto/v1550264713/hc/harry-cresswell-about-me.jpg">
+    content="https://res.cloudinary.com/murshidazher/image/upload/w_700,dpr_2.0,c_scale,f_auto,q_auto/v1550264713/hc/harry-cresswell-about-me.jpg">
   {{ end }}
   <!-- Pinterest Verification -->
   <meta name="p:domain_verify" content="c60dc1e9be844be29f0fb5525b9afe6f" />
@@ -56,8 +55,8 @@
   <link href="{{ .Site.Author.github }}" rel="me">
   <link href="{{ .Site.Author.linkedin }}" rel="me">
   <!-- IndieCert -->
-  <link rel="webmention" href="https://webmention.io/harrycresswell.com/webmention" />
-  <link rel="pingback" href="https://webmention.io/harrycresswell.com/xmlrpc" />
+  <link rel="webmention" href="https://webmention.io/murshidazher.com/webmention" />
+  <link rel="pingback" href="https://webmention.io/murshidazher.com/xmlrpc" />
   <!-- Styles -->
   {{ if .Site.IsServer }}
   <!-- Pipe Sass to CSS, include options, enable sourcemaps -->
@@ -89,7 +88,7 @@
   {{ end -}}
 </head>
 
-<body class="bg-night overflow-x-hidden">
+<body>
   <!-- <div id="app" class="relative flex flex-col w-screen mx-auto font-sans text-base max-w-1440 text-dawn md:flex-row">
     <div class="md:hidden">
       <div class="fixed top-0 left-0 z-30 w-full h-64 transition bg-dusk shift-0"></div>
@@ -180,9 +179,9 @@
             <span class="p-name u-url" rel="me">{{ if ne .Title "Design & Code" }} / {{ end }}</span>
             <a class="p-name u-url" rel="me">{{ if ne .Title "Design & Code" }}{{ .Title }}{{ end }}</a>
             <div hidden>
-                <img class="u-photo" src="https://harrycresswell.com/img/hc.jpg" alt="Harry Cresswell">
+                <img class="u-photo" src="https://murshidazher.com/img/hc.jpg" alt="Harry Cresswell">
                 <p class="p-note">{{ .Site.Params.Strapline }}</p>
-                <a href="mailto:studio@harrycresswell.com" rel="me" class="u-email">studio@harrycresswell.com</a>
+                <a href="mailto:studio@murshidazher.com" rel="me" class="u-email">studio@murshidazher.com</a>
             </div>
           </div>
           <nav class="Nav" aria-label="Main Navigation">

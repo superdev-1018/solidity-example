@@ -17,7 +17,7 @@ pygmentsCodeFences = true
   location = "Colombo, LK"
 
   # Set Cloudinary URL for image hosting
-  cloudinary_url = "https://res.cloudinary.com/harrycresswell/image/upload"
+  cloudinary_url = "https://res.cloudinary.com/murshidazher/image/upload"
   author = "Murshid Azher"
 
 [author]

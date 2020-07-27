@@ -9,7 +9,7 @@ syndicate: "false"
 ---
 
 {{< message >}}
-You can find all the code from this article over on <a href="https://github.com/harrycresswell/eleventy-starter">Github.com</a>
+You can find all the code from this article over on <a href="https://github.com/murshidazher/eleventy-starter">Github.com</a>
 {{< /message >}}
 
 This article will get you up and running with a simple [Eleventy](https://www.11ty.dev/) powered website and Sass pipeline. It’s 100% beginner friendly and should give you a good introduction to working with this lightweight JavaScript based static site generator.
@@ -794,7 +794,7 @@ The first line will prevent Git from tracking our _node modules_ directory. Our 
 
 Likewise we don’t want to upload our _\_site_ directory to Github as this will be created when we run our scripts or automated by a deployment tool such as Netlify. So the second line takes care of that.
 
-Finally, let’s create a [README.md](https://github.com/harrycresswell/eleventy-starter/blob/master/README.md) file. This acts as helpful documentation, both for us – so we remember how to install and use our project – and for other developers who might want to [clone a copy from Github](https://github.com/harrycresswell/eleventy-starter) and build something with it.
+Finally, let’s create a [README.md](https://github.com/murshidazher/eleventy-starter/blob/master/README.md) file. This acts as helpful documentation, both for us – so we remember how to install and use our project – and for other developers who might want to [clone a copy from Github](https://github.com/murshidazher/eleventy-starter) and build something with it.
 
 ## Conclusion
 
@@ -806,7 +806,7 @@ With the addition of a few NPM Scripts we can maintain a minimal build process w
 
 Until recently [Hugo](https://gohugo.io/) has been my go-to SSG of choice, primarily because it’s super fast and has zero dependencies, which makes it a solid choice. But writing JavaScript over Go is certainly appealing, and perhaps the more familiar language for many of us.
 
-Web development has become increasingly complex over the years, but it doesn’t have to be. There are some great tools out there to help you [keep it simple](https://harrycresswell.com/articles/intentions-2020/#keep-it-simple) and Eleventy sure fits that bill.
+Web development has become increasingly complex over the years, but it doesn’t have to be. There are some great tools out there to help you [keep it simple](https://murshidazher.com/articles/intentions-2020/#keep-it-simple) and Eleventy sure fits that bill.
 
 ## Further reading and credits
 
@@ -827,4 +827,4 @@ My understanding of NPM Scripts and the script workflow I used was heavily inspi
 - [A modern front-end workflow](https://css-irl.info/a-modern-front-end-workflow-part-1/) by Michelle Barker
 - [Why NPM Scripts](https://css-tricks.com/why-npm-scripts/) by Damon Bauer
 
-_I’ve done my best to crosscheck everything in this article, but if you spot any mistakes or have any issues [please let me know](mailto:studio@harrycresswell.com) and I will endeavor to make the necessary changes or help you out where I can._
+_I’ve done my best to crosscheck everything in this article, but if you spot any mistakes or have any issues [please let me know](mailto:studio@murshidazher.com) and I will endeavor to make the necessary changes or help you out where I can._

@@ -6,7 +6,7 @@ slug: "hugo-algolia"
 description: "Learn how to implement Algolia InstantSearch on a Hugo based static site."
 ---
 
-<p class="Message">You can download <a href="https://github.com/harrycresswell/hugolia">the project files</a> for this article over on Github.</p>
+<p class="Message">You can download <a href="https://github.com/murshidazher/hugolia">the project files</a> for this article over on Github.</p>
 
 {{< intro >}}We’re about to walk through setting up Algolia search on a Hugo static site with a Forestry CMS, so you can search your posts instantaneously and edit content directly from the browser.{{< /intro >}}
 
@@ -256,11 +256,11 @@ If you need more details on this whole set up, I highly recommend reading [Chris
 
 I wrote this down as much for my own understanding as I hope it has been helpful for your own. This was my first real venture using serverless functions and I’m still wrapping my head around them.
 
-With that said, any feedback you might have would be very welcome. [Drop me a tweet](https://twitter.com/harrycresswell) or [send me a message](/contact/). I’d be happy to hear from others exploring the world of serverless.
+With that said, any feedback you might have would be very welcome. [Drop me a tweet](https://twitter.com/murshidazher) or [send me a message](/contact/). I’d be happy to hear from others exploring the world of serverless.
 
-_Note: In [part 2 of this article](https://harrycresswell.com/articles/hugo-algolia-2/) we’ll build the front end, so users can interface with our content and see the power of Algolia on a Hugo static site._
+_Note: In [part 2 of this article](https://murshidazher.com/articles/hugo-algolia-2/) we’ll build the front end, so users can interface with our content and see the power of Algolia on a Hugo static site._
 
-<p class="Message">You can download the <a href="https://github.com/harrycresswell/hugolia">project files over on Github</a>. Bare in mind they also include code for the front end which is coming up in the next part.</p>
+<p class="Message">You can download the <a href="https://github.com/murshidazher/hugolia">project files over on Github</a>. Bare in mind they also include code for the front end which is coming up in the next part.</p>
 
 ## Further reading
 

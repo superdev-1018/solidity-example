@@ -6,7 +6,7 @@ description: "With 2019 almost over, it’s time to reflect on what have been an
 slug: "2019-review"
 tags: ["Year in Review"]
 syndicate: "false"
-feature: "https://res.cloudinary.com/harrycresswell/image/upload/v1577808208/hc/2019-in-review.png"
+feature: "https://res.cloudinary.com/murshidazher/image/upload/v1577808208/hc/2019-in-review.png"
 ---
 
 With 2019 almost over, it’s time to reflect on what have been another busy 12 months. This is a chance to take note of my successes and failures and pinpoint potential areas for improvement. I’ll do so by asking three simple questions:
@@ -33,7 +33,7 @@ I really wasn’t expecting to pick up basic React concepts and GraphQL so quick
 
 ### Newsletter
 
-I had a good year with [my weekly newsletter](https://harrycresswell.com/newsletter/) which I published consistently, only missing four weeks due to holiday. I’ve started to notice the impact of this commitment. Although the number of you subscribing is still modest that number has increased substantially. I haven’t done much at all in the way of marketing, so I’m pleased so many of you are enjoying it.
+I had a good year with [my weekly newsletter](https://murshidazher.com/newsletter/) which I published consistently, only missing four weeks due to holiday. I’ve started to notice the impact of this commitment. Although the number of you subscribing is still modest that number has increased substantially. I haven’t done much at all in the way of marketing, so I’m pleased so many of you are enjoying it.
 
 [Ash was kind enough to Tweet about it](https://twitter.com/ashleyo_brien/status/1180073230809419776?s=20) and several of you have emailed with positive feedback and questions. I’ve no doubt it’s been a great way to connect with other designers and developers and start conversations about common interests.
 
@@ -121,7 +121,7 @@ I’d like to get out there a bit more next year by joining a Meetup or making a
 
 I’m a big fan of Twitter but I still can’t seem to make a habit of posting regularly. It always comes as an afterthought and I rarely feel I have anything interesting to add to the conversation. Like a lot of things I’m sure this is down to my own lack of self confidence.
 
-Generally I find it helps to plan content ahead, but with social media that somehow feels a bit contrived and not spontaneous enough. Perhaps some form of scheduling could help. Or some sort of content plan where I stick to [sharing helpful tips](https://twitter.com/harrycresswell/status/1200881854703972352?s=20) and leave it at that.
+Generally I find it helps to plan content ahead, but with social media that somehow feels a bit contrived and not spontaneous enough. Perhaps some form of scheduling could help. Or some sort of content plan where I stick to [sharing helpful tips](https://twitter.com/murshidazher/status/1200881854703972352?s=20) and leave it at that.
 
 I’ve found my feet more in Slack channels this year. I feel more comfortable asking questions and helping others in that format. Perhaps that’s because it feels slightly more private and less like the whole world is watching.
 
@@ -212,8 +212,8 @@ Now for the numbers. I wish I’d recorded more but it’s not always easy to ke
 
 ## Final words
 
-This was my second time [writing a year in review](https://harrycresswell.com/articles/year-in-review/) and once again it’s been a valuable exercise. It’s helped me to put my foot on the brakes and take stock of my accomplishments or lack thereof. In some way or another it’s helped me better understand myself, in terms of what I care most about, what no longer serves me, where I can improve and where I should focus my efforts.
+This was my second time [writing a year in review](https://murshidazher.com/articles/year-in-review/) and once again it’s been a valuable exercise. It’s helped me to put my foot on the brakes and take stock of my accomplishments or lack thereof. In some way or another it’s helped me better understand myself, in terms of what I care most about, what no longer serves me, where I can improve and where I should focus my efforts.
 
-I referred to my [2018 in review](https://harrycresswell.com/articles/2018-review/) throughout this year, using it to keep tabs on my progress. In 2020 I hope to do the same with this one, using it to move more consciously through life, make better decisions and practice gratitude wherever possible.
+I referred to my [2018 in review](https://murshidazher.com/articles/2018-review/) throughout this year, using it to keep tabs on my progress. In 2020 I hope to do the same with this one, using it to move more consciously through life, make better decisions and practice gratitude wherever possible.
 
 To that end I’d like to say thanks to everyone who has helped make this year a great success, I’m grateful to you all. Wishing you all a very happy new year and here’s to the next decade. Thanks for reading!

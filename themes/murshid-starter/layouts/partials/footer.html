@@ -24,7 +24,7 @@
     </div>
   </div> -->
 
-  <footer class="" role="contentinfo">
+  <footer class="footer" role="contentinfo">
     <nav class="footer-nav mb-16" aria-label="Footer Navigation">
       <div class="mb-80">
         <div class="row-nm footer-nav__wrapper">
@@ -118,7 +118,7 @@
       </div>
 
       <section class="row-nm footer-copyright ">
-        <p>© 2020 Murshid Azher, unless otherwise specified.</p>
+        <p>&copy;{{ now.Format "2006"}} Murshid Azher, unless otherwise specified.</p>
         <p class="footer-copyright__mail"><a href="mailto:contact@murshidazher.com"
             title="Email Murshid Azher (contact@murshidazher.com)">hello@murshidazher.com</a></p>
       </section>
@@ -142,7 +142,7 @@
   <script src="{{ $globalJS.Permalink }}" integrity="{{ $globalJS.Data.Integrity }}" media="screen"></script>
   <script>
     var cl = cloudinary.Cloudinary.new({
-      cloud_name: "harrycresswell"
+      cloud_name: "murshidazher"
     });
 
     cl.responsive();

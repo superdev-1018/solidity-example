@@ -72,13 +72,13 @@ We’re almost ready to start building our form, but first lets take a moment to
 - Use Zapier to automagically send ourselves the data in an email, any time someone submits the form.
 - Finally, redirect the user to a success page after they complete the form.
 
-Before we get started, you might want to [jump over here](http://harrycresswell.co.uk/tutorials/zapier-contact/) to see the end result.
+Before we get started, you might want to [jump over here](http://murshidazher.co.uk/tutorials/zapier-contact/) to see the end result.
 
 ## Step 1: Writing the HTML
 
 Let’s take a look at the HTML we’re going to use to build the form.
 
-{{< message >}}If you’d rather skip ahead you can get hold of the source code for this tutorial on <a href="https://github.com/harrycresswell/zapier-contact-form">Github</a>.{{< /message >}}
+{{< message >}}If you’d rather skip ahead you can get hold of the source code for this tutorial on <a href="https://github.com/murshidazher/zapier-contact-form">Github</a>.{{< /message >}}
 
 For the purpose of this tutorial our form will have two input fields — one for a name and one for an email address — and a button to submit the data.
 
@@ -353,9 +353,9 @@ Although I only used a first name and an email address in this example, you migh
 
 I hope this has been a helpful introduction into using Zapier to process form data on static sites. You can find all the resources I used for this technique below.
 
-<p class="message">If you want to grab the source code from this tutorial you can get hold of that on <a href="https://github.com/harrycresswell/zapier-contact-form">github</a>.</p>
+<p class="message">If you want to grab the source code from this tutorial you can get hold of that on <a href="https://github.com/murshidazher/zapier-contact-form">github</a>.</p>
 
-If you have any questions or problems with this method then [drop me a tweet](https://twitter.com/harrycresswell), I’d be happy to help.
+If you have any questions or problems with this method then [drop me a tweet](https://twitter.com/murshidazher), I’d be happy to help.
 
 ### Further reading
 

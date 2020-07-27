@@ -24,6 +24,6 @@ url = "/things/"
 
 [Type Services](https://typeservices.co/) is a small type foundry I set up in 2017 with a focus on hand drawn type and imperfection in type design.
 
-[Mood](https://mood.harrycresswell.com/) is is a visual aid for creative projects – a moodboard of things I like. None of the content is my own. Built with Hugo, hosted with Netlify.
+[Mood](https://mood.murshidazher.com/) is is a visual aid for creative projects – a moodboard of things I like. None of the content is my own. Built with Hugo, hosted with Netlify.
 
-[Dark Sky](https://soundcloud.com/dark-sky) is an electronic music project by Matt Benyayer. Since 2012 we’ve collaborated on artwork for most of Matts releases. You’ll find the music and artwork on [my Soundcloud page](https://soundcloud.com/harrycresswell).
+[Dark Sky](https://soundcloud.com/dark-sky) is an electronic music project by Matt Benyayer. Since 2012 we’ve collaborated on artwork for most of Matts releases. You’ll find the music and artwork on [my Soundcloud page](https://soundcloud.com/murshidazher).

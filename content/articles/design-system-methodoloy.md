@@ -107,7 +107,7 @@ Remember, there’s no silver bullets when it comes to building UI design system
 
 As designers it is our responsibility to think deeply and consciously about the work we create. Putting out work which has a positive impact and genuinely solves problems for the long term.
 
-_I explore the ideas found in this article in more detail [over on Medium](https://medium.com/@harrycresswell). If you have a question about UI design or building systems in Sketch, [drop me a tweet](https://twitter.com/harrycresswell) and let’s have a chat about it._
+_I explore the ideas found in this article in more detail [over on Medium](https://medium.com/@murshidazher). If you have a question about UI design or building systems in Sketch, [drop me a tweet](https://twitter.com/murshidazher) and let’s have a chat about it._
 
 ## Further reading
 

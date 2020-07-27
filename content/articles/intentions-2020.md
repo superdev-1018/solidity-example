@@ -132,7 +132,7 @@ Lately I’ve been playing around with [P5.js](https://p5js.org/), following vid
 
 ### Moodboard
 
-I used to create personal mood boards to spot themes in my interests. I’ve not been doing this so much lately and I’d like to get back into it. A while back I set up a [mood board](https://mood.harrycresswell.com/) but have since let it fall by the wayside. It’s time to pick this up again and start posting some ideas.
+I used to create personal mood boards to spot themes in my interests. I’ve not been doing this so much lately and I’d like to get back into it. A while back I set up a [mood board](https://mood.murshidazher.com/) but have since let it fall by the wayside. It’s time to pick this up again and start posting some ideas.
 
 ### Music
 

@@ -6,7 +6,7 @@ description: "A boolean value is either true or false. Like a light switch it’
 slug: "js-data-types-boolean-equality"
 tags: ["Coursenotes", "JavaScript"]
 syndicate: "false"
-feature: "https://res.cloudinary.com/harrycresswell/image/upload/v1579251062/hc/boolean-equality.png"
+feature: "https://res.cloudinary.com/murshidazher/image/upload/v1579251062/hc/boolean-equality.png"
 ---
 
 _These notes are taken from [Beginner JavaScript](https://beginnerjavascript.com/) by Wes Bos. Go buy it!_

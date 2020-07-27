@@ -36,7 +36,7 @@ So by valuing the teachings experts and beginners alike and embracing the idea t
 
 ## Further resources
 
-- [CSS Grid: Responsive grid with auto-fit and minmax](https://codepen.io/harrycresswell/pen/qLoNQj)
+- [CSS Grid: Responsive grid with auto-fit and minmax](https://codepen.io/murshidazher/pen/qLoNQj)
 - Rachel Andrew on [being an expert and a beginning](https://twitter.com/rachelandrew/status/1096807596462403584) at the same time.
 - [Shoshin](https://en.wikipedia.org/wiki/Shoshin), the Zen Buddhism teachings of Beginners Mind.
 - [Everything easy is hard again](https://frankchimero.com/writing/everything-easy-is-hard-again/|) by Frank Chimero

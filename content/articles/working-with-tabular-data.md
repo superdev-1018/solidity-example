@@ -317,7 +317,7 @@ For my particular needs, I created another table for the `prices_for_one.yaml` d
 
 The only thing left to do from here was to use some CSS to create a tabbed table, which was made accessible through clever use of radio buttons.
 
-To make this happen, I built a quick [Codepen prototype](https://codepen.io/harrycresswell/pen/zYxgeLJ), taking most of my inspiration from [this fantastic article by Kenan Yusuf](https://kyusuf.com/post/completely-css-tabs/).
+To make this happen, I built a quick [Codepen prototype](https://codepen.io/murshidazher/pen/zYxgeLJ), taking most of my inspiration from [this fantastic article by Kenan Yusuf](https://kyusuf.com/post/completely-css-tabs/).
 
 Now we’re at the final hurdle. We need to make it possible to edit the pricing datain our table without having to dig into the data directory and edit `.yaml` files. This will make the data nice and easy to update and maintain.
 
@@ -377,7 +377,7 @@ Using data files to render options in a form select or cells in a table are just
 
 Currently data can only be consumed in templates, as demonstrated in this article. You can’t yet use data to generate standalone page content, which is a shame. But, I believe there are conversations happening about adding this as a future feature. It would make working with data in Hugo even more powerful.
 
-_If you have questions, you can reach me on [Twitter](https://twitter.com/harrycresswell). If you spot any mistakes or factual inaccuracies, please [file a GitHub issue](https://github.com/harrycresswell/harry/issues)._
+_If you have questions, you can reach me on [Twitter](https://twitter.com/murshidazher). If you spot any mistakes or factual inaccuracies, please [file a GitHub issue](https://github.com/murshidazher/harry/issues)._
 
 ## Resources
 

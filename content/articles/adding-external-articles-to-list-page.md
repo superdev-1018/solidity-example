@@ -34,7 +34,7 @@ Your posts should now look something like this:
 ---
 title: "Sketch Libraries and primitives to build buttons"
 date: 2018-01-26T21:29:52+01:00
-affiliatelink: "https://medium.com/@harrycresswell/using-sketch-libraries-and-primitives-to-build-an-even-better-system-of-buttons-ecc8f25486ac"
+affiliatelink: "https://medium.com/@murshidazher/using-sketch-libraries-and-primitives-to-build-an-even-better-system-of-buttons-ecc8f25486ac"
 ---
 
 ```
@@ -85,4 +85,4 @@ Hopefully you’ve now implemented a simple bit of logic which serves up both ex
 
 On a final note, if you want to differentiate between the different post types try using the `↗` icon and wrap in a <span> positioned after your title. I also added a `target='_blank'` to the `a` tag. It’s not essential but it’s a quick and easy way to show your readers that the post is from an external source and the link will open in a new window
 
-I hope you’ve found this helpful. Any questions [leave me a message](/contact/) or [shoot me a tweet](https://twitter.com/harrycresswell/)!
+I hope you’ve found this helpful. Any questions [leave me a message](/contact/) or [shoot me a tweet](https://twitter.com/murshidazher/)!

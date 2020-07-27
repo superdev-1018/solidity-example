@@ -79,7 +79,7 @@ Then call the `Parmeter` in a meta tag in your `<head>`:
 <meta name="description" content="{{ $.Param "description" }}">
 ```
 
-Using some simple logic we can take this further still, [head over to github](https://github.com/harrycresswell/harry/blob/master/site/layouts/partials/head.html) if you’re interested in finding out how this works.
+Using some simple logic we can take this further still, [head over to github](https://github.com/murshidazher/harry/blob/master/site/layouts/partials/head.html) if you’re interested in finding out how this works.
 
 There you have it. A couple of simple fixes to optimise your web pages and improve your chances of ranking higher in search engines.
 

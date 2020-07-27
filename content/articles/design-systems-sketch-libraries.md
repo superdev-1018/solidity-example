@@ -169,7 +169,7 @@ We just looked at using [Libraries](https://www.sketch.com/docs/libraries/) new 
 
 If you’re working in a team of designers, sharing design elements or working independently and looking for a better way to manage on-going projects then try incorporating Libraries into your workflow. Libraries are easily the biggest leap forward for Sketch users since Symbols when it comes to the challenging process of maintaining a design system.
 
-[Download the example project](https://www.dropbox.com/home/harrycresswell/05_writing/graphics%20and%20images/medium%20articles/sketch-libraries-part-1/sample%20project%20for%20download/folder%20of%20truth) for reference, it includes files for colors, icons and buttons, plus a quick example project which uses these Library files. I hope it helps you to see how I’ve set things up. Bare in mind you’ll need a copy of Sketch 47 for all this stuff to work.
+[Download the example project](https://www.dropbox.com/home/murshidazher/05_writing/graphics%20and%20images/medium%20articles/sketch-libraries-part-1/sample%20project%20for%20download/folder%20of%20truth) for reference, it includes files for colors, icons and buttons, plus a quick example project which uses these Library files. I hope it helps you to see how I’ve set things up. Bare in mind you’ll need a copy of Sketch 47 for all this stuff to work.
 
 If you found this article helpful, please share it with any friends who would benefit. Thanks for reading!
 

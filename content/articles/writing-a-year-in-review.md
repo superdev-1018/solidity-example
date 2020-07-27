@@ -8,7 +8,7 @@ tags: ["Year in Review"]
 syndicate: "false"
 ---
 
-Whilst writing my [year in review](https://harrycresswell.com/tags/year-in-review/) this year it seemed like a good idea and perhaps a useful exercise to outline exactly what this means to me – why I write one and the approach I use to write it. I hope this may in some way be helpful for you too.
+Whilst writing my [year in review](https://murshidazher.com/tags/year-in-review/) this year it seemed like a good idea and perhaps a useful exercise to outline exactly what this means to me – why I write one and the approach I use to write it. I hope this may in some way be helpful for you too.
 
 This is very much my own take to what has become an annual practice for many and I follow a format that has, so far, worked well for me. Here’s everything I can tell you about it.
 
@@ -59,4 +59,4 @@ Whatever you choose to call it, taking the time to reflect on your achievements 
 
 Reflection can bring a sense of perspective and writing a review each year can help you identify whether you are becoming the person you wish to be.
 
-For more on this check out my [year in review archive](https://harrycresswell.com/tags/year-in-review/) and pick up a copy of [Atomic Habits](https://www.goodreads.com/book/show/40121378-atomic-habits) if you haven’t read it already. It’s an important book full of actionable advice.
+For more on this check out my [year in review archive](https://murshidazher.com/tags/year-in-review/) and pick up a copy of [Atomic Habits](https://www.goodreads.com/book/show/40121378-atomic-habits) if you haven’t read it already. It’s an important book full of actionable advice.

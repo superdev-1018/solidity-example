@@ -35,7 +35,7 @@ npm init -y
 
 I now have a `package.json` file at the root of my project.
 
-Next, I need to install Eleventy so I can process my templates when I add them. I won’t go through this in detail as I’ve already covered that in [Getting Started with Eleventy](https://harrycresswell.com/articles/getting-started-with-eleventy/).
+Next, I need to install Eleventy so I can process my templates when I add them. I won’t go through this in detail as I’ve already covered that in [Getting Started with Eleventy](https://murshidazher.com/articles/getting-started-with-eleventy/).
 
 But here are a few reminders.
 
@@ -282,7 +282,7 @@ Then I’ll write a new NPM script to take the SCSS from `src/scss` and compile 
 "scss": "node-sass --output-style expanded -o src/_includes/css src/scss"
 ```
 
-If you want to get a better understanding of what’s happening here, I cover this in detail in [Getting Started with Eleventy](https://harrycresswell.com/articles/getting-started-with-eleventy/#compiling-sass-to-css).
+If you want to get a better understanding of what’s happening here, I cover this in detail in [Getting Started with Eleventy](https://murshidazher.com/articles/getting-started-with-eleventy/#compiling-sass-to-css).
 
 Before testing the script I need to add an entry point for my SCSS. So I create a `main.scss` file at `/src/scss/main.scss` and import the config file.
 
@@ -375,5 +375,5 @@ Haydon’s article shows you how to turn JSON tokens into CSS by using Nunjucks 
 Haydon’s approach may well be a better way to go about all this, but I’ll leave that for you to decide.
 
 {{< message >}}
-You can find all the code from this article over on <a href="https://github.com/harrycresswell/design-tokens-eleventy">Github.com</a>
+You can find all the code from this article over on <a href="https://github.com/murshidazher/design-tokens-eleventy">Github.com</a>
 {{< /message >}}
