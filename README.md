@@ -1,7 +1,6 @@
-# murshidazher.com
+# [murshidazher.com](https://reverent-brattain-0761ea.netlify.app/)
 
-Personal website
-
+![Netlify](https://img.shields.io/netlify/5bb22eef-8559-4079-be63-e42c63f63770?style=flat-square)
 
 ## Features
 

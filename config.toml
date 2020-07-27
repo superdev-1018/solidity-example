@@ -11,7 +11,7 @@ pygmentsCodeFences = true
 # pygmentsCodefencesGuessSyntax = true
 
 [params]
-  keywords = "Product Design, UX Design, UI Design, Front-end Web Development, Small businesses, Automation, Typography"
+  keywords = "Product Design, UX Design, UI Design, Front-end Web Development, Small businesses, Automation, Typography, Software Engineer, Developer"
   description = "Murshid Azher is a professional designer and front-end web developer from Colombo, Sri Lanka. Read technical articles and notes on designing and coding websites."
   strapline = "Design and front-end web development"
   location = "Colombo, LK"
