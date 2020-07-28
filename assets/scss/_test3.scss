@@ -878,13 +878,12 @@ a:hover {
   align-items: center;
   filter: brightness(0) invert(1);
   background-repeat: no-repeat;
-  // background-image: url('../img/arrow-right.svg');
   background-position: 100% 50%;
   background-size: 20px;
   transition: padding .2s ease;
   color: white;
   text-decoration: none;
-  background-image: url(../img/arrow-right.svg);
+  background-image: url(/img/arrow-right.svg);
 
   &:hover {
     transition: padding .2s ease;
