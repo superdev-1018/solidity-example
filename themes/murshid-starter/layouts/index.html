@@ -1,141 +1,145 @@
 {{ define "main" }}
-
 <section class="row intro center ">
-  <img alt="Murshid Azher's headshot" src="/img/ma.jpg"
-  width="400" data-src="/img/ma.jpg" data-srcset="/img/ma.jpg 400w" data-sizes="(max-width: 400px) 100vw, 400px"
-  class="w-48 h-48 rounded-full g-image g-image--lazy g-image--loaded" srcset="/img/ma.jpg 400w"
-  sizes="(max-width: 400px) 100vw, 400px">
-  <noscript>
-    <img src="/img/ma.jpg"
-    class="w-48 h-48 mr-32 rounded-full g-image g-image--loaded" width="400"
-    alt="Murshid Azher's headshot">
-  </noscript>
+    <img alt="Murshid Azher's headshot" src="/img/ma.jpg" width="400" data-src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale,f_auto,q_auto/ma.jpg"
+        data-srcset="/img/ma.jpg 400w" data-sizes="(max-width: 400px) 100vw, 400px"
+        class="w-48 h-48 rounded-full g-image g-image--lazy g-image--loaded cld-responsive lazyload" srcset="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale,f_auto,q_auto/ma.jpg 400w"
+        sizes="(max-width: 400px) 100vw, 400px">
+    <noscript>
+        <img src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale,f_auto,q_auto/ma.jpg" class="w-48 h-48 mr-32 rounded-full g-image g-image--loaded cld-responsive lazyload" width="400"
+            alt="Murshid Azher's headshot">
+    </noscript>
 </section>
 
 <section class="row ">
-  <div class="column center w-full">
-    <h1 class="align-center">Hey there *waves*, I'm Murshid Azher,<br> <mark>coder, designer and data enthusiast</mark>.</h1>
-  </div>
+    <div class="column center w-full">
+        <h1 class="align-center">Hey there *waves*, I'm Murshid Azher,<br> <mark>coder, designer and data
+                enthusiast</mark>.</h1>
+    </div>
 </section>
-
 <section class="row ">
-  <div class="column">
-    <p>I'm Murshid, a Software Engineer from <a>Colombo, Sri Lanka</a>. I’ve been designing and developing softwares for over a decade.</p>
-  </div>
-  <div class="column">
-    <p>I've spent the last two years creating amazing things for companies I believe in. You can find out more about me by click just right <a href="https://www.algolia.com/" target="_blank"
-      rel="noopener" class="text-zenith">here</a>.</p>
-  </div>
-  <div class="column">
-    <p>I write <a href="https://www.algolia.com/" target="_blank" rel="noopener"
-      class="text-zenith">articles on design and code</a> and also <a href="https://www.algolia.com/"
-      target="_blank" rel="noopener" class="">keep notes on things I’m learning</a> from books,
-      courses and the things I've found interesting.
-  </div>
+    <div class="column">
+        <p>I'm Murshid, a Software Engineer from <a>Colombo, Sri Lanka</a>. I’ve been designing and developing softwares
+            for over a decade.</p>
+    </div>
+    <div class="column">
+        <p>I've spent the last two years creating amazing things for companies I believe in. You can find out more about
+            me by click just right <a href="https://www.algolia.com/" target="_blank" rel="noopener"
+                class="text-zenith">here</a>.</p>
+    </div>
+    <div class="column">
+        <p>I write <a href="https://www.algolia.com/" target="_blank" rel="noopener" class="text-zenith">articles on
+                design and code</a> and also <a href="https://www.algolia.com/" target="_blank" rel="noopener"
+                class="">keep notes on things I’m learning</a> from books,
+            courses and the things I've found interesting.
+    </div>
 </section>
-
 <hr>
-
-
-
 <section class="row clients m-32">
-  <img src="img/seatgeek.svg" height="28" alt="SeatGeek Logo">
-  <img src="img/seatgeek.svg" height="28" alt="Ribose Logo">
-  <img src="img/seatgeek.svg" height="28" alt="Punch Logo">
+    <img src="img/seatgeek.svg" height="28" alt="SeatGeek Logo">
+    <img src="img/seatgeek.svg" height="28" alt="Ribose Logo">
+    <img src="img/seatgeek.svg" height="28" alt="Punch Logo">
 </section>
-
 <section class="row align-center j-center">
-  <div class="column w-full mx-60">
-    <h2 class="font-circular ">I work at the intersection of <mark>design, brand, code, strategy and content</mark>; helping organizations bring their concepts and products to life... to make people's life better.</h2>
-  </div>
+    <div class="column w-full mx-60">
+        <h2 class="font-circular ">I work at the intersection of <mark>design, brand, code, strategy and content</mark>;
+            helping organizations bring their concepts and products to life... to make people's life better.</h2>
+    </div>
 </section>
-
-<hr>
-
-
-
-
+<hr role="separator" aria-roledescription="divides the section">
 <section class="row-nm m-32 align-center j-center">
-  <div class="column-nm-sm w-full">
-    <h2 class="text-black fw-500">Opensource</h2>
-  </div>
+    <div class="column-nm-sm w-full">
+        <h2 class="text-black fw-500">Opensource</h2>
+    </div>
 </section>
 <section class="row-nm align-center j-center">
-  <div class="column-nm-sm w-full mx-45">
-    <h2 class="font-circular">I occasionally work on <mark>open source</mark> projects to improve my coding skills.</h2>
-  </div>
+    <div class="column-nm-sm w-full mx-45">
+        <h2 class="font-circular">I occasionally work on <mark>open source</mark> projects to improve my coding skills.
+        </h2>
+    </div>
 </section>
-
 <section class="row projects ">
-  <div class="scrolling-wrapper mt-32-md">
-    <div class="github-project bg-orange">
-      <div class="github-project__wrapper">
-        <div class="github-project__logo">
-          <img class="styles-module--fallbackImg--C-RAL" data-cover="false" src="img/project-logo.svg" alt="Baraja">
+    <div class="scrolling-wrapper mt-32-md">
+        <div class="github-project bg-orange">
+            <div class="github-project__wrapper">
+                <div class="github-project__logo">
+                    <img class="styles-module--fallbackImg--C-RAL" data-cover="false" src="img/project-logo.svg"
+                        alt="Baraja">
+                </div>
+                <div class="github-project__body">
+                    <h2 class="font-circular fw-500 github-project__body--title">Title</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa placeat numquam necessitatibus
+                        nam itaque laudantium iure quasi, praesentium molestiae provident in modi nesciunt
+                        exercitationem voluptatem, adipisci deleniti voluptates ut veniam.</p>
+                </div>
+                <div class="github-project__link">
+                    <a href="/" class="learn-more-button w-inline-block"
+                        style="background-image: url({{ .Site.BaseURL }}img/icons/arrow-right.svg);">
+                        <div>Explore Project</div>
+                    </a>
+                </div>
+            </div>
         </div>
-
-        <div class="github-project__body">
-          <h2 class="font-circular fw-500 github-project__body--title">Title</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa placeat numquam necessitatibus nam itaque laudantium iure quasi, praesentium molestiae provident in modi nesciunt exercitationem voluptatem, adipisci deleniti voluptates ut veniam.</p>
+        <div class="github-project bg-pink">
+            <div class="github-project__wrapper">
+                <div class="github-project__logo">
+                    <img class="styles-module--fallbackImg--C-RAL" data-cover="false"
+                        src="{{ .Site.BaseURL }}img/project-logo.svg" alt="Baraja">
+                </div>
+                <div class="github-project__body">
+                    <h2 class="font-circular fw-500 github-project__body--title">Title</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa placeat numquam necessitatibus
+                        nam itaque laudantium iure quasi, praesentium molestiae provident in modi nesciunt
+                        exercitationem voluptatem, adipisci deleniti voluptates ut veniam.</p>
+                </div>
+                <div class="github-project__link">
+                    <a href="/" class="learn-more-button w-inline-block"
+                        style="background-image: url({{ .Site.BaseURL }}img/icons/arrow-right.svg);">
+                        <div>Explore Project</div>
+                    </a>
+                </div>
+            </div>
         </div>
-
-        <div class="github-project__link">
-          <a href="/" class="learn-more-button w-inline-block" style="background-image: url({{ .Site.BaseURL }}img/icons/arrow-right.svg);"><div>Explore Project</div></a>
+        <div class="github-project bg-purple">
+            <div class="github-project__wrapper">
+                <div class="github-project__logo">
+                    <img class="styles-module--fallbackImg--C-RAL" data-cover="false" src="img/project-logo.svg"
+                        alt="Baraja">
+                </div>
+                <div class="github-project__body">
+                    <h2 class="font-circular fw-500 github-project__body--title">Title</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa placeat numquam necessitatibus
+                        nam itaque laudantium iure quasi, praesentium molestiae provident in modi nesciunt
+                        exercitationem voluptatem, adipisci deleniti voluptates ut veniam.</p>
+                </div>
+                <div class="github-project__link">
+                    <a href="/pro-chat-sdks" class="learn-more-button w-inline-block"
+                        style="background-image: url(img/icons/arrow-right.svg);">
+                        <div>Explore Project</div>
+                    </a>
+                </div>
+            </div>
         </div>
-
-      </div>
+        <div class="github-project bg-blue">
+            <div class="github-project__wrapper">
+                <div class="github-project__logo">
+                    <img class="styles-module--fallbackImg--C-RAL" data-cover="false" src="img/project-logo.svg"
+                        alt="Baraja">
+                </div>
+                <div class="github-project__body">
+                    <h2 class="font-circular fw-500 github-project__body--title">Title</h2>
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa placeat numquam necessitatibus
+                        nam itaque laudantium iure quasi, praesentium molestiae provident in modi nesciunt
+                        exercitationem voluptatem, adipisci deleniti voluptates ut veniam.</p>
+                </div>
+                <div class="github-project__link">
+                    <a href="/pro-chat-sdks" class="learn-more-button w-inline-block"
+                        style="background-image: url({{ .Site.BaseURL }}img/icons/arrow-right.svg);">
+                        <div>Explore Project</div>
+                    </a>
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="github-project bg-pink">
-      <div class="github-project__wrapper">
-        <div class="github-project__logo">
-          <img class="styles-module--fallbackImg--C-RAL" data-cover="false" src="{{ .Site.BaseURL }}img/project-logo.svg" alt="Baraja">
-        </div>
-
-        <div class="github-project__body">
-          <h2 class="font-circular fw-500 github-project__body--title">Title</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa placeat numquam necessitatibus nam itaque laudantium iure quasi, praesentium molestiae provident in modi nesciunt exercitationem voluptatem, adipisci deleniti voluptates ut veniam.</p>
-        </div>
-
-        <div class="github-project__link">
-          <a href="/" class="learn-more-button w-inline-block" style="background-image: url({{ .Site.BaseURL }}img/icons/arrow-right.svg);"><div>Explore Project</div></a>
-        </div>
-
-      </div>
-    </div>
-    <div class="github-project bg-purple">
-      <div class="github-project__wrapper">
-        <div class="github-project__logo">
-          <img class="styles-module--fallbackImg--C-RAL" data-cover="false" src="img/project-logo.svg" alt="Baraja">
-        </div>
-
-        <div class="github-project__body">
-          <h2 class="font-circular fw-500 github-project__body--title">Title</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa placeat numquam necessitatibus nam itaque laudantium iure quasi, praesentium molestiae provident in modi nesciunt exercitationem voluptatem, adipisci deleniti voluptates ut veniam.</p>
-        </div>
-
-        <div class="github-project__link">
-          <a href="/pro-chat-sdks" class="learn-more-button w-inline-block" style="background-image: url(img/icons/arrow-right.svg);"><div>Explore Project</div></a>
-        </div>
-
-      </div>
-    </div>
-    <div class="github-project bg-blue">
-      <div class="github-project__wrapper">
-        <div class="github-project__logo">
-          <img class="styles-module--fallbackImg--C-RAL" data-cover="false" src="img/project-logo.svg" alt="Baraja">
-        </div>
-
-        <div class="github-project__body">
-          <h2 class="font-circular fw-500 github-project__body--title">Title</h2>
-          <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa placeat numquam necessitatibus nam itaque laudantium iure quasi, praesentium molestiae provident in modi nesciunt exercitationem voluptatem, adipisci deleniti voluptates ut veniam.</p>
-        </div>
-
-        <div class="github-project__link">
-          <a href="/pro-chat-sdks" class="learn-more-button w-inline-block" style="background-image: url({{ .Site.BaseURL }}img/icons/arrow-right.svg);"><div>Explore Project</div></a>
-        </div>
-      </div>
-    </div>
-  </div>
 </section>
 </main>
 {{ end }}
