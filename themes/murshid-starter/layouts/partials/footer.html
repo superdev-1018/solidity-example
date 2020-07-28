@@ -1,63 +1,24 @@
-  <!-- <footer class="Footer pt-72" role="contentinfo">
-    <nav class="FooterNav mb-16" aria-label="Footer Navigation">
-      {{ $currentPage := . }}
-      {{ range .Site.Menus.footer }}
-      <a class="FooterNav-link{{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }} active{{end}} mr-8"
-        href="/">{{ .Name }}</a>
-      {{ end }}
-    </nav>
-    <p>Content &copy;{{ now.Format "2006"}} Murshid Azher, unless otherwise specified.
-  </div>
-  <div class="fixed bottom-0 left-0 z-20 w-full h-32 pointer-events-none gradient-y-transparent-night"></div>
-  <div class="fixed top-0 left-0 z-20 w-full h-32 pointer-events-none gradient-y-night-transparent"></div>
-  <div dir="ltr" class="resize-sensor"
-    style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;">
-    <div class="resize-sensor-expand"
-      style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;">
-      <div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 1439px; height: 10px;">
-      </div>
-    </div>
-    <div class="resize-sensor-shrink"
-      style="pointer-events: none; position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; z-index: -1; visibility: hidden; max-width: 100%;">
-      <div style="position: absolute; left: 0px; top: 0px; transition: all 0s ease 0s; width: 200%; height: 200%;">
-      </div>
-    </div>
-  </div> -->
 
   <footer class="footer" role="contentinfo">
     <nav class="footer-nav mb-16" aria-label="Footer Navigation">
       <div class="mb-80">
         <div class="row-nm footer-nav__wrapper">
-          <!-- <div class="column">
-            <div class="footer-nav__list">
-                <a href="/work" active="false" class="footer-nav__list--header">General</a>
-                <ul class="footer-nav__list--body">
-                  {{ $currentPage := . }}
-                  {{ range .Site.Menus.footer }}
-                  <li class="footer-nav__list--child">
-                    <a class="FooterNav-link{{if or ($currentPage.IsMenuCurrent "footer" .) ($currentPage.HasMenuCurrent "footer" .) }} active{{end}} mr-8"
-                      href="{{.URL}}" active="false">{{ .Name }}</a>
-                  </li>
-                  {{ end }}
-                </ul>
-            </div>
-          </div> -->
           <div class="col-lg-8 col-md-8 row-nm">
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-32">
               <div class="footer-nav__list">
-                <a href="/work" active="false" class="footer-nav__list--header">General</a>
+                <a href="/" active="false" class="footer-nav__list--header">General</a>
                 <ul class="footer-nav__list--body">
                   <li class="footer-nav__list--child">
                     <a class="" href="/" active="false">Home</a>
                   </li>
                   <li class="footer-nav__list--child">
-                    <a class="" href="/" active="false">About</a>
+                    <a class="" href="/about" active="false">About</a>
                   </li>
                   <li class="footer-nav__list--child">
-                    <a class="" href="/" active="false">Articles</a>
+                    <a class="" href="/articles" active="false">Articles</a>
                   </li>
                   <li class="footer-nav__list--child">
-                    <a class="" href="/" active="false">Notes</a>
+                    <a class="" href="/notes" active="false">Notes</a>
                   </li>
                   <li class="footer-nav__list--child">
                     <a class="" href="/contact" active="false">Contact</a>
@@ -65,10 +26,9 @@
                 </ul>
               </div>
             </div>
-
             <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-32">
               <div class="footer-nav__list">
-                <a href="/work" active="false" class="footer-nav__list--header">Work</a>
+                <a href="/" active="false" class="footer-nav__list--header">Work</a>
                 <ul class="footer-nav__list--body">
                   <li class="footer-nav__list--child">
                     <a class="" href="/" active="false">Things I’ve made</a>
@@ -81,9 +41,7 @@
                   </li>
                 </ul>
               </div>
-
             </div>
-
               <div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb-32">
                 <div class="footer-nav__list">
                   <a href="/work" active="false" class="footer-nav__list--header">Social</a>
@@ -112,11 +70,20 @@
 
             </div>
           <div class="col-lg-2 scroll-up">
-            <img src="{{ .Site.BaseURL }}img/arrow-up.svg" alt="">
+            <svg width="16px" height="22px" viewBox="0 0 16 22" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                <title>arrow-up</title>
+                <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round">
+                    <g id="Macbook-Air" transform="translate(-1139.000000, -128.000000)" stroke="#000000" stroke-width="2">
+                        <g id="arrow-up" transform="translate(1140.000000, 129.000000)">
+                            <line x1="7" y1="20" x2="7" y2="0" id="Path"></line>
+                            <polyline id="Path" points="0 7 7 0 14 7"></polyline>
+                        </g>
+                    </g>
+                </g>
+            </svg>
           </div>
         </div>
       </div>
-
       <section class="row-nm footer-copyright ">
         <p>&copy;{{ now.Format "2006"}} Murshid Azher, unless otherwise specified.</p>
         <p class="footer-copyright__mail"><a href="mailto:contact@murshidazher.com"
@@ -125,12 +92,9 @@
 
     </nav>
   </footer>
-
-
   <!-- Store JS files independently -->
   {{ $cloudinary := resources.Get "js/cloudinary-core-shrinkwrap.min.js" }}
   {{ $lazysizes := resources.Get "js/lazysizes.js" }}
-
   <!-- Concat JS, generate default app.js and app-likes -->
   {{ $defaultJS := slice $cloudinary $lazysizes | resources.Concat "app.js" }}
   <!-- Set default -->
@@ -148,7 +112,5 @@
     cl.responsive();
 
   </script>
-
   </body>
-
-  </html>
+</html>

@@ -656,8 +656,9 @@ a:hover {
 @media screen and (max-width: 500px) {
 
   .articles_list--item__body {
-    margin-bottom: 80px;
     width: 100%;
+    margin-right: 0px;
+    margin-left: 0px;
   }
 
   .hs-full-height {
