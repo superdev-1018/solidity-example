@@ -2,19 +2,87 @@
 /*
   You can use import statements to include partials:
  */
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -23,18 +91,31 @@ time, mark, audio, video {
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important; }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
   display: block; }
 
-ol, ul {
+ol,
+ul {
   list-style: none; }
 
-blockquote, q {
+blockquote,
+q {
   quotes: none; }
 
-blockquote:before, blockquote:after,
-q:before, q:after {
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
   content: '';
   content: none; }
 
@@ -65,10 +146,9 @@ img {
 .column {
   margin-right: 40px; }
 
-.column:last-of-type {
-  margin-right: 0; }
-
-header .row, .row .clients, .contact-bar {
+header .row,
+.row .clients,
+.contact-bar {
   align-items: center; }
 
 .intro {
@@ -86,7 +166,8 @@ hr {
   color: #ab865b;
   font-size: 0.875rem; }
 
-a.email-button, a.email {
+a.email-button,
+a.email {
   color: white;
   font-weight: 500;
   line-height: 1;
@@ -94,7 +175,8 @@ a.email-button, a.email {
   border: none;
   z-index: 2; }
 
-a.email-button:hover, a.email:hover {
+a.email-button:hover,
+a.email:hover {
   opacity: 0.8; }
 
 a.email-button {
@@ -122,7 +204,8 @@ a.email {
   width: 293.33333px;
   height: auto; }
 
-.thumbnails, .testimonials {
+.thumbnails,
+.testimonials {
   margin-bottom: 80px; }
 
 .question {
@@ -145,11 +228,14 @@ mark {
   margin-right: 10px;
   border-radius: 100%; }
 
-footer, footer a {
+footer,
+footer a {
   color: #9b9b9b; }
-  footer:active, footer a:active {
+  footer:active,
+  footer a:active {
     color: #9b9b9b; }
-  footer:visited, footer a:visited {
+  footer:visited,
+  footer a:visited {
     color: #9b9b9b; }
 
 @media screen and (min-width: 850px) {
@@ -161,7 +247,8 @@ footer, footer a {
     padding: 40px 0 0; }
   footer {
     padding: 40px 0; }
-  header, main {
+  header,
+  main {
     max-width: 85%; }
   .footer-nav {
     max-width: 85%; }
@@ -240,7 +327,8 @@ a {
   a:visited {
     color: #1623dd; }
 
-header, main {
+header,
+main {
   max-width: 960px;
   margin: 0 auto; }
 
@@ -261,7 +349,9 @@ header, main {
   .column:last-of-type {
     margin-right: 0; }
 
-header .row, .row .clients, .contact-bar {
+header .row,
+.row .clients,
+.contact-bar {
   align-items: center; }
 
 .intro {
@@ -326,6 +416,30 @@ aside.primary {
 \*------------------------------------*/
 :root {
   --space: calc(1rem / 2); }
+
+/*------------------------------------*\
+    #BASE: LINKS
+\*------------------------------------*/
+a:hover {
+  text-decoration: none; }
+
+a:active, a:focus {
+  outline: 1px dotted;
+  outline-offset: 4px; }
+
+a:before {
+  -webkit-transition: all 300ms ease-in-out;
+  -moz-transition: all 300ms ease-in-out;
+  -ms-transition: all 300ms ease-in-out;
+  -o-transition: all 300ms ease-in-out;
+  transition: all 300ms ease-in-out; }
+
+.no-focus {
+  outline: none;
+  outline-offset: none; }
+  .no-focus:active, .no-focus:focus {
+    outline: none;
+    outline-offset: none; }
 
 /*------------------------------------*\
     #BASE: QUOTES
@@ -1532,7 +1646,8 @@ a {
 
 .scroll-up {
   display: flex;
-  justify-content: flex-end; }
+  justify-content: flex-end;
+  cursor: pointer; }
   .scroll-up .img {
     margin: 1rem; }
 
@@ -1815,17 +1930,21 @@ a {
   break-inside: avoid; }
   .footer-nav__list .footer-nav__list--header {
     color: #000;
-    font-weight: 500; }
+    font-weight: 500;
+    text-decoration: none; }
   .footer-nav__list .footer-nav__list--body {
     list-style: none;
     margin: 1rem 0 0;
     padding: 0; }
     .footer-nav__list .footer-nav__list--body .footer-nav__list--child {
+      text-decoration: none;
       margin: .5rem 0;
       white-space: nowrap;
       overflow: hidden;
       width: 100%;
       text-overflow: ellipsis; }
+      .footer-nav__list .footer-nav__list--body .footer-nav__list--child a {
+        text-decoration: none; }
 
 .mb-80 {
   margin-bottom: 80px; }
@@ -1851,12 +1970,14 @@ a {
   background-size: 20px;
   transition: padding .2s ease;
   color: white;
-  text-decoration: none;
-  background-image: url(/img/arrow-right.svg); }
+  text-decoration: none; }
   .learn-more-button:hover {
     transition: padding .2s ease;
     padding-right: 35px;
     outline: 0; }
+
+.arrow-right {
+  background-image: url(/img/arrow-right.svg); }
 
 .scrolling-wrapper {
   overflow-x: scroll;
@@ -2041,6 +2162,9 @@ a.hs-featured-image-link {
   bottom: 0;
   display: block; }
 
+.logo {
+  text-decoration: none; }
+
 .post__meta-tag {
   margin: 16px 0 4px 0; }
   .post__meta-tag a {
@@ -2048,7 +2172,8 @@ a.hs-featured-image-link {
     font-size: .75em;
     padding: .25em .75em;
     background-color: #ebebfa;
-    border-radius: 99em; }
+    border-radius: 99em;
+    text-decoration: none; }
 
 .published-date {
   font-family: Circularstd, sans-serif;
@@ -2082,12 +2207,7 @@ strong {
 .post--body p {
   margin-bottom: 32px; }
   .post--body p a {
-    position: relative;
-    margin-right: 16px; }
-    .post--body p a::after {
-      padding-left: 1px;
-      content: '\2197';
-      position: absolute; }
+    position: relative; }
 
 .PostBody .intro {
   height: auto; }

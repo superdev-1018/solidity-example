@@ -16,33 +16,20 @@
 <section id="notes_list" class="row-nm m-120 mb-80 j-end">
   {{ range .Data.Pages }}
   <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="articles_list--item">
-      <!-- <img class="" srcset="
-      ../img/1.png 1x,
-      ../img/1@2x.png 2x,
-      ../img/1@3x.png 3x" alt="Latest work samples on Dribbble">-->
       <div class="articles_list--item__body">
         <div class="hs-featured-image-wrapper">
-          <!-- <time itemprop="datePublished"
-          class="post-date-inner">{{ .Date.Format "Mon, Jan 2, 2006" }}
-        </time> -->
-          <!-- <span class="post-date-inner">May 15, 2020</span> -->
+        <!-- <time itemprop="datePublished" class="post-date-inner">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>  -->
             <div title="" class="hs-featured-image-link">
               <span style="background:url(https://images.unsplash.com/photo-1534293507278-19b2539423f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80) no-repeat;" class="hs-featured-image">
               </span>
-
             </div>
         </div>
-
         <hr>
         {{ partial "post/tags.html" . }}
         <div class="articles_list--item__body--title">{{ .Title }}</div>
-        <!-- <time itemprop="datePublished"
-          class="inline-block mt-8 text-xs font-bold tracking-widest uppercase text-zenith">{{ .Date.Format "Mon, Jan 2, 2006" }}
-        </time> -->
-
         <p class="articles_list--item__body--desc">{{ .Description | markdownify }}</p>
         <div class="github-project__link">
-          <a href="{{ .Permalink }}" rel="noopener" class="learn-more-button w-inline-block filter-none" title="{{ .Title }}">Read more</a>
+          <a href="{{ .Permalink }}" rel="noopener" class="learn-more-button w-inline-block filter-none" title="{{ .Title }}" style="background-image: url({{ .Site.BaseURL }}img/icons/arrow-right.svg);">Read more</a>
         </div>
       </div>
   </article>

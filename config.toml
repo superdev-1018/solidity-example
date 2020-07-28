@@ -26,9 +26,9 @@ pygmentsCodeFences = true
   email = "studio@murshidazher.com"
   twitter = "https://twitter.com/murshidazher"
   github = "https://github.com/murshidazher"
-  linkedin = "https://linkedin.com/in/murshidazher/"
-  dribbble = "https://linkedin.com/in/murshidazher/"
-  instagram = "https://linkedin.com/in/murshidazher/"
+  linkedin = "https://linkedin.com/in/murshidazher"
+  dribbble = "https://dribbble.com/murshidazher"
+  instagram = "https://www.instagram.com/murshidazher"
   behance = "https://linkedin.com/in/murshidazher/"
 
 [taxonomies]
@@ -37,8 +37,8 @@ pygmentsCodeFences = true
 [outputs]
   home = [ "HTML", "RSS" ]
 
-# [markup.goldmark.renderer]
-#   unsafe = true
+[markup.goldmark.renderer]
+  unsafe = true
 
 [outputFormats]
 [outputFormats.RSS]

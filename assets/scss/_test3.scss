@@ -339,6 +339,7 @@ a:hover {
 
   display: flex;
   justify-content: flex-end;
+  cursor: pointer;
   // width: 30%;
 
   .img {
@@ -831,6 +832,7 @@ a:hover {
   .footer-nav__list--header {
     color: $black;
     font-weight: 500;
+    text-decoration: none;
   }
 
   .footer-nav__list--body {
@@ -839,11 +841,16 @@ a:hover {
     padding: 0;
 
     .footer-nav__list--child {
+      text-decoration: none;
       margin: .5rem 0;
       white-space: nowrap;
       overflow: hidden;
       width: 100%;
       text-overflow: ellipsis;
+
+      a {
+        text-decoration: none;
+      }
     }
 
   }
@@ -883,13 +890,18 @@ a:hover {
   transition: padding .2s ease;
   color: white;
   text-decoration: none;
-  background-image: url(/img/arrow-right.svg);
+
 
   &:hover {
     transition: padding .2s ease;
     padding-right: 35px;
     outline: 0;
   }
+}
+
+
+.arrow-right{
+  background-image: url(/img/arrow-right.svg);
 }
 
 .scrolling-wrapper {
@@ -1175,6 +1187,11 @@ a.hs-featured-image-link {
   display: block;
 }
 
+
+.logo {
+    text-decoration: none;
+}
+
 .post__meta-tag {
 
   margin: $base-unit * 4 0 $base-unit 0;
@@ -1186,6 +1203,7 @@ a.hs-featured-image-link {
     padding: .25em .75em;
     background-color: $link-color-light;
     border-radius: 99em;
+    text-decoration: none;
   }
 }
 
@@ -1241,7 +1259,6 @@ strong {
 
     a {
       position: relative;
-      margin-right: $base-unit * 4;
     }
   }
 }

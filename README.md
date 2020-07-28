@@ -6,7 +6,7 @@
 
 > A simple performant personal website made with [hugo](https://gohugo.io/).
 
-- Personal website made using World's fastest static side generator.
+- Personal website made using World's fastest static site generator.
 
 ## Links
 
