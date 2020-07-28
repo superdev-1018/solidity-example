@@ -1242,12 +1242,6 @@ strong {
     a {
       position: relative;
       margin-right: $base-unit * 4;
-      &::after {
-        padding-left: 1px;
-        // right: 8px;
-        content: '\2197';
-        position: absolute;
-      }
     }
   }
 }
