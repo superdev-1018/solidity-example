@@ -320,12 +320,9 @@ a:hover {
   }
 
   &.active {
+    color: #000;
     border-bottom: 2px solid #000;
     padding-bottom: 8px;
-  }
-
-  &:active {
-    color: #000;
   }
 
   &:visited {
@@ -334,13 +331,10 @@ a:hover {
 }
 
 
-
 .scroll-up {
-
   display: flex;
   justify-content: flex-end;
   cursor: pointer;
-  // width: 30%;
 
   .img {
     margin: 1rem;
@@ -351,7 +345,6 @@ a:hover {
 .center-max {
   max-width: 75%;
   margin: auto;
-  // background-color: lightblue;
 }
 
 
@@ -908,10 +901,6 @@ a:hover {
   overflow-x: scroll;
   overflow-y: hidden;
   white-space: nowrap;
-
-  // .card {
-  //   display: inline-block;
-  // }
 }
 
 .scrolling-wrapper-flexbox {
