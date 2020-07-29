@@ -1,4 +1,4 @@
-![murshid](https://raw.githubusercontent.com/murshidazher/murshid/master/themes/murshid-starter/static/img/favicon.png)
+![murshid](https://raw.githubusercontent.com/murshidazher/murshid/master/themes/murshid-starter/static/img/favicon-lg.png)
 
 # [murshidazher.com](https://reverent-brattain-0761ea.netlify.app/)
 
