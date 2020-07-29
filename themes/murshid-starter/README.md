@@ -1,4 +1,4 @@
-![murshid](https://raw.githubusercontent.com/murshidazher/murshid/master/themes/murshid-starter/static/img/favicon-lg.png)
+<img src="https://raw.githubusercontent.com/murshidazher/murshid/master/themes/murshid-starter/static/img/favicon-lg.png" width="75px">
 
 # murshid-starter
 
