@@ -2,4 +2,4 @@
 
 # murshid-starter
 
-> A simple starter theme for personal website.
+> A simple starter theme for personal website with layouts.
