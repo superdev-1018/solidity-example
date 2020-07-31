@@ -9,15 +9,13 @@
 - Personal website made using world's fastest static-site generator.
 
 ## Table of Contents
-- [murshidazher.com](#murshidazhercom)
-  - [Table of Contents](#table-of-contents)
-  - [Installing / Getting started](#installing--getting-started)
-    - [Initial Configuration](#initial-configuration)
-  - [Developing](#developing)
-    - [Building](#building)
-    - [Deploying / Publishing](#deploying--publishing)
-  - [Links](#links)
-  - [License](#license)
+- [Table of Contents](#table-of-contents)
+- [Installing / Getting started](#installing--getting-started)
+  - [Initial Configuration](#initial-configuration)
+- [Developing](#developing)
+- [Usage](#usage)
+- [Links](#links)
+- [License](#license)
   
 ## Installing / Getting started
 
