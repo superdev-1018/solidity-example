@@ -12,7 +12,7 @@ pygmentsCodeFences = true
 
 
 [params]
-  keywords = "Product Design, UX Design, UI Design, Front-end Web Development, Small businesses, Automation, Typography, Software Engineer, Developer"
+  keywords = "Product Design, UX Design, UI Design, Front-end, Web Development, Back-end, Small businesses, Automation, Typography, Software Engineer, Developer"
   description = "Murshid Azher is a professional designer and front-end web developer from Colombo, Sri Lanka. Read technical articles and notes on designing and coding websites."
   strapline = "Pixel pusher and data enthusiast"
   location = "Colombo, LK"
