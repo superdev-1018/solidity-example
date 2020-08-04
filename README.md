@@ -1,6 +1,6 @@
 <img src="https://raw.githubusercontent.com/murshidazher/murshid/master/themes/murshid-starter/static/img/favicon-lg.png" width="75px">
 
-# [murshidazher.com](https://reverent-brattain-0761ea.netlify.app/)
+# [murshidazher.com](https://www.murshidazher.com)
 
 ![netlify](https://img.shields.io/netlify/5bb22eef-8559-4079-be63-e42c63f63770?style=flat-square)
 
