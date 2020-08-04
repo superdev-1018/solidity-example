@@ -18,7 +18,7 @@ I’m in Colombo, on lockdown due to the Covid-19 Coronavirus outbreak. I’m we
 
 ### Current Projects
 
-- Creating custom data visualization charts using [Chart JS](https://canvasjs.com/react-charts/multiseries-chart/),  [rechart]() and [react-charts](https://www.npmjs.com/package/react-charts).
+- I'm currently learning to creating custom data visualization charts using [Chart JS](https://canvasjs.com/react-charts/multiseries-chart/),  [rechart]() and [react-charts](https://www.npmjs.com/package/react-charts).
 - I’m building a UI style guide generator with Eleventy, which takes a set of [design tokens](https://css-tricks.com/what-are-design-tokens/) stored as yaml data and turns them into Sass variables to use in your styles, and JSON to use in your templates. The idea is inspired by [Andy Bell’s Hylia Starter Kit](https://hylia.website/styleguide/).
 - I just launched [Local London](https://locallondon.life), a directory of London food & drink suppliers who deliver to your door. I’m working on the project with my friend Rozzy in response to the Covid-19 outbreak.
 - [Ed](https://twitter.com/Ed_Stephens_1) and I have been working on [AIN Jobs](https://www.jobs.angelinvestmentnetwork.co.uk/), a simple Gatsby powered jobsboard which uses Netlify Forms, Zapier, Airtable and Mailchimp to process data
