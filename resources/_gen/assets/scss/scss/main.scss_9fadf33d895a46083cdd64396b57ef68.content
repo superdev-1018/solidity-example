@@ -1589,12 +1589,12 @@ footer a {
   text-align: center; }
 
 h1 {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Recursive', sans-serif;
   line-height: 1.33;
   margin-bottom: 8px; }
 
 .logo {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Recursive', sans-serif;
   font-weight: 500; }
 
 .row-nm {
@@ -1903,7 +1903,7 @@ a {
   font-size: 0.75em; }
 
 .font-circular {
-  font-family: 'Epilogue', sans-serif; }
+  font-family: 'Recursive', sans-serif; }
 
 .mx-60 {
   max-width: 60ch; }
@@ -2057,7 +2057,7 @@ small {
         display: flex;
         justify-content: center;
         font-weight: 600;
-        font-family: 'Epilogue', sans-serif;
+        font-family: 'Recursive', sans-serif;
         color: #0500ff; }
 
 .fs-large {
@@ -2083,7 +2083,7 @@ small {
 .articles_list--item__body {
   margin-bottom: 80px; }
   .articles_list--item__body--title {
-    font-family: 'Epilogue', sans-serif;
+    font-family: 'Recursive', sans-serif;
     color: #000;
     font-size: 1.125rem; }
   .articles_list--item__body--desc {
@@ -2174,7 +2174,7 @@ a.hs-featured-image-link {
     text-decoration: none; }
 
 .published-date {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Recursive', sans-serif;
   color: #9b9b9b;
   font-size: 1rem;
   margin-top: 16px; }
