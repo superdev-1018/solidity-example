@@ -1760,6 +1760,8 @@ a {
     align-content: center; } }
 
 @media screen and (max-width: 850px) {
+  .mb-32-md {
+    margin-bottom: 2rem; }
   .hs-full-height .hs-featured-image {
     height: 320px; }
   .article_img {
@@ -2256,11 +2258,11 @@ strong {
   0% {
     fill: #f07575; }
   25% {
-    fill: #66b814; }
+    fill: #80e61a; }
   50% {
-    fill: #14b8b8; }
+    fill: #1ae6e6; }
   75% {
-    fill: #b375f0; }
+    fill: #801ae6; }
   100% {
     fill: #f07575; } }
 
