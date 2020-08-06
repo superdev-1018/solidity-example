@@ -7,6 +7,6 @@ slug = "contact"
 url = "contact"
 +++
 
-<div class="github-project__link align-center j-center">
-  <a href="mailto:hello@murshidazher.com" class="learn-more-button w-inline-block filter-none" title="Email Murshid Azher (hello@murshidazher.com)">Send me an email</a>
+<div class="link-arrow align-center j-center">
+  <a href="mailto:hello@murshidazher.com" class="learn-more-button w-inline-block" style="background-image: url(/img/icons/arrow-right.svg);" title="Email Murshid Azher (hello@murshidazher.com)">Send me an email</a>
 </div>

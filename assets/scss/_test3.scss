@@ -894,6 +894,16 @@ a:hover {
   color: white;
   text-decoration: none;
 
+  &--left {
+    padding-left: 30px;
+
+    &:hover {
+        transition: padding .2s ease;
+        padding-left: 35px;
+        outline: 0;
+    }
+  }
+
 
   &:hover {
     transition: padding .2s ease;
@@ -1353,4 +1363,22 @@ strong {
             color: $black;
         }
     }
+}
+
+
+.link-arrow {
+
+    a {
+        font-weight: 400;
+        color: $black;
+    }
+
+    &--left {
+
+    }
+
+    &--right {
+
+    }
+
 }

@@ -1981,6 +1981,12 @@ a {
   transition: padding .2s ease;
   color: white;
   text-decoration: none; }
+  .learn-more-button--left {
+    padding-left: 30px; }
+    .learn-more-button--left:hover {
+      transition: padding .2s ease;
+      padding-left: 35px;
+      outline: 0; }
   .learn-more-button:hover {
     transition: padding .2s ease;
     padding-right: 35px;
@@ -2001,7 +2007,7 @@ a {
 
 .scrolling-wrapper,
 .scrolling-wrapper-flexbox {
-  height: 21rem;
+  height: 22rem;
   -webkit-overflow-scrolling: touch; }
   .scrolling-wrapper::-webkit-scrollbar,
   .scrolling-wrapper-flexbox::-webkit-scrollbar {
@@ -2282,6 +2288,10 @@ strong {
   border-bottom: 1px solid #b7b7b7; }
 
 .articles_list--item__link a {
+  font-weight: 400;
+  color: #000; }
+
+.link-arrow a {
   font-weight: 400;
   color: #000; }
 
