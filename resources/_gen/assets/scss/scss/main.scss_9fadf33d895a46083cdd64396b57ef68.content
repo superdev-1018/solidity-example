@@ -357,6 +357,30 @@ header .row,
 .intro {
   align-items: flex-end; }
 
+@font-face {
+  font-family: 'Circularstd';
+  src: url("/fonts/CircularStd-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circularstd';
+  src: url("/fonts/CircularStd-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circularstd';
+  src: url("/fonts/CircularStd-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circularstd book';
+  src: url("/fonts/CircularStd-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal; }
+
 /*------------------------------------*\
     #ABSTRACTS: COLORS
 \*------------------------------------*/
@@ -1589,12 +1613,12 @@ footer a {
   text-align: center; }
 
 h1 {
-  font-family: 'Recursive', sans-serif;
+  font-family: 'Circularstd book', sans-serif;
   line-height: 1.33;
   margin-bottom: 8px; }
 
 .logo {
-  font-family: 'Recursive', sans-serif;
+  font-family: 'Circularstd', sans-serif;
   font-weight: 500; }
 
 .row-nm {
@@ -1903,7 +1927,7 @@ a {
   font-size: 0.75em; }
 
 .font-circular {
-  font-family: 'Recursive', sans-serif; }
+  font-family: 'Circularstd', sans-serif; }
 
 .mx-60 {
   max-width: 60ch; }
@@ -2057,7 +2081,7 @@ small {
         display: flex;
         justify-content: center;
         font-weight: 600;
-        font-family: 'Recursive', sans-serif;
+        font-family: 'Circularstd', sans-serif;
         color: #0500ff; }
 
 .fs-large {
@@ -2083,7 +2107,7 @@ small {
 .articles_list--item__body {
   margin-bottom: 80px; }
   .articles_list--item__body--title {
-    font-family: 'Recursive', sans-serif;
+    font-family: 'Circularstd', sans-serif;
     color: #000;
     font-size: 1.125rem; }
   .articles_list--item__body--desc {
@@ -2174,7 +2198,7 @@ a.hs-featured-image-link {
     text-decoration: none; }
 
 .published-date {
-  font-family: 'Recursive', sans-serif;
+  font-family: 'Circularstd', sans-serif;
   color: #9b9b9b;
   font-size: 1rem;
   margin-top: 16px; }
