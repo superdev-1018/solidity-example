@@ -63,6 +63,8 @@
     <!-- Load main.css-->
     <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">
     {{ else }}
+    <!-- Load Google fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Epilogue:wght@400;600&display=swap" rel="stylesheet">
     <!-- Set target path -->
     {{ $cssOpts := (dict "targetPath" "css/main.css" ) }}
     <!-- Pipe Sass to CSS, include options, add postCSS autoprefixer, minify and hash -->
