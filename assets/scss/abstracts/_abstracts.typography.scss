@@ -6,6 +6,31 @@
 * Courtesy of https://blog.codepen.io/2016/10/31/fluid-type-blogs/ and https://codepen.io/MadeByMike/pen/VvwqvW
 */
 
+@font-face {
+    font-family: 'Circularstd';
+    src: url('../fonts/CircularStd-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Circularstd';
+    src: url('../fonts/CircularStd-Black.otf') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Circularstd';
+    src: url('../fonts/CircularStd-Medium.otf') format('opentype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Circularstd book';
+    src: url('../fonts/CircularStd-Book.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+  }
+
 @function strip-unit($value) {
   @return $value / ($value * 0 + 1);
 }
@@ -40,7 +65,7 @@ $font-system-rg: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
 $font-system-md: Gothic A1, -apple-system, BlinkMacSystemFont, "Segoe UI",
   Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
   "Segoe UI Symbol";
-$font-system-mn: Gothic A1, "SF Mono", "Monaco", "Inconsolata", "Fira Mono",
+$font-system-mn: Menlo, "SF Mono", "Monaco", "Inconsolata", "Fira Mono",
   "Droid Sans Mono", "Source Code Pro", monospace;
 
 $font-weight-regular: 400;

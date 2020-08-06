@@ -77,6 +77,9 @@ And again you'd need to tell what the previous code actually does.
 
 - [ ] Add quick link navigation in blog.
 - [ ] Add apple-emoji font
+- [ ] Add node-arctic code colors 
+- [ ] Add custom theme colors
+- [ ] Change logo hover colors according to the theme
 
 ## Links
 

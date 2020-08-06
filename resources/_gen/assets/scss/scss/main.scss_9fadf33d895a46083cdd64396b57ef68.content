@@ -411,6 +411,30 @@ aside.primary {
 /*
 * Courtesy of https://blog.codepen.io/2016/10/31/fluid-type-blogs/ and https://codepen.io/MadeByMike/pen/VvwqvW
 */
+@font-face {
+  font-family: 'Circularstd';
+  src: url("../fonts/CircularStd-Bold.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circularstd';
+  src: url("../fonts/CircularStd-Black.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circularstd';
+  src: url("../fonts/CircularStd-Medium.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Circularstd book';
+  src: url("../fonts/CircularStd-Book.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal; }
+
 /*------------------------------------*\
     #ABSTRACTS: SPACING
 \*------------------------------------*/
@@ -498,7 +522,7 @@ li code {
 
 code,
 pre {
-  font-family: Menlo, Monaco, "Courier New", monospace; }
+  font-family: Menlo, 'Inconsolata', Monaco, "Courier New", monospace; }
 
 code {
   font-size: 85%;
@@ -1589,12 +1613,12 @@ footer a {
   text-align: center; }
 
 h1 {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Circularstd book', sans-serif;
   line-height: 1.33;
   margin-bottom: 8px; }
 
 .logo {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Circularstd book', sans-serif;
   font-weight: 500; }
 
 .row-nm {
@@ -1903,7 +1927,7 @@ a {
   font-size: 0.75em; }
 
 .font-circular {
-  font-family: 'Epilogue', sans-serif; }
+  font-family: 'Circularstd book', sans-serif; }
 
 .mx-60 {
   max-width: 60ch; }
@@ -2058,7 +2082,7 @@ small {
         display: flex;
         justify-content: center;
         font-weight: 600;
-        font-family: 'Epilogue', sans-serif;
+        font-family: 'Circularstd', sans-serif;
         color: #0500ff; }
 
 .fs-large {
@@ -2084,7 +2108,7 @@ small {
 .articles_list--item__body {
   margin-bottom: 80px; }
   .articles_list--item__body--title {
-    font-family: 'Epilogue', sans-serif;
+    font-family: 'Circularstd', sans-serif;
     color: #000;
     font-size: 1.125rem; }
   .articles_list--item__body--desc {
@@ -2165,7 +2189,7 @@ a.hs-featured-image-link {
   text-decoration: none; }
 
 .post__meta-tag {
-  margin: 16px 0 4px 0; }
+  margin: 16px 0 8px 0; }
   .post__meta-tag a {
     display: inline-flex;
     font-size: .75em;
@@ -2175,7 +2199,7 @@ a.hs-featured-image-link {
     text-decoration: none; }
 
 .published-date {
-  font-family: 'Epilogue', sans-serif;
+  font-family: 'Circularstd', sans-serif;
   color: #9b9b9b;
   font-size: 1rem;
   margin-top: 16px; }
