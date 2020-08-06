@@ -73,6 +73,11 @@ packagemanager deploy awesome-project -s server.com -u username -p password
 
 And again you'd need to tell what the previous code actually does.
 
+## TODO
+
+- [ ] Add quick link navigation in blog.
+- [ ] Add apple-emoji font
+
 ## Links
 
 A list of tools used to develop this project
