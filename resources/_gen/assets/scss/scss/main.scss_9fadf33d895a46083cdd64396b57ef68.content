@@ -411,30 +411,6 @@ aside.primary {
 /*
 * Courtesy of https://blog.codepen.io/2016/10/31/fluid-type-blogs/ and https://codepen.io/MadeByMike/pen/VvwqvW
 */
-@font-face {
-  font-family: 'Circularstd';
-  src: url("../fonts/CircularStd-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Circularstd';
-  src: url("../fonts/CircularStd-Black.otf") format("opentype");
-  font-weight: 900;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Circularstd';
-  src: url("../fonts/CircularStd-Medium.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Circularstd book';
-  src: url("../fonts/CircularStd-Book.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal; }
-
 /*------------------------------------*\
     #ABSTRACTS: SPACING
 \*------------------------------------*/
@@ -1613,12 +1589,12 @@ footer a {
   text-align: center; }
 
 h1 {
-  font-family: 'Circularstd book', sans-serif;
+  font-family: 'Epilogue', sans-serif;
   line-height: 1.33;
   margin-bottom: 8px; }
 
 .logo {
-  font-family: 'Circularstd book', sans-serif;
+  font-family: 'Epilogue', sans-serif;
   font-weight: 500; }
 
 .row-nm {
@@ -1927,7 +1903,7 @@ a {
   font-size: 0.75em; }
 
 .font-circular {
-  font-family: 'Circularstd book', sans-serif; }
+  font-family: 'Epilogue', sans-serif; }
 
 .mx-60 {
   max-width: 60ch; }
@@ -1987,7 +1963,6 @@ a {
   padding-right: 30px;
   padding-bottom: 5px;
   align-items: center;
-  filter: brightness(0) invert(1);
   background-repeat: no-repeat;
   background-position: 100% 50%;
   background-size: 20px;
@@ -2082,7 +2057,7 @@ small {
         display: flex;
         justify-content: center;
         font-weight: 600;
-        font-family: 'Circularstd', sans-serif;
+        font-family: 'Epilogue', sans-serif;
         color: #0500ff; }
 
 .fs-large {
@@ -2096,8 +2071,8 @@ small {
 .m-120 {
   margin-top: 120px; }
 
-.filter-none {
-  filter: brightness(0) invert(0); }
+.filter-inverse {
+  filter: brightness(0) invert(1); }
 
 .articles_list--item img {
   border-radius: 8px;
@@ -2108,7 +2083,7 @@ small {
 .articles_list--item__body {
   margin-bottom: 80px; }
   .articles_list--item__body--title {
-    font-family: 'Circularstd', sans-serif;
+    font-family: 'Epilogue', sans-serif;
     color: #000;
     font-size: 1.125rem; }
   .articles_list--item__body--desc {
@@ -2199,7 +2174,7 @@ a.hs-featured-image-link {
     text-decoration: none; }
 
 .published-date {
-  font-family: 'Circularstd', sans-serif;
+  font-family: 'Epilogue', sans-serif;
   color: #9b9b9b;
   font-size: 1rem;
   margin-top: 16px; }
@@ -2295,6 +2270,7 @@ strong {
   border-bottom: 1px solid #b7b7b7; }
 
 .articles_list--item__link a {
-  font-weight: 400; }
+  font-weight: 400;
+  color: #000; }
 
 /*# sourceMappingURL=main.css.map */

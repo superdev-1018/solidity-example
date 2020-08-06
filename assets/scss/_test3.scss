@@ -876,7 +876,7 @@ a:hover {
   padding-right: 30px;
   padding-bottom: 5px;
   align-items: center;
-  filter: brightness(0) invert(1);
+//   filter: brightness(0) invert(1);
   background-repeat: no-repeat;
   background-position: 100% 50%;
   background-size: 20px;
@@ -1052,7 +1052,11 @@ small {
 
 
 .filter-none {
-  filter: brightness(0) invert(0);
+//   filter: brightness(0) invert(0);
+}
+
+.filter-inverse {
+    filter: brightness(0) invert(1);
 }
 
 .articles_list {
@@ -1336,6 +1340,7 @@ strong {
     &__link {
         a {
             font-weight: 400;
+            color: $black;
         }
     }
 }
