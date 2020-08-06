@@ -2270,4 +2270,7 @@ strong {
   color: black;
   border-bottom: 1px solid #b7b7b7; }
 
+.articles_list--item__link a {
+  font-weight: 400; }
+
 /*# sourceMappingURL=main.css.map */
