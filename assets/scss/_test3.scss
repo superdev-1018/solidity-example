@@ -254,9 +254,11 @@ footer a {
 }
 
 h1 {
-  font-family: 'Circularstd book', sans-serif;
+  font-family: 'Circularstd', sans-serif;
   line-height: 1.33;
   margin-bottom: $base-unit * 2;
+  font-weight: 500;
+    font-style: normal;
 }
 
 .logo {
@@ -792,6 +794,10 @@ a:hover {
   font-family: 'Circularstd', sans-serif;
 }
 
+.font-circular-book {
+    font-family: 'Circularstd book', sans-serif;
+}
+
 .mx-60 {
   max-width: 60ch;
 }
@@ -1022,7 +1028,7 @@ small {
         display: flex;
         justify-content: center;
         font-weight: 600;
-        font-family: 'Circularstd', sans-serif;
+        font-family: 'Circularstd book', sans-serif;
         // margin-left: 0.1rem;
         // padding: .15rem;
         color: #0500ff;
@@ -1078,7 +1084,7 @@ small {
       margin-bottom: $gutter * 2;
 
       &--title {
-        font-family: 'Circularstd', sans-serif;
+        font-family: 'Circularstd book', sans-serif;
         color: $black;
         font-size: 1.125rem;
 

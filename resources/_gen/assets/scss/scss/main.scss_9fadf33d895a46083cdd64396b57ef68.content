@@ -86,7 +86,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   vertical-align: baseline;
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important; }
@@ -123,15 +122,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-h1 {
-  color: #000;
-  font-size: 1.5rem;
-  font-weight: 400; }
-
-h2 {
-  font-size: 1.25rem;
-  font-weight: 400; }
-
 img {
   max-width: 100%; }
 
@@ -145,14 +135,6 @@ img {
 
 .column {
   margin-right: 40px; }
-
-header .row,
-.row .clients,
-.contact-bar {
-  align-items: center; }
-
-.intro {
-  align-items: flex-end; }
 
 hr {
   width: 90px;
@@ -296,7 +278,6 @@ footer a {
   .clients {
     width: 100px; } }
 
-/*# sourceMappingURL=main.css.map */
 body {
   width: 100%;
   padding: 80px 0 0;
@@ -1613,9 +1594,11 @@ footer a {
   text-align: center; }
 
 h1 {
-  font-family: 'Circularstd book', sans-serif;
+  font-family: 'Circularstd', sans-serif;
   line-height: 1.33;
-  margin-bottom: 8px; }
+  margin-bottom: 8px;
+  font-weight: 500;
+  font-style: normal; }
 
 .logo {
   font-family: 'Circularstd', sans-serif;
@@ -1929,6 +1912,9 @@ a {
 .font-circular {
   font-family: 'Circularstd', sans-serif; }
 
+.font-circular-book {
+  font-family: 'Circularstd book', sans-serif; }
+
 .mx-60 {
   max-width: 60ch; }
 
@@ -2081,7 +2067,7 @@ small {
         display: flex;
         justify-content: center;
         font-weight: 600;
-        font-family: 'Circularstd', sans-serif;
+        font-family: 'Circularstd book', sans-serif;
         color: #0500ff; }
 
 .fs-large {
@@ -2107,7 +2093,7 @@ small {
 .articles_list--item__body {
   margin-bottom: 80px; }
   .articles_list--item__body--title {
-    font-family: 'Circularstd', sans-serif;
+    font-family: 'Circularstd book', sans-serif;
     color: #000;
     font-size: 1.125rem; }
   .articles_list--item__body--desc {
