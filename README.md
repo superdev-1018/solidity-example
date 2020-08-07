@@ -98,4 +98,4 @@ A list of tools used to develop this project
 
 ## License
 
-[MIT](https://github.com/murshidazher/murshid/blob/master/LICENSE) © Murshid Azher
+[MIT](https://github.com/murshidazher/murshid/blob/master/LICENSE) © Murshid Azher. IOS 13.3 emoji ® [Apple](https://www.apple.com/) and ® [emojipedia](https://emojipedia.org/apple/ios-13.3/)
