@@ -6,6 +6,11 @@
 
 - **SASS** — what are the uses
 
+## Links
+
+- [Curated collection](https://github.com/theNewDynamic/awesome-hugo) of hugo articles and examples.
+
 ## License
 
 [MIT](https://github.com/murshidazher/murshid/blob/master/LICENSE) © Murshid Azher
+
