@@ -254,16 +254,16 @@ footer a {
 }
 
 h1 {
-  font-family: 'Circularstd', sans-serif;
+  font-family: 'Khula', sans-serif;
   line-height: 1.33;
   margin-bottom: $base-unit * 2;
-  font-weight: 500;
+  font-weight: 600;
     font-style: normal;
 }
 
 .logo {
-  font-family: 'Circularstd', sans-serif;
-  font-weight: 500;
+  font-family: 'Khula', sans-serif;
+  font-weight: 600;
 }
 
 
@@ -795,11 +795,11 @@ a:hover {
 }
 
 .font-circular {
-  font-family: 'Circularstd', sans-serif;
+  font-family: 'Khula', sans-serif;
 }
 
 .font-circular-book {
-    font-family: 'Circularstd book', sans-serif;
+    font-family: 'Khula', sans-serif;
 }
 
 .mx-60 {
@@ -1043,7 +1043,7 @@ small {
         display: flex;
         justify-content: center;
         font-weight: 600;
-        font-family: 'Circularstd book', sans-serif;
+        font-family: 'Khula book', sans-serif;
         // margin-left: 0.1rem;
         // padding: .15rem;
         color: #0500ff;
@@ -1099,7 +1099,7 @@ small {
       margin-bottom: $gutter * 2;
 
       &--title {
-        font-family: 'Circularstd book', sans-serif;
+        font-family: 'Khula book', sans-serif;
         color: $black;
         font-size: 1.125rem;
 
@@ -1222,7 +1222,7 @@ a.hs-featured-image-link {
 }
 
 .published-date {
-  font-family: 'Circularstd', sans-serif;
+  font-family: 'Khula', sans-serif;
   color: $grey;
   font-size: 1rem;
   margin-top: $base-unit * 4;

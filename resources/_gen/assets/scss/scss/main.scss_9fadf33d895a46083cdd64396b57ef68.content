@@ -342,25 +342,29 @@ header .row,
   font-family: 'Circularstd';
   src: url("/fonts/CircularStd-Bold.otf") format("opentype");
   font-weight: 700;
-  font-style: normal; }
+  font-style: normal;
+  font-display: block; }
 
 @font-face {
   font-family: 'Circularstd';
   src: url("/fonts/CircularStd-Black.otf") format("opentype");
   font-weight: 900;
-  font-style: normal; }
+  font-style: normal;
+  font-display: block; }
 
 @font-face {
   font-family: 'Circularstd';
   src: url("/fonts/CircularStd-Medium.otf") format("opentype");
   font-weight: 500;
-  font-style: normal; }
+  font-style: normal;
+  font-display: block; }
 
 @font-face {
   font-family: 'Circularstd book';
   src: url("/fonts/CircularStd-Book.otf") format("opentype");
   font-weight: 400;
-  font-style: normal; }
+  font-style: normal;
+  font-display: block; }
 
 /*------------------------------------*\
     #ABSTRACTS: COLORS
@@ -1594,15 +1598,15 @@ footer a {
   text-align: center; }
 
 h1 {
-  font-family: 'Circularstd', sans-serif;
+  font-family: 'Khula', sans-serif;
   line-height: 1.33;
   margin-bottom: 8px;
-  font-weight: 500;
+  font-weight: 600;
   font-style: normal; }
 
 .logo {
-  font-family: 'Circularstd', sans-serif;
-  font-weight: 500; }
+  font-family: 'Khula', sans-serif;
+  font-weight: 600; }
 
 .row-nm {
   display: flex;
@@ -1912,10 +1916,10 @@ a {
   font-size: 0.75em; }
 
 .font-circular {
-  font-family: 'Circularstd', sans-serif; }
+  font-family: 'Khula', sans-serif; }
 
 .font-circular-book {
-  font-family: 'Circularstd book', sans-serif; }
+  font-family: 'Khula', sans-serif; }
 
 .mx-60 {
   max-width: 60ch; }
@@ -1982,7 +1986,8 @@ a {
   color: white;
   text-decoration: none; }
   .learn-more-button--left {
-    padding-left: 30px; }
+    padding-left: 30px;
+    background-position: 0% 50%; }
     .learn-more-button--left:hover {
       transition: padding .2s ease;
       padding-left: 35px;
@@ -2075,7 +2080,7 @@ small {
         display: flex;
         justify-content: center;
         font-weight: 600;
-        font-family: 'Circularstd book', sans-serif;
+        font-family: 'Khula book', sans-serif;
         color: #0500ff; }
 
 .fs-large {
@@ -2101,7 +2106,7 @@ small {
 .articles_list--item__body {
   margin-bottom: 80px; }
   .articles_list--item__body--title {
-    font-family: 'Circularstd book', sans-serif;
+    font-family: 'Khula book', sans-serif;
     color: #000;
     font-size: 1.125rem; }
   .articles_list--item__body--desc {
@@ -2192,7 +2197,7 @@ a.hs-featured-image-link {
     text-decoration: none; }
 
 .published-date {
-  font-family: 'Circularstd', sans-serif;
+  font-family: 'Khula', sans-serif;
   color: #9b9b9b;
   font-size: 1rem;
   margin-top: 16px; }
