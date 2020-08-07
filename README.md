@@ -75,11 +75,15 @@ And again you'd need to tell what the previous code actually does.
 
 ## TODO
 
-- [ ] Add quick link navigation in blog.
-- [ ] Add apple-emoji font
-- [ ] Add node-arctic code colors 
-- [ ] Add custom theme colors
-- [ ] Change logo hover colors according to the theme
+- [ ] Add quick link navigation in a single blog post.
+- [ ] Add apple-emoji font.
+- [ ] Add node-arctic code colors. 
+- [ ] Add custom theme colors.
+- [ ] Change logo hover colors according to the theme.
+- [ ] Add search functionality for blog.
+- [ ] Add `RSS` feed for the blog.
+- [ ] Add a way to display a collection of liked posts.
+- [ ] Add detailed projects section.
 
 ## Links
 
