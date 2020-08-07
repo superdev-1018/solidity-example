@@ -84,6 +84,7 @@ And again you'd need to tell what the previous code actually does.
 - [ ] Add `RSS` feed for the blog.
 - [ ] Add a way to display a collection of liked posts.
 - [ ] Add detailed projects section.
+- [ ] Include pagination.
 
 ## Links
 
