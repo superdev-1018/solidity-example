@@ -8,7 +8,8 @@
 
 ## Links
 
-- [Curated collection](https://github.com/theNewDynamic/awesome-hugo) of hugo articles and examples.
+- [Curated collection](https://github.com/theNewDynamic/awesome-hugo) of hugo articles and examples and [extension](https://github.com/theNewDynamic/language-hugo-vscode).
+- Get top 5 github links [Hugo data](https://gohugo.io/templates/data-templates/)
 
 ## License
 

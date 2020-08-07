@@ -282,7 +282,7 @@ body {
   width: 100%;
   padding: 80px 0 0;
   font-family: "Graphik", sans-serif;
-  color: #57586e;
+  color: #747474;
   font-size: 1rem;
   line-height: 1.5; }
 

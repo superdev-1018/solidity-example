@@ -75,6 +75,7 @@ And again you'd need to tell what the previous code actually does.
 
 ## TODO
 
+- [ ] SEO the website
 - [ ] Add quick link navigation in a single blog post.
 - [ ] Add apple-emoji font.
 - [ ] Add node-arctic code colors. 
