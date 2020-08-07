@@ -257,13 +257,13 @@ h1 {
   font-family: 'Khula', sans-serif;
   line-height: 1.33;
   margin-bottom: $base-unit * 2;
-  font-weight: 600;
+  font-weight: 700;
     font-style: normal;
 }
 
 .logo {
   font-family: 'Khula', sans-serif;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 
@@ -827,6 +827,11 @@ a:hover {
   font-weight: 500;
 }
 
+
+.fw-600 {
+    font-weight: 600;
+  }
+
 .footer-nav__list {
   page-break-inside: avoid;
   -moz-column-break-inside: avoid;
@@ -834,7 +839,7 @@ a:hover {
 
   .footer-nav__list--header {
     color: $black;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none;
   }
 

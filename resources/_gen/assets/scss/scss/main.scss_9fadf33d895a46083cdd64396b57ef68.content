@@ -338,34 +338,6 @@ header .row,
 .intro {
   align-items: flex-end; }
 
-@font-face {
-  font-family: 'Circularstd';
-  src: url("/fonts/CircularStd-Bold.otf") format("opentype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Circularstd';
-  src: url("/fonts/CircularStd-Black.otf") format("opentype");
-  font-weight: 900;
-  font-style: normal;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Circularstd';
-  src: url("/fonts/CircularStd-Medium.otf") format("opentype");
-  font-weight: 500;
-  font-style: normal;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Circularstd book';
-  src: url("/fonts/CircularStd-Book.otf") format("opentype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: block; }
-
 /*------------------------------------*\
     #ABSTRACTS: COLORS
 \*------------------------------------*/
@@ -1601,12 +1573,12 @@ h1 {
   font-family: 'Khula', sans-serif;
   line-height: 1.33;
   margin-bottom: 8px;
-  font-weight: 600;
+  font-weight: 700;
   font-style: normal; }
 
 .logo {
   font-family: 'Khula', sans-serif;
-  font-weight: 600; }
+  font-weight: 700; }
 
 .row-nm {
   display: flex;
@@ -1939,13 +1911,16 @@ a {
 .fw-500 {
   font-weight: 500; }
 
+.fw-600 {
+  font-weight: 600; }
+
 .footer-nav__list {
   page-break-inside: avoid;
   -moz-column-break-inside: avoid;
   break-inside: avoid; }
   .footer-nav__list .footer-nav__list--header {
     color: #000;
-    font-weight: 500;
+    font-weight: 600;
     text-decoration: none; }
   .footer-nav__list .footer-nav__list--body {
     list-style: none;
