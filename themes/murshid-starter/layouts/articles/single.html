@@ -5,7 +5,16 @@
     <div class="column center w-full">
 
       <h1 class="align-center">
-      {{ .Title }}{{ if .Params.emoji }}<span class="fs-large">{{ .Params.emoji }}</span>{{ end }}
+      {{ .Title }}
+      {{ if .Params.emoji }}
+        {{ $alias := .Params.emoji }}
+        {{ range first 1 (where .Site.Data.emoji.ios13 "alias" "eq" $alias) }}
+            <!-- (where .Site.Data.petiteannonce "cityName" "eq" .Params.name) -->
+            <span class="fs-large">
+                <img width="32" height="32" class="emoji--fix" title="{{ .title }}" src="{{ .link }}"/>
+            </span>
+        {{ end }}
+        {{ end }}
       </h1>
     </div>
   </header>
