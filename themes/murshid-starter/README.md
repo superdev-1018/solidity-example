@@ -14,6 +14,8 @@
 - [Perfect meta](https://www.skcript.com/svr/perfect-seo-meta-tags-with-hugo/)
 - [Superb site for Shortcodes and Hugo updates](https://gohugohq.com/partials/emojis-shortcode-for-hugo/)
 - [How To Change The Links That Appear Under Your Site On Google](https://www.create.net/support/how-to-change-the-links-that-appear-under-your-site-on-google)
+- [ifttt](https://ifttt.com/join)
+- [pocket + ifttt](https://ifttt.com/connect/feed/pocket)
 
 ## License
 
