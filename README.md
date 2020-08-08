@@ -92,6 +92,7 @@ And again you'd need to tell what the previous code actually does.
 - [ ] Add a separate about me section for the site.
 - [ ] Add a work with me section for the site.
 - [ ] Add service worker for offline capabilities.
+- [ ] Add Sitemap and robots.txt .
 
 ## Keep in Mind
 
