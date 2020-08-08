@@ -1776,6 +1776,12 @@ a {
     max-width: 8.33333333%; }
   .mb-32 {
     margin-bottom: 32px; }
+  .footer__quote {
+    margin-top: 8px;
+    text-align: start;
+    justify-content: flex-start; }
+  .footer-copyright__mail {
+    margin-top: 8px; }
   .intro-sm {
     height: 160px;
     align-items: flex-end; }
@@ -2277,5 +2283,8 @@ strong {
 .link-arrow a {
   font-weight: 400;
   color: #000; }
+
+.align-end {
+  text-align: end; }
 
 /*# sourceMappingURL=main.css.map */

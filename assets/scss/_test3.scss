@@ -358,6 +358,7 @@ a:hover {
     flex: 1;
   }
 
+
   .col-lg-8 {
     @include make-col(8, 12);
   }
@@ -590,6 +591,16 @@ a:hover {
   .mb-32 {
     margin-bottom: 32px;
   }
+
+  .footer__quote {
+    margin-top: $base-unit * 2;
+    text-align: start;
+    justify-content: flex-start;
+}
+
+.footer-copyright__mail {
+    margin-top: $base-unit * 2;
+}
 
 
   .intro-sm {
@@ -1390,5 +1401,9 @@ strong {
 
     }
 
+}
+
+.align-end {
+    text-align: end;
 }
 

@@ -2,7 +2,7 @@
 <article id="content" class="Post">
   <header id="{{ .Slug }}" class="row-nm m-32 center intro-sm">
     <div class="column center w-full">
-      <h1 class="align-center">{{ .Title }}
+      <h1 class="center align-center">{{ .Title }}
         {{ if .Params.emoji }}
         {{ $alias := .Params.emoji }}
         {{ range first 1 (where .Site.Data.emoji.ios13 "alias" "eq" $alias) }}

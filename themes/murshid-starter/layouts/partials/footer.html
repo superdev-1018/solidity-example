@@ -87,8 +87,8 @@
             </div>
         </div>
         <section class="row-nm footer-copyright ">
-            <p>&copy;{{ now.Format "2006"}} {{ .Site.Author.name }}, unless otherwise specified.</p>
-            <p class="center align-center"><span>Have a great day.</span>
+            <p class="col-lg-4 col-md-8">&copy;{{ now.Format "2006"}} {{ .Site.Author.name }}, unless otherwise specified.</p>
+            <p class="col-lg-4 col-md-6 center align-center footer__quote">Have a great day.
                 {{ $alias := ":kissing_heart:" }}
                 {{ range first 1 (where .Site.Data.emoji.ios13 "alias" "eq" $alias) }}
                     <!-- (where .Site.Data.petiteannonce "cityName" "eq" .Params.name) -->
@@ -97,7 +97,7 @@
                     </span>
                 {{ end }}
             </p>
-            <p class="footer-copyright__mail"><a href="mailto:{{ .Site.Author.email }}"
+            <p class="col-lg-4 col-md-6 footer-copyright__mail align-end"><a href="mailto:{{ .Site.Author.email }}"
                     title="Email Murshid Azher ({{ .Site.Author.email }})">{{ .Site.Author.email }}</a></p>
         </section>
     </nav>
