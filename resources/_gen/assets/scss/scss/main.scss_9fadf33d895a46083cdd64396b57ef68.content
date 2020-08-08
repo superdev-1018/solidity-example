@@ -2069,6 +2069,11 @@ small {
   font-weight: lighter;
   color: #747474; }
 
+.emoji {
+  font-size: .75rem;
+  font-weight: lighter;
+  color: #747474; }
+
 .no-outline:active, .no-outline:focus {
   outline: 0;
   outline-offset: 0; }
