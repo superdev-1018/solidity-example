@@ -4,7 +4,7 @@ date = "2017-05-02T22:05:42+01:00"
 description = "What I’m doing now, what I’m choosing to focus my time and attention on. Maintaining a page like this is an incredibly effective way of staying on track and blocking out the noise"
 slug = "now"
 url = "now"
-emoji = "🦠"
+emoji = ":microbe:"
 +++
 
 I’m in Colombo, on lockdown due to the Covid-19 Coronavirus outbreak. I’m well, but I’m at home to help prevent the spread. This is how I’m spending my time right now.

@@ -1,0 +1,9 @@
+<!-- {{ .Get 0 | emojify }} -->
+{{ $alias := .Get 0 }}
+{{ $size := .Get 1 }}
+{{ $default_size := 24 }}
+{{ range first 1 (where .Site.Data.emoji.ios13 "alias" "eq" $alias) }}
+    <span class="fs-large">
+        <img width="{{ $size | default $default_size }}" height="{{ $size | default $default_size }}" title="{{ .title }}" src="{{ .link }}"/><!-- /.Emoji -->
+    </span><!-- /.Emoji Wrapper -->
+{{ end }}

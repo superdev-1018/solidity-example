@@ -48,7 +48,7 @@
   alias: ":text:"
 - title: "Face Blowing a Kiss"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/face-throwing-a-kiss_1f618.png
-  alias: ":text:"
+  alias: ":kissing_heart:"
 - title: "Kissing Face"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/kissing-face_1f617.png
   alias: ":text:"
@@ -90,7 +90,7 @@
   alias: ":text:"
 - title: "Thinking Face"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/thinking-face_1f914.png
-  alias: ":text:"
+  alias: ":thinking:"
 - title: "Zipper-Mouth Face"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/zipper-mouth-face_1f910.png
   alias: ":text:"
@@ -645,22 +645,22 @@
   alias: ":text:"
 - title: "Call Me Hand"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/call-me-hand_1f919.png
-  alias: ":text:"
+  alias: ":call_me_hand:"
 - title: "Call Me Hand: Light Skin Tone"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/call-me-hand_emoji-modifier-fitzpatrick-type-1-2_1f919-1f3fb_1f3fb.png
-  alias: ":text:"
+  alias: ":call_me_hand_light:"
 - title: "Call Me Hand: Medium-Light Skin Tone"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/call-me-hand_emoji-modifier-fitzpatrick-type-3_1f919-1f3fc_1f3fc.png
-  alias: ":text:"
+  alias: ":call_me_hand_medium_light:"
 - title: "Call Me Hand: Medium Skin Tone"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/call-me-hand_emoji-modifier-fitzpatrick-type-4_1f919-1f3fd_1f3fd.png
-  alias: ":text:"
+  alias: ":call_me_hand_medium:"
 - title: "Call Me Hand: Medium-Dark Skin Tone"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/call-me-hand_emoji-modifier-fitzpatrick-type-5_1f919-1f3fe_1f3fe.png
-  alias: ":text:"
+  alias: ":call_me_hand_medium_dark:"
 - title: "Call Me Hand: Dark Skin Tone"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/call-me-hand_emoji-modifier-fitzpatrick-type-6_1f919-1f3ff_1f3ff.png
-  alias: ":text:"
+  alias: ":call_me_hand_dark:"
 - title: "Backhand Index Pointing Left"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/white-left-pointing-backhand-index_1f448.png
   alias: ":text:"
@@ -771,22 +771,22 @@
   alias: ":text:"
 - title: "Thumbs Up"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/thumbs-up-sign_1f44d.png
-  alias: ":text:"
+  alias: ":thumbsup:"
 - title: "Thumbs Up: Light Skin Tone"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/thumbs-up-sign_emoji-modifier-fitzpatrick-type-1-2_1f44d-1f3fb_1f3fb.png
-  alias: ":text:"
+  alias: ":thumbsup_light:"
 - title: "Thumbs Up: Medium-Light Skin Tone"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/thumbs-up-sign_emoji-modifier-fitzpatrick-type-3_1f44d-1f3fc_1f3fc.png
-  alias: ":text:"
+  alias: ":thumbsup_medium_light:"
 - title: "Thumbs Up: Medium Skin Tone"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/thumbs-up-sign_emoji-modifier-fitzpatrick-type-4_1f44d-1f3fd_1f3fd.png
-  alias: ":text:"
+  alias: ":thumbsup_medium:"
 - title: "Thumbs Up: Medium-Dark Skin Tone"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/thumbs-up-sign_emoji-modifier-fitzpatrick-type-5_1f44d-1f3fe_1f3fe.png
-  alias: ":text:"
+  alias: ":thumbsup_medium_dark:"
 - title: "Thumbs Up: Dark Skin Tone"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/thumbs-up-sign_emoji-modifier-fitzpatrick-type-6_1f44d-1f3ff_1f3ff.png
-  alias: ":text:"
+  alias: ":thumbsup_dark:"
 - title: "Thumbs Down"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/thumbs-down-sign_1f44e.png
   alias: ":text:"
@@ -3447,22 +3447,22 @@
   alias: ":text:"
 - title: "Baby Angel"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/baby-angel_1f47c.png
-  alias: ":text:"
+  alias: ":angel:"
 - title: "Baby Angel: Light Skin Tone"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/baby-angel_emoji-modifier-fitzpatrick-type-1-2_1f47c-1f3fb_1f3fb.png
-  alias: ":text:"
+  alias: ":angel_light:"
 - title: "Baby Angel: Medium-Light Skin Tone"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/baby-angel_emoji-modifier-fitzpatrick-type-3_1f47c-1f3fc_1f3fc.png
-  alias: ":text:"
+  alias: ":angel_medium_light:"
 - title: "Baby Angel: Medium Skin Tone"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/baby-angel_emoji-modifier-fitzpatrick-type-4_1f47c-1f3fd_1f3fd.png
-  alias: ":text:"
+  alias: ":angel_light:"
 - title: "Baby Angel: Medium-Dark Skin Tone"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/baby-angel_emoji-modifier-fitzpatrick-type-5_1f47c-1f3fe_1f3fe.png
-  alias: ":text:"
+  alias: ":angel_medium_dark:"
 - title: "Baby Angel: Dark Skin Tone"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/baby-angel_emoji-modifier-fitzpatrick-type-6_1f47c-1f3ff_1f3ff.png
-  alias: ":text:"
+  alias: ":angel_dark:"
 - title: "Santa Claus"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/father-christmas_1f385.png
   alias: ":text:"
@@ -6078,7 +6078,7 @@
   alias: ":text:"
 - title: "Microbe"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/microbe_1f9a0.png
-  alias: ":text:"
+  alias: ":microbe:"
 - title: "Bouquet"
   link: https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/bouquet_1f490.png
   alias: ":text:"

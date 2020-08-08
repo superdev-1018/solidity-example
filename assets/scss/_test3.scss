@@ -251,6 +251,7 @@ footer a {
 
 .align-center {
   text-align: center;
+  align-items: center;
 }
 
 h1 {
@@ -1059,7 +1060,9 @@ small {
 
 .fs-large {
   margin-left: .5rem;
-  font-size: 1.5em;
+  font-size: .75rem;
+  font-weight: lighter;
+  color: $color;
 }
 
 .no-outline {
@@ -1388,3 +1391,4 @@ strong {
     }
 
 }
+

@@ -3,7 +3,15 @@
 
 <header id="tags" class="row-nm m-32 center intro-sm">
   <div class="column center w-full">
-    <h1 class="align-center">I publish my thoughts occasionally <span class="fs-large">🤔</span> </h1>
+    <h1 class="align-center">I publish my thoughts occasionally
+        {{ $alias := ":thinking:" }}
+        {{ range first 1 (where .Site.Data.emoji.ios13 "alias" "eq" $alias) }}
+            <!-- (where .Site.Data.petiteannonce "cityName" "eq" .Params.name) -->
+            <span class="fs-large">
+                <img width="32" height="32" title="{{ .title }}" src="{{ .link }}"/>
+            </span>
+        {{ end }}
+    </h1>
   </div>
 </header>
 <section class="row-nm align-center j-center">

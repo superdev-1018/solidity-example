@@ -88,6 +88,15 @@
         </div>
         <section class="row-nm footer-copyright ">
             <p>&copy;{{ now.Format "2006"}} {{ .Site.Author.name }}, unless otherwise specified.</p>
+            <p class="center align-center"><span>Have a great day.</span>
+                {{ $alias := ":kissing_heart:" }}
+                {{ range first 1 (where .Site.Data.emoji.ios13 "alias" "eq" $alias) }}
+                    <!-- (where .Site.Data.petiteannonce "cityName" "eq" .Params.name) -->
+                    <span class="fs-large">
+                        <img width="20" height="20" title="{{ .title }}" src="{{ .link }}"/>
+                    </span>
+                {{ end }}
+            </p>
             <p class="footer-copyright__mail"><a href="mailto:{{ .Site.Author.email }}"
                     title="Email Murshid Azher ({{ .Site.Author.email }})">{{ .Site.Author.email }}</a></p>
         </section>

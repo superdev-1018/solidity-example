@@ -1567,7 +1567,8 @@ footer a {
   justify-content: center; }
 
 .align-center {
-  text-align: center; }
+  text-align: center;
+  align-items: center; }
 
 h1 {
   font-family: 'Khula', sans-serif;
@@ -2060,7 +2061,9 @@ small {
 
 .fs-large {
   margin-left: .5rem;
-  font-size: 1.5em; }
+  font-size: .75rem;
+  font-weight: lighter;
+  color: #747474; }
 
 .no-outline:active, .no-outline:focus {
   outline: 0;

@@ -10,6 +10,9 @@
 
 - [Curated collection](https://github.com/theNewDynamic/awesome-hugo) of hugo articles and examples and [extension](https://github.com/theNewDynamic/language-hugo-vscode).
 - Get top 5 github links [Hugo data](https://gohugo.io/templates/data-templates/)
+- [SEO and RSS](https://keithpblog.org/post/hugo-website-seo/)
+- [Perfect meta](https://www.skcript.com/svr/perfect-seo-meta-tags-with-hugo/)
+- [Superb site for Shortcodes and Hugo updates](https://gohugohq.com/partials/emojis-shortcode-for-hugo/)
 
 ## License
 

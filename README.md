@@ -75,9 +75,9 @@ And again you'd need to tell what the previous code actually does.
 
 ## TODO
 
-- [ ] SEO the website
+- [ ] SEO the website.
 - [ ] Add quick link navigation in a single blog post.
-- [ ] Add apple-emoji font.
+- [x] Add apple-emoji font.
 - [ ] Add node-arctic code colors. 
 - [ ] Add custom theme colors.
 - [ ] Change logo hover colors according to the theme.
@@ -86,6 +86,16 @@ And again you'd need to tell what the previous code actually does.
 - [ ] Add a way to display a collection of liked posts.
 - [ ] Add detailed projects section.
 - [ ] Include pagination.
+- [ ] Check footer copyright responsiveness.
+- [ ] Add preload functionality for the site.
+- [ ] Add resume for the site.
+- [ ] Add a separate about me section for the site.
+- [ ] Add a work with me section for the site.
+- [ ] Add service worker for offline capabilities.
+
+## Keep in Mind
+
+- **Syntax** - syntax highlight isn't working as it's expected to work.
 
 ## Links
 
@@ -101,5 +111,5 @@ A list of tools used to develop this project
 
 [MIT](https://github.com/murshidazher/murshid/blob/master/LICENSE) © Murshid Azher.
 
-[IOS 13.3 emoji](https://emojipedia.org/apple/ios-13.3/) and [Emoji alias](https://github.com/onmyway133/emoji) ® Apple and ® Emojipedia.
+[IOS 13.3 emoji](https://emojipedia.org/apple/ios-13.3/) and [Emoji alias](https://github.com/ikatyang/emoji-cheat-sheet) ® Apple and ® Emojipedia.
 
