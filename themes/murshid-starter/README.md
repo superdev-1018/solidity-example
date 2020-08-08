@@ -13,6 +13,7 @@
 - [SEO and RSS](https://keithpblog.org/post/hugo-website-seo/)
 - [Perfect meta](https://www.skcript.com/svr/perfect-seo-meta-tags-with-hugo/)
 - [Superb site for Shortcodes and Hugo updates](https://gohugohq.com/partials/emojis-shortcode-for-hugo/)
+- [How To Change The Links That Appear Under Your Site On Google](https://www.create.net/support/how-to-change-the-links-that-appear-under-your-site-on-google)
 
 ## License
 

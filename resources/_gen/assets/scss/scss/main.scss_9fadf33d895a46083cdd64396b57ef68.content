@@ -291,7 +291,7 @@ footer {
   background-color: #fafafa95; }
 
 h1 {
-  color: #000;
+  color: #111;
   font-size: 1.5rem;
   font-weight: 400; }
 
@@ -1415,13 +1415,13 @@ html {
   background-color: #542bff; }
 
 .logo {
-  color: #000; }
+  color: #111; }
 
 body {
   background-color: #fff; }
 
 .text-black {
-  color: #000; }
+  color: #111; }
 
 .intro {
   height: 240px; }
@@ -1453,7 +1453,7 @@ a.email {
 a.email-button {
   border-radius: 4px;
   padding: 11px;
-  background-color: #000; }
+  background-color: #111; }
   a.email-button img {
     vertical-align: middle; }
 
@@ -1483,7 +1483,7 @@ a.email {
   margin-bottom: 80px; }
 
 .question {
-  color: #000;
+  color: #111;
   font-weight: 400;
   margin-bottom: 20px; }
 
@@ -1513,7 +1513,7 @@ mark {
   position: relative;
   box-sizing: border-box;
   border-radius: 4px;
-  background: #000; }
+  background: #111; }
   .github-project:not(:last-child) {
     margin-right: 40px; }
   .github-project .github-project__wrapper {
@@ -1601,7 +1601,7 @@ a {
 .PostBody h5,
 .PostBody h6 {
   margin-top: 2.4rem;
-  color: #000; }
+  color: #111; }
 
 .PostBody h3 {
   font-size: 1.125rem;
@@ -1858,8 +1858,6 @@ a {
     margin-right: 20px; }
   .m-32 {
     margin-top: 40px; }
-  .footer-copyright__mail {
-    display: none; }
   .footer-nav {
     margin: 0 auto; }
   .logo {
@@ -1926,7 +1924,7 @@ a {
   -moz-column-break-inside: avoid;
   break-inside: avoid; }
   .footer-nav__list .footer-nav__list--header {
-    color: #000;
+    color: #111;
     font-weight: 600;
     text-decoration: none; }
   .footer-nav__list .footer-nav__list--body {
@@ -2091,7 +2089,7 @@ small {
   margin-bottom: 80px; }
   .articles_list--item__body--title {
     font-family: 'Khula book', sans-serif;
-    color: #000;
+    color: #111;
     font-size: 1.125rem; }
   .articles_list--item__body--desc {
     white-space: initial;
@@ -2194,14 +2192,14 @@ strong {
   font-weight: 600; }
 
 .Post .heading-anchor {
-  color: #000;
+  color: #111;
   text-decoration: none; }
   .Post .heading-anchor:hover {
     color: #1623dd; }
   .Post .heading-anchor:active {
     color: #1623dd; }
   .Post .heading-anchor:visited {
-    color: #000; }
+    color: #111; }
 
 .mt-48 {
   margin-top: 112px; }
@@ -2278,13 +2276,16 @@ strong {
 
 .articles_list--item__link a {
   font-weight: 400;
-  color: #000; }
+  color: #111; }
 
 .link-arrow a {
   font-weight: 400;
-  color: #000; }
+  color: #111; }
 
 .align-end {
   text-align: end; }
+
+.emoji--fix {
+  margin-bottom: -2px; }
 
 /*# sourceMappingURL=main.css.map */
