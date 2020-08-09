@@ -2,7 +2,7 @@
 title: "Using Current Date and Time In VS Code Snippets"
 date: 2020-08-09T21:48:48+05:30
 draft: false
-description: "How to add dates, title, custom attributes to Markdown front-matter."
+description: "Generate frontmatter for markdown on the fly using custom snippets."
 slug: "using-current-date-and-time-in-vs-code-snippets"
 url: "using-current-date-and-time-in-vs-code-snippets"
 tags: ["Hugo", "VSCode", "Snippets"]
@@ -11,9 +11,9 @@ syndicate: "false"
 
 I write my blog post thorough markdowns using the super awesome text editor [Visual Studio Code](https://code.visualstudio.com/). But previously, when I want to generate a new blog post, I had to go through couple of steps before I can successfully generate the front-matter, they are:
 
-- **Determining the date and time**
-- **Converting them into an `ISO 8601` date format so its universal**
-- **Then copying the same title some time and converting them into lowercase for `slug` and `url`**
+- 1. Determining the date and time
+- 2. Converting them into an `ISO 8601` date format so its universal
+- 3. Then copying the same title some time and converting them into lowercase for `slug` and `url`
 
 So..., Hey \*hold on\*, What is a front-matter ? {{< emoji ":thumbsup:" "20" >}}
 
