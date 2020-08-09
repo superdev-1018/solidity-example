@@ -11,17 +11,17 @@ syndicate: "false"
 
 I write my blog post thorough markdowns using the super awesome text editor [Visual Studio Code](https://code.visualstudio.com/). But previously, when I want to generate a new blog post, I had to go through couple of steps before I can successfully generate the front-matter, they are:
 
-- Determining the date and time
-- Converting them into an `ISO 8601` date format so its universal
-- Then copying the same title some time and converting them into lowercase for `slug` and `url`
+- **Determining the date and time**
+- **Converting them into an `ISO 8601` date format so its universal**
+- **Then copying the same title some time and converting them into lowercase for `slug` and `url`**
 
-So..., Hey \*hold on\*, What is a front-matter ? {{ < emoji ":thinking:"> }}
+So..., Hey \*hold on\*, What is a front-matter ? {{< emoji ":thumbsup:" "20" >}}
 
 ## What is a front-matter
 
 Front-matter is the primary section of your blog-post which contains meta-data about your blog post. This can contain anything you wish to pass down as `Params`, but a general blog post would usually consist of `title`, `date`, `description`, `url`.
 
-Phew {{ < emoji ":thinking:"> }}, since that out of the way lets continue. 
+Phew {{< emoji ":thumbsup:" "20" >}}, since that out of the way lets continue.
 
 ## User Snippets in Visual Studio Code
 
