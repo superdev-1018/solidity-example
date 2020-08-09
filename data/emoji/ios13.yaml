@@ -126,7 +126,7 @@
   alias: ":text:"
 - title: "Relieved Face"
   link: ios_emoji/relieved-face_1f60c.png
-  alias: ":text:"
+  alias: ":relieved:"
 - title: "Pensive Face"
   link: ios_emoji/pensive-face_1f614.png
   alias: ":text:"
@@ -504,22 +504,22 @@
   alias: ":text:"
 - title: "Raised Hand"
   link: ios_emoji/raised-hand_270b.png
-  alias: ":text:"
+  alias: ":hand:"
 - title: "Raised Hand: Light Skin Tone"
   link: ios_emoji/raised-hand_emoji-modifier-fitzpatrick-type-1-2_270b-1f3fb_1f3fb.png
-  alias: ":text:"
+  alias: ":hand_light:"
 - title: "Raised Hand: Medium-Light Skin Tone"
   link: ios_emoji/raised-hand_emoji-modifier-fitzpatrick-type-3_270b-1f3fc_1f3fc.png
-  alias: ":text:"
+  alias: ":hand_medium_light:"
 - title: "Raised Hand: Medium Skin Tone"
   link: ios_emoji/raised-hand_emoji-modifier-fitzpatrick-type-4_270b-1f3fd_1f3fd.png
-  alias: ":text:"
+  alias: ":hand_medium:"
 - title: "Raised Hand: Medium-Dark Skin Tone"
   link: ios_emoji/raised-hand_emoji-modifier-fitzpatrick-type-5_270b-1f3fe_1f3fe.png
-  alias: ":text:"
+  alias: ":hand_medium_dark:"
 - title: "Raised Hand: Dark Skin Tone"
   link: ios_emoji/raised-hand_emoji-modifier-fitzpatrick-type-6_270b-1f3ff_1f3ff.png
-  alias: ":text:"
+  alias: ":hand_dark:"
 - title: "Vulcan Salute"
   link: ios_emoji/raised-hand-with-part-between-middle-and-ring-fingers_1f596.png
   alias: ":text:"
