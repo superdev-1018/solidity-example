@@ -5,7 +5,7 @@ description = "Subheading or a short description."
 slug = "using-current-date-and-time-in-vs-code-snippets"
 url = "using-current-date-and-time-in-vs-code-snippets"
 tags = ["Hugo", "VSCode", "Snippets"]
-draft = "true"
+draft = "false"
 +++
 
 ```json
@@ -46,3 +46,7 @@ draft = "true"
   }
 }
 ```
+
+{{< message >}}
+You can find all the code from this article over on <a href="https://github.com/murshidazher/design-tokens-eleventy">Github.com</a>
+{{< /message >}}
