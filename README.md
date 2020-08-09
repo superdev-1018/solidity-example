@@ -78,6 +78,7 @@ And again you'd need to tell what the previous code actually does.
 - [ ] SEO the website.
 - [ ] Add quick link navigation in a single blog post.
 - [x] Add apple-emoji font.
+- [ ] Show the code language in syntax hightlight js.
 - [ ] Add resume for the site.
 - [x] Add node-arctic code colors. 
 - [ ] Add custom theme colors.

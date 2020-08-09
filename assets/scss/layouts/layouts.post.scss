@@ -70,7 +70,9 @@
 }
 
 .Post p.Message {
-    background-color: rgba(var(--color-link-rgb),.075);
+  background: rgba(var(--color-link-rgb), 0.05);
+
+    // background-color: rgba(165, 22, 248, 0.075);
     border-radius: 4px;
   // background: rgba(var(--color-link-rgb), 0.05);
   color: var(--color-link);
