@@ -15,7 +15,7 @@ I write my blog post through markdowns using the super awesome text editor [Visu
 * Converting them into an `ISO 8601` date format so it's universal
 * Then most of time copying the same title and converting them into lowercase for `slug` and `url`
 
-So..., Hey \*hold on\*, What is a front-matter ? {{< emoji ":hand:" "20" >}}
+So..., Hey ✋, What is a front-matter?
 
 ## What is a front-matter
 
