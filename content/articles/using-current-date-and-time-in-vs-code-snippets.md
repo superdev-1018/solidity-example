@@ -21,7 +21,7 @@ So..., Hey \*hold on\*, What is a front-matter ? {{< emoji ":hand:" "20" >}}
 
 Front-matter is the primary section of your blog-post which contains meta-data about your blog post. This can contain anything you wish to pass down as `Params`, but a general blog post would usually consist of  `title`, `date`, `description`, `url`.
 
-Phew {{< emoji ":relieved:" "20" >}}, since that out of the way lets continue.
+Phew 😌, since that out of the way lets continue.
 
 ## User Snippets in Visual Studio Code
 
@@ -87,7 +87,7 @@ Now, to tackle the great concern of tackling the issue of date generation, as of
 - `CURRENT_MINUTE`
 - `CURRENT_SECOND`
 
-Now If I want the front matter to have a format such as this `2020-08-09T21:48:48+05:30`, I would add the following snippet,
+If I want the front matter to have a format such as this `2020-08-09T21:48:48+05:30`, I would add the following snippet,
 
 ```json
 "date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}T${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}+05:30",

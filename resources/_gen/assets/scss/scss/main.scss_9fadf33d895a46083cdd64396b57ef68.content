@@ -1013,7 +1013,8 @@ video {
   content: ","; }
 
 .Post p.Message {
-  background-color: rgba(201, 168, 250, 0.04);
+  background-color: rgba(var(--color-link-rgb), 0.075);
+  border-radius: 4px;
   color: var(--color-link);
   padding: 2% 3%; }
   .Post p.Message a:hover {
