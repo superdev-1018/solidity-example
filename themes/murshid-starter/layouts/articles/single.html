@@ -3,20 +3,20 @@
 <article id="articles" class="Post h-entry">
   <header id="notes" class="row-nm m-32 center intro-sm">
     <div class="column center w-full">
-
-      <h1 class="align-center">
-      {{ .Title }}
-      {{ if .Params.emoji }}
-        {{ $alias := .Params.emoji }}
-        {{ $url := .Site.Params.cloudinary_url }}
-        {{ range first 1 (where .Site.Data.emoji.ios13 "alias" "eq" $alias) }}
-            <!-- (where .Site.Data.petiteannonce "cityName" "eq" .Params.name) -->
-            <span class="fs-large">
-                <img width="32" height="32" class="emoji--fix cld-responsive lazyload" title="{{ .title }}" src="{{ $url }}/{{ .link }}"/>
-            </span>
-        {{ end }}
-        {{ end }}
-      </h1>
+        <div class="header__wrapper">
+            <h1 class="center align-center">
+                {{ .Title }}
+            </h1>
+            {{ if .Params.emoji }}
+            {{ $alias := .Params.emoji }}
+            {{ $url := .Site.Params.cloudinary_url }}
+            {{ range first 1 (where .Site.Data.emoji.ios13 "alias" "eq" $alias) }}
+                <span class="fs-large">
+                    <img min-width="32" min-height="32" class="cld-responsive lazyload" title="{{ .title }}" src="{{ $url }}/{{ .link }}"/>
+                </span>
+            {{ end }}
+            {{ end }}
+        </div>
     </div>
   </header>
   <section class="row-nm align-center j-center">

@@ -1417,8 +1417,13 @@ html {
 .logo {
   color: #111; }
 
+.header__wrapper {
+  display: flex;
+  flex-direction: row; }
+
 body {
-  background-color: #fff; }
+  background-color: #fff;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
 
 .text-black {
   color: #111; }
@@ -1550,6 +1555,11 @@ footer,
 footer a {
   color: #9b9b9b; }
 
+.footer__quote {
+  display: flex;
+  align-items: end;
+  justify-content: center; }
+
 .rounded-full {
   border-radius: 9999px; }
 
@@ -1571,14 +1581,13 @@ footer a {
   align-items: center; }
 
 h1 {
-  font-family: 'Khula', sans-serif;
   line-height: 1.33;
+  margin-top: 4px;
   margin-bottom: 8px;
   font-weight: 700;
   font-style: normal; }
 
 .logo {
-  font-family: 'Khula', sans-serif;
   font-weight: 700; }
 
 .row-nm {
@@ -1813,6 +1822,9 @@ a {
       padding: 10px; } }
 
 @media screen and (max-width: 500px) {
+  .header__wrapper {
+    flex-direction: column;
+    align-items: center; }
   .articles_list--item__body {
     width: 100%;
     margin-right: 0px;
@@ -1891,12 +1903,6 @@ a {
 
 .small {
   font-size: 0.75em; }
-
-.font-circular {
-  font-family: 'Khula', sans-serif; }
-
-.font-circular-book {
-  font-family: 'Khula', sans-serif; }
 
 .mx-60 {
   max-width: 60ch; }
@@ -2059,8 +2065,7 @@ small {
       .tags__wrapper .tags__child .tags__child--number span {
         display: flex;
         justify-content: center;
-        font-weight: 600;
-        font-family: 'Khula book', sans-serif;
+        font-weight: 700;
         color: #0500ff; }
 
 .fs-large {
@@ -2093,7 +2098,7 @@ small {
 .articles_list--item__body {
   margin-bottom: 80px; }
   .articles_list--item__body--title {
-    font-family: 'Khula book', sans-serif;
+    font-weight: 600;
     color: #111;
     font-size: 1.125rem; }
   .articles_list--item__body--desc {
@@ -2184,7 +2189,6 @@ a.hs-featured-image-link {
     text-decoration: none; }
 
 .published-date {
-  font-family: 'Khula', sans-serif;
   color: #9b9b9b;
   font-size: 1rem;
   margin-top: 16px; }

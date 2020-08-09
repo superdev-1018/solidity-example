@@ -7,6 +7,11 @@ html {
   color: $black;
 }
 
+.header__wrapper {
+    display: flex;
+    flex-direction: row;
+}
+
 // body {
 //   background-color: white;
 //   // background-image: url('../img/dot-grid.png');
@@ -22,6 +27,7 @@ $dot-space: 22px;
 
 body {
   background-color: #fff;
+  font-family: $font-system-rg;
 	// background:
 	// 	linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
 	// 	linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
@@ -227,6 +233,12 @@ footer a {
   color: $grey;
 }
 
+.footer__quote {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+}
+
 .rounded-full {
   border-radius: 9999px;
 }
@@ -255,15 +267,16 @@ footer a {
 }
 
 h1 {
-  font-family: 'Khula', sans-serif;
+//   font-family: 'Khula', sans-serif;
   line-height: 1.33;
+  margin-top: $base-unit;
   margin-bottom: $base-unit * 2;
   font-weight: 700;
     font-style: normal;
 }
 
 .logo {
-  font-family: 'Khula', sans-serif;
+//   font-family: 'Khula', sans-serif;
   font-weight: 700;
 }
 
@@ -593,6 +606,7 @@ a:hover {
   }
 
   .footer__quote {
+
     margin-top: $base-unit * 2;
     text-align: start;
     justify-content: flex-start;
@@ -666,6 +680,11 @@ a:hover {
 
 // mobile
 @media screen and (max-width: 500px) {
+
+    .header__wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
 
   .articles_list--item__body {
     width: 100%;
@@ -807,11 +826,11 @@ a:hover {
 }
 
 .font-circular {
-  font-family: 'Khula', sans-serif;
+//   font-family: 'Khula', sans-serif;
 }
 
 .font-circular-book {
-    font-family: 'Khula', sans-serif;
+    // font-family: 'Khula', sans-serif;
 }
 
 .mx-60 {
@@ -1059,8 +1078,8 @@ small {
       span {
         display: flex;
         justify-content: center;
-        font-weight: 600;
-        font-family: 'Khula book', sans-serif;
+        font-weight: 700;
+        // font-family: 'Khula book', sans-serif;
         // margin-left: 0.1rem;
         // padding: .15rem;
         color: #0500ff;
@@ -1124,7 +1143,8 @@ font-size: .75rem;
       margin-bottom: $gutter * 2;
 
       &--title {
-        font-family: 'Khula book', sans-serif;
+        // font-family: 'Khula book', sans-serif;
+        font-weight: 600;
         color: $black;
         font-size: 1.125rem;
 
@@ -1247,7 +1267,7 @@ a.hs-featured-image-link {
 }
 
 .published-date {
-  font-family: 'Khula', sans-serif;
+//   font-family: 'Khula', sans-serif;
   color: $grey;
   font-size: 1rem;
   margin-top: $base-unit * 4;
@@ -1416,4 +1436,6 @@ strong {
 .emoji--fix {
     margin-bottom: -2px;
 }
+
+
 
