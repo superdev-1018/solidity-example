@@ -93,6 +93,7 @@ And again you'd need to tell what the previous code actually does.
 - [ ] Add a work with me section for the site.
 - [ ] Add service worker for offline capabilities.
 - [ ] Add Sitemap and robots.txt .
+- [ ] Next and Prev. inside a single blog post.
 
 ## Keep in Mind
 

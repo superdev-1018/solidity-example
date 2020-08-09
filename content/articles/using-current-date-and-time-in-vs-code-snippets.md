@@ -11,9 +11,9 @@ syndicate: "false"
 
 I write my blog post thorough markdowns using the super awesome text editor [Visual Studio Code](https://code.visualstudio.com/). But previously, when I want to generate a new blog post, I had to go through couple of steps before I can successfully generate the front-matter, they are:
 
-- 1. Determining the date and time
-- 2. Converting them into an `ISO 8601` date format so its universal
-- 3. Then copying the same title some time and converting them into lowercase for `slug` and `url`
+* Determining the date and time
+* Converting them into an `ISO 8601` date format so its universal
+* Then copying the same title some time and converting them into lowercase for `slug` and `url`
 
 So..., Hey \*hold on\*, What is a front-matter ? {{< emoji ":thumbsup:" "20" >}}
 
@@ -98,7 +98,7 @@ Finally, these are additional snippet variables provided by Microsoft to make th
 
 ## Useful Snippet Variable
 
-Below mentioned are some of the most useful variables when you proceed in your journey in creating your own front-matter
+Below mentioned are some of the most useful variables when you proceed in your journey in creating your own snippet
 
 - `CLIPBOARD` The content of your clipboard
 - `TM_CURRENT_LINE` The content of the current line
