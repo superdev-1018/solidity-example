@@ -16,6 +16,8 @@
 - [How To Change The Links That Appear Under Your Site On Google](https://www.create.net/support/how-to-change-the-links-that-appear-under-your-site-on-google)
 - [ifttt](https://ifttt.com/join)
 - [pocket + ifttt](https://ifttt.com/connect/feed/pocket)
+- [IFTTT Andy article](https://hankchizljaw.com/wrote/jamstack-ifttt-and-netlify:-a-power-trio/#heading-back-to-power-trios)
+- [Vinyl Record cover](https://www.sketchappsources.com/free-source/1908-vinyl-pop-up-sketch-freebie-resource.html)
 
 ## License
 

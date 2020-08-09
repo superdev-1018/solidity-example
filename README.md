@@ -78,17 +78,17 @@ And again you'd need to tell what the previous code actually does.
 - [ ] SEO the website.
 - [ ] Add quick link navigation in a single blog post.
 - [x] Add apple-emoji font.
-- [ ] Add node-arctic code colors. 
+- [ ] Add resume for the site.
+- [x] Add node-arctic code colors. 
 - [ ] Add custom theme colors.
 - [ ] Change logo hover colors according to the theme.
 - [ ] Add search functionality for blog.
 - [ ] Add `RSS` feed for the blog.
-- [ ] Add a way to display a collection of liked posts.
+- [ ] Add a way to display a collection of liked posts (`IFTTT` trigger `Pocket` feed).
 - [ ] Add detailed projects section.
 - [ ] Include pagination.
 - [ ] Check footer copyright responsiveness.
 - [ ] Add preload functionality for the site.
-- [ ] Add resume for the site.
 - [ ] Add a separate about me section for the site.
 - [ ] Add a work with me section for the site.
 - [ ] Add service worker for offline capabilities.

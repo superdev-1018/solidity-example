@@ -28,6 +28,7 @@ $dot-space: 22px;
 body {
   background-color: #fff;
   font-family: $font-system-rg;
+  color: var(--color-body);
 	// background:
 	// 	linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
 	// 	linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
@@ -138,7 +139,7 @@ mark {
 .author {
   display: flex;
   align-items: center;
-  color: $grey;
+  color: var(--color-body);
   margin-top: $gutter / 2;
 
   img {
@@ -230,7 +231,7 @@ mark {
 
 footer,
 footer a {
-  color: $grey;
+  color: var(--color-body);
 }
 
 .footer__quote {
@@ -573,6 +574,10 @@ a:hover {
     @include make-col(9, 12);
   }
 
+  .col-md-12 {
+    @include make-col(12, 12);
+  }
+
   .col-md-10 {
     @include make-col(10, 12);
   }
@@ -607,13 +612,17 @@ a:hover {
 
   .footer__quote {
 
-    margin-top: $base-unit * 2;
+    margin-top: $base-unit * 6;
     text-align: start;
     justify-content: flex-start;
 }
 
+.footer-copyright__text {
+    text-align: center;
+}
+
 .footer-copyright__mail {
-    margin-top: $base-unit * 2;
+    margin-top: $base-unit * 6;
 }
 
 
@@ -1268,7 +1277,7 @@ a.hs-featured-image-link {
 
 .published-date {
 //   font-family: 'Khula', sans-serif;
-  color: $grey;
+  color: var(--color-body);
   font-size: 1rem;
   margin-top: $base-unit * 4;
 }

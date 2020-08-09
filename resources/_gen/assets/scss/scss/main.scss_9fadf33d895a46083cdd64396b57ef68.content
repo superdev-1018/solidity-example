@@ -203,7 +203,7 @@ mark {
 .author {
   display: flex;
   align-items: center;
-  color: #9b9b9b;
+  color: var(--color-body);
   margin-top: 20px; }
 
 .author img {
@@ -212,13 +212,13 @@ mark {
 
 footer,
 footer a {
-  color: #9b9b9b; }
+  color: var(--color-body); }
   footer:active,
   footer a:active {
-    color: #9b9b9b; }
+    color: var(--color-body); }
   footer:visited,
   footer a:visited {
-    color: #9b9b9b; }
+    color: var(--color-body); }
 
 @media screen and (min-width: 850px) {
   .column {
@@ -297,7 +297,7 @@ h1 {
 
 h2 {
   font-size: 1.25rem;
-  font-weight: 400; }
+  font-weight: 500; }
 
 a {
   color: #1623dd;
@@ -343,8 +343,8 @@ header .row,
 \*------------------------------------*/
 :root {
   --bg-opacity: 1;
-  --color-dark: #151515;
-  --color-body: #f5f5f5;
+  --color-dark: #111111;
+  --color-body: #373a3c;
   --color-light: #767676;
   --color-lighter: #888;
   --color-lightest: #f5f5f5;
@@ -1423,7 +1423,8 @@ html {
 
 body {
   background-color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol"; }
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  color: var(--color-body); }
 
 .text-black {
   color: #111; }
@@ -1500,7 +1501,7 @@ mark {
 .author {
   display: flex;
   align-items: center;
-  color: #9b9b9b;
+  color: var(--color-body);
   margin-top: 20px; }
   .author img {
     margin-right: 10px;
@@ -1553,7 +1554,7 @@ mark {
 
 footer,
 footer a {
-  color: #9b9b9b; }
+  color: var(--color-body); }
 
 .footer__quote {
   display: flex;
@@ -1762,6 +1763,9 @@ a {
   .col-md-9 {
     flex: 0 0 75%;
     max-width: 75%; }
+  .col-md-12 {
+    flex: 0 0 100%;
+    max-width: 100%; }
   .col-md-10 {
     flex: 0 0 83.33333333%;
     max-width: 83.33333333%; }
@@ -1786,11 +1790,13 @@ a {
   .mb-32 {
     margin-bottom: 32px; }
   .footer__quote {
-    margin-top: 8px;
+    margin-top: 24px;
     text-align: start;
     justify-content: flex-start; }
+  .footer-copyright__text {
+    text-align: center; }
   .footer-copyright__mail {
-    margin-top: 8px; }
+    margin-top: 24px; }
   .intro-sm {
     height: 160px;
     align-items: flex-end; }
@@ -2189,7 +2195,7 @@ a.hs-featured-image-link {
     text-decoration: none; }
 
 .published-date {
-  color: #9b9b9b;
+  color: var(--color-body);
   font-size: 1rem;
   margin-top: 16px; }
 

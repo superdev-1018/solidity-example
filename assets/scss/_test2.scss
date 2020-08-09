@@ -223,7 +223,7 @@ mark {
 .author {
     display: flex;
     align-items: center;
-    color: #9b9b9b;
+    color: var(--color-body);
     margin-top: 20px;
 }
 
@@ -234,14 +234,14 @@ mark {
 
 footer,
 footer a {
-    color: #9b9b9b;
+    color: var(--color-body);
 
     &:active {
-        color: #9b9b9b;
+        color: var(--color-body);
     }
 
     &:visited {
-        color: #9b9b9b;
+        color: var(--color-body);
     }
 }
 
@@ -374,7 +374,7 @@ h1 {
 
 h2 {
     font-size: 1.25rem;
-    font-weight: $font-weight-regular;
+    font-weight: 500;
 }
 
 a {
