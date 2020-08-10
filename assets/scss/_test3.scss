@@ -1378,12 +1378,17 @@ strong {
 }
 
 @keyframes logo {
-  0% { fill: hsl(0,80%,70%); }
-  25% { fill: hsl(90,80%,50%); }
-  50% { fill: hsl(180,80%,50%); }
-  75% { fill: hsl(270,80%, 50%); }
-  100% { fill: hsl(0,80%,70%); }
+  0% { fill: hsl(3, 81%, 73%); }
+  25% { fill: hsl(150, 45%, 71%); }
+  50% { fill: hsl(197, 72%, 68%); }
+  75% { fill: hsl(230, 69%, 77%); }
+  100% { fill: hsl(3, 81%, 73%); }
 }
+
+.fadf {
+  color: hsl(3, 81%, 73%);
+}
+
 
 #header a {
   font-size:14px;
