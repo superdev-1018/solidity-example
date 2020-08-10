@@ -268,7 +268,6 @@ footer a {
 }
 
 h1 {
-//   font-family: 'Khula', sans-serif;
   line-height: 1.33;
   margin-top: $base-unit;
   margin-bottom: $base-unit * 2;
@@ -277,7 +276,6 @@ h1 {
 }
 
 .logo {
-//   font-family: 'Khula', sans-serif;
   font-weight: 700;
 }
 
@@ -1088,9 +1086,6 @@ small {
         display: flex;
         justify-content: center;
         font-weight: 700;
-        // font-family: 'Khula book', sans-serif;
-        // margin-left: 0.1rem;
-        // padding: .15rem;
         color: #0500ff;
       }
     }
@@ -1152,7 +1147,6 @@ font-size: .75rem;
       margin-bottom: $gutter * 2;
 
       &--title {
-        // font-family: 'Khula book', sans-serif;
         font-weight: 600;
         color: $black;
         font-size: 1.125rem;
@@ -1182,7 +1176,6 @@ font-size: .75rem;
   position: relative;
 
   .post-date-inner {
-    // font-family: 'Ubuntu',sans-serif;
     position: absolute;
     top: 16px;
     z-index: 1;
@@ -1276,7 +1269,6 @@ a.hs-featured-image-link {
 }
 
 .published-date {
-//   font-family: 'Khula', sans-serif;
   color: var(--color-body);
   font-size: 1rem;
   margin-top: $base-unit * 4;
@@ -1342,7 +1334,7 @@ strong {
 }
 
 .mono {
-  font-family: sf mono,monaco,inconsolata,fira mono,droid sans mono,source code pro,monospace;
+  font-family: $font-system-mn;
   font-size: .875em;
 }
 
