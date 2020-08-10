@@ -6,9 +6,9 @@ $color-link: #542bff;
 
 :root {
   --bg-opacity: 1;
-  --color-dark: #111111;
+  --color-dark: #1a2a30;
   --color-body: #373a3c;
-  --color-light: #767676;
+  --color-light: #454545;
   --color-lighter: #888;
   --color-lightest: #f5f5f5;
   --color-link: #202E78;
@@ -29,6 +29,24 @@ $color-link: #542bff;
     --grid-width: 140rem;
     --logo-rotation-duration: 15s;
     --left-margin: calc(var(--grid-width)/12*1);
+
+
+  // colors
+
+  --color-font-one: #1a2a30;
+  --color-font-two: #454545;
+  --color-font-three: #ffffff;
+  --color-one: #f1f1f2;
+  --color-two: #fff;
+  --color-three: #f1f1f2;
+  --color-four: #1a2a30;
+  --color-five: #f1f1f2;
+  --color-six: #dfdfe1;
+  --color-white: #fff;
+  --color-notification: #aaef52;
+  --overlay-search: rgba(0, 0, 0, .7);
+  --overlay-button: rgba(0, 0, 0, .06);
+  --ali-red: #FF4747;
 
   // --color-primary: var(--color-purple);
   // --color-text: var(--color-black);

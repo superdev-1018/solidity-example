@@ -81,7 +81,7 @@ And again you'd need to tell what the previous code actually does.
 - [ ] Show the code language in syntax hightlight js.
 - [ ] Add resume for the site.
 - [x] Add node-arctic code colors. 
-- [ ] Add custom theme colors.
+- [x] Add custom theme colors.
 - [ ] Change logo hover colors according to the theme.
 - [ ] Add search functionality for blog.
 - [ ] Add `RSS` feed for the blog.

@@ -54,17 +54,17 @@ pygmentsCodeFences = true
 enableEmoji = true
 
 [[menu.main]]
-  name = "Articles"
+  name = "📝 Articles"
   url = "/articles/"
   weight = 5
 
 [[menu.main]]
-  name = "Notes"
+  name = "📚 Notes"
   url = "/notes/"
   weight = 10
 
 [[menu.main]]
-  name = "Tags"
+  name = "🔖 Tags"
   url = "/tags/"
   weight = 15
 

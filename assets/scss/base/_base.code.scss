@@ -29,7 +29,8 @@ li code {
 
 code,
 pre {
-  font-family: Menlo, 'Inconsolata', Monaco, "Courier New", monospace;
+  font-family: $font-system-mn;
+  font-variant-ligatures: common-ligatures;
 }
 
 code {

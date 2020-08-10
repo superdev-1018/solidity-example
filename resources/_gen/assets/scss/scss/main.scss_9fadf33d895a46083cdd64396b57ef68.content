@@ -338,14 +338,48 @@ header .row,
 .intro {
   align-items: flex-end; }
 
+@font-face {
+  font-family: 'Inter';
+  src: url("/fonts/Inter.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: block; }
+
+@font-face {
+  font-family: 'Inter';
+  src: url("/fonts/Inter-Black.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: block; }
+
+@font-face {
+  font-family: 'Inter';
+  src: url("/fonts/Inter-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: block; }
+
+@font-face {
+  font-family: 'Inter';
+  src: url("/fonts/Inter-Regular.otf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: block; }
+
+@font-face {
+  font-family: 'JetBrains Mono';
+  src: url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/eot/JetBrainsMono-Regular.eot") format("embedded-opentype"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff2/JetBrainsMono-Regular.woff2") format("woff2"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff/JetBrainsMono-Regular.woff") format("woff"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/ttf/JetBrainsMono-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+
 /*------------------------------------*\
     #ABSTRACTS: COLORS
 \*------------------------------------*/
 :root {
   --bg-opacity: 1;
-  --color-dark: #111111;
+  --color-dark: #1a2a30;
   --color-body: #373a3c;
-  --color-light: #767676;
+  --color-light: #454545;
   --color-lighter: #888;
   --color-lightest: #f5f5f5;
   --color-link: #202E78;
@@ -364,7 +398,21 @@ header .row,
   --color-7: #b4b4b4;
   --grid-width: 140rem;
   --logo-rotation-duration: 15s;
-  --left-margin: calc(var(--grid-width)/12*1); }
+  --left-margin: calc(var(--grid-width)/12*1);
+  --color-font-one: #1a2a30;
+  --color-font-two: #454545;
+  --color-font-three: #ffffff;
+  --color-one: #f1f1f2;
+  --color-two: #fff;
+  --color-three: #f1f1f2;
+  --color-four: #1a2a30;
+  --color-five: #f1f1f2;
+  --color-six: #dfdfe1;
+  --color-white: #fff;
+  --color-notification: #aaef52;
+  --overlay-search: rgba(0, 0, 0, .7);
+  --overlay-button: rgba(0, 0, 0, .06);
+  --ali-red: #FF4747; }
 
 /*------------------------------------*\
     #ABSTRACTS: BREAKPOINTS
@@ -444,7 +492,7 @@ blockquote {
     display: block;
     font-size: 80%;
     font-style: normal;
-    font-family: Gothic A1, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-family: -apple-system, "Inter", sans-serif;
     font-weight: 700;
     margin-top: 0.75rem; }
     @media screen and (min-width: 48em) {
@@ -479,7 +527,8 @@ li code {
 
 code,
 pre {
-  font-family: Menlo, 'Inconsolata', Monaco, "Courier New", monospace; }
+  font-family: "Jetbrains Mono", "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+  font-variant-ligatures: common-ligatures; }
 
 code {
   font-size: 85%;
@@ -1381,6 +1430,300 @@ video {
     .Video {
       margin-bottom: 2.4rem; } }
 /*------------------------------------*\
+    #COMPONENTS: HEADER
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Header {
+  display: flex;
+  font-weight: 500;
+  justify-content: space-between;
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 4% 0; }
+  .Header a {
+    text-decoration: none; }
+    .Header a:hover {
+      background-color: unset; }
+
+/*------------------------------------*\
+    #COMPONENTS: NAV
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Nav-list {
+  text-align: right; }
+
+.Nav-listItem {
+  font-weight: 500; }
+
+@media (min-width: 48em) {
+  .Nav-list {
+    display: flex;
+    text-align: left; }
+  .Nav-listItem:not(:last-of-type) {
+    margin-right: 3rem; } }
+  @media screen and (min-width: 48em) and (min-width: 48em) {
+    .Nav-listItem:not(:last-of-type) {
+      margin-right: 3.2rem; } }
+/*------------------------------------*\
+    #COMPONENTS: FOOTER
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Footer {
+  max-width: 1600px;
+  margin: 0 auto;
+  margin-top: 1.5rem;
+  padding-bottom: 64px; }
+  @media screen and (min-width: 48em) {
+    .Footer {
+      margin-top: 1.6rem; } }
+  .Footer p {
+    margin-top: 1.5rem; }
+    @media screen and (min-width: 48em) {
+      .Footer p {
+        margin-top: 1.6rem; } }
+.FooterNav a {
+  color: var(--color-dark);
+  text-decoration: none;
+  font-weight: 500;
+  margin-right: 16px; }
+  .FooterNav a:hover {
+    background-color: unset;
+    text-decoration: underline; }
+
+/*------------------------------------*\
+    #COMPONENTS: IMAGE
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Image figcaption {
+  line-height: 20px;
+  margin-top: 0.75rem; }
+  @media screen and (min-width: 48em) {
+    .Image figcaption {
+      margin-top: 0.8rem; } }
+.Image + p,
+p + .Image {
+  margin-top: 2.25rem; }
+  @media screen and (min-width: 48em) {
+    .Image + p,
+    p + .Image {
+      margin-top: 2.4rem; } }
+.ImageCover {
+  object-fit: cover;
+  height: 350px; }
+
+@media (min-width: 37.5em) {
+  .ImageCover {
+    object-fit: fill;
+    height: auto; } }
+
+/**
+ * Component Modifier
+ */
+@media (min-width: 37.5em) {
+  .Image--pullRight {
+    width: 55%;
+    float: right;
+    margin-left: 48px;
+    margin-bottom: 32px;
+    margin-top: 0; } }
+
+/**
+ * Component Utility
+ */
+/* Animate the lazyloading */
+.lazyload,
+.lazyloading {
+  opacity: 0; }
+
+.lazyloaded {
+  opacity: 1;
+  transition: opacity 300ms; }
+
+.Ratio--rounded {
+  display: block;
+  width: 200px;
+  height: 200px;
+  border-radius: 999%;
+  overflow: hidden;
+  display: block;
+  position: relative; }
+  .Ratio--rounded > img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    border-radius: 999%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0; }
+
+.rounded-circle {
+  border-radius: 50%;
+  width: 8em;
+  height: 8em;
+  margin-bottom: 32px; }
+  @media (min-width: 37.5em) {
+    .rounded-circle {
+      width: 10em;
+      height: 10em; } }
+img,
+svg {
+  vertical-align: middle; }
+
+/*------------------------------------*\
+    #COMPONENTS: NEWSLETTER
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.Newsletter {
+  max-width: 1600px;
+  margin: 0 auto; }
+
+.NewsletterForm {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1.5rem; }
+  @media screen and (min-width: 48em) {
+    .NewsletterForm {
+      margin-top: 1.6rem; } }
+.NewsletterForm-field:nth-child(even) {
+  margin-bottom: 1.5rem; }
+  @media screen and (min-width: 48em) {
+    .NewsletterForm-field:nth-child(even) {
+      margin-bottom: 1.6rem; } }
+@media (min-width: 48em) {
+  .NewsletterForm {
+    flex-direction: row; }
+  .NewsletterForm-label {
+    margin-top: 0rem; } }
+  @media screen and (min-width: 48em) and (min-width: 48em) {
+    .NewsletterForm-label {
+      margin-top: 0rem; } }
+@media (min-width: 48em) {
+  .NewsletterForm-field {
+    flex: 1;
+    align-self: flex-end; }
+    .NewsletterForm-field:nth-child(even) {
+      margin-bottom: 0rem; } }
+    @media screen and (min-width: 48em) and (min-width: 48em) {
+      .NewsletterForm-field:nth-child(even) {
+        margin-bottom: 0rem; } }
+@media (min-width: 48em) {
+    .NewsletterForm-field:not(:last-of-type) {
+      margin-right: 0.75rem; } }
+    @media screen and (min-width: 48em) and (min-width: 48em) {
+      .NewsletterForm-field:not(:last-of-type) {
+        margin-right: 0.8rem; } }
+/*------------------------------------*\
+    #COMPONENTS: RATIO
+\*------------------------------------*/
+/**
+ * A utility that provides you with a predictable aspect ratio
+ *
+ * 16:9: ratio wide
+ * 1:1: ratio square
+ * 3:2: ratio classic
+ */
+.Ratio {
+  background-color: #f6f6f6;
+  display: block;
+  position: relative; }
+
+.Ratio--3by2 {
+  padding-bottom: 66.66667%; }
+
+.Ratio--16by9 {
+  padding-bottom: 56.25%; }
+
+.Ratio--1by1 {
+  padding-bottom: 100%; }
+
+.Ratio img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/*------------------------------------*\
+    #COMPONENTS: PULLQUOTE
+\*------------------------------------*/
+/**
+ * Component Block
+ */
+.PullQuote {
+  border-left: none;
+  color: var(--color-dark);
+  max-width: 430px; }
+  .PullQuote > p {
+    font-size: 110%;
+    margin-bottom: 0.75rem;
+    margin-left: 0rem; }
+    @media screen and (min-width: 48em) {
+      .PullQuote > p {
+        margin-bottom: 0.8rem; } }
+    @media screen and (min-width: 48em) {
+      .PullQuote > p {
+        margin-left: 0rem; } }
+  .PullQuote > figcaption {
+    margin-left: 0rem; }
+    @media screen and (min-width: 48em) {
+      .PullQuote > figcaption {
+        margin-left: 0rem; } }
+/**
+ * Component Modifier
+ */
+.PullQuote--left {
+  margin-top: 0rem;
+  margin-bottom: 0rem; }
+  @media screen and (min-width: 48em) {
+    .PullQuote--left {
+      margin-top: 0rem; } }
+  @media screen and (min-width: 48em) {
+    .PullQuote--left {
+      margin-bottom: 0rem; } }
+  @media (min-width: 48em) {
+    .PullQuote--left {
+      margin-left: 0rem; } }
+  @media screen and (min-width: 48em) and (min-width: 48em) {
+    .PullQuote--left {
+      margin-left: 0rem; } }
+.PullQuote--right {
+  float: right;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+  margin-left: 3rem;
+  margin-right: 1.5rem;
+  width: 400px; }
+  @media screen and (min-width: 48em) {
+    .PullQuote--right {
+      margin-top: 1.6rem; } }
+  @media screen and (min-width: 48em) {
+    .PullQuote--right {
+      margin-bottom: 3.2rem; } }
+  @media screen and (min-width: 48em) {
+    .PullQuote--right {
+      margin-left: 3.2rem; } }
+  @media screen and (min-width: 48em) {
+    .PullQuote--right {
+      margin-right: 1.6rem; } }
+  @media (min-width: 48em) {
+    .PullQuote--right {
+      margin-right: 12rem; } }
+  @media screen and (min-width: 48em) and (min-width: 48em) {
+    .PullQuote--right {
+      margin-right: 12.8rem; } }
+/*------------------------------------*\
     #UTILITIES: LAYOUT
 \*------------------------------------*/
 .u-visually-hidden {
@@ -1424,7 +1767,7 @@ html {
 
 body {
   background-color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  font-family: "Inter", sans-serif;
   color: var(--color-body); }
 
 .text-black {
@@ -1621,22 +1964,23 @@ a {
 .text-nav {
   padding-bottom: 4px;
   border-bottom: 2px solid none;
-  color: #000;
+  color: var(--color-dark);
   text-decoration: none;
   background-color: transparent;
   padding-bottom: 12px;
   border-bottom-color: transparent;
-  transition: all 200s ease; }
+  transition: all 200s ease;
+  font-weight: 500; }
   .text-nav:hover {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid var(--color-dark);
     padding-bottom: 8px;
     transition: all 200s ease; }
   .text-nav.active {
-    color: #000;
-    border-bottom: 2px solid #000;
+    color: var(--color-dark);
+    border-bottom: 2px solid var(--color-dark);
     padding-bottom: 8px; }
   .text-nav:visited {
-    color: #000; }
+    color: var(--color-dark); }
 
 .scroll-up {
   display: flex;
@@ -1652,6 +1996,8 @@ a {
 @media screen and (min-width: 850px) {
   .column {
     flex: 1; }
+  .Nav-listItem {
+    flex: 1 auto; }
   .col-lg-8 {
     flex: 0 0 66.66666667%;
     max-width: 66.66666667%; }
@@ -1810,9 +2156,13 @@ a {
   .nav-mobile {
     display: inline;
     text-align: right; }
-    .nav-mobile .column {
+    .nav-mobile .Nav-listItem {
       margin: 10px;
-      margin-bottom: 16px; }
+      margin-bottom: 1.5rem; } }
+    @media screen and (max-width: 850px) and (min-width: 48em) {
+      .nav-mobile .Nav-listItem {
+        margin-bottom: 1.6rem; } }
+@media screen and (max-width: 850px) {
   .row {
     margin: 20px 0; }
   .column {
@@ -1884,9 +2234,13 @@ a {
   .nav-mobile {
     display: inline;
     text-align: right; }
-    .nav-mobile .column {
+    .nav-mobile .Nav-listItem {
       margin: 10px;
-      margin-bottom: 16px; }
+      margin-bottom: 1.5rem; } }
+    @media screen and (max-width: 500px) and (min-width: 48em) {
+      .nav-mobile .Nav-listItem {
+        margin-bottom: 1.6rem; } }
+@media screen and (max-width: 500px) {
   .intro {
     height: 250px; }
   .clients {
@@ -2235,7 +2589,7 @@ strong {
   text-align: center; }
 
 .mono {
-  font-family: sf mono,monaco,inconsolata,fira mono,droid sans mono,source code pro,monospace;
+  font-family: "Jetbrains Mono", "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   font-size: .875em; }
 
 #header {
@@ -2265,15 +2619,18 @@ strong {
 
 @keyframes logo {
   0% {
-    fill: #f07575; }
+    fill: #f28882; }
   25% {
-    fill: #80e61a; }
+    fill: #94d6b5; }
   50% {
-    fill: #1ae6e6; }
+    fill: #73c7e8; }
   75% {
-    fill: #801ae6; }
+    fill: #9ca9ed; }
   100% {
-    fill: #f07575; } }
+    fill: #f28882; } }
+
+.fadf {
+  color: #f28882; }
 
 #header a {
   font-size: 14px;

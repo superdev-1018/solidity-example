@@ -30,7 +30,7 @@ As aforementioned, since I am using the Visual Studio Code, I could leverage Vis
 
 ## Create a User Snippet
 
-If you're an `OSX` user, then User Snippet is under `Code` > `Preferences` > `User Snippets` else if you're a `Windows` user, then it's under `File` > `Preferences` > `User Snippets`.
+If you're an `OSX` user, then User Snippet is under `Code > Preferences > User Snippets` else if you're a `Windows` user, then it's under `File > Preferences > User Snippets`.
 
 This would prompt the command palette of Visual Studio Code stating to select the type of language this scaffolding would come into play. You can either choose `global` or a specific language based upon your needs. Since, I would only need this code snippet for markdowns; I would select `markdown.json (Markdown)`.
 
