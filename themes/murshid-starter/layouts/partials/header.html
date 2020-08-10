@@ -108,7 +108,7 @@
                     <li class="Nav-listItem">
                         <a class="text-nav {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{end}}"
                             href="{{.URL}}">
-                            <span>{{ .Name }}</span>
+                            <span>{{ print .Pre }}&nbsp;&nbsp;{{ print .Name }}</span>
                         </a>
                     </li>
                     {{ end }}

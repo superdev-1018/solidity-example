@@ -18,6 +18,8 @@
 - [pocket + ifttt](https://ifttt.com/connect/feed/pocket)
 - [IFTTT Andy article](https://hankchizljaw.com/wrote/jamstack-ifttt-and-netlify:-a-power-trio/#heading-back-to-power-trios)
 - [Vinyl Record cover](https://www.sketchappsources.com/free-source/1908-vinyl-pop-up-sketch-freebie-resource.html)
+- [Asynchronously loading pages](https://albertarmea.com/post/async-load-hugo/)
+- [hugo-lunrjs-search-index](https://codewithhugo.com/hugo-lunrjs-search-index/)
 
 ## License
 

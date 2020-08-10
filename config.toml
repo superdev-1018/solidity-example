@@ -56,17 +56,18 @@ enableEmoji = true
 [[menu.main]]
   name = "Articles"
   url = "/articles/"
+  pre = "📝"
   weight = 5
 
 [[menu.main]]
   name = "Notes"
-  emoji = "📝"
+  pre = "📚"
   url = "/notes/"
   weight = 10
 
 [[menu.main]]
   name = "Tags"
-  emoji = "📝"
+  pre = "🔖"
   url = "/tags/"
   weight = 15
 
