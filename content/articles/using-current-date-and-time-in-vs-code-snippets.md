@@ -34,7 +34,7 @@ If you're an `OSX` user, then User Snippet is under `Code` > `Preferences` > `Us
 
 This would prompt the command palette of Visual Studio Code stating to select the type of language this scaffolding would come into play. You can either choose `global` or a specific language based upon your needs. Since, I would only need this code snippet for markdowns; I would select `markdown.json (Markdown)`.
 
-Next we need to give write our markdown as a `json` file. I would suggest you first writing out how your snippet should appear first in an empty file then transcribing it into `json`.
+Next we need to write our markdown as a `json` file. I would suggest you first typing it out on how your snippet should appear in an empty file then transcribing it into `json`.
 
 So, now will construct a typical front-matter in an empty file first, let’s recreate the front-matter for this blog post.
 
