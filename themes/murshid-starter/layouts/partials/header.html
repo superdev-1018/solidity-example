@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html dir="ltr" loc="en" lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}">
+<html dir="ltr" lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}">
 <head>
     {{"<!-- some HTML comment -->" | safeHTML }}
     <meta charset="UTF-8" />
@@ -100,11 +100,9 @@
                     {{ $currentPage := . }}
                     {{ range .Site.Menus.main }}
                     {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
-                    <li class="Nav-listItem column">
+                    <li class="Nav-listItem">
                         <a class="text-nav  {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}text-zenith active{{end}}"
                             href="{{.URL}}">
-                            <span
-                                class="inline-block h-px mx-16 -mt-px group-hover:w-48 {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}w-48 bg-zenith   group-hover:bg-white transition{{ else }}w-24 bg-dawn group-hover:w-24  group-hover:bg-zenith transition{{end}}"></span>
                             <span>{{ .Name }}</span>
                         </a>
                     </li>

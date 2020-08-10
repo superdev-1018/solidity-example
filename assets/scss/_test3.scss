@@ -368,6 +368,10 @@ a:hover {
 
 @media screen and (min-width: 850px) {
   .column {
+    flex: 1;
+  }
+
+  .Nav-listItem {
     flex: 1 auto;
   }
 

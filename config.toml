@@ -59,7 +59,7 @@ enableEmoji = true
   weight = 5
 
 [[menu.main]]
-  name = "📚 Book Notes"
+  name = "📚 Notes"
   url = "/notes/"
   weight = 10
 

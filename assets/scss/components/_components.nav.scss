@@ -21,6 +21,6 @@
   }
 
   .Nav-listItem:not(:last-of-type) {
-    @include margin-right(1);
+    @include margin-right(2);
   }
 }
