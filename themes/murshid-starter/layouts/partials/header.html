@@ -53,9 +53,17 @@
     <link href="{{ .Site.Author.twitter }}" rel="me">
     <link href="{{ .Site.Author.github }}" rel="me">
     <link href="{{ .Site.Author.linkedin }}" rel="me">
+    <!-- First, all the preloads -->
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/Inter-Bold.woff2" crossorigin />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/Inter-Medium.woff2" crossorigin />
+    <link rel="preload" as="style" href="/css/font.css" />
+    <link rel="preload" as="font" type="font/woff2" href="/fonts/Inter-Regular.woff2" crossorigin />
+
     <!-- IndieCert -->
     <link rel="webmention" href="https://webmention.io/murshidazher.com/webmention" />
     <link rel="pingback" href="https://webmention.io/murshidazher.com/xmlrpc" />
+
+
     <!-- Styles -->
     {{ if .Site.IsServer }}
     <!-- Pipe Sass to CSS, include options, enable sourcemaps -->
@@ -80,10 +88,10 @@
     {{ printf `<link rel="%s" type="%s" href="%s" title="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
     {{ end -}}
 </head>
-<body>
+<body aria-live="polite">
     <header role="banner">
         <section class="row-nm">
-            <a href="/" onclick="ga('send', 'event', 'click', 'header_logo');" class="logo">
+            <a href="/" class="logo">
                 <svg id="logo" width="48px" height="18px" viewBox="0 0 48 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
                     <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
                         <g id="Dribble" transform="translate(-141.000000, -218.000000)" fill="var(--color-dark)" fill-rule="nonzero">
@@ -99,7 +107,7 @@
                     {{ range .Site.Menus.main }}
                     {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
                     <li class="Nav-listItem">
-                        <a class="text-nav  {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}text-zenith active{{end}}"
+                        <a class="text-nav {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{end}}"
                             href="{{.URL}}">
                             <span>{{ .Name }}</span>
                         </a>
@@ -109,3 +117,4 @@
             </nav>
         </section>
     </header>
+

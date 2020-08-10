@@ -340,37 +340,31 @@ header .row,
 
 @font-face {
   font-family: 'Inter';
-  src: url("/fonts/Inter.ttf") format("truetype");
-  font-weight: 700;
-  font-style: normal;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Inter';
-  src: url("/fonts/Inter-Black.ttf") format("truetype");
-  font-weight: 900;
-  font-style: normal;
-  font-display: block; }
-
-@font-face {
-  font-family: 'Inter';
-  src: url("/fonts/Inter-Medium.ttf") format("truetype");
+  font-display: swap;
+  src: url("Inter-Medium.woff2") format("woff2");
   font-weight: 500;
-  font-style: normal;
-  font-display: block; }
+  font-style: normal; }
 
 @font-face {
   font-family: 'Inter';
-  src: url("/fonts/Inter-Regular.otf") format("truetype");
+  font-display: swap;
+  src: url("Inter-Regular.woff2") format("woff2");
   font-weight: 400;
-  font-style: normal;
-  font-display: block; }
+  font-style: normal; }
+
+@font-face {
+  font-family: 'Inter';
+  font-display: swap;
+  src: url("Inter-Bold.woff2") format("woff2");
+  font-weight: 700;
+  font-style: normal; }
 
 @font-face {
   font-family: 'JetBrains Mono';
   src: url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/eot/JetBrainsMono-Regular.eot") format("embedded-opentype"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff2/JetBrainsMono-Regular.woff2") format("woff2"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff/JetBrainsMono-Regular.woff") format("woff"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/ttf/JetBrainsMono-Regular.ttf") format("truetype");
   font-weight: normal;
-  font-style: normal; }
+  font-style: normal;
+  font-display: swap; }
 
 /*------------------------------------*\
     #ABSTRACTS: COLORS
@@ -492,7 +486,7 @@ blockquote {
     display: block;
     font-size: 80%;
     font-style: normal;
-    font-family: -apple-system, "Inter", sans-serif;
+    font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
     font-weight: 700;
     margin-top: 0.75rem; }
     @media screen and (min-width: 48em) {
@@ -1454,7 +1448,8 @@ video {
  * Component Block
  */
 .Nav-list {
-  text-align: right; }
+  text-align: right;
+  font-family: -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol; }
 
 .Nav-listItem {
   font-weight: 500; }
@@ -1767,7 +1762,7 @@ html {
 
 body {
   background-color: #fff;
-  font-family: "Inter", sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
   color: var(--color-body); }
 
 .text-black {

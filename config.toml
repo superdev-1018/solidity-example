@@ -60,11 +60,13 @@ enableEmoji = true
 
 [[menu.main]]
   name = "Notes"
+  emoji = "📝"
   url = "/notes/"
   weight = 10
 
 [[menu.main]]
   name = "Tags"
+  emoji = "📝"
   url = "/tags/"
   weight = 15
 
