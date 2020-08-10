@@ -549,6 +549,8 @@ a:hover {
 
 @media screen and (max-width: 850px) {
 
+  
+
     .mb-32-md {
         margin-bottom: 2rem;
     }
@@ -657,9 +659,9 @@ a:hover {
     display: inline;
     text-align: right;
 
-    .column {
+    .Nav-listItem {
       margin: 10px;
-      margin-bottom: $base-unit * 4;
+      @include margin-bottom(2);
     }
   }
 
@@ -791,9 +793,9 @@ a:hover {
     display: inline;
     text-align: right;
 
-    .column {
+    .Nav-listItem {
       margin: 10px;
-      margin-bottom: $base-unit * 4;
+      @include margin-bottom(2);
     }
   }
 
