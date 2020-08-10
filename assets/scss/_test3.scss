@@ -321,27 +321,28 @@ a:hover {
 .text-nav {
   padding-bottom: 4px;
   border-bottom: 2px solid none;
-  color: #000;
+  color: var(--color-dark);
   text-decoration: none;
   background-color: transparent;
   padding-bottom: 12px;
   border-bottom-color: transparent;
   transition: all 200s ease;
+  font-weight: 500;
 
   &:hover {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid var(--color-dark);
     padding-bottom: 8px;
     transition: all 200s ease;
   }
 
   &.active {
-    color: #000;
-    border-bottom: 2px solid #000;
+    color: var(--color-dark);
+    border-bottom: 2px solid var(--color-dark);
     padding-bottom: 8px;
   }
 
   &:visited {
-    color: #000;
+    color: var(--color-dark);
   }
 }
 
@@ -367,7 +368,7 @@ a:hover {
 
 @media screen and (min-width: 850px) {
   .column {
-    flex: 1;
+    flex: 1 auto;
   }
 
 
