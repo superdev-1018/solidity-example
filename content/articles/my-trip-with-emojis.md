@@ -198,5 +198,5 @@ Well, if you're still racking your brain out on how I got that dab emoji, well i
 - [Dab Emoji](https://dribbble.com/shots/6134883-Dab-Emoji) by André Gonçalves.
 
 {{< message >}}
-You can find the scraper from this article over on <a href="https://gist.github.com/murshidazher/652f40516f30bdd2b57613f40e4a1f46">Github.com</a>
+You can find the scraper from this article over on <a href="https://github.com/murshidazher/ios-emoji-scraper">Github.com</a>
 {{< /message >}}
