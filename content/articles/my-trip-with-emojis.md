@@ -39,7 +39,7 @@ This is where my 24 hour journey began, I had the following priorities in this b
 
 Since I needed a univesal emoji and I had over 15 emoji collections to choose from, see this how a [simple wave emoji](https://emojipedia.org/waving-hand/) appears in different platform. But since I was previously set on using apple emojis, I was on the lookout for apple emoji font but as it appears I couldn't find one online.
 
-Next, I came up with the idea of scrapping the whole collection of [Apple Emoji from Emojipedia](https://emojipedia.org/apple/ios-13.3/) which consists of about 3175 PNGS.
+Next, I came up with the idea of scraping the whole collection of [Apple Emoji from Emojipedia](https://emojipedia.org/apple/ios-13.3/) which consists of about 3175 PNGS.
 
 The process goes like this which I got from this [Gist](https://gist.github.com/SMotaal/03e7eccb2a8beb5db5529130bee7ee6f) by Saleh Abdel Motaal,
 
@@ -57,7 +57,7 @@ Second Step: Clean up the Script
 [...document.querySelectorAll('script, link[rel=preload], link[rel=prefetch]')].forEach(element => element.remove());
 {{</ highlight >}}
 
-This gave me a pretty good `JSON` file to work with, but since am using `YAML` as the  data-serialization language for consistency I wrote a Python script to convert this JSON to `YAML` too. Here `ex.txt` is the `JSON` file we've scrapped,
+This gave me a pretty good `JSON` file to work with, but since am using `YAML` as the  data-serialization language for consistency I wrote a Python script to convert this JSON to `YAML` too. Here `ex.txt` is the `JSON` file we've scraped,
 
 {{< highlight python >}}
 def convert_yaml():
@@ -180,7 +180,7 @@ Though it was a fun journey to go through and I learned a lot from it, I revoke 
 One: I don't want to impose my views on aesthetics to my users
 Two: Though I compressed each emojis to be less than `4KB` still there is a request sent to a blob storage to retrieve it, which could be eliminated.
 Three: Pixelation - since the emojis are in raster format the inevitable pixelation will occur when you zoom in on them but I don't want to portray this to my readers.
-Fourth: Updates - the version of Apple Emoji I scrapped is `v13.3` but I have to be on constant lookout for any new emojis and update them both in my `YAML` and cloud media while going through the whole process again.
+Fourth: Updates - the version of Apple Emoji I scraped is `v13.3` but I have to be on constant lookout for any new emojis and update them both in my `YAML` and cloud media while going through the whole process again.
 
 Phew 💨 , for the reasons mentioned above I opted out of using a consistent emoji library and with that I rest my case.
 
@@ -192,11 +192,11 @@ Well, if you're still racking your brain out on how I got that dab emoji, well i
 
 - [Emoji Mac](https://harrycresswell.com/articles/emoji-mac/) by Harry Cresswell.
 - [Emojipedia® Apple iOS 13.3](https://emojipedia.org/apple/ios-13.3/) by Emojipedia.
-- [Emojipedia Scrapping](https://gist.github.com/SMotaal/03e7eccb2a8beb5db5529130bee7ee6f) by Saleh Abdel Motaal.
+- [Emojipedia Scraping](https://gist.github.com/SMotaal/03e7eccb2a8beb5db5529130bee7ee6f) by Saleh Abdel Motaal.
 - [Emojis Shortcode](https://gohugohq.com/partials/emojis-shortcode-for-hugo/) by GoHugoHQ.
 - [emoji-cheat-sheet](https://github.com/ikatyang/emoji-cheat-sheet) by Ika.
 - [Dab Emoji](https://dribbble.com/shots/6134883-Dab-Emoji) by André Gonçalves.
 
 {{< message >}}
-You can find the scrapper from this article over on <a href="https://gist.github.com/murshidazher/652f40516f30bdd2b57613f40e4a1f46">Github.com</a>
+You can find the scraper from this article over on <a href="https://gist.github.com/murshidazher/652f40516f30bdd2b57613f40e4a1f46">Github.com</a>
 {{< /message >}}
