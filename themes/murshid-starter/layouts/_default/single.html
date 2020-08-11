@@ -4,9 +4,9 @@
     <div class="column center w-full">
         <div class="header__wrapper">
             <h1 class="center align-center">
-                {{ .Title }}
+                {{ .Title }}&nbsp; {{ .Params.emoji }}
             </h1>
-            {{ if .Params.emoji }}
+            <!-- {{ if .Params.emoji }}
             {{ $alias := .Params.emoji }}
             {{ $url := .Site.Params.cloudinary_url }}
             {{ range first 1 (where .Site.Data.emoji.ios13 "alias" "eq" $alias) }}
@@ -14,7 +14,7 @@
                     <img min-width="32" min-height="32" class="cld-responsive lazyload" title="{{ .title }}" src="{{ $url }}/{{ .link }}"/>
                 </span>
             {{ end }}
-            {{ end }}
+            {{ end }} -->
         </div>
     </div>
 

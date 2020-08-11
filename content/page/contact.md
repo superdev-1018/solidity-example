@@ -1,6 +1,6 @@
 +++
 title = "Want to chat or grab a coffee?"
-emoji = ":call_me_hand:"
+emoji = "🤙"
 date = "2020-05-02T22:05:42+01:00"
 description = "I'm always happy to talk about working together, new opportunities or just catching up. If you'd like to get in touch, just shoot me an email with the link below"
 slug = "contact"
