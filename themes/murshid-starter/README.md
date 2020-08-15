@@ -20,6 +20,7 @@
 - [Vinyl Record cover](https://www.sketchappsources.com/free-source/1908-vinyl-pop-up-sketch-freebie-resource.html)
 - [Asynchronously loading pages](https://albertarmea.com/post/async-load-hugo/)
 - [hugo-lunrjs-search-index](https://codewithhugo.com/hugo-lunrjs-search-index/)
+- [WIA aria 1.1](https://www.w3.org/TR/wai-aria-practices-1.1/)
 
 ## License
 
