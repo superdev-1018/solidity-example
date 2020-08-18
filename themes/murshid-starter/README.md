@@ -23,6 +23,7 @@
 - [WIA aria 1.1](https://www.w3.org/TR/wai-aria-practices-1.1/)
 - [Generative Art](https://hamy.xyz/about/) generative art
 - [Manage Google Tags](https://marketingplatform.google.com/about/tag-manager/)
+- [Auto-publish future posts with JAMstack on Netlify and IFTTT/CircleCI 2.0 scheduled jobs](https://codewithhugo.com/scheduled-future-posts-jamstack/)
 
 ## License
 
