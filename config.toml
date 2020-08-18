@@ -13,6 +13,11 @@ pygmentsCodeFences = true
 enableRobotsTXT = true
 canonifyURLs = true
 
+[sitemap]
+  changefreq = "daily"
+  filename = "sitemap.xml"
+  priority = 0.5
+
 
 [params]
   keywords = "Product Design, UX Design, UI Design, Front-end, Web Development, Back-end, Software, Small businesses, Murshid Azher, Murshid, Azher, Automation, Typography, Software Engineer, Developer"
