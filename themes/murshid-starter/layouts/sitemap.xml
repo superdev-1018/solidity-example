@@ -2,24 +2,11 @@
   {{ range .Data.Pages }}{{ if not .Params.robotsdisallow }}
   <url>
     <loc>{{ .Permalink }}</loc>{{ if not .Lastmod.IsZero }}
-    <lastmod>{{ safeHTML ( .Lastmod.Format "2006-01-02T15:04:05-07:00" ) }}</lastmod>{{ end }}{{ with .Sitemap.ChangeFreq }}
+    <lastmod>{{ safeHTML ( .Lastmod.Format "Mon, 02 Jan 2006 15:04:05 -0700" ) }}</lastmod>{{ end }}{{ with .Sitemap.ChangeFreq }}
     <changefreq>{{ . }}</changefreq>{{ end }}{{ if ge .Sitemap.Priority 0.0 }}
     <priority>{{ .Sitemap.Priority }}</priority>{{ end }}{{ if .IsTranslated }}{{ range .Translations }}
-    <xhtml:link
-                rel="alternate"
-                hreflang="{{ .Lang }}"
-                href="{{ .Permalink }}"
-                />{{ end }}
-    <xhtml:link
-                rel="alternate"
-                hreflang="{{ .Lang }}"
-                href="{{ .Permalink }}"
-                />{{ end }}
-    <xhtml:link
-                rel="alternate"
-                hreflang="x-default"
-                href="{{ .Permalink }}"
-                />
-  </url>
-  {{ end }}{{ end }}
+    <xhtml:link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />{{ end }}
+    <xhtml:link rel="alternate" hreflang="{{ .Lang }}" href="{{ .Permalink }}" />{{ end }}
+    <xhtml:link rel="alternate" hreflang="x-default" href="{{ .Permalink }}" />
+  </url>{{ end }}{{ end }}
 </urlset>
