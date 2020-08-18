@@ -2,5 +2,8 @@ node_modules/
 public/
 site/public
 
+# vscode
+.vscode
+
 # hugo binaries
 hugo.*
