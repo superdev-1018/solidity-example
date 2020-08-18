@@ -46,12 +46,11 @@
     <meta name="p:domain_verify" content="f9bd7e5c38b66501ad8461dc001738ac" />
     <!-- Google Verification -->
     <meta name="google-site-verification" content="lbDySSCWEPzBHtLk4VSiPGDSzexsqW9sEo7MN31maUk" />
-
     <!-- Disable save to Pintrest button on images -->
     <meta name="pinterest" content="nopin" />
     <!-- Me -->
-    {{ with .Site.Author.name }}
-    <meta name="author" content="{{ . }}">{{ end }}
+    {{ with .Site.Author.name -}}
+    <meta name="author" content="{{ . }}">{{- end }}
     <link href="mailto:{{ .Site.Author.email }}" rel="me">
     <link href="{{ .Site.Author.twitter }}" rel="me">
     <link href="{{ .Site.Author.github }}" rel="me">
