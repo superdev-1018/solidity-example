@@ -2,8 +2,10 @@
 
 # [murshidazher.com](https://www.murshidazher.com)
 
+![GitHub package.json version](https://img.shields.io/github/package-json/v/murshidazher/murshid?style=flat-square)
 ![netlify](https://img.shields.io/netlify/5bb22eef-8559-4079-be63-e42c63f63770?style=flat-square)
 ![CircleCI](https://img.shields.io/circleci/build/github/murshidazher/murshid/master?style=flat-square)
+![GitHub](https://img.shields.io/github/license/murshidazher/murshid?style=flat-square)
 
 > A simple performant personal website made with [hugo](https://gohugo.io/).
 
