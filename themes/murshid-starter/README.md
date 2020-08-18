@@ -21,6 +21,7 @@
 - [Asynchronously loading pages](https://albertarmea.com/post/async-load-hugo/)
 - [hugo-lunrjs-search-index](https://codewithhugo.com/hugo-lunrjs-search-index/)
 - [WIA aria 1.1](https://www.w3.org/TR/wai-aria-practices-1.1/)
+- [Generative Art](https://hamy.xyz/about/) generative art
 
 ## License
 
