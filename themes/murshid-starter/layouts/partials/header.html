@@ -15,6 +15,8 @@
     <meta name="keywords" content="{{ . }}">{{ end }}
     {{ with .Site.LanguageCode }}
     <meta http-equiv="content-language" content="{{ . }}" />{{ end }}
+    <!-- Robots -->
+    {{ with .Params.robotsdisallow }}<meta name="robots" content="noindex, nofollow, noarchive">{{ else }}<meta name="robots" content="index, follow, archive">{{ end }}
     <!-- Open Graph / Facebook -->
     <meta property="og:title"
         content="{{ if .IsHome -}}{{ .Site.Title }} &middot; {{ $.Site.Params.strapline }}{{- else -}}{{ .Title }} | {{ .Site.Title }} &middot; {{ $.Site.Params.strapline }} {{- end }}">
