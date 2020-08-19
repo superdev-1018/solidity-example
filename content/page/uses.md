@@ -1,6 +1,6 @@
 +++
 title = "Uses"
-date = "2019-01-18T11:27:43+01:00"
+date = 2020-08-11T13:29:21+05:30
 description = "Things I use"
 emoji = "🍳"
 slug = "uses"

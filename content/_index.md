@@ -1,6 +1,6 @@
 ---
 title: "Hello, I'm Murshid Azher"
-date: "2016-10-24T17:23:17+01:00"
+date: 2020-08-11T13:29:21+05:30
 description: "Murshid Azher is a professional designer Front-end web developer from London, England. Read technical articles and notes on design and code."
 intro: "I'm a freelance designer and front-end web developer from London, England."
 draft: false
