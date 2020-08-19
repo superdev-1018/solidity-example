@@ -22,7 +22,7 @@ canonifyURLs = true
 [params]
   keywords = "Product Design, UX Design, UI Design, Front-end, Web Development, Visual Identity, Back-end, Software, Small businesses, Murshid Azher, Murshid, Azher, Automation, Typography, Software Engineer, Developer"
   description = "Murshid Azher is a professional designer and software developer from Colombo, Sri Lanka. Read technical articles and notes on coding, designing and much more."
-  strapline = "Coder, Designer and Data Enthusiast"
+  strapline = "Coder, Designer, and Data Enthusiast"
   location = "Colombo, LK"
 
   # Set Cloudinary URL for image hosting
