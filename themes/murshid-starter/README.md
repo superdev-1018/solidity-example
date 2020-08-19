@@ -25,6 +25,7 @@
 - [Manage Google Tags](https://marketingplatform.google.com/about/tag-manager/)
 - [Auto-publish future posts with JAMstack on Netlify and IFTTT/CircleCI 2.0 scheduled jobs](https://codewithhugo.com/scheduled-future-posts-jamstack/)
 - [Hugo - Best practices](https://github.com/spech66/hugo-best-practices)
+- [SASS / SCSS Assets Management](https://gohugo.io/hugo-pipes/scss-sass/)
 
 ## License
 
