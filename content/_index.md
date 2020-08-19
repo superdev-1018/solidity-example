@@ -1,8 +1,8 @@
 ---
 title: "Hello, I'm Murshid Azher"
 date: 2020-08-11T13:29:21+05:30
-description: "Murshid Azher is a professional designer Front-end web developer from London, England. Read technical articles and notes on design and code."
-intro: "I'm a freelance designer and front-end web developer from London, England."
+description: "Murshid Azher is a professional designer and software developer from Colombo, Sri Lanka. Read technical articles and notes on design and code."
+intro: "I'm a freelance designer and software developer from Colombo, Sri Lanka."
 draft: false
 ---
 
