@@ -4,6 +4,6 @@ Disallow: /404/
 Disallow: /search/
 Disallow: /page/
 
-{{ range where .Data.Pages "Params.robotsdisallow" true -}}Disallow: {{- .RelPermalink -}}{{- end }}
+{{- range where .Data.Pages "Params.robotsdisallow" true -}}Disallow: {{- .RelPermalink -}}{{- end -}}
 
 Sitemap: {{ "sitemap.xml" | absLangURL }}
