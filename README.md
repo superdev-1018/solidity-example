@@ -78,7 +78,7 @@ And again you'd need to tell what the previous code actually does.
 
 ## TODO
 
-- [ ] SEO the website.
+- [x] SEO the website.
 - [ ] Add quick link navigation in a single blog post.
 - [x] Add apple-emoji font.
 - [ ] Show the code language in syntax hightlight js.
@@ -91,12 +91,12 @@ And again you'd need to tell what the previous code actually does.
 - [ ] Add a way to display a collection of liked posts (`IFTTT` trigger `Pocket` feed).
 - [ ] Add detailed projects section.
 - [ ] Include pagination.
-- [ ] Check footer copyright responsiveness.
+- [x] Check footer copyright responsiveness.
 - [ ] Add preload functionality for the site.
 - [ ] Add a separate about me section for the site.
 - [ ] Add a work with me section for the site.
 - [ ] Add service worker for offline capabilities.
-- [ ] Add Sitemap and robots.txt .
+- [x] Add Sitemap and robots.txt .
 - [ ] Next and Prev. inside a single blog post.
 
 ## Keep in Mind
@@ -116,6 +116,3 @@ A list of tools used to develop this project
 ## License
 
 [MIT](https://github.com/murshidazher/murshid/blob/master/LICENSE) © Murshid Azher.
-
-[IOS 13.3 emoji](https://emojipedia.org/apple/ios-13.3/) and [Emoji alias](https://github.com/ikatyang/emoji-cheat-sheet) ® Apple and ® Emojipedia.
-
