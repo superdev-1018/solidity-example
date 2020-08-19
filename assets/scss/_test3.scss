@@ -790,7 +790,7 @@ a:hover {
 
     .Nav-listItem {
       margin: 10px;
-      @include margin-bottom(1);
+      @include margin-bottom(.67);
     }
   }
 
