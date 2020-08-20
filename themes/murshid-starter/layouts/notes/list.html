@@ -12,14 +12,19 @@
 <section class="row-nm align-center j-center">
   <div class="column-nm-sm w-full mx-60 ">
     <h2 class="font-circular-book center">
-      Notes on interesting things I’m learning from courses, books, talks and articles on the internet.
+      Notes on interesting things I’m learning from courses, books, talks and
+      articles on the internet.
     </h2>
   </div>
 </section>
 <section id="notes_list" class="row-nm m-120 mb-80 j-end">
   {{ range .Data.Pages }}
 
-  <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="articles_list--item">
+  <article
+    itemscope="itemscope"
+    itemtype="http://schema.org/CreativeWork"
+    class="articles_list--item"
+  >
     <div class="articles_list--item__body">
       <div class="hs-featured-image-wrapper">
         <!-- <time itemprop="datePublished" class="post-date-inner">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>  -->
@@ -35,7 +40,9 @@
       {{ partial "post/tags.html" . }}
 
       <div class="articles_list--item__body--title">{{ .Title }}</div>
-      <p class="articles_list--item__body--desc">{{ .Description | markdownify }}</p>
+      <p class="articles_list--item__body--desc">
+        {{ .Description | markdownify }}
+      </p>
       <div class="articles_list--item__link">
         <a
           href="{{ .Permalink }}"

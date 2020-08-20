@@ -11,14 +11,21 @@
 </header>
 <section class="row-nm align-center j-center">
   <div class="column-nm-sm w-full mx-60 ">
-    <h2 class="font-circular-book center">Here are some of my recent ideas I've published on how to design and code things for the web.</h2>
+    <h2 class="font-circular-book center">
+      Here are some of my recent ideas I've published on how to design and code
+      things for the web.
+    </h2>
   </div>
 </section>
 
 <section id="articles_list" class="row-nm m-120 mb-80 j-end">
   {{ range .Data.Pages }}
 
-  <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="articles_list--item">
+  <article
+    itemscope="itemscope"
+    itemtype="http://schema.org/CreativeWork"
+    class="articles_list--item"
+  >
     <!-- <img class="" srcset="
       ../img/1.png 1x,
       ../img/1@2x.png 2x,
@@ -46,7 +53,9 @@
           class="inline-block mt-8 text-xs font-bold tracking-widest uppercase text-zenith">{{ .Date.Format "Mon, Jan 2, 2006" }}
         </time> -->
 
-      <p class="articles_list--item__body--desc">{{ .Description | markdownify }}</p>
+      <p class="articles_list--item__body--desc">
+        {{ .Description | markdownify }}
+      </p>
       <div class="articles_list--item__link">
         <a
           href="{{ .Permalink }}"

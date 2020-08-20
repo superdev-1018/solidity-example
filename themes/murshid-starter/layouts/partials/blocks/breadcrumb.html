@@ -5,10 +5,12 @@
 
 {{ template "breadcrumb" dict "currentPage" .currentPage.Parent }}
  {{ end }}
- {{ if eq .id .currentPage.UniqueID }}
- {{ .currentPage.Title }}
 
-{{ else }}
- <a href="{{ .Permalink }}">{{ .currentPage.Title }}</a> > {{ end }}
+{{ if eq .id .currentPage.UniqueID }}
+ {{ .currentPage.Title }}
+ {{ else }}
+
+<a href="{{ .Permalink }}">{{ .currentPage.Title }}</a> > {{ end }}
 {{ end }}
-{{ end }}
+{{
+end }}

@@ -20,17 +20,25 @@
 <section id="articles_list" class="row-nm m-120 mb-80 j-end">
   {{ range .Data.Pages }}
 
-  <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="articles_list--item">
+  <article
+    itemscope="itemscope"
+    itemtype="http://schema.org/CreativeWork"
+    class="articles_list--item"
+  >
     <div class="articles_list--item__body">
       <hr />
       {{ partial "post/tags.html" . }}
 
       <div class="articles_list--item__body--title">{{ .Title }}</div>
-      <time itemprop="datePublished" class="inline-block mt-8 text-xs font-bold tracking-widest uppercase text-zenith"
+      <time
+        itemprop="datePublished"
+        class="inline-block mt-8 text-xs font-bold tracking-widest uppercase text-zenith"
         >{{ .Date.Format "Mon, Jan 2, 2006" }}
 
       </time>
-      <p class="articles_list--item__body--desc">{{ .Description | markdownify }}</p>
+      <p class="articles_list--item__body--desc">
+        {{ .Description | markdownify }}
+      </p>
       <div class="articles_list--item__link">
         <a
           href="{{ .Permalink }}"

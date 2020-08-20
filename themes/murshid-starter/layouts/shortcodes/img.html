@@ -5,14 +5,20 @@
       media="(min-width: 535px)"
       data-original-set="{{ .Get "src" }}.{{ .Get "type" }} 1x,
                 {{ .Get "src" }}@2x.{{ .Get "type" }} 2x"
-      srcset="{{ .Get "src" }}.{{ .Get "type" }} 1x, {{ .Get "src" }}@2x.{{ .Get "type" }} 2x"
+      srcset="
+        {{ .Get "src" }}.{{ .Get "type" }}    1x,
+        {{ .Get "src" }}@2x.{{ .Get "type" }} 2x
+      "
     />
     <!-- Small screens -->
     <source
       media="(max-width: 534px)"
       data-original-set="{{ .Get "src" }}-sm.{{ .Get "type" }} 1x,
                 {{ .Get "src" }}-sm@2x.{{ .Get "type" }} 2x"
-      srcset="{{ .Get "src" }}-sm.{{ .Get "type" }} 1x, {{ .Get "src" }}-sm@2x.{{ .Get "type" }} 2x"
+      srcset="
+        {{ .Get "src" }}-sm.{{ .Get "type" }}    1x,
+        {{ .Get "src" }}-sm@2x.{{ .Get "type" }} 2x
+      "
     />
     <!-- Fallback -->
     <img

@@ -14,23 +14,19 @@ stage: first-stage
 
 ## What is an emoji
 
-Emoji is a word derived from the Japanese word `kanji` meaning `picture` and `character`, the word `emoji` is a contraction which can be
-roughly translated as `pictograph`.
+Emoji is a word derived from the Japanese word `kanji` meaning `picture` and `character`, the word `emoji` is a contraction which can be roughly translated as `pictograph`.
 
 ## Shortcut I never knew before
 
-Though I've used emojis before I never knew how to access emoji's on mac until I came across this article by
-[Harry Cresswell](https://harrycresswell.com/articles/emoji-mac/).
+Though I've used emojis before I never knew how to access emoji's on mac until I came across this article by [Harry Cresswell](https://harrycresswell.com/articles/emoji-mac/).
 
-You only need to press `Command(⌘) + Control(⌃) + Spacebar` to bring up the emoji palette. Then search for your favourite emoji and select
-it. That seems super simple right.
+You only need to press `Command(⌘) + Control(⌃) + Spacebar` to bring up the emoji palette. Then search for your favourite emoji and select it. That seems super simple right.
 
 ## Markdown and Shortcode
 
-As you might've seen most of my main sections have a unique emoji to visually communicate its purpose. I am obsessed with them and since I
-mostly developed this site using `MacOS` I wasn't aware of how it looked on `Windows` until I recently got to know that the emojis looked
-different on `Windows`. Most important;y, how it was drastically different when using a `Samsung` device, to read more on this look at
-[Samsung’s Bizarre Emojis](https://medium.com/hackernoon/samsungs-bizarre-emojis-6be568a3b7d9) by Jackson.
+As you might've seen most of my main sections have a unique emoji to visually communicate its purpose. I am obsessed with them and since I mostly developed this site using `MacOS`
+I wasn't aware of how it looked on `Windows` until I recently got to know that the emojis looked different on `Windows`. Most important;y, how it was drastically different when
+using a `Samsung` device, to read more on this look at [Samsung’s Bizarre Emojis](https://medium.com/hackernoon/samsungs-bizarre-emojis-6be568a3b7d9) by Jackson.
 
 This is where my 24 hour journey began, I had the following priorities in this brief endeavor
 
@@ -40,35 +36,29 @@ This is where my 24 hour journey began, I had the following priorities in this b
 
 ## Javascript and Python to the Rescue
 
-Since I needed a univesal emoji and I had over 15 emoji collections to choose from, see this how a
-[simple wave emoji](https://emojipedia.org/waving-hand/) appears in different platform. But since I was previously set on using apple
-emojis, I was on the lookout for apple emoji font but as it appears I couldn't find one online.
+Since I needed a univesal emoji and I had over 15 emoji collections to choose from, see this how a [simple wave emoji](https://emojipedia.org/waving-hand/) appears in different
+platform. But since I was previously set on using apple emojis, I was on the lookout for apple emoji font but as it appears I couldn't find one online.
 
-Next, I came up with the idea of scraping the whole collection of [Apple Emoji from Emojipedia](https://emojipedia.org/apple/ios-13.3/)
-which consists of about 3175 PNGS.
+Next, I came up with the idea of scraping the whole collection of [Apple Emoji from Emojipedia](https://emojipedia.org/apple/ios-13.3/) which consists of about 3175 PNGS.
 
-The process goes like this which I got from this [Gist](https://gist.github.com/SMotaal/03e7eccb2a8beb5db5529130bee7ee6f) by Saleh Abdel
-Motaal,
+The process goes like this which I got from this [Gist](https://gist.github.com/SMotaal/03e7eccb2a8beb5db5529130bee7ee6f) by Saleh Abdel Motaal,
 
 First Step: Navigate to https://emojipedia.org/apple/ios-13.3/
 
 Second Step: Generate the asset manifest by running this in the Inspect console
 
-{{< highlight js >}}
-copy(JSON.stringify(Object.fromEntries([...document.querySelector('ul.emoji-grid').querySelectorAll('img[title][src][srcset]')].map(({title,
-attributes}, index) => ([attributes.title.value, attributes.srcset.value.replace(/ +\dx$/, '')]))))) {{</ highlight >}}
+{{< highlight js >}} copy(JSON.stringify(Object.fromEntries([...document.querySelector('ul.emoji-grid').querySelectorAll('img[title][src][srcset]')].map(({title, attributes},
+index) => ([attributes.title.value, attributes.srcset.value.replace(/ +\dx$/, '')]))))) {{</ highlight >}}
 
 Second Step: Clean up the Script
 
-{{< highlight js >}} [...document.querySelectorAll('script, link[rel=preload], link[rel=prefetch]')].forEach(element => element.remove());
-{{</ highlight >}}
+{{< highlight js >}} [...document.querySelectorAll('script, link[rel=preload], link[rel=prefetch]')].forEach(element => element.remove()); {{</ highlight >}}
 
-This gave me a pretty good `JSON` file to work with, but since am using `YAML` as the data-serialization language for consistency I wrote a
-Python script to convert this JSON to `YAML` too. Here `ex.txt` is the `JSON` file we've scraped,
+This gave me a pretty good `JSON` file to work with, but since am using `YAML` as the data-serialization language for consistency I wrote a Python script to convert this JSON to
+`YAML` too. Here `ex.txt` is the `JSON` file we've scraped,
 
-{{< highlight python >}} def convert_yaml(): with open('ex.txt') as f1: with open('ios13.yaml', 'w') as f2: lines = f1.readlines() for i,
-line in enumerate(lines): yaml_line = line.replace('{', '\n') yaml_line = yaml_line.replace('}\n', '') yaml_line = yaml_line.replace(',',
-'') yaml_line = yaml_line.lstrip();
+{{< highlight python >}} def convert_yaml(): with open('ex.txt') as f1: with open('ios13.yaml', 'w') as f2: lines = f1.readlines() for i, line in enumerate(lines): yaml_line =
+line.replace('{', '\n') yaml_line = yaml_line.replace('}\n', '') yaml_line = yaml_line.replace(',', '') yaml_line = yaml_line.lstrip();
 
         if yaml_line:
           yaml_line = '- title: ' + yaml_line
@@ -80,20 +70,17 @@ line in enumerate(lines): yaml_line = line.replace('{', '\n') yaml_line = yaml_l
 
 Then, download those images
 
-{{< highlight python >}} def download_img(): base = "ios_emoji" i = 0 with open('ex.txt') as f: urls = f.read() links =
-re.findall('"((http)s?://.\*?)"', urls) for url in links: i = i+1 print('Downloading... ' + str(i)) context =
-ssl.\_create_unverified_context() img_url = url[0] path_url =
-img_url.replace('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/', '') path_url = os.path.join(base,
-path_url) ssl.\_create_default_https_context = ssl.\_create_unverified_context urllib.request.urlretrieve(img_url, path_url)
-{{</ highlight >}}
+{{< highlight python >}} def download_img(): base = "ios_emoji" i = 0 with open('ex.txt') as f: urls = f.read() links = re.findall('"((http)s?://.\*?)"', urls) for url in links: i
+= i+1 print('Downloading... ' + str(i)) context = ssl.\_create_unverified_context() img_url = url[0] path_url =
+img_url.replace('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/', '') path_url = os.path.join(base, path_url) ssl.\_create_default_https_context =
+ssl.\_create_unverified_context urllib.request.urlretrieve(img_url, path_url) {{</ highlight >}}
 
 Then, compress these pngs so that you can reduce their load time
 
-{{< highlight python >}} def resize(): root_dir = "ios_emoji" out_dir = "resized" resize_ratio = 0.6 # where 0.5 is half size, 2 is double
-size
+{{< highlight python >}} def resize(): root_dir = "ios_emoji" out_dir = "resized" resize_ratio = 0.6 # where 0.5 is half size, 2 is double size
 
-i = 0 for filename in glob.iglob(root\*dir + '\*\*/\_.png', recursive=True): i = i + 1 decimal_round = 3 # number of decimal points
-re_filename = os.path.join(out_dir, filename) im = Image.open(filename)
+i = 0 for filename in glob.iglob(root\*dir + '\*\*/\_.png', recursive=True): i = i + 1 decimal_round = 3 # number of decimal points re_filename = os.path.join(out_dir, filename) im
+= Image.open(filename)
 
       new_image_height = int(im.size[0] / (1/resize_ratio))
       new_image_length = int(im.size[1] / (1/resize_ratio))
@@ -110,13 +97,12 @@ re_filename = os.path.join(out_dir, filename) im = Image.open(filename)
 
 {{</ highlight >}}
 
-Then, uplaod these files to the compressed file to you own image hosting platform, I use [Cloudinary](https://cloudinary.com/) to transform
-and manage my media contents.
+Then, uplaod these files to the compressed file to you own image hosting platform, I use [Cloudinary](https://cloudinary.com/) to transform and manage my media contents.
 
 ## Shortcode with Hugo
 
-Now for the emoji to appear in Hugo, as a shortcode we need to replace the appropriate shortcode in the `YAML` file manually. You could use
-either of these github repo stated in the resources to find their appropriate :shortcodes:.
+Now for the emoji to appear in Hugo, as a shortcode we need to replace the appropriate shortcode in the `YAML` file manually. You could use either of these github repo stated in
+the resources to find their appropriate :shortcodes:.
 
 Then will create a `Shortcode` in Hugo,
 
@@ -129,8 +115,8 @@ Then will create a `Shortcode` in Hugo,
 
 Then paste the following content inside `emoji.html`,
 
-{{< highlight html >}} {{ $shortcode := .Get 0 }} {{ $size := .Get 1 }} {{ $default_size := 24 }}
-{{ range first 1 (where .Site.Data.emoji.ios13 "shortcode" "eq" $shortcode) }} <span class="emoji"> <img 
+{{< highlight html >}} {{ $shortcode := .Get 0 }} {{ $size := .Get 1 }} {{ $default_size := 24 }} {{ range first 1 (where .Site.Data.emoji.ios13 "shortcode" "eq" $shortcode) }}
+<span class="emoji"> <img 
             width="{{ $size | default $default_size }}" 
             height="{{ $size | default $default_size }}" 
             class="cld-responsive lazyload"  
@@ -150,22 +136,20 @@ Now, in your markdown you can use the `shortcode` like
 
 ## Reflection
 
-Though it was a fun journey to go through and I learned a lot from it, I revoke my initial stand and planning to go with the native
-implementation of emojis. There are couple of reasons for this;
+Though it was a fun journey to go through and I learned a lot from it, I revoke my initial stand and planning to go with the native implementation of emojis. There are couple of
+reasons for this;
 
-One: I don't want to impose my views on aesthetics to my users Two: Though I compressed each emojis to be less than `4KB` still there is a
-request sent to a blob storage to retrieve it, which could be eliminated. Three: Pixelation - since the emojis are in raster format the
-inevitable pixelation will occur when you zoom in on them but I don't want to portray this to my readers. Fourth: Updates - the version of
-Apple Emoji I scraped is `v13.3` but I have to be on constant lookout for any new emojis and update them both in my `YAML` and cloud media
-while going through the whole process again.
+One: I don't want to impose my views on aesthetics to my users Two: Though I compressed each emojis to be less than `4KB` still there is a request sent to a blob storage to
+retrieve it, which could be eliminated. Three: Pixelation - since the emojis are in raster format the inevitable pixelation will occur when you zoom in on them but I don't want to
+portray this to my readers. Fourth: Updates - the version of Apple Emoji I scraped is `v13.3` but I have to be on constant lookout for any new emojis and update them both in my
+`YAML` and cloud media while going through the whole process again.
 
 Phew 💨 , for the reasons mentioned above I opted out of using a consistent emoji library and with that I rest my case.
 
 ## Postscript
 
-Well, if you're still racking your brain out on how I got that dab emoji, well it's a custom emoji created by
-[André Gonçalves](https://dribbble.com/andre_goncalves), one of the custom emojis I added to the library I created with the same method
-mentioned above.
+Well, if you're still racking your brain out on how I got that dab emoji, well it's a custom emoji created by [André Gonçalves](https://dribbble.com/andre_goncalves), one of the
+custom emojis I added to the library I created with the same method mentioned above.
 
 ### Resources
 
@@ -177,5 +161,4 @@ mentioned above.
 - [Samsung’s Bizarre Emojis](https://medium.com/hackernoon/samsungs-bizarre-emojis-6be568a3b7d9) by Jackson
 - [Dab Emoji](https://dribbble.com/shots/6134883-Dab-Emoji) by André Gonçalves.
 
-{{< message >}} You can find the scraper from this article over on
-<a href="https://github.com/murshidazher/ios-emoji-scraper">Github.com</a> {{< /message >}}
+{{< message >}} You can find the scraper from this article over on <a href="https://github.com/murshidazher/ios-emoji-scraper">Github.com</a> {{< /message >}}

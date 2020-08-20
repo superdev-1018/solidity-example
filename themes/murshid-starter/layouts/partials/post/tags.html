@@ -3,7 +3,8 @@
   <div class="post__meta-tag">
     {{ $baseurl := .Site.BaseURL }}
  {{ range .Params.tags }}
- <a href="/tags/{{ . | urlize }}" class="text-zenith">{{ . }}</a> {{ end }}
+
+    <a href="/tags/{{ . | urlize }}" class="text-zenith">{{ . }}</a> {{ end }}
 
   </div>
 </div>
