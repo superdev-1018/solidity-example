@@ -10,6 +10,7 @@ pygmentsUseClasses=true
 pygmentsCodeFences = true
 # pygmentsCodefencesGuessSyntax = true
 
+disableHugoGeneratorInject = true
 enableRobotsTXT = true
 canonifyURLs = true
 
