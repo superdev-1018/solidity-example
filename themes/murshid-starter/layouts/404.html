@@ -1,29 +1,32 @@
-{{ define "main" }}
-<article id="content" class="Post">
-    <header id="{{ .Slug }}" class="row-nm m-32 center intro-sm">
-        <div class="column center w-full">
-            <h1 class="align-center">Oops! We can’t find that page</h1>
-            <span class="fs-large">
-                <img data-src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale,f_auto,f_webp,fl_awebp,q_auto/site/waving.gif" role="Waving" aria-roledescription="Go back" alt="Waving gif" caption="A waving emoji to say bye" />
-            </span>
-        </div>
+
+  {{ define "main" }}
+  <article class="Post"
+           id="content">
+    <header class="row-nm m-32 center intro-sm"
+            id="{{ .Slug }}">
+      <div class="column center w-full">
+        <h1 class="align-center">Oops! We can’t find that page</h1><span class="fs-large"><img alt="Waving gif"
+             aria-roledescription="Go back"
+             caption="A waving emoji to say bye"
+             class="lazyload"
+             data-src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale,f_auto,f_webp,fl_awebp,q_auto/site/waving.gif"
+             role="Waving"></span>
+      </div>
     </header>
     <section class="row-nm align-center j-center">
-        <div class="column-nm-sm w-full mx-60 ">
-            <h2 class="font-circular-book center">Sorry, we’ve misplaced that URL or it's pointing to something that
-                doesn’t
-                exist.</h2>
-        </div>
+      <div class="column-nm-sm w-full mx-60">
+        <h2 class="font-circular-book center">Sorry, we’ve misplaced that URL or it's pointing to something that doesn’t exist.</h2>
+      </div>
     </section>
     <section class="PostBody m-120 mb-80 post--body">
-        <div class="center-max align-center j-center">
-            <div class="link-arrow align-center j-center">
-                <a href="{{ .Site.BaseURL }}" class="learn-more-button learn-more-button--left w-inline-block"
-                    style="background-image: url({{ .Site.BaseURL }}img/icons/arrow-left.svg);"
-                    alt="Go back home">Head back home</a>
-            </div>
+      <div class="center-max align-center j-center">
+        <div class="link-arrow align-center j-center">
+          <a alt="Go back home"
+               class="learn-more-button learn-more-button--left w-inline-block"
+               href="{{%20.Site.BaseURL%20}}"
+               style="background-image: url({{ .Site.BaseURL }}img/icons/arrow-left.svg);">Head back home</a>
         </div>
+      </div>
     </section>
-</article>
-<!--/.Content -->
-{{ end }}
+  </article><!--/.Content -->
+  {{ end }}

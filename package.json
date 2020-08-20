@@ -6,18 +6,33 @@
   "author": "Murshid Azher",
   "license": "MIT",
   "scripts": {
+    "precommit": "lint-staged",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "hugo server --watch --disableFastRender",
     "clean": "rm -rf public",
     "build": "hugo --verbose",
-    "format": "prettier --write \"themes/**/*.{html}\" \"assets/scss/**/*.{scss}\""
+    "format": "npm run format:scss & npm run format:md",
+    "format:scss": "prettier --single-quote --print-width 180 --write '*.scss'",
+    "format:md": "prettier --print-width 180 --write '*.md'"
   },
   "dependencies": {
     "autoprefixer": "^9.7.1",
-    "postcss-cli": "^6.1.3",
-    "prettier": "^2.0.5"
+    "postcss-cli": "^6.1.3"
+  },
+  "lint-staged": {
+    "*.md": [
+      "npm run format:scss",
+      "git add"
+    ],
+    "*.scss": [
+      "npm run format:md",
+      "git add"
+    ]
   },
   "devDependencies": {
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
     "prettier-plugin-go-template": "0.0.4"
   }
 }
