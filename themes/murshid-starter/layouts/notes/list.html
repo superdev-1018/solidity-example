@@ -1,19 +1,10 @@
 {{ define "main" }}
-
-
 <header id="notes" class="row-nm m-32 center intro-sm">
   <div class="column center w-full">
     <div class="header__wrapper">
         <h1 class="align-center">
             I sometimes take-down notes&nbsp; 📚
         </h1>
-        <!-- {{ $alias := ":writing_hand:" }}
-        {{ $url := .Site.Params.cloudinary_url }}
-        {{ range first 1 (where .Site.Data.emoji.ios13 "alias" "eq" $alias) }}
-            <span class="fs-large">
-                <img min-width="32" min-height="32" class="cld-responsive lazyload" title="{{ .title }}" src="{{ $url }}/{{ .link }}"/>
-            </span>
-        {{ end }} -->
     </div>
   </div>
 </header>
@@ -23,7 +14,6 @@
       internet.</h2>
   </div>
 </section>
-
 <section id="notes_list" class="row-nm m-120 mb-80 j-end">
   {{ range .Data.Pages }}
   <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="articles_list--item">

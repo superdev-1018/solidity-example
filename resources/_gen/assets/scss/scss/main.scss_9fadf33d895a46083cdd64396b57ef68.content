@@ -2230,10 +2230,10 @@ a {
     text-align: right; }
     .nav-mobile .Nav-listItem {
       margin: 10px;
-      margin-bottom: 1.5rem; } }
+      margin-bottom: 1.005rem; } }
     @media screen and (max-width: 500px) and (min-width: 48em) {
       .nav-mobile .Nav-listItem {
-        margin-bottom: 1.6rem; } }
+        margin-bottom: 1.072rem; } }
 @media screen and (max-width: 500px) {
   .intro {
     height: 250px; }

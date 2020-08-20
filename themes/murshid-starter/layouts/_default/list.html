@@ -1,25 +1,39 @@
 {{ define "main" }}
 
-<header class="PostHeader">
-  <h1 class="PostHeader-title">All Posts</h1>
+<header id="tags" class="row-nm m-32 center intro-sm">
+    <div class="column center w-full">
+        <div class="header__wrapper">
+            <h1 class="align-center">
+                {{ .Title }}&nbsp; {{ .Params.emoji }}
+            </h1>
+        </div>
+    </div>
 </header>
-<section class="PostList mt-32">
-  {{ range .Pages }}
 
-  <article class="PostListItem">
-    <h3 class="PostListItem-title">
-      <!-- If external link exists in post matter, else show post page-->
-      {{ if isset .Params "affiliatelink" }}
+<section class="row-nm align-center j-center">
+    <div class="column-nm-sm w-full mx-60 ">
+        <h2 class="font-circular-book center">{{ .Params.description }}</h2>
+    </div>
+</section>
 
-      <a href="{{ .Params.affiliatelink }}" target="_blank">{{ .Title }}</a
-      ><span>&#8599;</span> {{else}}
-
-      <a href="{{ .Permalink }}">{{ .Title }}</a> {{ end }}
-
-    </h3>
-    <p>{{ .Description }}</p>
-  </article>
-  {{ end }}
-
+<section id="articles_list" class="row-nm m-120 mb-80 j-end">
+    {{ range .Data.Pages }}
+    <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="articles_list--item">
+        <div class="articles_list--item__body">
+            <hr>
+            {{ partial "post/tags.html" . }}
+            <div class="articles_list--item__body--title">{{ .Title }}</div>
+            <time itemprop="datePublished"
+                class="inline-block mt-8 text-xs font-bold tracking-widest uppercase text-zenith">{{ .Date.Format "Mon, Jan 2, 2006" }}
+            </time>
+            <p class="articles_list--item__body--desc">{{ .Description | markdownify }}</p>
+            <div class="articles_list--item__link">
+                <a href="{{ .Permalink }}" rel="noopener" class="learn-more-button w-inline-block filter-none"
+                    title="{{ .Title }}"
+                    style="background-image: url({{ .Site.BaseURL }}img/icons/arrow-right.svg);">Read more</a>
+            </div>
+        </div>
+    </article>
+    {{ end }}
 </section>
 {{ end }}
