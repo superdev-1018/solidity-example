@@ -21,15 +21,15 @@
   },
   "lint-staged": {
     "*.md": [
-      "prettier --parser --print-width 180 --write '*.md",
+      "prettier --parser --print-width 180 --write '*.md'",
       "git add"
     ],
     "*.scss": [
-      "prettier --parser  --single-quote --print-width 180 --write '*.scss",
+      "prettier --parser  --single-quote --print-width 180 --write '*.scss'",
       "git add"
     ],
     "*.html": [
-      "prettier --parser --single-quote --print-width 180 --write '*.html",
+      "prettier --parser --single-quote --print-width 180 --write '*.html'",
       "git add"
     ]
   },
