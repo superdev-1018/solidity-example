@@ -35,6 +35,7 @@
 - [How to create subdomain in Netlify](https://www.freecodecamp.org/news/how-to-host-a-git-repository-on-a-subdomain-with-netlify-b8afb5fca96e/)
 - [SEO sitemap best practices in 2020](https://blog.spotibo.com/sitemap-guide/)
 - [minify configuration in HUGO](https://gohugo.io/getting-started/configuration/) config to minify CSS
+- [Cloudinary Dynamic Quality Analysis](https://cloudinary.com/blog/how_to_support_webp_images_save_bandwidth_and_improve_user_performance)
 
 
 ## License
