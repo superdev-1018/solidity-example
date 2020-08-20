@@ -21,11 +21,11 @@
   },
   "lint-staged": {
     "*.md": [
-      "npm run format:scss",
+      "prettier --print-width 180 --write '*.md",
       "git add"
     ],
     "*.scss": [
-      "npm run format:md",
+      "prettier --single-quote --print-width 180 --write '*.scss",
       "git add"
     ]
   },
