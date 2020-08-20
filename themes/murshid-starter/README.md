@@ -36,6 +36,8 @@
 - [SEO sitemap best practices in 2020](https://blog.spotibo.com/sitemap-guide/)
 - [minify configuration in HUGO](https://gohugo.io/getting-started/configuration/) config to minify CSS
 - [Cloudinary Dynamic Quality Analysis](https://cloudinary.com/blog/how_to_support_webp_images_save_bandwidth_and_improve_user_performance)
+- [WebP Hero](https://chasemoskal.com/webp-hero/)
+- [Stackoverflow Webp](https://stackoverflow.com/questions/47663490/how-to-view-webp-format-on-ie11)
 
 
 ## License
