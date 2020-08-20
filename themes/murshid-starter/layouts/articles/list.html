@@ -27,7 +27,7 @@
           class="post-date-inner">{{ .Date.Format "Mon, Jan 2, 2006" }}
         </time> -->
           <!-- <span class="post-date-inner">May 15, 2020</span> -->
-            <div title="" class="hs-featured-image-link">
+            <div alt="" class="hs-featured-image-link">
               <span style="background:url(https://images.unsplash.com/photo-1534293507278-19b2539423f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80) no-repeat;" class="hs-featured-image">
               </span>
 
@@ -43,7 +43,7 @@
 
         <p class="articles_list--item__body--desc">{{ .Description | markdownify }}</p>
         <div class="articles_list--item__link">
-          <a href="{{ .Permalink }}" rel="noopener" class="learn-more-button w-inline-block filter-none" title="{{ .Title }}" style="background-image: url({{ .Site.BaseURL }}img/icons/arrow-right.svg);">Read more</a>
+          <a href="{{ .Permalink }}" rel="noopener" class="learn-more-button w-inline-block filter-none" alt="{{ .Title }}" style="background-image: url({{ .Site.BaseURL }}img/icons/arrow-right.svg);">Read more</a>
         </div>
       </div>
   </article>
