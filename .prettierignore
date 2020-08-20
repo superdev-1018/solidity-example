@@ -1,0 +1,7 @@
+# Ignore artifacts:
+public
+resources
+
+# Ignore all HTML files:
+themes/murshid-starter/layouts/partials/footer.html
+themes/murshid-starter/layouts/partials/heading-anchor.html

@@ -4,56 +4,84 @@
       <div class="Ratio Ratio--{{- with .Params.image_ratio -}}{{ markdownify . }}{{- end -}}">
         <img
           data-src="https://res.cloudinary.com/murshidazher/image/upload/w_auto,dpr_auto,c_scale,f_auto,q_auto/{{- with .Params.image_one -}}{{ markdownify . }}{{- end -}}"
-          class="cld-responsive lazyload " alt="{{- with .Params.image_one_alt -}}{{ markdownify . }}{{- end -}}" caption="">
-      </div><!-- /.ImageRatio -->
-    </div><!-- /.Image -->
+          class="cld-responsive lazyload "
+          alt="{{- with .Params.image_one_alt -}}{{ markdownify . }}{{- end -}}"
+          caption=""
+        />
+      </div>
+      <!-- /.ImageRatio -->
+    </div>
+    <!-- /.Image -->
     {{- with .Params.image_one_caption -}}
+
     <figure class="flex items-center justify-center">
       <figcaption class="mono">{{ markdownify . }}</figcaption>
     </figure>
     {{- end -}}
+
   </div>
   <div class="">
     <div class="Image">
       <div class="Ratio Ratio--{{- with .Params.image_ratio -}}{{ markdownify . }}{{- end -}}">
         <img
           data-src="https://res.cloudinary.com/murshidazher/image/upload/w_auto,dpr_auto,c_scale,f_auto,q_auto/{{- with .Params.image_two -}}{{ markdownify . }}{{- end -}}"
-          class="cld-responsive lazyload " alt="{{- with .Params.image_two_alt -}}{{ markdownify . }}{{- end -}}" caption="">
-      </div><!-- /.ImageRatio -->
-    </div><!-- /.Image -->
+          class="cld-responsive lazyload "
+          alt="{{- with .Params.image_two_alt -}}{{ markdownify . }}{{- end -}}"
+          caption=""
+        />
+      </div>
+      <!-- /.ImageRatio -->
+    </div>
+    <!-- /.Image -->
     {{- with .Params.image_two_caption -}}
+
     <figure class="flex items-center justify-center">
       <figcaption class="mono">{{ markdownify . }}</figcaption>
     </figure>
     {{- end -}}
+
   </div>
   <div class="">
     <div class="Image">
       <div class="Ratio Ratio--{{- with .Params.image_ratio -}}{{ markdownify . }}{{- end -}}">
         <img
           data-src="https://res.cloudinary.com/murshidazher/image/upload/w_auto,dpr_auto,c_scale,f_auto,q_auto/{{- with .Params.image_three -}}{{ markdownify . }}{{- end -}}"
-          class="cld-responsive lazyload" alt="{{- with .Params.image_three_alt -}}{{ markdownify . }}{{- end -}}" caption="">
-      </div><!-- /.ImageRatio -->
-    </div><!-- /.Image -->
+          class="cld-responsive lazyload"
+          alt="{{- with .Params.image_three_alt -}}{{ markdownify . }}{{- end -}}"
+          caption=""
+        />
+      </div>
+      <!-- /.ImageRatio -->
+    </div>
+    <!-- /.Image -->
 
     {{- with .Params.image_three_caption -}}
+
     <figure class="flex items-center justify-center">
       <figcaption class="mono">{{ markdownify . }}</figcaption>
     </figure>
     {{- end -}}
+
   </div>
   <div class="">
     <div class="Image">
       <div class="Ratio Ratio--{{- with .Params.image_ratio -}}{{ markdownify . }}{{- end -}}">
         <img
           data-src="https://res.cloudinary.com/murshidazher/image/upload/w_auto,dpr_auto,c_scale,f_auto,q_auto/{{- with .Params.image_four -}}{{ markdownify . }}{{- end -}}"
-          class="cld-responsive lazyload" alt="{{- with .Params.image_four_alt -}}{{ markdownify . }}{{- end -}}" caption="">
-      </div><!-- /.ImageRatio-->
-    </div><!-- /.Image -->
+          class="cld-responsive lazyload"
+          alt="{{- with .Params.image_four_alt -}}{{ markdownify . }}{{- end -}}"
+          caption=""
+        />
+      </div>
+      <!-- /.ImageRatio-->
+    </div>
+    <!-- /.Image -->
     {{- with .Params.image_four_caption -}}
+
     <figure class="flex items-center justify-center">
       <figcaption class="mono">{{ markdownify . }}</figcaption>
     </figure>
     {{- end -}}
+
   </div>
 </section>

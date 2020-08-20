@@ -1,12 +1,13 @@
 <figure class="sm:mb-16">
-    <blockquote class="bl-none ch-60 my-0 mx-0">
-        <p>
-            {{ .Get "quote" }}
-            {{ if .Get "cite"}}
-            {{ end }}
-        </p>
-        {{ if .Get "cite"}}
-            <figcaption>&mdash; {{ .Get "cite" }}</figcaption>
-        {{ end }}
-    </blockquote>
+  <blockquote class="bl-none ch-60 my-0 mx-0">
+    <p>
+      {{ .Get "quote" }} {{ if .Get "cite"}} {{ end }}
+
+    </p>
+    {{ if .Get "cite"}}
+
+    <figcaption>&mdash; {{ .Get "cite" }}</figcaption>
+    {{ end }}
+
+  </blockquote>
 </figure>

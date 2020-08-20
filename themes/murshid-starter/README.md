@@ -27,7 +27,8 @@
 - [Hugo - Best practices](https://github.com/spech66/hugo-best-practices)
 - [SASS / SCSS Assets Management](https://gohugo.io/hugo-pipes/scss-sass/)
 - [Custom headers Netlify](https://docs.netlify.com/routing/headers/#multi-value-headers)
-- [Circle CI + Heroku](https://circleci.com/blog/automating-the-deploy-of-an-adonis-api-to-heroku/) and [this](https://discourse.gohugo.io/t/automated-deployment-with-circle-ci-hugo/11168)
+- [Circle CI + Heroku](https://circleci.com/blog/automating-the-deploy-of-an-adonis-api-to-heroku/) and
+  [this](https://discourse.gohugo.io/t/automated-deployment-with-circle-ci-hugo/11168)
 - [Automate scheduled builds with Hugo, Netlify, and GitLab’s CI/CD pipeline](https://www.neotericdesign.com/articles/2020/02/automate-scheduled-builds-with-hugo-netlify-and-gitlabs-ci/cd-pipeline/)
 - [SEO Links](https://varvy.com/)
 - [Netlify + Apache HTTP access](https://community.netlify.com/t/netlify-using-htaccess-file/3678/2)
@@ -39,8 +40,6 @@
 - [WebP Hero](https://chasemoskal.com/webp-hero/)
 - [Stackoverflow Webp](https://stackoverflow.com/questions/47663490/how-to-view-webp-format-on-ie11)
 
-
 ## License
 
 [MIT](https://github.com/murshidazher/murshid/blob/master/LICENSE) © Murshid Azher
-

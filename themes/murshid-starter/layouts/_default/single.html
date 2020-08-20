@@ -1,12 +1,14 @@
 {{ define "main" }}
+
 <article id="content" class="Post">
   <header id="{{ .Slug }}" class="row-nm m-32 center intro-sm">
     <div class="column center w-full">
-        <div class="header__wrapper">
-            <h1 class="center align-center">
-                {{ .Title }}&nbsp; {{ .Params.emoji }}
-            </h1>
-            <!-- {{ if .Params.emoji }}
+      <div class="header__wrapper">
+        <h1 class="center align-center">
+          {{ .Title }}&nbsp; {{ .Params.emoji }}
+
+        </h1>
+        <!-- {{ if .Params.emoji }}
             {{ $alias := .Params.emoji }}
             {{ $url := .Site.Params.cloudinary_url }}
             {{ range first 1 (where .Site.Data.emoji.ios13 "alias" "eq" $alias) }}
@@ -15,9 +17,8 @@
                 </span>
             {{ end }}
             {{ end }} -->
-        </div>
+      </div>
     </div>
-
   </header>
   <section class="row-nm align-center j-center">
     <div class="column-nm-sm w-full mx-60 ">
@@ -27,6 +28,7 @@
   <section class="PostBody m-120 mb-80 post--body">
     <div class="center-max">
       {{ .Content }}
+
     </div>
   </section>
 </article>

@@ -6,35 +6,34 @@
   "author": "Murshid Azher",
   "license": "MIT",
   "scripts": {
-    "precommit": "lint-staged",
+    "precommit": "npm run format",
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "hugo server --watch --disableFastRender",
     "clean": "rm -rf public",
     "build": "hugo --verbose",
-    "format": "npm run format:scss & npm run format:md",
-    "format:scss": "prettier --single-quote --print-width 180 --write '*.scss'",
-    "format:md": "prettier --print-width 180 --write '*.md'"
+    "format": "npm run format:scss & npm run format:md & npm run format:html",
+    "format:scss": "prettier --write '**/*.scss'",
+    "format:md": "prettier --write '**/*.md'",
+    "format:html": "prettier --write 'themes/murshid-starter/**/*.html'"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run format"
+    }
+  },
+  "lint-staged": {
+    "*.{js,json,css,scss,html,md}": [
+      "git add"
+    ]
   },
   "dependencies": {
     "autoprefixer": "^9.7.1",
     "postcss-cli": "^6.1.3"
   },
-  "lint-staged": {
-    "*.md": [
-      "prettier --parser markdown --print-width 180 --write ",
-      "git add"
-    ],
-    "*.scss": [
-      "prettier --parser  --single-quote --print-width 180 --write '*.scss'",
-      "git add"
-    ],
-    "*.html": [
-      "prettier --parser --single-quote --print-width 180 --write '*.html'",
-      "git add"
-    ]
-  },
   "devDependencies": {
     "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
     "prettier-plugin-go-template": "0.0.4"
   }
 }

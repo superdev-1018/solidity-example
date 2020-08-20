@@ -12,6 +12,7 @@
 - Personal website made using world's fastest static-site generator.
 
 ## Table of Contents
+
 - [Table of Contents](#table-of-contents)
 - [Installing / Getting started](#installing--getting-started)
   - [Initial Configuration](#initial-configuration)
@@ -19,11 +20,10 @@
 - [Usage](#usage)
 - [Links](#links)
 - [License](#license)
-  
+
 ## Installing / Getting started
 
-A quick introduction of the minimal setup you need to get a hello world up &
-running.
+A quick introduction of the minimal setup you need to get a hello world up & running.
 
 ```shell
 packagemanager install awesome-project
@@ -35,13 +35,11 @@ Here you should say what actually happens when you execute the code above.
 
 ### Initial Configuration
 
-Some projects require initial configuration (e.g. access tokens or keys, `npm i`).
-This is the section where you would document those requirements.
+Some projects require initial configuration (e.g. access tokens or keys, `npm i`). This is the section where you would document those requirements.
 
 ## Developing
 
-Here's a brief intro about what a developer must do in order to start developing
-the project further:
+Here's a brief intro about what a developer must do in order to start developing the project further:
 
 ```shell
 git clone https://github.com/your/awesome-project.git
@@ -53,8 +51,7 @@ And state what happens step-by-step.
 
 ### Building
 
-If your project needs some additional steps for the developer to build the
-project after some code changes, state them here:
+If your project needs some additional steps for the developer to build the project after some code changes, state them here:
 
 ```shell
 ./configure
@@ -62,13 +59,11 @@ make
 make install
 ```
 
-Here again you should state what actually happens when the code above gets
-executed.
+Here again you should state what actually happens when the code above gets executed.
 
 ### Deploying / Publishing
 
-In case there's some step you have to take that publishes this project to a
-server, this is the right time to state it.
+In case there's some step you have to take that publishes this project to a server, this is the right time to state it.
 
 ```shell
 packagemanager deploy awesome-project -s server.com -u username -p password
@@ -83,7 +78,7 @@ And again you'd need to tell what the previous code actually does.
 - [x] Add apple-emoji font.
 - [ ] Show the code language in syntax hightlight js.
 - [ ] Add resume for the site.
-- [x] Add node-arctic code colors. 
+- [x] Add node-arctic code colors.
 - [x] Add custom theme colors.
 - [ ] Change logo hover colors according to the theme.
 - [ ] Add search functionality for blog.

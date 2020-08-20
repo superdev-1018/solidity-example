@@ -3,8 +3,8 @@
 \*------------------------------------*/
 
 a {
-//   color: var(--color-link);
-//   text-decoration: underline;
+  //   color: var(--color-link);
+  //   text-decoration: underline;
   //transition: color .2s ease-in-out;
 
   &:hover {
@@ -35,7 +35,7 @@ a {
 
 .no-focus {
   outline: none;
-    outline-offset: none;
+  outline-offset: none;
   &:active,
   &:focus {
     outline: none;

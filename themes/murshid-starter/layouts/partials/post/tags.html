@@ -1,9 +1,7 @@
 <!-- Tags. -->
 <div class="post__meta-tags">
-    <div class="post__meta-tag">
-      {{ $baseurl := .Site.BaseURL }}
-      {{ range .Params.tags }}
-        <a href="/tags/{{ . | urlize }}" class="text-zenith">{{ . }}</a>
-      {{ end }}
-    </div>
+  <div class="post__meta-tag">{{ $baseurl := .Site.BaseURL }}
+ {{ range .Params.tags }}
+ <a href="/tags/{{ . | urlize }}" class="text-zenith">{{ . }}</a> {{ end }}
+</div>
 </div>

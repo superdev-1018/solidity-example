@@ -3,11 +3,12 @@
 <article id="articles" class="Post h-entry">
   <header id="notes" class="row-nm m-32 center intro-sm">
     <div class="column center w-full">
-        <div class="header__wrapper">
-            <h1 class="center align-center">
-                {{ .Title }}&nbsp; {{ .Params.emoji }}
-            </h1>
-        </div>
+      <div class="header__wrapper">
+        <h1 class="center align-center">
+          {{ .Title }}&nbsp; {{ .Params.emoji }}
+
+        </h1>
+      </div>
     </div>
   </header>
   <section class="row-nm align-center j-center">
@@ -16,25 +17,24 @@
     </div>
   </section>
 
-  <div class="center" >{{ partial "post/tags.html" . }}</div>
+  <div class="center">{{ partial "post/tags.html" . }}</div>
 
   <section class="articles_list--meta flex flex-row mb-16 mt-16">
-   <div class="tags row-nm center">
-     <div class="column center w-full published-date" >
-       Published on&nbsp;
+    <div class="tags row-nm center">
+      <div class="column center w-full published-date">
+        Published on&nbsp;
         <time itemprop="datePublished" class="inline-block" datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}
-        </time>
-     </div>
-    <!-- &nbsp; — &nbsp; {{ partial "post/tags.html" . }} -->
-  </div>
+ </time>
+      </div>
+      <!-- &nbsp; — &nbsp; {{ partial "post/tags.html" . }} -->
+    </div>
   </section>
 
   {{ if .Params.cover }}
+
   <section class="article_img">
     <div alt="" class="hs-featured-image-link hs-full-height">
-      <span style="background:url({{ .Params.cover }}) no-repeat;" class="hs-featured-image">
-      </span>
-
+      <span style="background:url({{ .Params.cover }}) no-repeat;" class="hs-featured-image"> </span>
     </div>
   </section>
   {{ end }}
@@ -42,9 +42,9 @@
   <section class="PostBody e-content {{ if not .Params.cover }}mt-48{{ end }}">
     <div class="center-max">
       {{ partial "heading-anchor.html" .Content }}
-      {{ partialCached "post/author.html" . }}
-    </div>
+ {{ partialCached "post/author.html" . }}
 
+    </div>
   </section>
 </article>
 <!--/.Content -->

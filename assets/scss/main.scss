@@ -2,39 +2,31 @@
   You can use import statements to include partials:
  */
 
- @import "test4";
- @import "test2";
+@import 'test4';
+@import 'test2';
 
 // Variables
-@import "abstracts/_all";
+@import 'abstracts/_all';
 
 // Base styles
-@import "base/_all";
+@import 'base/_all';
 
 // Layout styles
- @import "layouts/_all";
-
-
+@import 'layouts/_all';
 
 // Object styles
- @import "objects/_all";
+@import 'objects/_all';
 
 // Component styles
- @import "components/_all";
+@import 'components/_all';
 
 // Utility styles
- @import "utilities/_all";
+@import 'utilities/_all';
 
+// Variables
+@import 'mixins/_all';
 
-
-
- // Variables
- @import "mixins/_all";
-
-
-@import "test3";
-
-
+@import 'test3';
 
 // @import 'theme';
 // @import 'reset';

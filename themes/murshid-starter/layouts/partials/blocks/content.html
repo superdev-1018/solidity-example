@@ -1,16 +1,24 @@
 <section class="post__project section">
   <div class="flex">
     {{- with .Params.heading -}}
+
     <h2 class="post__project--heading" id="{{ . | urlize}}">
       {{ markdownify . }}&nbsp;
       <a class="heading-anchor" href="#{{ . | urlize}}" aria-label="Anchor">#</a>
     </h2>
     {{- end -}}
-      {{- with .Params.subheading -}}<h4 class="">{{ markdownify . }}</h4>{{- end -}}
+ {{- with .Params.subheading -}}
+
+    <h4 class="">{{ markdownify . }}</h4>
+    {{- end -}}
+
   </div>
   {{- with .Params.content -}}
+
   <div class="block">
-      {{ markdownify . }}
+    {{ markdownify . }}
+
   </div>
   {{- end -}}
+
 </section>

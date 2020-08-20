@@ -2,13 +2,21 @@
   <div class="Ratio Ratio--3by2">
     <img
       data-src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale,f_auto,q_auto/{{ .Get "src" }}"
-      class="cld-responsive lazyload {{ if .Get "class"}}{{ .Get "class" }}{{ end }}" alt="{{ .Get "alt" }}" caption="">
-  </div><!-- /.ImageRatio -->
+      class="cld-responsive lazyload {{ if .Get "class"}}{{ .Get "class" }}{{ end }}"
+      alt="{{ .Get "alt" }}"
+      caption=""
+    />
+  </div>
+  <!-- /.ImageRatio -->
   {{ if .Get "caption"}}
-      <figure>
-      {{ end }}
-      {{ if .Get "caption"}}
-        <figcaption class="mono">{{ .Get "caption" }}</figcaption>
-      </figure>
+
+  <figure>
+    {{ end }}
+ {{ if .Get "caption"}}
+
+    <figcaption class="mono">{{ .Get "caption" }}</figcaption>
+  </figure>
   {{ end }}
-</div><!-- /.Image -->
+
+</div>
+<!-- /.Image -->

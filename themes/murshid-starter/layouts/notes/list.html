@@ -1,40 +1,53 @@
 {{ define "main" }}
+
 <header id="notes" class="row-nm m-32 center intro-sm">
   <div class="column center w-full">
     <div class="header__wrapper">
-        <h1 class="align-center">
-            I sometimes take-down notes&nbsp; 📚
-        </h1>
+      <h1 class="align-center">
+        I sometimes take-down notes&nbsp; 📚
+      </h1>
     </div>
   </div>
 </header>
 <section class="row-nm align-center j-center">
   <div class="column-nm-sm w-full mx-60 ">
-    <h2 class="font-circular-book center">Notes on interesting things I’m learning from courses, books, talks and articles on the
-      internet.</h2>
+    <h2 class="font-circular-book center">Notes on interesting things I’m learning from courses, books, talks and articles on the internet.</h2>
   </div>
 </section>
 <section id="notes_list" class="row-nm m-120 mb-80 j-end">
   {{ range .Data.Pages }}
+
   <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="articles_list--item">
-      <div class="articles_list--item__body">
-        <div class="hs-featured-image-wrapper">
+    <div class="articles_list--item__body">
+      <div class="hs-featured-image-wrapper">
         <!-- <time itemprop="datePublished" class="post-date-inner">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>  -->
-            <div alt="" class="hs-featured-image-link">
-              <span style="background:url(https://images.unsplash.com/photo-1534293507278-19b2539423f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80) no-repeat;" class="hs-featured-image">
-              </span>
-            </div>
-        </div>
-        <hr>
-        {{ partial "post/tags.html" . }}
-        <div class="articles_list--item__body--title">{{ .Title }}</div>
-        <p class="articles_list--item__body--desc">{{ .Description | markdownify }}</p>
-        <div class="articles_list--item__link">
-          <a href="{{ .Permalink }}" rel="noopener" class="learn-more-button w-inline-block filter-none" alt="{{ .Title }}" style="background-image: url({{ .Site.BaseURL }}img/icons/arrow-right.svg);">Read more</a>
+        <div alt="" class="hs-featured-image-link">
+          <span
+            style="background:url(https://images.unsplash.com/photo-1534293507278-19b2539423f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80) no-repeat;"
+            class="hs-featured-image"
+          >
+          </span>
         </div>
       </div>
+      <hr />
+      {{ partial "post/tags.html" . }}
+
+      <div class="articles_list--item__body--title">{{ .Title }}</div>
+      <p class="articles_list--item__body--desc">{{ .Description | markdownify }}</p>
+      <div class="articles_list--item__link">
+        <a
+          href="{{ .Permalink }}"
+          rel="noopener"
+          class="learn-more-button w-inline-block filter-none"
+          alt="{{ .Title }}"
+          style="background-image: url({{ .Site.BaseURL }}img/icons/arrow-right.svg);"
+          >Read more</a
+        >
+      </div>
+    </div>
   </article>
   {{ end }}
+
 </section>
 
 {{ end }}

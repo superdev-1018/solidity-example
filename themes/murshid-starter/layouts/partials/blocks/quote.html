@@ -2,25 +2,37 @@
   <figure class="md:flex">
     <blockquote class="bl-none ch-60 my-0 mx-0 sm:mb-16">
       <p>
-      {{- with .Params.quote_text -}}
-        {{ markdownify . }}
-      {{- end -}}
+        {{- with .Params.quote_text -}}
+ {{ markdownify . }}
+ {{- end -}}
+
       </p>
-      {{- with .Params.quote_caption -}}<figcaption>&mdash; {{ markdownify . }}</figcaption>{{- end -}}
+      {{- with .Params.quote_caption -}}
+
+      <figcaption>&mdash; {{ markdownify . }}</figcaption>
+      {{- end -}}
+
     </blockquote>
   </figure>
-   <div class="">
+  <div class="">
     <div class="Image">
       <div class="block relative bg-light Ratio--{{- with .Params.image_ratio -}}{{ markdownify . }}{{- end -}}">
         <img
           data-src="https://res.cloudinary.com/murshidazher/image/upload/w_auto,dpr_auto,c_scale,f_auto,q_auto/{{- with .Params.image -}}{{ markdownify . }}{{- end -}}"
-          class="block h-full w-full absolute top-0 left-0 cld-responsive lazyload" alt="{{- with .Params.image_alt -}}{{ markdownify . }}{{- end -}}" caption="">
-      </div><!-- /.ImageRatio -->
-    </div><!-- /.Image -->
+          class="block h-full w-full absolute top-0 left-0 cld-responsive lazyload"
+          alt="{{- with .Params.image_alt -}}{{ markdownify . }}{{- end -}}"
+          caption=""
+        />
+      </div>
+      <!-- /.ImageRatio -->
+    </div>
+    <!-- /.Image -->
     {{- with .Params.image_caption -}}
+
     <figure class="flex items-center justify-center">
       <figcaption class="mono">{{ markdownify . }}</figcaption>
     </figure>
     {{- end -}}
+
   </div>
 </section>
