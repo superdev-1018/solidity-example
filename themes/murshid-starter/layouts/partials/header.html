@@ -1,4 +1,10 @@
-<html dir="ltr" lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}" itemscope itemtype="http://schema.org/WebSite" prefix="og: http://ogp.me/ns#">
+<html
+  dir="ltr"
+  lang="{{ with .Site.LanguageCode }}{{ . }}{{ else }}en{{ end }}"
+  itemscope
+  itemtype="http://schema.org/WebSite"
+  prefix="og: http://ogp.me/ns#"
+>
   <head>
     {{"<!-- some HTML comment -->" | safeHTML }}
 
@@ -7,7 +13,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Titles -->
     <title>
-      {{ if .IsHome -}}{{ .Site.Title }} &middot; {{ $.Site.Params.strapline }}{{- else -}}{{ .Title }} | {{ .Site.Title }} &middot; {{ $.Site.Params.strapline }} {{- end }}
+      {{ if .IsHome -}}{{ .Site.Title }} &middot; {{ $.Site.Params.strapline }}{{- else -}}{{ .Title }} | {{ .Site.Title }} &middot;
+      {{ $.Site.Params.strapline }} {{- end }}
 
     </title>
     <meta
@@ -49,7 +56,10 @@
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="{{ .Permalink }}" />
-    <meta property="twitter:title" content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}" />
+    <meta
+      property="twitter:title"
+      content="{{ $isHomePage := eq .Title .Site.Title }}{{ .Title }}{{ if eq $isHomePage false }} - {{ .Site.Title }}{{ end }}"
+    />
     <meta
       property="twitter:description"
       content="{{ if eq $isHomePage false }} {{ .Description }}{{ end }} {{ $isHomePage := eq .Title .Site.Title }}{{ .Site.Params.description }}"
@@ -62,7 +72,10 @@
     <!-- else if no image in frontmatter, and sections are not equal to articles or notes, then display image -->
     {{ else if and (ne .Section "articles") (ne .Section "notes") }}
 
-    <meta property="og:image" content="https://res.cloudinary.com/murshidazher/image/upload/w_700,dpr_2.0,c_scale,f_auto,q_auto/v1550264713/mc/murshid-azher-about-me.jpg" />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/murshidazher/image/upload/w_700,dpr_2.0,c_scale,f_auto,q_auto/v1550264713/mc/murshid-azher-about-me.jpg"
+    />
     {{ end }}
 
     <!-- Pinterest Verification -->
@@ -117,7 +130,8 @@
     <link rel="shortcut icon" href="{{ .Site.BaseURL }}img/favicon.ico" type="image/x-icon" />
     <!-- RSS -->
     {{ with .OutputFormats.Get "rss" -}}
- {{ printf `<link rel="%s" type="%s" href="%s" alt="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+
+    {{ printf `<link rel="%s" type="%s" href="%s" alt="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
  {{ end -}}
 
   </head>
@@ -126,7 +140,15 @@
     <header role="banner">
       <section class="row-nm">
         <a href="/" class="logo">
-          <svg id="logo" width="48px" height="18px" viewBox="0 0 48 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+          <svg
+            id="logo"
+            width="48px"
+            height="18px"
+            viewBox="0 0 48 18"
+            version="1.1"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+          >
             <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
               <g id="Dribble" transform="translate(-141.000000, -218.000000)" fill="var(--color-dark)" fill-rule="nonzero">
                 <path
@@ -138,7 +160,9 @@
           </svg>
           <div hidden>
             <p class="p-note">{{ .Site.Params.Strapline }}</p>
-            <a class="u-email" href="mailto:{{ .Site.Author.email }}" alt="Email Murshid Azher ({{ .Site.Author.email }})">{{ .Site.Author.email }}</a>
+            <a class="u-email" href="mailto:{{ .Site.Author.email }}" alt="Email Murshid Azher ({{ .Site.Author.email }})"
+              >{{ .Site.Author.email }}</a
+            >
           </div>
         </a>
         <nav class="Nav" aria-label="Main Navigation">
@@ -146,10 +170,14 @@
             {{ $.Scratch.Set "counter" 0 }}
  {{ $currentPage := . }}
  {{ range .Site.Menus.main }}
- {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+
+            {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
 
             <li class="Nav-listItem">
-              <a class="text-nav {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{end}}" href="{{.URL}}">
+              <a
+                class="text-nav {{if or ($currentPage.IsMenuCurrent "main" .) ($currentPage.HasMenuCurrent "main" .) }}active{{end}}"
+                href="{{.URL}}"
+              >
                 <span>{{ print .Name }}</span>
               </a>
             </li>

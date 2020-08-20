@@ -12,9 +12,9 @@
     "clean": "rm -rf public",
     "build": "hugo --verbose",
     "format": "npm run format:scss & npm run format:md & npm run format:html",
-    "format:scss": "prettier --write '**/*.scss'",
-    "format:md": "prettier --write '**/*.md'",
-    "format:html": "prettier --write 'themes/murshid-starter/**/*.html'"
+    "format:scss": "prettier --single-quote --print-width 180 --write '**/*.scss'",
+    "format:md": "prettier --print-width 180 --write '**/*.md'",
+    "format:html": "prettier --write '**/*.html'"
   },
   "husky": {
     "hooks": {

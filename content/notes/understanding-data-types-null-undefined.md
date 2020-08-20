@@ -22,7 +22,8 @@ let dog
 console.log(dog)
 ```
 
-`undefined` is something that has been created, like a variable, but does not yet have a value set to it. In other words, _it is not yet defined_.
+`undefined` is something that has been created, like a variable, but does not yet have a value set to it. In other words, _it is not yet
+defined_.
 
 The browser sets this missing value to `undefined` because no value exists and so there is nothing to return.
 
@@ -59,8 +60,8 @@ This example returned `undefined` as we have yet to give it a value.
 
 ## A practical example
 
-We can use the example of a mononymous person (someone known by a single name). In this case we’ll use the singer [Cher](https://en.wikipedia.org/wiki/Cher), who we know only as
-Cher.
+We can use the example of a mononymous person (someone known by a single name). In this case we’ll use the singer
+[Cher](https://en.wikipedia.org/wiki/Cher), who we know only as Cher.
 
 ```javascript
 const cher = {
@@ -77,8 +78,9 @@ undefined
 
 Now on to our example of `null`.
 
-The comedian and illusionist [Teller](<https://en.wikipedia.org/wiki/Teller_(magician)>), the silent half of the duo Penn & Teller, legally changed his original polynym, Raymond
-Joseph Teller, to the mononym "Teller" and possesses a United States passport issued in that single name.
+The comedian and illusionist [Teller](<https://en.wikipedia.org/wiki/Teller_(magician)>), the silent half of the duo Penn & Teller, legally
+changed his original polynym, Raymond Joseph Teller, to the mononym "Teller" and possesses a United States passport issued in that single
+name.
 
 In JavaScript we can represent his original name like this:
 

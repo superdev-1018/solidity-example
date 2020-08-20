@@ -11,7 +11,8 @@
         {{ if .Params.emoji }}
  {{ $alias := .Params.emoji }}
  {{ $url := .Site.Params.cloudinary_url }}
- {{ range first 1 (where .Site.Data.emoji.ios13 "alias" "eq" $alias) }}
+
+        {{ range first 1 (where .Site.Data.emoji.ios13 "alias" "eq" $alias) }}
 
         <span class="fs-large">
           <img min-width="32" min-height="32" class="cld-responsive lazyload" alt="{{ .title }}" src="{{ $url }}/{{ .link }}" caption="" />
@@ -34,8 +35,10 @@
     <div class="tags row-nm center">
       <div class="column center w-full published-date">
         Published on&nbsp;
-        <time itemprop="datePublished" alt="Published Date" class="inline-block" datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}
- </time>
+        <time itemprop="datePublished" alt="Published Date" class="inline-block" datetime="{{ .Date }}"
+          >{{ .Date.Format "January 2, 2006" }}
+
+        </time>
       </div>
       <!-- &nbsp; — &nbsp; {{ partial "post/tags.html" . }} -->
     </div>

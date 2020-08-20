@@ -2,12 +2,13 @@
 {{ define "breadcrumb" }}
 {{ if .currentPage.Parent }}
 {{ if ne .currentPage.Parent .IsHome }}
- {{ template "breadcrumb" dict "currentPage" .currentPage.Parent }}
- {{ end }}
 
-{{ if eq .id .currentPage.UniqueID }}
+{{ template "breadcrumb" dict "currentPage" .currentPage.Parent }}
+ {{ end }}
+ {{ if eq .id .currentPage.UniqueID }}
  {{ .currentPage.Title }}
- {{ else }}
+
+{{ else }}
  <a href="{{ .Permalink }}">{{ .currentPage.Title }}</a> > {{ end }}
 {{ end }}
 {{ end }}

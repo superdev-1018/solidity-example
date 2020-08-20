@@ -26,8 +26,10 @@
       {{ partial "post/tags.html" . }}
 
       <div class="articles_list--item__body--title">{{ .Title }}</div>
-      <time itemprop="datePublished" class="inline-block mt-8 text-xs font-bold tracking-widest uppercase text-zenith">{{ .Date.Format "Mon, Jan 2, 2006" }}
- </time>
+      <time itemprop="datePublished" class="inline-block mt-8 text-xs font-bold tracking-widest uppercase text-zenith"
+        >{{ .Date.Format "Mon, Jan 2, 2006" }}
+
+      </time>
       <p class="articles_list--item__body--desc">{{ .Description | markdownify }}</p>
       <div class="articles_list--item__link">
         <a
