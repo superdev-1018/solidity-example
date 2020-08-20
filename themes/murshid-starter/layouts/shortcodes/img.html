@@ -19,7 +19,7 @@
         data-original="{{ .Get "src" }}.{{ .Get "type" }}"
         data-original-set="{{ .Get "src" }}@2x.{{ .Get "type" }} 2x"
         alt="{{ .Get "alt" }}"{{ if .Get "caption"}} class="img-fluid figure-img"{{ end }}
-        srcset="{{ .Get "src" }}@2x.{{ .Get "type" }} 2x" src="{{ .Get "src" }}.{{ .Get "type" }}">
+        srcset="{{ .Get "src" }}@2x.{{ .Get "type" }} 2x" src="{{ .Get "src" }}.{{ .Get "type" }}" caption="">
     </picture>
     {{ if .Get "caption"}}
     <figure>

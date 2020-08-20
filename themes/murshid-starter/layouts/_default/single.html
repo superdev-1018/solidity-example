@@ -11,7 +11,7 @@
             {{ $url := .Site.Params.cloudinary_url }}
             {{ range first 1 (where .Site.Data.emoji.ios13 "alias" "eq" $alias) }}
                 <span class="fs-large">
-                    <img min-width="32" min-height="32" class="cld-responsive lazyload" alt="{{ .title }}" src="{{ $url }}/{{ .link }}"/>
+                    <img min-width="32" min-height="32" class="cld-responsive lazyload" alt="{{ .title }}" src="{{ $url }}/{{ .link }}" caption=""/>
                 </span>
             {{ end }}
             {{ end }} -->

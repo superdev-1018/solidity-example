@@ -7,6 +7,6 @@
 {{ $default_size := 24 }}
 {{ range first 1 (where .Site.Data.emoji.ios13 "alias" "eq" $alias) }}
     <span class="emoji">
-        <img width="{{ $size | default $default_size }}" height="{{ $size | default $default_size }}" class="cld-responsive lazyload" alt="{{ .title }}" src="{{ $url }}/{{ .link }}"/><!-- /.Emoji -->
+        <img width="{{ $size | default $default_size }}" height="{{ $size | default $default_size }}" class="cld-responsive lazyload" alt="{{ .title }}" src="{{ $url }}/{{ .link }}" caption=""/><!-- /.Emoji -->
     </span><!-- /.Emoji Wrapper -->
 {{ end }}

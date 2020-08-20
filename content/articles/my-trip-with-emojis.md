@@ -154,6 +154,7 @@ Then paste the following content inside `emoji.html`,
             height="{{ $size | default $default_size }}" 
             class="cld-responsive lazyload"  
             alt="{{ .title }}"
+            caption=""
             src="{{ .link }}"/><!-- /.Emoji -->
     </span><!-- /.Emoji Wrapper -->
 {{ end }}
