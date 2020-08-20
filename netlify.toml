@@ -6,3 +6,15 @@
 [context.production.environment]
   HUGO_VERSION = "0.69.2"
   HUGO_ENV = "production"
+
+
+[[plugins]]
+  package = "netlify-plugin-submit-sitemap"
+    [plugins.inputs]
+	  baseUrl = "https://murshidazher.com/"
+	  sitemapPath = "/sitemap.xml"
+	  providers = [
+		"google",
+		"bing",
+		"yandex"
+	  ]
