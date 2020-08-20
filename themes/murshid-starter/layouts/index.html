@@ -1,18 +1,17 @@
 {{ define "main" }}
 <section class="row intro center ">
-    <img alt="Murshid Azher's headshot" src="/img/ma-default.jpg" width="400" data-src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale,f_auto,q_auto/ma-default.jpg"
-        data-srcset="/img/ma-default.jpg 400w" data-sizes="(max-width: 400px) 100vw, 400px"
-        class="w-48 h-48 rounded-full g-image g-image--lazy g-image--loaded cld-responsive lazyload" srcset="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale,f_auto,q_auto/ma-default.jpg 400w"
+    <img alt="{{ .Site.Author.name }}'s headshot" src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale,f_auto,q_auto/ma-default.jpg" width="400" data-src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale,f_auto,q_auto/ma-default.jpg"
+        class="w-48 h-48 rounded-full g-image g-image--lazy g-image--loaded cld-responsive lazyload"
         sizes="(max-width: 400px) 100vw, 400px" caption="">
     <noscript>
         <img src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale,f_auto,q_auto/ma-default.jpg" class="w-48 h-48 mr-32 rounded-full g-image g-image--loaded cld-responsive lazyload" width="400"
-            alt="Murshid Azher's headshot" caption="">
+            alt="{{ .Site.Author.name }}'s headshot" caption="">
     </noscript>
 </section>
 
 <section class="row ">
     <div class="column center w-full">
-        <h1 class="align-center">Hey there *waves*, I'm Murshid Azher,<br> <mark>coder, designer and data
+        <h1 class="align-center">Hey there *waves*, I'm {{ .Site.Author.name }},<br> <mark>coder, designer and data
                 enthusiast</mark>.</h1>
     </div>
 </section>
@@ -62,7 +61,7 @@
             <div class="github-project__wrapper">
                 <div class="github-project__logo">
                     <img class="styles-module--fallbackImg--C-RAL" data-cover="false" src="img/project-logo.svg"
-                        alt="Baraja">
+                        alt="Baraja" caption="">
                 </div>
                 <div class="github-project__body">
                     <h2 class="font-circular-book fw-600 github-project__body--title">Title</h2>
@@ -82,7 +81,7 @@
             <div class="github-project__wrapper">
                 <div class="github-project__logo">
                     <img class="styles-module--fallbackImg--C-RAL" data-cover="false"
-                        src="{{ .Site.BaseURL }}img/project-logo.svg" alt="Baraja">
+                        src="{{ .Site.BaseURL }}img/project-logo.svg" alt="Baraja" caption="">
                 </div>
                 <div class="github-project__body">
                     <h2 class="font-circular-book fw-600 github-project__body--title">Title</h2>
@@ -102,7 +101,7 @@
             <div class="github-project__wrapper">
                 <div class="github-project__logo">
                     <img class="styles-module--fallbackImg--C-RAL" data-cover="false" src="img/project-logo.svg"
-                        alt="Baraja">
+                        alt="Baraja" caption="">
                 </div>
                 <div class="github-project__body">
                     <h2 class="font-circular-book fw-600 github-project__body--title">Title</h2>
@@ -122,7 +121,7 @@
             <div class="github-project__wrapper">
                 <div class="github-project__logo">
                     <img class="styles-module--fallbackImg--C-RAL" data-cover="false" src="img/project-logo.svg"
-                        alt="Baraja">
+                        alt="Baraja" caption="">
                 </div>
                 <div class="github-project__body">
                     <h2 class="font-circular-book fw-600 github-project__body--title">Title</h2>

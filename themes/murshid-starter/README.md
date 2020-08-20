@@ -34,6 +34,7 @@
 - [Remove Outdated Links Google](https://www.google.com/webmasters/tools/removals)
 - [How to create subdomain in Netlify](https://www.freecodecamp.org/news/how-to-host-a-git-repository-on-a-subdomain-with-netlify-b8afb5fca96e/)
 - [SEO sitemap best practices in 2020](https://blog.spotibo.com/sitemap-guide/)
+- [minify configuration in HUGO](https://gohugo.io/getting-started/configuration/) config to minify CSS
 
 
 ## License

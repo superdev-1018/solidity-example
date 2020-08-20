@@ -90,6 +90,7 @@
     {{ end -}}
 </head>
 <body aria-live="polite">
+    <a class="skip-link" href="#main-content">Skip to main content</a>
     <header role="banner">
         <section class="row-nm">
             <a href="/" class="logo">
@@ -100,6 +101,12 @@
                         </g>
                     </g>
                 </svg>
+                <div hidden>
+                    <img class="u-photo" src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale,f_auto,q_auto/ma-default.jpg" alt="{{ .Site.Author.name }}">
+                    <p class="p-note">{{ .Site.Params.Strapline }}</p>
+                    <a class="u-email" href="mailto:{{ .Site.Author.email }}"
+                    alt="Email Murshid Azher ({{ .Site.Author.email }})">{{ .Site.Author.email }}</a>
+                </div>
             </a>
             <nav class="Nav" aria-label="Main Navigation">
                 <ul class="Nav-list row-nm nav-mobile">
