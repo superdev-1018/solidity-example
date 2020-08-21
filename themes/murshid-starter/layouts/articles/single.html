@@ -23,13 +23,8 @@
     <div class="tags row-nm center">
       <div class="column center w-full published-date">
         Published on&nbsp;
-        <time
-          itemprop="datePublished"
-          class="inline-block"
-          datetime="{{ .Date }}"
-          >{{ .Date.Format "January 2, 2006" }}
-
-        </time>
+        <time itemprop="datePublished" class="inline-block" datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}
+ </time>
       </div>
       <!-- &nbsp; — &nbsp; {{ partial "post/tags.html" . }} -->
     </div>
@@ -39,11 +34,7 @@
 
   <section class="article_img">
     <div alt="" class="hs-featured-image-link hs-full-height">
-      <span
-        style="background:url({{ .Params.cover }}) no-repeat;"
-        class="hs-featured-image"
-      >
-      </span>
+      <span style="background:url({{ .Params.cover }}) no-repeat;" class="hs-featured-image"> </span>
     </div>
   </section>
   {{ end }}
@@ -51,8 +42,7 @@
   <section class="PostBody e-content {{ if not .Params.cover }}mt-48{{ end }}">
     <div class="center-max">
       {{ partial "heading-anchor.html" .Content }}
-
-      {{ partialCached "post/author.html" . }}
+ {{ partialCached "post/author.html" . }}
 
     </div>
   </section>

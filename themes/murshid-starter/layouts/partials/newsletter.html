@@ -1,10 +1,6 @@
 <section class="Newsletter" id="braintactics">
   <h3 class="Newsletter-title">Weekly Newsletter</h3>
-  <p>
-    <a href="/newsletter/">Braintactics</a> is a weekly roundup of articles,
-    tools and tips for product designers and front-end developers. I send it
-    every Friday morning.
-  </p>
+  <p><a href="/newsletter/">Braintactics</a> is a weekly roundup of articles, tools and tips for product designers and front-end developers. I send it every Friday morning.</p>
 
   <form
     class="NewsletterForm validate"
@@ -18,13 +14,7 @@
       <label class="NewsletterForm-label" for="name">
         First Name
       </label>
-      <input
-        class="NewsletterForm-input"
-        id="name"
-        name="NAME"
-        placeholder="e.g. Harry"
-        type="text"
-      />
+      <input class="NewsletterForm-input" id="name" name="NAME" placeholder="e.g. Harry" type="text" />
     </div>
     <!-- /.NewsletterForm-field-->
 
@@ -32,86 +22,41 @@
       <label class="NewsletterForm-label" for="email">
         Email Address
       </label>
-      <input
-        class="NewsletterForm-input"
-        id="email"
-        name="EMAIL"
-        placeholder="e.g. harry@gmail.com"
-        type="email"
-      />
+      <input class="NewsletterForm-input" id="email" name="EMAIL" placeholder="e.g. harry@gmail.com" type="email" />
     </div>
     <!-- /.NewsletterForm-field-->
     <div class="NewsletterForm-field">
       <!-- Add merge tag to show what page folks sign up on -->
-      <input
-        class="u-visually-hidden"
-        name="LOCATION"
-        value="{{ .Title }}"
-        type="hidden"
-        id="mce-LOCATION"
-      />
+      <input class="u-visually-hidden" name="LOCATION" value="{{ .Title }}" type="hidden" id="mce-LOCATION" />
       <!-- Automagically add folks to Brain—tactics group in Mailchimp -->
 
       <div class="Form-options" style="display:none">
         <strong>Product </strong>
         <ul>
           <li>
-            <input
-              type="checkbox"
-              value="4"
-              name="group[6417][4]"
-              id="mce-group[6417]-6417-0"
-              checked
-            />
+            <input type="checkbox" value="4" name="group[6417][4]" id="mce-group[6417]-6417-0" checked />
             <label for="mce-group[6417]-6417-0">Braintactics</label>
           </li>
           <li>
-            <input
-              type="checkbox"
-              value="8"
-              name="group[6417][8]"
-              id="mce-group[6417]-6417-1"
-            />
+            <input type="checkbox" value="8" name="group[6417][8]" id="mce-group[6417]-6417-1" />
             <label for="mce-group[6417]-6417-1">DS in Sketch</label>
           </li>
         </ul>
       </div>
       <!-- End the magic -->
       <div id="mce-responses" class="clear">
-        <div
-          class="response"
-          id="mce-error-response"
-          style="display:none"
-        ></div>
-        <div
-          class="response"
-          id="mce-success-response"
-          style="display:none"
-        ></div>
+        <div class="response" id="mce-error-response" style="display:none"></div>
+        <div class="response" id="mce-success-response" style="display:none"></div>
       </div>
       <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
       <div style="position: absolute; left: -5000px;" aria-hidden="true">
-        <label for="b_4e8fba8d0ab4a857159c0104e_d6ad2b65ca"
-          >Prevent bot signups</label
-        >
-        <input
-          type="text"
-          name="b_4e8fba8d0ab4a857159c0104e_d6ad2b65ca"
-          tabindex="-1"
-          value=""
-        />
+        <label for="b_4e8fba8d0ab4a857159c0104e_d6ad2b65ca">Prevent bot signups</label>
+        <input type="text" name="b_4e8fba8d0ab4a857159c0104e_d6ad2b65ca" tabindex="-1" value="" />
       </div>
 
       <div class="NewsletterForm-button">
-        <label class="NewsletterForm-label u-visually-hidden" for="subscribe"
-          >Subscribe</label
-        >
-        <input
-          class="Button Button--primary"
-          name="subscribe"
-          type="submit"
-          value="Subscribe"
-        />
+        <label class="NewsletterForm-label u-visually-hidden" for="subscribe">Subscribe</label>
+        <input class="Button Button--primary" name="subscribe" type="submit" value="Subscribe" />
       </div>
     </div>
     <!-- /.NewsletterForm-field-->

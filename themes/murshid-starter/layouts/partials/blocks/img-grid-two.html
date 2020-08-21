@@ -1,9 +1,7 @@
 <section class="my-32 grid">
   <div class="grid-1-6">
     <div class="Image">
-      <div
-        class="Ratio Ratio--{{- with .Params.image_ratio -}}{{ markdownify . }}{{- end -}}"
-      >
+      <div class="Ratio Ratio--{{- with .Params.image_ratio -}}{{ markdownify . }}{{- end -}}">
         <img
           data-src="https://res.cloudinary.com/murshidazher/image/upload/w_auto,dpr_auto,c_scale,f_auto,q_auto/{{- with .Params.image_one -}}{{ markdownify . }}{{- end -}}"
           class="cld-responsive lazyload "
@@ -24,9 +22,7 @@
   </div>
   <div class="grid-7-6">
     <div class="Image">
-      <div
-        class="Ratio Ratio--{{- with .Params.image_ratio -}}{{ markdownify . }}{{- end -}}"
-      >
+      <div class="Ratio Ratio--{{- with .Params.image_ratio -}}{{ markdownify . }}{{- end -}}">
         <img
           data-src="https://res.cloudinary.com/murshidazher/image/upload/w_auto,dpr_auto,c_scale,f_auto,q_auto/{{- with .Params.image_two -}}{{ markdownify . }}{{- end -}}"
           class="cld-responsive lazyload "

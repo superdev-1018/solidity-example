@@ -28,11 +28,7 @@
   {{ range .Site.Taxonomies.tags }}
 
   <a class="no-outline" href="{{ .Page.Permalink }}">
-    <article
-      itemscope="itemscope"
-      itemtype="http://schema.org/CreativeWork"
-      class="tags__child"
-    >
+    <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="tags__child">
       <div class="tags__child--number">
         <span>{{ printf "%02d" .Count }}</span>
       </div>

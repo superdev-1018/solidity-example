@@ -1,8 +1,6 @@
 <section class="my-32">
   <div class="Image">
-    <div
-      class="Ratio Ratio--{{- with .Params.image_ratio -}}{{ markdownify . }}{{- end -}}"
-    >
+    <div class="Ratio Ratio--{{- with .Params.image_ratio -}}{{ markdownify . }}{{- end -}}">
       <img
         data-src="https://res.cloudinary.com/murshidazher/image/upload/w_auto,dpr_auto,c_scale,f_auto,q_auto/{{- with .Params.image -}}{{ markdownify . }}{{- end -}}"
         class="cld-responsive lazyload "
