@@ -42,6 +42,7 @@ enableGitInfo = true
   dribbble = "https://dribbble.com/murshidazher"
   instagram = "https://www.instagram.com/murshidazher"
   behance = "https://www.behance.net/murshidazher"
+  medium = "https://medium.com/@imurshid"
 
 [taxonomies]
   tag = "tags"
