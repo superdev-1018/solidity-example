@@ -2,7 +2,6 @@ User-agent: *
 
 Disallow: /404/
 Disallow: /search/
-Disallow: /page/
 
 {{ range where .Data.Pages "Params.robotsdisallow" true -}}Disallow: {{- .RelPermalink -}}{{- end }}
 
