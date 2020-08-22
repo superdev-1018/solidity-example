@@ -39,6 +39,10 @@
 - [Cloudinary Dynamic Quality Analysis](https://cloudinary.com/blog/how_to_support_webp_images_save_bandwidth_and_improve_user_performance)
 - [WebP Hero](https://chasemoskal.com/webp-hero/)
 - [Stackoverflow Webp](https://stackoverflow.com/questions/47663490/how-to-view-webp-format-on-ie11)
+- [Progressive Image Loading](https://scotch.io/tutorials/blurry-to-crisp-progressive-media-for-better-ux)
+- [Netlify Custom headers](https://docs.netlify.com/routing/headers/#basic-authentication-headers)
+- [Content of this](https://www.connorrothschild.com/)
+- [Blog Side Content Nav](https://www.connorrothschild.com/post/animate-hugo-academic/#step-0-make-your-about-page-your-actual-homepage)
 
 ## License
 
