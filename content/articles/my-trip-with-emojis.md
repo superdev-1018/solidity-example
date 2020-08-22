@@ -2,7 +2,7 @@
 title: 'My Trip with Emojis'
 date: 2020-08-11T13:29:21+05:30
 draft: false
-description: 'The mind is in a constant state of flux with various emotions just in search of a consistent emoji library.'
+description: 'The mind is in a constant state of flux just in search of a consistent emoji library.'
 slug: 'my-trip-with-emojis'
 url: 'my-trip-with-emojis'
 tags: ['Hugo', 'Mac', 'Emoji', 'Python']
