@@ -15,17 +15,16 @@
 
 ## Table of Contents
 
-- [murshidazher.com](#murshidazhercom)
-  - [Table of Contents](#table-of-contents)
-  - [Installing / Getting started](#installing--getting-started)
-    - [Initial Configuration](#initial-configuration)
-  - [Developing](#developing)
-    - [Building](#building)
-    - [Deploying / Publishing](#deploying--publishing)
-  - [TODO](#todo)
-  - [Keep in Mind](#keep-in-mind)
-  - [Links](#links)
-  - [License](#license)
+- [Table of Contents](#table-of-contents)
+- [Installing / Getting started](#installing--getting-started)
+  - [Initial Configuration](#initial-configuration)
+- [Developing](#developing)
+  - [Building](#building)
+  - [Deploying / Publishing](#deploying--publishing)
+- [TODO](#todo)
+- [Keep in Mind](#keep-in-mind)
+- [Links](#links)
+- [License](#license)
 
 ## Installing / Getting started
 
