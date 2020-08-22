@@ -6,6 +6,9 @@
 ![Netlify](https://img.shields.io/netlify/5bb22eef-8559-4079-be63-e42c63f63770?logo=netlify&style=flat-square)
 ![CircleCI](https://img.shields.io/circleci/build/github/murshidazher/murshid?logo=circleci&style=flat-square)
 ![GitHub](https://img.shields.io/github/license/murshidazher/murshid?style=flat-square)
+![Blazing Fast](https://img.shields.io/badge/speed-blazing%20%F0%9F%94%A5-brightgreen.svg?style=flat-square)
+![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)
+
 
 > A simple performant personal website made with [hugo](https://gohugo.io/).
 
@@ -13,13 +16,17 @@
 
 ## Table of Contents
 
-- [Table of Contents](#table-of-contents)
-- [Installing / Getting started](#installing--getting-started)
-  - [Initial Configuration](#initial-configuration)
-- [Developing](#developing)
-- [Usage](#usage)
-- [Links](#links)
-- [License](#license)
+- [murshidazher.com](#murshidazhercom)
+  - [Table of Contents](#table-of-contents)
+  - [Installing / Getting started](#installing--getting-started)
+    - [Initial Configuration](#initial-configuration)
+  - [Developing](#developing)
+    - [Building](#building)
+    - [Deploying / Publishing](#deploying--publishing)
+  - [TODO](#todo)
+  - [Keep in Mind](#keep-in-mind)
+  - [Links](#links)
+  - [License](#license)
 
 ## Installing / Getting started
 
