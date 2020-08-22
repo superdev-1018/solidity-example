@@ -1,6 +1,11 @@
 <!-- Post Author. -->
 <div class="post-author">
-  <img alt="Murshid Azher" class="avatar avatar--round avatar--m u-photo" data-src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale,f_auto,q_auto/ma.webp" caption="" />
+  <img
+    alt="{{ .Site.Author.name }}'s headshot"
+    caption=""
+    class="avatar avatar--round avatar--m u-photo cld-responsive lazyload"
+    data-src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_1.0,c_scale,f_webp,fl_awebp.progressive.progressive:semi,f_auto,q_80/ma-default.jpg"
+  />
   <div class="post-author__text">
     <h4>Did you enjoy this?</h4>
     <p>Follow me to get notified &darr;</p>
@@ -12,6 +17,11 @@
   <a class="u-url" href="{{ .Permalink }}">{{ .Title }}</a>
   <p class="h-card p-author">
     <a class="p-name u-url" href="{{ $.Site.BaseURL }}" rel="author">Murshid Azher</a>
-    <img alt="Murshid Azher" class="u-photo" data-src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_auto,c_scale,f_auto,q_auto/ma.webp" caption="" />
+    <img
+      alt="{{ .Site.Author.name }}'s headshot"
+      caption=""
+      class="u-photo cld-responsive lazyload"
+      data-src="{{ .Site.Params.cloudinary_url }}/w_auto,dpr_1.0,c_scale,f_webp,fl_awebp.progressive.progressive:semi,f_auto,q_80/ma-default.jpg"
+    />
   </p>
 </div>
