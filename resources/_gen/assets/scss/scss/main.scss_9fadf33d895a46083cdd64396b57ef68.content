@@ -282,7 +282,7 @@ body {
   width: 100%;
   padding: 80px 0 0;
   font-family: "Graphik", sans-serif;
-  color: #747474;
+  color: #424242;
   font-size: 1rem;
   line-height: 1.5; }
 
@@ -291,13 +291,13 @@ footer {
   background-color: #fafafa95; }
 
 h1 {
-  color: #111;
+  color: #424242;
   font-size: 1.5rem;
   font-weight: 400; }
 
 h2 {
   font-size: 1.25rem;
-  font-weight: 500; }
+  font-weight: 400; }
 
 a {
   color: #1623dd;
@@ -339,27 +339,6 @@ header .row,
   align-items: flex-end; }
 
 @font-face {
-  font-family: 'Inter';
-  font-display: block;
-  src: url("/fonts/Inter-Medium.woff2") format("woff2");
-  font-weight: 500;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Inter';
-  font-display: block;
-  src: url("/fonts/Inter-Regular.woff2") format("woff2");
-  font-weight: 400;
-  font-style: normal; }
-
-@font-face {
-  font-family: 'Inter';
-  font-display: block;
-  src: url("/fonts/Inter-Bold.woff2") format("woff2");
-  font-weight: 700;
-  font-style: normal; }
-
-@font-face {
   font-family: 'JetBrains Mono';
   src: url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/eot/JetBrainsMono-Regular.eot") format("embedded-opentype"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff2/JetBrainsMono-Regular.woff2") format("woff2"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff/JetBrainsMono-Regular.woff") format("woff"), url("https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/ttf/JetBrainsMono-Regular.ttf") format("truetype");
   font-weight: normal;
@@ -371,8 +350,8 @@ header .row,
 \*------------------------------------*/
 :root {
   --bg-opacity: 1;
-  --color-dark: #1a2a30;
-  --color-body: #373a3c;
+  --color-dark: #424242;
+  --color-body: #424242;
   --color-light: #454545;
   --color-lighter: #888;
   --color-lightest: #f5f5f5;
@@ -1749,11 +1728,10 @@ svg {
   left: 0; }
 
 html {
-  font-feature-settings: 'calt', 'liga', 'hist', 'onum', 'pnum';
-  background-color: #542bff; }
+  font-feature-settings: 'calt', 'liga', 'hist', 'onum', 'pnum'; }
 
 .logo {
-  color: #111; }
+  color: var(--color-dark); }
 
 .header__wrapper {
   display: flex;
@@ -1761,11 +1739,11 @@ html {
 
 body {
   background-color: #fff;
-  font-family: "Inter", -apple-system, BlinkMacSystemFont, segoe ui, Roboto, Helvetica, Arial, sans-serif, apple color emoji, segoe ui emoji, segoe ui symbol;
+  font-family: Roboto, Arial, Helvetica, sans-serif, -apple-system, BlinkMacSystemFont, segoe ui, apple color emoji, segoe ui emoji, segoe ui symbol;
   color: var(--color-body); }
 
 .text-black {
-  color: #111; }
+  color: var(--color-dark); }
 
 .intro {
   height: 240px; }
@@ -1797,7 +1775,7 @@ a.email {
 a.email-button {
   border-radius: 4px;
   padding: 11px;
-  background-color: #111; }
+  background-color: var(--color-dark); }
   a.email-button img {
     vertical-align: middle; }
 
@@ -1827,7 +1805,7 @@ a.email {
   margin-bottom: 80px; }
 
 .question {
-  color: #111;
+  color: var(--color-dark);
   font-weight: 400;
   margin-bottom: 20px; }
 
@@ -1845,6 +1823,17 @@ mark {
     margin-right: 10px;
     border-radius: 100%; }
 
+time {
+  font-family: "Jetbrains Mono", "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
+.sub-footer--container {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  left: 0;
+  padding-top: 4rem;
+  box-shadow: 0 -0.1875rem 0.125rem #c3c3c314; }
+
 .github-project {
   display: inline-block;
   color: #fff;
@@ -1857,7 +1846,7 @@ mark {
   position: relative;
   box-sizing: border-box;
   border-radius: 4px;
-  background: #111; }
+  background: var(--color-dark); }
   .github-project:not(:last-child) {
     margin-right: 40px; }
   .github-project .github-project__wrapper {
@@ -1923,11 +1912,11 @@ h1 {
   line-height: 1.33;
   margin-top: 4px;
   margin-bottom: 8px;
-  font-weight: 700;
+  font-weight: 500;
   font-style: normal; }
 
 .logo {
-  font-weight: 700; }
+  font-weight: 500; }
 
 .row-nm {
   display: flex;
@@ -1949,7 +1938,7 @@ a {
 .PostBody h5,
 .PostBody h6 {
   margin-top: 2.4rem;
-  color: #111; }
+  color: #424242; }
 
 .PostBody h3 {
   font-size: 1.125rem;
@@ -1964,7 +1953,7 @@ a {
   padding-bottom: 12px;
   border-bottom-color: transparent;
   transition: all 200s ease;
-  font-weight: 500; }
+  font-weight: 400; }
   .text-nav:hover {
     border-bottom: 2px solid var(--color-dark);
     padding-bottom: 8px;
@@ -2285,7 +2274,7 @@ a {
   -moz-column-break-inside: avoid;
   break-inside: avoid; }
   .footer-nav__list .footer-nav__list--header {
-    color: #111;
+    color: #424242;
     font-weight: 600;
     text-decoration: none; }
   .footer-nav__list .footer-nav__list--body {
@@ -2306,6 +2295,7 @@ a {
   margin-bottom: 80px; }
 
 .footer-copyright {
+  font-family: "Jetbrains Mono", "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   align-items: center;
   justify-content: space-between;
   margin-top: 1.5rem;
@@ -2420,19 +2410,19 @@ small {
       .tags__wrapper .tags__child .tags__child--number span {
         display: flex;
         justify-content: center;
-        font-weight: 700;
+        font-weight: 500;
         color: #0500ff; }
 
 .fs-large {
   margin-left: 0.5rem;
   font-size: 0.75rem;
   font-weight: lighter;
-  color: #747474; }
+  color: #424242; }
 
 .emoji {
   font-size: 0.75rem;
   font-weight: lighter;
-  color: #747474; }
+  color: #424242; }
 
 .no-outline:active, .no-outline:focus {
   outline: 0;
@@ -2453,8 +2443,8 @@ small {
 .articles_list--item__body {
   margin-bottom: 80px; }
   .articles_list--item__body--title {
-    font-weight: 600;
-    color: #111;
+    font-weight: 500;
+    color: var(--color-dark);
     font-size: 1.125rem; }
   .articles_list--item__body--desc {
     white-space: initial;
@@ -2515,8 +2505,7 @@ a.hs-featured-image-link {
   display: block;
   background-size: cover !important;
   background-position: center center !important;
-  position: relative;
-  border-radius: 6px; }
+  position: relative; }
 
 .hs-featured-image:after {
   border-radius: 6px;
@@ -2556,14 +2545,14 @@ strong {
   font-weight: 600; }
 
 .Post .heading-anchor {
-  color: #111;
+  color: var(--color-dark);
   text-decoration: none; }
   .Post .heading-anchor:hover {
     color: #1623dd; }
   .Post .heading-anchor:active {
     color: #1623dd; }
   .Post .heading-anchor:visited {
-    color: #111; }
+    color: var(--color-dark); }
 
 .mt-48 {
   margin-top: 112px; }
@@ -2643,11 +2632,11 @@ strong {
 
 .articles_list--item__link a {
   font-weight: 400;
-  color: #111; }
+  color: var(--color-dark); }
 
 .link-arrow a {
   font-weight: 400;
-  color: #111; }
+  color: var(--color-dark); }
 
 .align-end {
   text-align: end; }
