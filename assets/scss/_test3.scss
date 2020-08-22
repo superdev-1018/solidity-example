@@ -1031,17 +1031,20 @@ small {
         }
 
         .tags__child--number {
+            font-family: $font-system-mn;
             display: flex;
             flex-direction: column;
             margin-right: 6px;
             padding: 0.25rem;
             background-color: #d8dbff;
             border-radius: 100%;
+
             width: 24px;
             height: 24px;
             // display: flex;
 
             span {
+                // font-size: .875rem;
                 display: flex;
                 justify-content: center;
                 font-weight: 500;

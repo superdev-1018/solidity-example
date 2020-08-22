@@ -1832,7 +1832,7 @@ time {
   width: 100%;
   left: 0;
   padding-top: 4rem;
-  box-shadow: 0 -0.1875rem 0.125rem #c3c3c314; }
+  box-shadow: 0 -0.1875rem 0.125rem #efefef; }
 
 .github-project {
   display: inline-block;
@@ -2399,6 +2399,7 @@ small {
     .tags__wrapper .tags__child .tag__text {
       padding-right: 0.75rem; }
     .tags__wrapper .tags__child .tags__child--number {
+      font-family: "Jetbrains Mono", "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
       display: flex;
       flex-direction: column;
       margin-right: 6px;
