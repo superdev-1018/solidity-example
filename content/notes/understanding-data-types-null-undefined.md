@@ -1,7 +1,7 @@
 ---
 title: 'Understanding data types: null vs undefined'
 date: 2020-01-14T20:44:38Z
-draft: false
+draft: true
 description: 'There are two ways to express nothing in JavaScript; null and undefined. But how do they differ?'
 slug: 'js-data-types-null-undefined'
 tags: ['Coursenotes', 'JavaScript']
