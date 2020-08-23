@@ -10,7 +10,6 @@
     "clean": "rm -rf public",
     "format": "npm run format:scss & npm run format:html",
     "format:scss": "prettier --single-quote --print-width 180 --write '**/*.scss'",
-    "format:md": "prettier --print-width 180 --write '**/*.md'",
     "format:html": "prettier --write '**/*.html'",
     "lint:md": "markdownlint --config ./.markdown-lint.yml ./content/**/*.md",
     "lint": "npm run start && run-p lint:*",

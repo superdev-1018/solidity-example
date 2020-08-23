@@ -44,14 +44,17 @@ Next we need to write our markdown as a `json` file. I would suggest you first t
 
 So, now will construct a typical front-matter in an empty file first, let’s recreate the front-matter for this blog post.
 
-## {{< highlight md >}}
-
-title: "Using Current Date and Time In VS Code Snippets" date: 2020-08-09T21:48:48+05:30 draft: false description: "How to add dates, title, custom attributes to Markdown
-front-matter." slug: "using-current-date-and-time-in-vs-code-snippets" url: "using-current-date-and-time-in-vs-code-snippets" tags: ["Hugo", "VSCode", "Snippets"] syndicate:
-"false"
-
+{{< highlight md >}}
 ---
-
+title: "Using Current Date and Time In VS Code Snippets"
+date: 2020-08-09T21:48:48+05:30
+draft: false
+description: "How to add dates, title, custom attributes to Markdown front-matter."
+slug: "using-current-date-and-time-in-vs-code-snippets"
+url: "using-current-date-and-time-in-vs-code-snippets"
+tags: ["Hugo", "VSCode", "Snippets"]
+syndicate: "false"
+---
 {{</ highlight >}}
 
 Now, that we've the blueprint on how the end scaffolding should appear will move on to `markdown.json` and will create the user snippet. But before that we need to know the
@@ -61,13 +64,26 @@ First, comes the title of the snippet and it has to be `unique` in that file sin
 creation of this snippet in the appropriate file. I usually prefer to prefix a snippet with a `.` so Visual Studio Code would list out all the available snippet for me using
 `Intellisense` but the prefix could be anything you desire. You can also press `Ctrl` + `Space` bring up Intellisense.
 
-{{< highlight json >}} { "Hugo Markdown Blog Front-matter": { "prefix": ".fm", "body": ["---", "title:
-\"$0${1:${CLIPBOARD}}\"",
+{{< highlight json >}}
+{
+  "Hugo Markdown Blog Front-matter": {
+    "prefix": ".fm",
+    "body": ["---",
+      "title: \"$0${1:${CLIPBOARD}}\"",
       "date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}T${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}+05:30",
-      "draft: ${6:false}", "emoji:
-\"${2::call_me_hand:}\"",
-      "description: \"${3:Subheading or a short description.}\"", "slug: \"${4:${CLIPBOARD/[' ']/-/gi}}\"", "url: \"${4:${CLIPBOARD/[' ']/-/gi}}\"", "tags:
-[\"${7:tag}\"]", "syndicate: \"\${8:false}\"", "---" ], "description": "Generate Blog Front-matter" } } {{</ highlight >}}
+      "draft: ${6:false}",
+      "emoji: \"${2::call_me_hand:}\"",
+      "description: \"${3:Subheading or a short description.}\"",
+      "slug: \"${4:${CLIPBOARD/[' ']/-/gi}}\"",
+      "url: \"${4:${CLIPBOARD/[' ']/-/gi}}\"",
+      "tags: [\"${7:tag}\"]",
+      "syndicate: \"${8:false}\"",
+      "---"
+    ],
+    "description": "Generate Blog Front-matter"
+  }
+}
+{{</ highlight >}}
 
 Second, comes the `body` it contains the text which should appear when you type the `prefix`. Now what you will do is you will break down the previously created file into
 individual lines and create strings inside the body. You can also use `$1` - `$n` to define tab stops which a user can use to easy navigate by pressing tabs and `${1:label}`,
@@ -86,7 +102,10 @@ to the current date and time with one of the following variables.
 
 If I want the front matter to have a format such as this `2020-08-09T21:48:48+05:30`, I would add the following snippet,
 
-{{< highlight json >}} "date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}T${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}+05:30", "draft: \${6:false}", {{</ highlight >}}
+{{< highlight json >}}
+"date: ${CURRENT_YEAR}-${CURRENT_MONTH}-${CURRENT_DATE}T${CURRENT_HOUR}:${CURRENT_MINUTE}:${CURRENT_SECOND}+05:30",
+      "draft: ${6:false}",
+{{</ highlight >}}
 
 Finally, these are additional snippet variables provided by Microsoft to make the creation of scaffolding easier, like for example, the `CLIPBOARD`used above is such a variable
 which would allow a user to generate the `title`, `slug` and `url` from the text in the clipboard.

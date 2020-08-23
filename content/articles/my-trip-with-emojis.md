@@ -47,54 +47,84 @@ First Step: Navigate to https://emojipedia.org/apple/ios-13.3/
 
 Second Step: Generate the asset manifest by running this in the Inspect console
 
-{{< highlight js >}} copy(JSON.stringify(Object.fromEntries([...document.querySelector('ul.emoji-grid').querySelectorAll('img[title][src][srcset]')].map(({title, attributes},
-index) => ([attributes.title.value, attributes.srcset.value.replace(/ +\dx$/, '')]))))) {{</ highlight >}}
+{{< highlight js >}}
+copy(JSON.stringify(Object.fromEntries([...document.querySelector('ul.emoji-grid').querySelectorAll('img[title][src][srcset]')].map(({title, attributes}, index) => ([attributes.title.value, attributes.srcset.value.replace(/ +\dx$/, '')])))))
+{{</ highlight >}}
 
 Second Step: Clean up the Script
 
-{{< highlight js >}} [...document.querySelectorAll('script, link[rel=preload], link[rel=prefetch]')].forEach(element => element.remove()); {{</ highlight >}}
+{{< highlight js >}}
+[...document.querySelectorAll('script, link[rel=preload], link[rel=prefetch]')].forEach(element => element.remove());
+{{</ highlight >}}
 
 This gave me a pretty good `JSON` file to work with, but since am using `YAML` as the data-serialization language for consistency I wrote a Python script to convert this JSON to
 `YAML` too. Here `ex.txt` is the `JSON` file we've scraped,
 
-{{< highlight python >}} def convert_yaml(): with open('ex.txt') as f1: with open('ios13.yaml', 'w') as f2: lines = f1.readlines() for i, line in enumerate(lines): yaml_line =
-line.replace('{', '\n') yaml_line = yaml_line.replace('}\n', '') yaml_line = yaml_line.replace(',', '') yaml_line = yaml_line.lstrip();
+{{< highlight python >}}
+def convert_yaml():
+  with open('ex.txt') as f1:
+    with open('ios13.yaml', 'w') as f2:
+      lines = f1.readlines()
+      for i, line in enumerate(lines):
+        yaml_line = line.replace('{', '\n')
+        yaml_line = yaml_line.replace('}\n', '')
+        yaml_line = yaml_line.replace(',', '')
+        yaml_line = yaml_line.lstrip();
 
         if yaml_line:
           yaml_line = '- title: ' + yaml_line
           yaml_line = yaml_line.replace(': "https', '\n  link: https')
           yaml_line = yaml_line.replace('.png', '.png\n  shortcode: ":text:')
           f2.write(yaml_line)
-
 {{</ highlight >}}
 
 Then, download those images
 
-{{< highlight python >}} def download_img(): base = "ios_emoji" i = 0 with open('ex.txt') as f: urls = f.read() links = re.findall('"((http)s?://.\*?)"', urls) for url in links: i
-= i+1 print('Downloading... ' + str(i)) context = ssl.\_create_unverified_context() img_url = url[0] path_url =
-img_url.replace('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/', '') path_url = os.path.join(base, path_url) ssl.\_create_default_https_context =
-ssl.\_create_unverified_context urllib.request.urlretrieve(img_url, path_url) {{</ highlight >}}
+{{< highlight python >}}
+def download_img():
+  base = "ios_emoji"
+  i = 0
+  with open('ex.txt') as f:
+    urls = f.read()
+    links = re.findall('"((http)s?://.*?)"', urls)
+    for url in links:
+        i = i+1
+        print('Downloading... ' + str(i))
+        context = ssl._create_unverified_context()
+        img_url = url[0]
+        path_url = img_url.replace('https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/60/apple/237/', '')
+        path_url = os.path.join(base, path_url)
+        ssl._create_default_https_context = ssl._create_unverified_context
+        urllib.request.urlretrieve(img_url, path_url)
+{{</ highlight >}}
 
 Then, compress these pngs so that you can reduce their load time
 
-{{< highlight python >}} def resize(): root_dir = "ios_emoji" out_dir = "resized" resize_ratio = 0.6 # where 0.5 is half size, 2 is double size
-
-i = 0 for filename in glob.iglob(root\*dir + '\*\*/\_.png', recursive=True): i = i + 1 decimal_round = 3 # number of decimal points re_filename = os.path.join(out_dir, filename) im
-= Image.open(filename)
+{{< highlight python >}}
+def resize():
+  root_dir = "ios_emoji"
+  out_dir = "resized"
+  resize_ratio = 0.6  # where 0.5 is half size, 2 is double size
+  
+  i = 0
+  for filename in glob.iglob(root_dir + '**/*.png', recursive=True):
+      i = i + 1
+      decimal_round = 3 # number of decimal points
+      re_filename = os.path.join(out_dir, filename)
+      im = Image.open(filename)
 
       new_image_height = int(im.size[0] / (1/resize_ratio))
-      new_image_length = int(im.size[1] / (1/resize_ratio))
+      new_image_length = int(im.size[1] / (1/resize_ratio))  
       imResize = im.resize((new_image_height, new_image_length), Image.ANTIALIAS)
 
       with open(re_filename, 'w+') as f:
         # (re_filename, 'PNG', optimize=True, quality=85)
         imResize.save(re_filename, 'PNG', compress_level=9) # lossless compression algorithm
         print(
-            'Converted... ' + str(i) +
-            ' dimesion: ' + str(imResize.size[0]) +
-            'px size: ' + 'from ' + str(round(os.path.getsize(filename)/1024, decimal_round)) + 'KB to '
+            'Converted... ' + str(i) + 
+            ' dimesion: ' + str(imResize.size[0]) +  
+            'px size: ' + 'from ' + str(round(os.path.getsize(filename)/1024, decimal_round)) + 'KB to ' 
             + str(round(os.path.getsize(re_filename)/1024, decimal_round)) + 'KB')
-
 {{</ highlight >}}
 
 Then, uplaod these files to the compressed file to you own image hosting platform, I use [Cloudinary](https://cloudinary.com/) to transform and manage my media contents.
@@ -115,18 +145,22 @@ Then will create a `Shortcode` in Hugo,
 
 Then paste the following content inside `emoji.html`,
 
-{{< highlight html >}} {{ $shortcode := .Get 0 }} {{ $size := .Get 1 }} {{ $default_size := 24 }} {{ range first 1 (where .Site.Data.emoji.ios13 "shortcode" "eq" $shortcode) }}
-<span class="emoji"> <img 
+
+{{< highlight html >}}
+{{ $shortcode := .Get 0 }}
+{{ $size := .Get 1 }}
+{{ $default_size := 24 }}
+{{ range first 1 (where .Site.Data.emoji.ios13 "shortcode" "eq" $shortcode) }}
+    <span class="emoji">
+        <img 
             width="{{ $size | default $default_size }}" 
             height="{{ $size | default $default_size }}" 
             class="cld-responsive lazyload"  
-            alt="{{ .title }}"
-            caption=""
-            src="{{ .link }}"/><!-- /.Emoji --> </span><!-- /.Emoji Wrapper --> {{ end }} {{</ highlight >}}
-
-Alternatively, If you just need to convert the given shortcode without your own emoji collection,
-
-{{< highlight html >}} {{ .Get 0 | emojify }} {{</ highlight >}}
+            title="{{ .title }}" 
+            src="{{ .link }}"/><!-- /.Emoji -->
+    </span><!-- /.Emoji Wrapper -->
+{{ end }}
+{{</ highlight >}}
 
 ## Let the magic happen
 

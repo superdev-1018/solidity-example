@@ -6,3 +6,4 @@ resources
 themes/murshid-starter/layouts/partials/footer.html
 themes/murshid-starter/layouts/partials/heading-anchor.html
 themes/murshid-starter/layouts/partials/head-comment.html
+**/*.md
