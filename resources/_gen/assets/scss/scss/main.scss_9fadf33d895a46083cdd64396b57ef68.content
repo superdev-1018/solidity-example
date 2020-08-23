@@ -1739,7 +1739,7 @@ html {
 
 body {
   background-color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, "avenir next", avenir, helvetica, "helvetica neue", ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, neue, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
   color: var(--color-body); }
 
 .text-black {
@@ -1824,6 +1824,7 @@ mark {
     border-radius: 100%; }
 
 time {
+  font-size: .875em;
   font-family: "Jetbrains Mono", "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 .sub-footer--container {
@@ -1965,9 +1966,17 @@ a {
     color: var(--color-dark); }
 
 .scroll-up {
-  display: flex;
-  justify-content: flex-end;
-  cursor: pointer; }
+  position: relative;
+  display: inline-block;
+  padding-top: 15px;
+  padding-right: 30px;
+  padding-bottom: 15px;
+  cursor: pointer;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+  background-size: 16px;
+  background-image: url("data:image/svg+xml,%3Csvg width='16px' height='22px' viewBox='0 0 16 22' version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' %3E%3Cg id='Page-1' stroke='none' stroke-width='1' fill='none' fill-rule='evenodd' stroke-linecap='round' stroke-linejoin='round'%3E%3Cg id='Macbook-Air' transform='translate(-1139.000000, -128.000000)' stroke='%23111' stroke-width='2'%3E%3Cg id='arrow-up' transform='translate(1140.000000, 129.000000)'%3E%3Cline x1='7' y1='20' x2='7' y2='0' id='Path'%3E%3C/line%3E%3Cpolyline id='Path' points='0 7 7 0 14 7'%3E%3C/polyline%3E%3C/g%3E%3C/g%3E%3C/g%3E%3C/svg%3E"); }
   .scroll-up .img {
     margin: 1rem; }
 
@@ -2313,10 +2322,12 @@ a {
   background-size: 20px;
   transition: padding 0.2s ease;
   color: white;
-  text-decoration: none; }
+  text-decoration: none;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' class='feather feather-arrow-right'%3E%3Cpath d='M5 12h14M12 5l7 7-7 7'/%3E%3C/svg%3E"); }
   .learn-more-button--left {
     padding-left: 30px;
-    background-position: 0% 50%; }
+    background-position: 0% 50%;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' class='feather feather-arrow-left'%3E%3Cpath d='M19 12H5M12 19l-7-7 7-7'/%3E%3C/svg%3E"); }
     .learn-more-button--left:hover {
       transition: padding 0.2s ease;
       padding-left: 35px;
@@ -2327,7 +2338,7 @@ a {
     outline: 0; }
 
 .arrow-right {
-  background-image: url(/img/arrow-right.svg); }
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' fill='none' stroke='currentColor' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' class='feather feather-arrow-right'%3E%3Cpath d='M5 12h14M12 5l7 7-7 7'/%3E%3C/svg%3E"); }
 
 .scrolling-wrapper {
   overflow-x: scroll;

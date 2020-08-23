@@ -12,5 +12,5 @@ an email with the {{< emoji ":thumbsup:" "20" >}} below. I'm always happy to tal
 shoot me an email with the link below
 
 <div class="link-arrow align-center j-center">
-  <a href="mailto:hello@murshidazher.com" class="learn-more-button w-inline-block" style="background-image: url(/img/icons/arrow-right.svg);" alt="Email Murshid Azher (hello@murshidazher.com)">Send me an email</a>
+  <a href="mailto:hello@murshidazher.com" class="learn-more-button w-inline-block" alt="Email Murshid Azher (hello@murshidazher.com)">Send me an email</a>
 </div>
