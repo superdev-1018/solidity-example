@@ -1824,7 +1824,7 @@ mark {
     border-radius: 100%; }
 
 time {
-  font-size: .875em;
+  font-size: 0.875em;
   font-family: "Jetbrains Mono", "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 .sub-footer--container {

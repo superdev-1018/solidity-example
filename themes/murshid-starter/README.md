@@ -45,6 +45,7 @@
 - [Blog Side Content Nav](https://www.connorrothschild.com/post/animate-hugo-academic/#step-0-make-your-about-page-your-actual-homepage)
 - [Src set and responsive sizes in cloudinary](https://cloudinary.com/blog/responsive_images_with_srcset_sizes_and_cloudinary)
 - [Go to previous commit and push](https://stackoverflow.com/questions/4359681/want-to-change-my-master-to-an-older-commit-how-can-i-do-this)
+- [Hugo Best Practice](https://github.com/praveenjuge/hugo-SEO-meta-tags)
 
 ## License
 

@@ -4,7 +4,7 @@ date = 2020-08-11T13:29:21+05:30
 description = "Things I use"
 emoji = "🍳"
 slug = "uses"
-draft = "false"
+draft = "true"
 +++
 
 My office setup, and the tools I use from day to day.

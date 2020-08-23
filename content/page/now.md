@@ -5,6 +5,7 @@ description = "What I’m doing now, what I’m choosing to focus my time and at
 slug = "now"
 url = "now"
 emoji = ":microbe:"
+draft = "true"
 +++
 
 I’m in Colombo, on lockdown due to the Covid-19 Coronavirus outbreak. I’m well, but I’m at home to help prevent the spread. This is how I’m spending my time right now.

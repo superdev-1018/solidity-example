@@ -88,34 +88,35 @@
     </section>
   </nav>
 </footer>
-<!-- Store JS files independently -->
-{{ $cloudinary := resources.Get "js/cloudinary-core-shrinkwrap.min.js" }}
-{{ $lazysizes := resources.Get "js/lazysizes.js" }}
-<!-- Concat JS, generate default app.js and app-likes -->
-{{ $defaultJS := slice $cloudinary $lazysizes | resources.Concat "app.js" }}
-<!-- Set default -->
-{{ $script := $defaultJS }}
-<!-- Assign script to global, minify and fingerprint -->
-{{ $globalJS := $script | resources.Minify | resources.Fingerprint "sha512" }}
-<!-- Load script and authenticate hashed file -->
-<script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript" crossorigin="anonymous"></script>
-<script src="{{ $globalJS.Permalink }}" integrity="{{ $globalJS.Data.Integrity }}" media="screen"></script>
-<script>
-  function animateToTop(e) {
-    e.preventDefault()
-    var scrollToTop = window.setInterval(function () {
-      var pos = window.pageYOffset
-      if (pos > 0) {
-        window.scrollTo(0, pos - 20)
-      } else {
-        window.clearInterval(scrollToTop)
-      }
-    }, 2) //two seconds to scroll-up
-  }
-</script>
-<script>
-  var cl = cloudinary.Cloudinary.new({
-    cloud_name: 'murshidazher',
-  })
-  cl.responsive()
-</script>
+        <!-- Store JS files independently -->
+        {{- $cloudinary := resources.Get "js/cloudinary-core-shrinkwrap.min.js" -}}
+        {{- $lazysizes := resources.Get "js/lazysizes.js" -}}
+        <!-- Concat JS, generate default app.js and app-likes -->
+        {{- $defaultJS := slice $cloudinary $lazysizes | resources.Concat "app.js" -}}
+        <!-- Set default -->
+        {{- $script := $defaultJS -}}
+        <!-- Assign script to global, minify and fingerprint -->
+        {{- $globalJS := $script | resources.Minify | resources.Fingerprint "sha512" -}}
+        <!-- Load script and authenticate hashed file -->
+        <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript" crossorigin="anonymous"></script>
+        <script src="{{ $globalJS.Permalink }}" integrity="{{ $globalJS.Data.Integrity }}" media="screen"></script>
+        <script>
+        function animateToTop(e) {
+            e.preventDefault()
+            var scrollToTop = window.setInterval(function () {
+            var pos = window.pageYOffset
+            if (pos > 0) {
+                window.scrollTo(0, pos - 20)
+            } else {
+                window.clearInterval(scrollToTop)
+            }
+            }, 2) //two seconds to scroll-up
+        }
+        </script>
+        <script>
+        var cl = cloudinary.Cloudinary.new({
+            cloud_name: 'murshidazher',
+        })
+        cl.responsive()
+        </script>
+
