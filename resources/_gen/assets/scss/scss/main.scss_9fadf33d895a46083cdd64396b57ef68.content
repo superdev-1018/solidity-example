@@ -484,10 +484,7 @@ pre {
   font-size: 0.8em;
   overflow: auto;
   overflow-wrap: normal;
-  padding: 3%;
-  border-radius: 8px;
-  border-bottom-right-radius: 8px;
-  border-bottom-left-radius: 8px; }
+  padding: 3%; }
 
 pre + p {
   margin-top: 1.5rem; }
@@ -1739,7 +1736,7 @@ html {
 
 body {
   background-color: #fff;
-  font-family: -apple-system, BlinkMacSystemFont, neue, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
+  font-family: "Inter", -apple-system, BlinkMacSystemFont, neue, ubuntu, roboto, noto, "segoe ui", arial, sans-serif;
   color: var(--color-body); }
 
 .text-black {
@@ -1885,7 +1882,7 @@ footer a {
 
 .footer__quote {
   display: flex;
-  align-items: end;
+  align-items: flex-end;
   justify-content: center; }
 
 .rounded-full {

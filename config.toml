@@ -28,6 +28,8 @@ enableGitInfo = true
   description = "Murshid Azher is a professional designer and software developer from Colombo, Sri Lanka. Read technical articles and notes on coding, designing and much more."
   strapline = "I design, code and grow things on the internet."
   location = "Colombo, LK"
+  jobTitle = "Software Engineer"
+  worksFor= "Atera"
 
   # Set Cloudinary URL for image hosting
   cloudinary_url = "https://res.cloudinary.com/murshidazher/image/upload"
@@ -36,8 +38,6 @@ enableGitInfo = true
 [author]
   name = "Murshid Azher"
   email = "hello@murshidazher.com"
-  jobTitle = "Software Engineer"
-  worksFor= "Atera"
   twitter = "https://twitter.com/murshidazher"
   github = "https://github.com/murshidazher"
   linkedin = "https://linkedin.com/in/murshidazher"

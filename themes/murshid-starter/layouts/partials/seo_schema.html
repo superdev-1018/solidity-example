@@ -5,7 +5,7 @@
         "name": "{{ with .Site.Author.name }}{{ . }}{{ end }}",
         "url": "{{ .Permalink }}",
         "inLanguage" : "{{ with .Site.LanguageCode }}{{ . }}{{ end }}",
-        "keywords" : [{{ with .Site.Params.keywords }}"{{ . }}",{{ end }}],
+        "keywords" : [{{ with .Site.Params.keywords }}{{ . }}{{ end }}],
         "image": "https://haydenbleasel.com/icons/icon-512x512.png",
         "sameAs": [
             "{{ .Site.Author.twitter }}",
@@ -15,12 +15,10 @@
             "{{ .Site.Author.behance }}",
             "{{ .Site.Author.medium }}"
         ],
-        "jobTitle": "{{ with .Site.Author.jobTitle }}{{ . }}{{ end }}",
+        "jobTitle": "{{ with .Site.Params.jobTitle }}{{ . }}{{ end }}",
         "worksFor": {
             "@type": "Organization",
-            "name": "{{ with .Site.Author.worksFor }}{{ . }}{{ end }}"
+            "name": "{{ with .Site.Params.worksFor }}{{ . }}{{ end }}"
         }
     }
 </script>
-
-<!-- {{ partial "seo_schema" . }} -->

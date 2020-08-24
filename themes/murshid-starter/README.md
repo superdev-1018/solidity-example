@@ -48,6 +48,7 @@
 - [Hugo Best Practice](https://github.com/praveenjuge/hugo-SEO-meta-tags)
 
 ## Math
+
 - [KaTex partial](https://eankeen.github.io/blog/posts/render-latex-with-katex-in-hugo-blog/)
 - [Gatsby Blog ML](https://janosh.dev/blog)
 
