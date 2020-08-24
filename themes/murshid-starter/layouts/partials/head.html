@@ -83,12 +83,12 @@
     <link rel="preload" as="font" type="font/woff2" href="/fonts/Inter-Medium.woff2" crossorigin />
     <link as="font" type="font/woff2" href="/fonts/Inter-Regular.woff2" crossorigin /> -->
 
-  <!-- <link
+  <link
     href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&family=Space+Mono:wght@400;700&display=swap"
     rel="preload"
     as="style"
     onload="this.onload=null;this.rel='stylesheet'"
-  /> -->
+  />
 
   <!-- IndieCert -->
   <link rel="webmention" href="https://webmention.io/murshidazher.com/webmention" />
@@ -124,6 +124,6 @@
  {{ printf `<link rel="%s" type="%s" href="%s" alt="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
  {{ end -}}
 
-  {{ partial "seo_schema" . }}
+  {{ partialCached "seo_schema.html" . }}
 
 </head>

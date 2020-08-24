@@ -47,6 +47,10 @@
 - [Go to previous commit and push](https://stackoverflow.com/questions/4359681/want-to-change-my-master-to-an-older-commit-how-can-i-do-this)
 - [Hugo Best Practice](https://github.com/praveenjuge/hugo-SEO-meta-tags)
 
+## Math
+- [KaTex partial](https://eankeen.github.io/blog/posts/render-latex-with-katex-in-hugo-blog/)
+- [Gatsby Blog ML](https://janosh.dev/blog)
+
 ## License
 
 [MIT](https://github.com/murshidazher/murshid/blob/master/LICENSE) © Murshid Azher
