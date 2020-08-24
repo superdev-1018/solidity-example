@@ -1,27 +1,25 @@
 <script type="application/ld+json">
     {
-        "@context" : "http://schema.org",
-        "@type" : "BlogPosting",
-        "mainEntityOfPage": {
-             "@type": "WebPage",
-             "@id": "{{ .Site.BaseURL }}"
-        },
-        "articleSection" : "{{ .Section }}",
-        "name" : "{{ .Title }}",
-        "headline" : "{{ .Title }}",
-        "description" : "{{ if .Description }}{{ .Description }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ end }}{{ end }}",
-        "inLanguage" : "en-US",
-        "author" : "{{ range .Site.Author }}{{ . }}{{ end }}",
-        "creator" : "{{ range .Site.Author }}{{ . }}{{ end }}",
-        "publisher": "{{ range .Site.Author }}{{ . }}{{ end }}",
-        "accountablePerson" : "{{ range .Site.Author }}{{ . }}{{ end }}",
-        "copyrightHolder" : "{{ range .Site.Author }}{{ . }}{{ end }}",
-        "copyrightYear" : "{{ .Date.Format "2006" }}",
-        "datePublished": "{{ .Date }}",
-        "dateModified" : "{{ .Date }}",
-        "url" : "{{ .Permalink }}",
-        "wordCount" : "{{ .WordCount }}",
-        "keywords" : [ {{ if isset .Params "tags" }}{{ range .Params.tags }}"{{ . }}",{{ end }}{{ end }}"Blog" ]
+        "@context": "https://schema.org/",
+        "@type": "Person",
+        "name": "{{ with .Site.Author.name }}{{ . }}{{ end }}",
+        "url": "{{ .Permalink }}",
+        "inLanguage" : "{{ with .Site.LanguageCode }}{{ . }}{{ end }}",
+        "keywords" : [{{ with .Site.Params.keywords }}"{{ . }}",{{ end }}],
+        "image": "https://haydenbleasel.com/icons/icon-512x512.png",
+        "sameAs": [
+            "{{ .Site.Author.twitter }}",
+            "{{ .Site.Author.dribbble }}",
+            "{{ .Site.Author.linkedin }}",
+            "{{ .Site.Author.github }}",
+            "{{ .Site.Author.behance }}",
+            "{{ .Site.Author.medium }}"
+        ],
+        "jobTitle": "{{ with .Site.Author.jobTitle }}{{ . }}{{ end }}",
+        "worksFor": {
+            "@type": "Organization",
+            "name": "{{ with .Site.Author.worksFor }}{{ . }}{{ end }}"
+        }
     }
 </script>
 

@@ -36,6 +36,8 @@ enableGitInfo = true
 [author]
   name = "Murshid Azher"
   email = "hello@murshidazher.com"
+  jobTitle = "Software Engineer"
+  worksFor= "Atera"
   twitter = "https://twitter.com/murshidazher"
   github = "https://github.com/murshidazher"
   linkedin = "https://linkedin.com/in/murshidazher"

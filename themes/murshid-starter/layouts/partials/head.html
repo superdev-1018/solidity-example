@@ -124,4 +124,6 @@
  {{ printf `<link rel="%s" type="%s" href="%s" alt="%s" />` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
  {{ end -}}
 
+  {{ partial "seo_schema" . }}
+
 </head>
