@@ -1,24 +1,23 @@
 <script type="application/ld+json">
-    {
-        "@context": "https://schema.org/",
-        "@type": "Person",
-        "name": "{{ with .Site.Author.name }}{{ . }}{{ end }}",
-        "url": "{{ .Permalink }}",
-        "inLanguage" : "{{ with .Site.LanguageCode }}{{ . }}{{ end }}",
-        "keywords" : [{{ with .Site.Params.keywords }}{{ . }}{{ end }}],
-        "image": "https://haydenbleasel.com/icons/icon-512x512.png",
-        "sameAs": [
-            "{{ .Site.Author.twitter }}",
-            "{{ .Site.Author.dribbble }}",
-            "{{ .Site.Author.linkedin }}",
-            "{{ .Site.Author.github }}",
-            "{{ .Site.Author.behance }}",
-            "{{ .Site.Author.medium }}"
-        ],
-        "jobTitle": "{{ with .Site.Params.jobTitle }}{{ . }}{{ end }}",
-        "worksFor": {
-            "@type": "Organization",
-            "name": "{{ with .Site.Params.worksFor }}{{ . }}{{ end }}"
-        }
+  {
+    "@context": "https://schema.org/",
+    "@type": "Person",
+    "name": "{{ with .Site.Author.name }}{{ . }}{{ end }}",
+    "url": "https://murshidazher.com/",
+    "inLanguage" : "{{ with .Site.LanguageCode }}{{ . }}{{ end }}",
+    "image": "https://murshidazher.com/img/icon-512x512.png",
+    "sameAs": [
+      "https://twitter.com/murshidazher",
+      "https://linkedin.com/in/murshidazher",
+      "https://dribbble.com/murshidazher",
+      "https://www.instagram.com/murshidazher",
+      "https://www.behance.net/murshidazher}",
+      "https://github.com/murshidazher"
+    ],
+    "jobTitle": "{{ with .Site.Params.jobTitle }}{{ . }}{{ end }}",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "{{ with .Site.Params.worksFor }}{{ . }}{{ end }}"
     }
+  }
 </script>
