@@ -51,6 +51,7 @@
 
 - [KaTex partial](https://eankeen.github.io/blog/posts/render-latex-with-katex-in-hugo-blog/)
 - [Gatsby Blog ML](https://janosh.dev/blog)
+- [Add plots to Hugo - Plotly](https://metalblueberry.github.io/post/howto/2019-11-23_add_plots_with_hugo_shortcodes/)
 
 ## License
 
