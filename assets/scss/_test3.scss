@@ -494,6 +494,10 @@ a:hover {
         margin-right: $gutter / 2;
         margin-left: $gutter / 2;
     }
+
+    .clients {
+        margin: $gutter * 3 auto;
+    }
 }
 
 @media screen and (max-width: 1060px) {

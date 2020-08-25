@@ -2057,7 +2057,9 @@ a {
     max-width: 33.33333333%; }
   .articles_list--item__body {
     margin-right: 20px;
-    margin-left: 20px; } }
+    margin-left: 20px; }
+  .clients {
+    margin: 120px auto; } }
 
 @media screen and (max-width: 1060px) {
   .hs-full-height .hs-featured-image {
