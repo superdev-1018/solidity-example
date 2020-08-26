@@ -53,6 +53,10 @@
 - [Gatsby Blog ML](https://janosh.dev/blog)
 - [Add plots to Hugo - Plotly](https://metalblueberry.github.io/post/howto/2019-11-23_add_plots_with_hugo_shortcodes/)
 
+- [List of Hugo Markdown tools and Shortcodes](https://themes.gohugo.io//theme/hugo-book/docs/shortcodes/mermaid/)
+- [anotehr blog](https://geoffruddock.com/)
+- [Integrate Hugo and Katex](https://vincenttam.gitlab.io/post/2019-04-29-improved-integration-of-hugo-and-katex/)
+
 ## License
 
 [MIT](https://github.com/murshidazher/murshid/blob/master/LICENSE) © Murshid Azher

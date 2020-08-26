@@ -10,7 +10,7 @@ syndicate: 'false'
 stage: first-stage
 ---
 
-{{< emoji ":dab:" "60" >}}
+{{< emoji ":dab:" "60" true >}}
 
 ## What is an emoji
 

@@ -1,9 +1,9 @@
-<!-- {{ .Get 0 | emojify }} -->
+{{ if (.Get 2) }}
+ {{ $alias := .Get 0 }}
+ {{ $url := .Site.Params.cloudinary_url }}
+ {{ $size := .Get 1 }}
+ {{ $default_size := 24 }}
 
-{{ $alias := .Get 0 }}
-{{ $url := .Site.Params.cloudinary_url }}
-{{ $size := .Get 1 }}
-{{ $default_size := 24 }}
 {{ range first 1 (where .Site.Data.emoji.ios13 "alias" "eq" $alias) }}
 
 <span class="emoji">
@@ -16,4 +16,7 @@
     caption=""
   /><!-- /.Emoji --> </span
 ><!-- /.Emoji Wrapper -->
+{{ end }}
+{{ else }}
+ {{ .Get 0 | emojify }}
 {{ end }}
