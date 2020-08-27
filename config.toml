@@ -5,10 +5,11 @@ title = "Murshid Azher"
 pluralizelisttitles = false
 
 # Enable for syntax highlighting
-pygmentsUseClasses=true
+pygmentsUseClasses = true
 # Enable highlighting for code fences
 pygmentsCodeFences = true
 # pygmentsCodefencesGuessSyntax = true
+pygmentsOptions = "title=true"
 
 disableHugoGeneratorInject = true
 enableRobotsTXT = true

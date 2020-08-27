@@ -21,9 +21,13 @@
 
   <section class="articles_list--meta flex flex-row mb-16 mt-16">
     <div class="tags row-nm center">
-      <div class="column center w-full published-date">
+      <div class="column center w-full published-details">
         <time itemprop="datePublished" class="inline-block" datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}
  </time>
+        <span class="published-details">
+          &nbsp;·&nbsp;{{ .WordCount | lang.NumFmt 0 }} word&nbsp;·&nbsp;~{{ .ReadingTime | lang.NumFmt 0 }}
+ minute{{ if not (eq .ReadingTime 1) }}s{{ end }} to read
+        </span>
       </div>
       <!-- &nbsp; — &nbsp; {{ partial "post/tags.html" . }} -->
     </div>

@@ -1727,6 +1727,10 @@ svg {
 html {
   font-feature-settings: 'calt', 'liga', 'hist', 'onum', 'pnum'; }
 
+.published-details {
+  font-size: .875rem;
+  font-family: "Jetbrains Mono", "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
+
 .logo {
   color: var(--color-dark); }
 
@@ -1782,6 +1786,9 @@ a.email-button {
 .mb-16 {
   margin-bottom: 1rem; }
 
+.mt-16 {
+  margin-top: 8px; }
+
 a.email {
   border-radius: 4px;
   padding: 11px 13px 12px;
@@ -1821,7 +1828,6 @@ mark {
     border-radius: 100%; }
 
 time {
-  font-size: 0.875em;
   font-family: "Jetbrains Mono", "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace; }
 
 .sub-footer--container {
@@ -2685,5 +2691,21 @@ strong {
 
 .katex-display > .katex > .katex-html {
   font-size: 1rem; }
+
+.chroma [data-lang]:before {
+  position: absolute;
+  z-index: 0;
+  top: -22px;
+  left: 0;
+  content: attr(data-lang);
+  font-size: 1.1em;
+  color: var(--lang-name);
+  background-color: var(--lang-name-bg);
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+  padding: 5px 10px 7px;
+  line-height: 1.2; }
 
 /*# sourceMappingURL=main.css.map */

@@ -60,7 +60,7 @@ Second Step: Clean up the Script
 This gave me a pretty good `JSON` file to work with, but since am using `YAML` as the data-serialization language for consistency I wrote a Python script to convert this JSON to
 `YAML` too. Here `ex.txt` is the `JSON` file we've scraped,
 
-{{< highlight python >}}
+{{< highlight python language-name "python"  >}}
 def convert_yaml():
   with open('ex.txt') as f1:
     with open('ios13.yaml', 'w') as f2:
