@@ -15,16 +15,17 @@
 
 ## Table of Contents
 
-- [Table of Contents](#table-of-contents)
-- [Installing / Getting started](#installing--getting-started)
-  - [Initial Configuration](#initial-configuration)
-- [Developing](#developing)
-  - [Building](#building)
-  - [Deploying / Publishing](#deploying--publishing)
-- [TODO](#todo)
-- [Keep in Mind](#keep-in-mind)
-- [Links](#links)
-- [License](#license)
+- [murshidazher.com](#murshidazhercom)
+  - [Table of Contents](#table-of-contents)
+  - [Installing / Getting started](#installing--getting-started)
+    - [Initial Configuration](#initial-configuration)
+  - [Developing](#developing)
+    - [Building](#building)
+    - [Deploying / Publishing](#deploying--publishing)
+  - [TODO](#todo)
+  - [Keep in Mind](#keep-in-mind)
+  - [Links](#links)
+  - [License](#license)
 
 ## Installing / Getting started
 
@@ -85,14 +86,14 @@ And again you'd need to tell what the previous code actually does.
 - [ ] Add resume for the site.
 - [x] Add node-arctic code colors.
 - [x] Add custom theme colors.
-- [ ] Change logo hover colors according to the theme.
+- [x] Change logo hover colors according to the theme.
 - [ ] Add search functionality for blog.
-- [ ] Add `RSS` feed for the blog.
+- [x] Add `RSS` feed for the blog.
 - [ ] Add a way to display a collection of liked posts (`IFTTT` trigger `Pocket` feed).
 - [ ] Add detailed projects section.
 - [ ] Include pagination.
 - [x] Check footer copyright responsiveness.
-- [ ] Add preload functionality for the site.
+- [x] Add preload functionality for the site.
 - [ ] Add a separate about me section for the site.
 - [ ] Add a work with me section for the site.
 - [ ] Add service worker for offline capabilities.

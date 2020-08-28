@@ -8,6 +8,7 @@ slug: "improved-integration-of-hugo-and-katex"
 url: "improved-integration-of-hugo-and-katex"
 tags: ["tag"]
 syndicate: "false"
+katex: true
 ---
 KaTeX can be used to generate complex math formulas server-side. 
 

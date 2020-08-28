@@ -64,6 +64,7 @@
 - [Hugo Blog Tricks on Time to Read and words count](https://github.com/dguo/dannyguo.com)
 - [Main Code Block](https://github.com/a-luna/aaronluna.dev)
 - [Interview Experience](https://www.soberkoder.com/swiggy-interview-experience-bangalore/)
+- [Google Tag Manager](https://chartio.com/learn/marketing-analytics/how-to-add-google-analytics-tracking-to-a-website/)
 
 ## License
 
