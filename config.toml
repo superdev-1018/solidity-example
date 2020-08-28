@@ -15,6 +15,9 @@ disableHugoGeneratorInject = true
 enableRobotsTXT = true
 canonifyURLs = true
 
+# Enable Google Analytics
+googleAnalytics = "UA-176773451-1"
+
 # Enable for getting last mod date from Github
 enableGitInfo = true
 
