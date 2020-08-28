@@ -47,11 +47,11 @@ First Step: Navigate to https://emojipedia.org/apple/ios-13.3/
 
 Second Step: Generate the asset manifest by running this in the Inspect console
 
-{{< highlight js >}}
+```js
 copy(JSON.stringify(Object.fromEntries([...document.querySelector('ul.emoji-grid').querySelectorAll('img[title][src][srcset]')].map(({title, attributes}, index) => ([attributes.title.value, attributes.srcset.value.replace(/ +\dx$/, '')])))))
-{{</ highlight >}}
+```
 
-Second Step: Clean up the Script
+Third Step: Clean up the Script
 
 {{< highlight js >}}
 [...document.querySelectorAll('script, link[rel=preload], link[rel=prefetch]')].forEach(element => element.remove());

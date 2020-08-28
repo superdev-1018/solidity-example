@@ -46,6 +46,7 @@
 - [Src set and responsive sizes in cloudinary](https://cloudinary.com/blog/responsive_images_with_srcset_sizes_and_cloudinary)
 - [Go to previous commit and push](https://stackoverflow.com/questions/4359681/want-to-change-my-master-to-an-older-commit-how-can-i-do-this)
 - [Hugo Best Practice](https://github.com/praveenjuge/hugo-SEO-meta-tags)
+- [Google Analytics](https://www.soberkoder.com/google-analytics-hugo/)
 
 ## Math
 
@@ -61,6 +62,7 @@
 - [same as above and good tech blog](https://www.dannyguo.com/blog/how-to-add-copy-to-clipboard-buttons-to-code-blocks-in-hugo/)
 - [Good Blog](https://tomspencer.dev/blog/)
 - [Hugo Blog Tricks on Time to Read and words count](https://github.com/dguo/dannyguo.com)
+- [Main Code Block](https://github.com/a-luna/aaronluna.dev)
 
 ## License
 

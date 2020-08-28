@@ -94,9 +94,10 @@
         <!-- Store JS files independently -->
         {{- $cloudinary := resources.Get "js/cloudinary-core-shrinkwrap.min.js" -}}
         {{- $lazysizes := resources.Get "js/lazysizes.js" -}}
+        {{- $codeblock := resources.Get "js/copy-code-block.js" -}}
         {{- $katex := resources.Get "js/katex-macros.js" | resources.Minify | resources.Fingerprint "sha512" -}}
         <!-- Concat JS, generate default app.js and app-likes -->
-        {{- $defaultJS := slice $cloudinary $lazysizes | resources.Concat "app.js" -}}
+        {{- $defaultJS := slice $cloudinary $lazysizes $codeblock | resources.Concat "app.js" -}}
         <!-- Set default -->
         {{- $script := $defaultJS -}}
         <!-- Assign script to global, minify and fingerprint -->
