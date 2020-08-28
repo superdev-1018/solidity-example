@@ -18,6 +18,35 @@
             test.innerText = "ERROR: fig variable is not defined"
             return
         }
+
+        fig.layout = {
+            hovermode: 'closest',
+            font: {
+                family: '"Jetbrains Mono", "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+                size: 12,
+                color: '#454545'
+            },
+            hoverlabel: {
+                mode: 'markers',
+                bgcolor: '#000',
+                bordercolor: '#000',
+                font: {
+                family: '"Jetbrains Mono", "SF Mono", Monaco, Consolas, "Liberation Mono", "Courier New", monospace',
+                size: 11,
+                color: '#fff',
+                }
+            },
+            transition: {
+                easing: "sin"
+            },
+            traces: {
+                hovertemplate: 'None',
+
+            }
+        };
+
+        fig['displaylogo'] = false
+
         test.innerText = null
         Plotly.plot(test ,fig);
       }

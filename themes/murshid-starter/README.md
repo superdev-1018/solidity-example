@@ -65,6 +65,8 @@
 - [Main Code Block](https://github.com/a-luna/aaronluna.dev)
 - [Interview Experience](https://www.soberkoder.com/swiggy-interview-experience-bangalore/)
 - [Google Tag Manager](https://chartio.com/learn/marketing-analytics/how-to-add-google-analytics-tracking-to-a-website/)
+- [Plotly Hover Text Formatting](https://plotly.com/python/hover-text-and-formatting/)
+- [Plotly All Varialbes](https://plotly.com/python/reference/layout/#layout-hoverlabel)
 
 ## License
 

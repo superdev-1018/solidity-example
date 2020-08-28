@@ -51,7 +51,10 @@ var trace2 = {
 data = [trace1, trace2];
 fig = {
   data: data,
-  config:{"responsive":true}
+  config: {
+      responsive : true,
+      displayModeBar: false
+      },
 }
 
 {{</ plot >}}

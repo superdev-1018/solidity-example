@@ -79,6 +79,7 @@ And again you'd need to tell what the previous code actually does.
 
 ## TODO
 
+- [ ] Add table of contents
 - [x] SEO the website.
 - [ ] Add quick link navigation in a single blog post.
 - [x] Add apple-emoji font.
@@ -103,6 +104,7 @@ And again you'd need to tell what the previous code actually does.
 ## Keep in Mind
 
 - **Syntax** - syntax highlight isn't working as it's expected to work.
+- Plotly
 
 ## Links
 
@@ -113,6 +115,7 @@ A list of tools used to develop this project
 - :baby_bottle: [autoprefixer](https://github.com/postcss/autoprefixer) - to use `PostCSS` vendor prefixes
 - :burrito: [prettier](https://prettier.io/) - for code formatting
 - :cactus: [lazy-loading](https://github.com/aFarkas/lazysizes) - for lazy-loading of images
+- :chart_with_upward_trend: [plotly](https://plotly.com/javascript/) - for interactive charts
 
 ## License
 
