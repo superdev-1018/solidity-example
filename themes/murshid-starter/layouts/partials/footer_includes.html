@@ -13,8 +13,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js" type="text/javascript" crossorigin="anonymous"></script>
 <script src="{{ $globalJS.Permalink }}" integrity="{{ $globalJS.Data.Integrity }}" media="screen"></script>
 
-<!-- Load KaTex -->
-{{ if .Params.katex }}{{ partial "katex.html" . }}{{ end }}
+<!-- Load for Math functionalities -->
+{{ if .Params.math }}{{ partial "math.html" . }}{{ end }}
+
+<!-- Load for interactive graphs -->
+{{ if .Params.graph }}{{ partial "graph.html" . }}{{ end }}
 
 <!-- To automatically render math in text elements, include the auto-render extension: -->
 

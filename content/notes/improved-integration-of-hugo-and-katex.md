@@ -8,7 +8,8 @@ slug: "improved-integration-of-hugo-and-katex"
 url: "improved-integration-of-hugo-and-katex"
 tags: ["tag"]
 syndicate: "false"
-katex: true
+math: true
+graph: true
 ---
 KaTeX can be used to generate complex math formulas server-side. 
 
@@ -30,6 +31,30 @@ $$
 $$
 f(x) = \int_{-\infty}^\infty\hat f(\xi)\,e^{2 \pi i \xi x}\,d\xi
 $$
+
+### Example Graph
+
+{{< plot "plot2" >}}
+
+var trace1 = {
+  x: [1, 2, 3, 4],
+  y: [10, 15, 13, 17],
+  type: 'scatter'
+};
+
+var trace2 = {
+  x: [1, 2, 3, 4],
+  y: [16, 5, 11, 9],
+  type: 'scatter'
+};
+
+data = [trace1, trace2];
+fig = {
+  data: data,
+  config:{"responsive":true}
+}
+
+{{</ plot >}}
 
 
 ### Example 2

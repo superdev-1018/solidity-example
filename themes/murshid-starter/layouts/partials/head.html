@@ -138,4 +138,7 @@
   {{ template "_internal/google_analytics.html" . }}
  {{ partialCached "seo_schema.html" . }}
 
+  <!-- Load for interactive graphs -->
+  {{ if .Params.graph }}{{ partial "graph.html" . }}{{ end }}
+
 </head>
