@@ -10,6 +10,7 @@ tags: ["tag"]
 syndicate: "false"
 math: true
 graph: true
+diagram: true
 ---
 KaTeX can be used to generate complex math formulas server-side. 
 
@@ -58,6 +59,14 @@ fig = {
 }
 
 {{</ plot >}}
+
+{{<mermaid>}}
+graph TD;
+  A-->B;
+  A-->C;
+  B-->D;
+  C-->D;
+{{</mermaid>}}
 
 
 ### Example 2

@@ -15,17 +15,16 @@
 
 ## Table of Contents
 
-- [murshidazher.com](#murshidazhercom)
-  - [Table of Contents](#table-of-contents)
-  - [Installing / Getting started](#installing--getting-started)
-    - [Initial Configuration](#initial-configuration)
-  - [Developing](#developing)
-    - [Building](#building)
-    - [Deploying / Publishing](#deploying--publishing)
-  - [TODO](#todo)
-  - [Keep in Mind](#keep-in-mind)
-  - [Links](#links)
-  - [License](#license)
+- [Table of Contents](#table-of-contents)
+- [Installing / Getting started](#installing--getting-started)
+  - [Initial Configuration](#initial-configuration)
+- [Developing](#developing)
+  - [Building](#building)
+  - [Deploying / Publishing](#deploying--publishing)
+- [TODO](#todo)
+- [Keep in Mind](#keep-in-mind)
+- [Links](#links)
+- [License](#license)
 
 ## Installing / Getting started
 
@@ -115,7 +114,8 @@ A list of tools used to develop this project
 - :baby_bottle: [autoprefixer](https://github.com/postcss/autoprefixer) - to use `PostCSS` vendor prefixes
 - :burrito: [prettier](https://prettier.io/) - for code formatting
 - :cactus: [lazy-loading](https://github.com/aFarkas/lazysizes) - for lazy-loading of images
-- :chart_with_upward_trend: [plotly](https://plotly.com/javascript/) - for interactive charts
+- :chart_with_upwards_trend: [plotly](https://plotly.com/javascript/) - for interactive charts
+- :math: [KaTeX](https://katex.org/docs/supported.html) - for math functions in Latex
 
 ## License
 
