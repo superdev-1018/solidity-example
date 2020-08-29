@@ -2716,7 +2716,6 @@ strong {
   border-radius: 4px; }
 
 .highlight > .chroma {
-  color: #d0d0d0;
   position: static;
   z-index: 1;
   border-radius: 4px;
