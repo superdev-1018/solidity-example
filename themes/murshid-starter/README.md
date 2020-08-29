@@ -68,6 +68,11 @@
 - [Plotly Hover Text Formatting](https://plotly.com/python/hover-text-and-formatting/)
 - [Plotly All Varialbes](https://plotly.com/python/reference/layout/#layout-hoverlabel)
 
+## Massive
+
+- [Collection on Hugo attachments, table, info and more](https://learn.netlify.app/en/shortcodes/attachments/)
+- [TOC](https://ma.ttias.be/adding-a-sticky-table-of-contents-in-hugo-to-posts/)
+
 ## License
 
 [MIT](https://github.com/murshidazher/murshid/blob/master/LICENSE) © Murshid Azher
