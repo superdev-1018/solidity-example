@@ -43,15 +43,15 @@ Next, I came up with the idea of scraping the whole collection of [Apple Emoji f
 
 The process goes like this which I got from this [Gist](https://gist.github.com/SMotaal/03e7eccb2a8beb5db5529130bee7ee6f) by Saleh Abdel Motaal,
 
-First Step: Navigate to https://emojipedia.org/apple/ios-13.3/
+**First Step**: Navigate to https://emojipedia.org/apple/ios-13.3/
 
-Second Step: Generate the asset manifest by running this in the Inspect console
+**Second Step**: Generate the asset manifest by running this in the Inspect console
 
 ```js
 copy(JSON.stringify(Object.fromEntries([...document.querySelector('ul.emoji-grid').querySelectorAll('img[title][src][srcset]')].map(({title, attributes}, index) => ([attributes.title.value, attributes.srcset.value.replace(/ +\dx$/, '')])))))
 ```
 
-Third Step: Clean up the Script
+**Third Step**: Clean up the Script
 
 {{< highlight js >}}
 [...document.querySelectorAll('script, link[rel=preload], link[rel=prefetch]')].forEach(element => element.remove());
@@ -127,7 +127,7 @@ def resize():
             + str(round(os.path.getsize(re_filename)/1024, decimal_round)) + 'KB')
 {{</ highlight >}}
 
-Then, uplaod these files to the compressed file to you own image hosting platform, I use [Cloudinary](https://cloudinary.com/) to transform and manage my media contents.
+Then, upload these files to the compressed file to you own image hosting platform, I use [Cloudinary](https://cloudinary.com/) to transform and manage my media contents.
 
 ## Shortcode with Hugo
 
@@ -144,7 +144,6 @@ Then will create a `Shortcode` in Hugo,
 ```
 
 Then paste the following content inside `emoji.html`,
-
 
 {{< highlight html >}}
 {{ $shortcode := .Get 0 }}

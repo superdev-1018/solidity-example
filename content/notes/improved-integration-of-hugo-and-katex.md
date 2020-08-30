@@ -68,6 +68,10 @@ graph TD;
   C-->D;
 {{</mermaid>}}
 
+{{<notice info >}}
+A tip disclaimer
+{{< /notice >}}
+
 
 ### Example 2
 ```

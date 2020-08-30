@@ -115,7 +115,7 @@ A list of tools used to develop this project
 - :burrito: [prettier](https://prettier.io/) - for code formatting
 - :cactus: [lazy-loading](https://github.com/aFarkas/lazysizes) - for lazy-loading of images
 - :chart_with_upwards_trend: [plotly](https://plotly.com/javascript/) - for interactive charts
-- :math: [KaTeX](https://katex.org/docs/supported.html) - for math functions in Latex
+- :dancer: [KaTeX](https://katex.org/docs/supported.html) - for math functions in Latex
 
 ## License
 
