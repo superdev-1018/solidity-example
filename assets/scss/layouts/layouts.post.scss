@@ -9,43 +9,43 @@
 //.Post {}
 
 .PostHeader-title {
-    color: rgba(var(--color-white), 1);
-    max-width: 18ch;
+  color: rgba(var(--color-white), 1);
+  max-width: 18ch;
 }
 
 .PostMeta {
-    display: flex;
-    max-width: 1600px;
-    margin: 0 auto;
-    @include margin-bottom(1);
+  display: flex;
+  max-width: 1600px;
+  margin: 0 auto;
+  @include margin-bottom(1);
 }
 
 .PostBody {
-    @include margin-top(0.5);
-    max-width: 1600px;
-    // margin: 0 auto;
+  @include margin-top(0.5);
+  max-width: 1600px;
+  // margin: 0 auto;
 
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        max-width: 45ch;
-        line-height: 1.2;
-        position: relative;
-        @include margin-top(1.5);
-        @include margin-bottom(0.5);
-    }
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    max-width: 45ch;
+    line-height: 1.2;
+    position: relative;
+    @include margin-top(1.5);
+    @include margin-bottom(0.5);
+  }
 
-    p {
-        max-width: 60ch;
-        @include margin-top(1.2);
-        @include margin-bottom(0.8);
-    }
+  p {
+    max-width: 60ch;
+    @include margin-top(1.2);
+    @include margin-bottom(0.8);
+  }
 
-    .intro {
-        max-width: 48ch;
-    }
+  .intro {
+    max-width: 48ch;
+  }
 }
 
 /**
@@ -53,101 +53,101 @@
  */
 
 .PostMeta-tag {
-    a {
-        color: var(--color-white);
-        text-decoration: underline;
-    }
+  a {
+    color: var(--color-white);
+    text-decoration: underline;
+  }
 
-    a:hover {
-        background-color: var(--color-dark);
-        color: var(--color-white);
-        text-decoration: none;
-    }
+  a:hover {
+    background-color: var(--color-dark);
+    color: var(--color-white);
+    text-decoration: none;
+  }
 
-    a:not(:last-child):after {
-        content: ',';
-    }
+  a:not(:last-child):after {
+    content: ',';
+  }
 }
 
 .Post p.Message {
-    background: rgba(var(--color-link-rgb), 0.05);
+  background: rgba(var(--color-link-rgb), 0.05);
 
-    // background-color: rgba(165, 22, 248, 0.075);
-    border-radius: 4px;
-    // background: rgba(var(--color-link-rgb), 0.05);
-    color: var(--color-link);
-    padding: 2% 3%;
+  // background-color: rgba(165, 22, 248, 0.075);
+  border-radius: 4px;
+  // background: rgba(var(--color-link-rgb), 0.05);
+  color: var(--color-link);
+  padding: 2% 3%;
 
-    a {
-        // text-decoration: underline;
-    }
+  a {
+    // text-decoration: underline;
+  }
 
-    a:hover {
-        text-decoration: none;
-    }
+  a:hover {
+    text-decoration: none;
+  }
 }
 
 .Post .intro,
 .intro {
-    font-size: 100%;
-    line-height: 1.5;
-    @include margin-bottom(1);
+  font-size: 100%;
+  line-height: 1.5;
+  @include margin-bottom(1);
 
-    @include breakpoint(md) {
-        font-size: 125%;
-        line-height: 1.5;
-    }
+  @include breakpoint(md) {
+    font-size: 125%;
+    line-height: 1.5;
+  }
 }
 
 .post-author {
-    display: flex;
-    align-items: center;
-    @include margin-top(2);
-    @include margin-bottom(3);
+  display: flex;
+  align-items: center;
+  @include margin-top(2);
+  @include margin-bottom(3);
 
-    h4,
-    p {
-        margin: 0;
-    }
+  h4,
+  p {
+    margin: 0;
+  }
 }
 
 .PostRelated {
-    @include margin-bottom(2);
+  @include margin-bottom(2);
 }
 
 .Post .heading-anchor {
-    display: none;
-    position: absolute;
-    top: 0;
-    left: -1em;
-    width: 1em;
-    opacity: 0;
-    font-weight: 400;
+  display: none;
+  position: absolute;
+  top: 0;
+  left: -1em;
+  width: 1em;
+  opacity: 0;
+  font-weight: 400;
 
-    @include breakpoint(sm) {
-        display: block;
-    }
+  @include breakpoint(sm) {
+    display: block;
+  }
 }
 
-.Post h2:focus>.heading-anchor,
-.Post h2:hover>.heading-anchor,
-.Post h3:focus>.heading-anchor,
-.Post h3:hover>.heading-anchor,
-.Post h4:focus>.heading-anchor,
-.Post h4:hover>.heading-anchor {
-    opacity: 1;
+.Post h2:focus > .heading-anchor,
+.Post h2:hover > .heading-anchor,
+.Post h3:focus > .heading-anchor,
+.Post h3:hover > .heading-anchor,
+.Post h4:focus > .heading-anchor,
+.Post h4:hover > .heading-anchor {
+  opacity: 1;
 }
 
 .Post .heading-anchor {
-    text-decoration: none;
+  text-decoration: none;
 
-    &:hover {
-        text-decoration: underline;
-        color: var(--color-link);
-        background: none;
-    }
+  &:hover {
+    text-decoration: underline;
+    color: var(--color-link);
+    background: none;
+  }
 }
 
 .PostHeader-title__gif {
-    width: 1.2em;
+  width: 1.2em;
 }

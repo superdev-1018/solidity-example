@@ -23,26 +23,22 @@
 // }
 
 @font-face {
-    font-family: 'JetBrains Mono';
-    src: url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/eot/JetBrainsMono-Regular.eot') format('embedded-opentype'),
-        url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
-        url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff/JetBrainsMono-Regular.woff') format('woff'),
-        url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/ttf/JetBrainsMono-Regular.ttf') format('truetype');
-    font-weight: normal;
-    font-style: normal;
-    font-display: swap;
+  font-family: 'JetBrains Mono';
+  src: url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/eot/JetBrainsMono-Regular.eot') format('embedded-opentype'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff2/JetBrainsMono-Regular.woff2') format('woff2'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/web/woff/JetBrainsMono-Regular.woff') format('woff'),
+    url('https://raw.githubusercontent.com/JetBrains/JetBrainsMono/master/ttf/JetBrainsMono-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
-    font-family: "feather";
-    src: url('/fonts/feather/feather.eot');
-    /* IE9*/
-    src: url('/fonts/feather/feather.eot#iefix') format('embedded-opentype'),
-        /* IE6-IE8 */
-        url('/fonts/feather/feather.woff') format('woff'),
-        /* chrome, firefox */
-        url('/fonts/feather/feather.ttf') format('truetype'),
-        /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
-        url('/fonts/feather/feather.svg#feather') format('svg');
-    /* iOS 4.1- */
+  font-family: 'feather';
+  src: url('/fonts/feather/feather.eot');
+  /* IE9*/
+  src: url('/fonts/feather/feather.eot#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('/fonts/feather/feather.woff') format('woff'),
+    /* chrome, firefox */ url('/fonts/feather/feather.ttf') format('truetype'),
+    /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/ url('/fonts/feather/feather.svg#feather') format('svg');
+  /* iOS 4.1- */
 }
