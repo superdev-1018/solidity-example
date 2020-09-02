@@ -30,11 +30,6 @@ body {
     background-color: #fff;
     font-family: $font-system-rg;
     color: var(--color-body);
-    // background:
-    // 	linear-gradient(90deg, $bg-color ($dot-space - $dot-size), transparent 1%) center,
-    // 	linear-gradient($bg-color ($dot-space - $dot-size), transparent 1%) center,
-    // 	$dot-color;
-    // background-size: $dot-space $dot-space;
 }
 
 .text-black {
@@ -158,7 +153,6 @@ time {
     width: 100%;
     left: 0;
     padding-top: 4rem;
-    //   box-shadow: 0 -0.1875rem 0.125rem #efefef;
 }
 
 .github-project {
@@ -176,8 +170,6 @@ time {
     position: relative;
     box-sizing: border-box;
     border-radius: $radius;
-
-    // background: #497fec;
     background: var(--color-dark);
 
     // border: dotted 1px $black;
