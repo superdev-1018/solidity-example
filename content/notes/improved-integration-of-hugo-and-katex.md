@@ -6,7 +6,7 @@ emoji: ":call_me_hand:"
 description: "Subheading or a short description."
 slug: "improved-integration-of-hugo-and-katex"
 url: "improved-integration-of-hugo-and-katex"
-tags: ["tag"]
+tags: ["test", "katex", "plotly"]
 syndicate: "false"
 math: true
 graph: true
