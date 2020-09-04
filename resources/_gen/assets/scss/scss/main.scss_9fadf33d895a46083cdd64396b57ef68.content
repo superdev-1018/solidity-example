@@ -2892,4 +2892,7 @@ section.attachments.grey label {
 section.attachments.grey .attachments-files {
   background: #f4f4f4; }
 
+.mt-1 {
+  margin-top: 8px; }
+
 /*# sourceMappingURL=main.css.map */

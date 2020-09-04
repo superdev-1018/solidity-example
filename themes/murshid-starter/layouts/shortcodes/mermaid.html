@@ -2,3 +2,9 @@
   {{ safeHTML .Inner }}
 
 </div>
+{{ if .Get 0 }}
+
+<figure class="mermaid__figure">
+  <figcaption class="mermaid__figure--caption mono center mt-1"><small>Nº{{ .Get 0 }} {{ .Get 1 }}</small></figcaption>
+</figure>
+{{ end }}
