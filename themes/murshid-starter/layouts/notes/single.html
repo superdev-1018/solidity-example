@@ -33,7 +33,11 @@
 
   <section class="article_img">
     <div alt="" class="hs-featured-image-link hs-full-height">
-      <span style="background:url({{ .Params.cover }}) no-repeat;" class="hs-featured-image"> </span>
+      <span
+        style="background:url({{ .Site.Params.cloudinary_url }}/w_600,dpr_1.0,c_scale,f_webp,fl_awebp.progressive.progressive:semi,f_auto,q_90/articles/banners/banner_{{ .Params.cover }}) no-repeat;"
+        class="hs-featured-image"
+      >
+      </span>
     </div>
   </section>
   {{ end }}

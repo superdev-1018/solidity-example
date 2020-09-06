@@ -10,6 +10,7 @@ tags: ["ml", "data-science", "matplotlib"]
 syndicate: "false"
 diagram: true
 graph: true
+cover: "understanding-data-science-tools-matplotlib.jpg"
 ---
 
 > Matplotlib is a Python 2D plotting library which produces publication quality figures in a variety of hardcopy formats and interactive environments across platforms.

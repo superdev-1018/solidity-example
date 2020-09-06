@@ -11,6 +11,7 @@ syndicate: "false"
 math: true
 graph: true
 diagram: true
+cover: "understanding-data-science-tools-matplotlib.jpg"
 ---
 KaTeX can be used to generate complex math formulas server-side. 
 

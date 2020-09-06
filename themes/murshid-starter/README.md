@@ -55,7 +55,7 @@
 - [Add plots to Hugo - Plotly](https://metalblueberry.github.io/post/howto/2019-11-23_add_plots_with_hugo_shortcodes/)
 
 - [List of Hugo Markdown tools and Shortcodes](https://themes.gohugo.io//theme/hugo-book/docs/shortcodes/mermaid/)
-- [anotehr blog](https://geoffruddock.com/)
+- [Another blog](https://geoffruddock.com/)
 - [Integrate Hugo and Katex](https://vincenttam.gitlab.io/post/2019-04-29-improved-integration-of-hugo-and-katex/)
 - [Dynamically Render MathJax or Katex](https://github.com/cntrump/hugo-notepadium/blob/master/layouts/partials/math.html)
 - [Hugo Codeblock copy](https://aaronluna.dev/blog/add-copy-button-to-code-blocks-hugo-chroma/)
