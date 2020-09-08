@@ -23,7 +23,11 @@
     <div class="tags row-nm center">
       <div class="column center w-full published-date">
         <time itemprop="datePublished" alt="Published Date" class="inline-block" datetime="{{ .Date }}">{{ .Date.Format "January 2, 2006" }}
- </time>
+ </time
+        ><span class="published-details">
+          &nbsp;·&nbsp;{{ .ReadingTime | lang.NumFmt 0 }}
+minute{{ if not (eq .ReadingTime 1) }}s{{ end }} to read
+        </span>
       </div>
       <!-- &nbsp; — &nbsp; {{ partial "post/tags.html" . }} -->
     </div>
