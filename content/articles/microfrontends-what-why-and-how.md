@@ -115,9 +115,9 @@ Design systems
 
 To ensure a consistent look and feel for the customer, it is wise to establish a common design system. 
 
-haring knowledge
+Sharing knowledge
 
-Autonomy is essential, but you don’t want information silos. It’s not productive when every team builds an error-logging infrastructure on their own. 
+Autonomy is essential, but you don’t want information silos. It’s not productive when every team builds an error-logging infrastructure on their own.
 
 
 References
