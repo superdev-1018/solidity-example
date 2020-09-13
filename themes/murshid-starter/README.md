@@ -76,6 +76,10 @@
 - [Illustratiions](https://www.opendoodles.com/about)
 - [Programming Articles](https://fangpenlin.com/)
 
+## Youtube
+
+- [Conferences](https://www.youtube.com/c/GotoConferences)
+
 ## License
 
 [MIT](https://github.com/murshidazher/murshid/blob/master/LICENSE) © Murshid Azher
