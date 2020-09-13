@@ -1170,8 +1170,370 @@ Events behave differently when they bubble from the Shadow DOM into the regular 
 
 ### Communication patterns
 
-There are three forms of UI communications, 
+There are three forms of UI communications,
+ 1. Parent to fragment
+ 2. Fragment to parent
+ 3. Fragment to fragment
 
+### Parent to fragment
+
+Team Checkout will extend the Buy button
+using another attribute called edition. Team Decide sets this attribute and updates it
+accordingly when the user changes the option.
+
+#### Updated Buy button
+tag-name: checkout-buy
+attributes: sku=[sku], edition=[standard|platinum]
+example: <checkout-buysku="porsche"edition="platinum"></checkout-buy>
+
+IMPLEMENTING THE PLATINUM OPTION
+
+`team-decide/product/fendt.html`
+```
+...
+<img class="decide_image"
+src="https://mi-fr.org/img/fendt_standard.svg" />
+...
+<label class="decide_editions">
+ <input type="checkbox" name="edition" value="platinum" />
+ <span>Platinum Edition</span>
+</label>
+<checkout-buy sku="fendt" edition="standard"></checkout-buy>
+...
+```
+
+Team Decide introduced a simple checkbox input element for choosing the material
+upgrade. The Buy-button component also received an edition attribute. Now the
+team needs to write a bit of JavaScript glue-code to connect both elements. Changes
+to the checkbox should result in changes to the edition attribute. The main image
+on the site also needs to change.
+
+`team-decide/static/page.js`
+```
+const option = document.querySelector(".decide_editions input");
+const image = document.querySelector(".decide_image");
+const buyButton = document.querySelector("checkout-buy");
+option.addEventListener("change", e => {
+const edition = e.target.checked ? "platinum" : "standard";
+buyButton.setAttribute("edition", edition);
+image.src = image.src.replace(/(standard|platinum)/, edition);
+});
+```
+
+### UPDATING ON ATTRIBUTE CHANGE
+
+The first version of the Buy-button custom element only used the connectedCallback
+methods. But custom elements also come with a few lifecycle methods.
+ The most interesting one for our case is attributeChangedCallback (name, oldValue, newValue). This method is triggered every time someone changes an attribute
+of your custom element. You receive the name of the attribute that changed (name),
+the attribute’s previous value (oldValue), and the updated value (newValue). For this
+to work, you have to register the list of attributes that should be observed up front.
+The code of the custom element now looks like this.
+
+`team-checkout/static/fragment.js`
+```
+const prices = {
+porsche: { standard: 66, platinum: 966 },
+fendt: { standard: 54, platinum: 945 },
+eicher: { standard: 58, platinum: 958 }
+};
+class CheckoutBuy extends HTMLElement {
+static get observedAttributes() {
+return ["sku", "edition"];
+}
+connectedCallback() {
+this.render();
+}
+attributeChangedCallback() {
+this.render();
+}
+render() {
+const sku = this.getAttribute("sku");
+const edition = this.getAttribute("edition");
+this.innerHTML = `
+<button type="button">
+buy for $${prices[sku][edition]}
+</button>
+`;
+...
+}
+}
+```
+
+Figure 6.4 illustrates the data flow. We propagate changed state of the outer application
+(product page) to the nested application (Buy button). This follows the unidirectional
+dataflow 1
+ pattern. React and Redux popularized the “props down, events up” approach.
+The updated state is passed down the tree via attributes to child components as needed.
+Communication in the other direction is done via events. We’ll cover this next. 
+
+### Fragment to parent
+
+ For a clean solution, the animation has to be developed by Team Decide. To
+accomplish this, both teams have to work together through a clearly defined contract.
+Team Checkout must notify Team Decide when a user has successfully added an item
+to the cart. Team Decide can trigger its animation in response to that.
+ The teams agree on implementing this notification via an event on the Buy button.
+The updated contract for the Buy-button fragment looks like this:
+ Updated Buy button
+tag-name: checkout-buy
+attributes: sku=[sku], edition=[standard|platinum]
+emits event: checkout:item_added
+
+Now the fragment can emit a checkout:item_added event to inform others about a
+successful add-to-cart action.
+
+#### EMITTING CUSTOM EVENTS
+
+Let’s look at the code that’s needed to make the interaction happen. We’ll use the
+browser’s native CustomEvents API. The feature is available in all browsers, including
+older versions of Internet Explorer. It enables you to emit events that work the same as
+native browser events like click or change. But you are free to choose the event’s name
+
+`team-checkout/static/fragment.js`
+```
+class CheckoutBuy extends HTMLElement {
+...
+render() {
+...
+this.innerHTML = `...`;
+this.querySelector("button").addEventListener("click", () => {
+...
+const event = new CustomEvent("checkout:item_added");
+this.dispatchEvent(event);
+});
+}
+}
+```
+
+### LISTENING FOR CUSTOM EVENTS
+
+That’s everything Team Checkout needed to do. Let’s add the checkmark animation
+when the event occurs. We can trigger the animation by adding a decide_product—confirm
+class to the existing decide_product div element.
+
+`team-decide/static/page.js`
+```
+const buyButton = document.querySelector("checkout-buy");
+const product = document.querySelector(".decide_product");
+buyButton.addEventListener("checkout:item_added", e => {
+product.classList.add("decide_product--confirm");
+});
+product.addEventListener("animationend", () => {
+product.classList.remove("decide_product--confirm");
+});
+```
+
+Listening to the custom checkout:item_added event works the same way as listening
+to a click event. Select the element you want to listen on (<checkout-buy>) and register an event handler: .addEventListener("checkout:item_added", () => {…}).
+Run the following command to start the example:
+
+Using the browser’s event mechanism has multiple benefits:
+ Custom Events can have high-level names that reflect your domain language.
+Good event names are easier to understand than technical names like click or
+touch.
+ Fragments don’t need to know their parents.
+ All major libraries and frameworks support browser events.
+ It gives access to all native event features like .stopPropagation or .target.
+ It’s easy to debug via browser developer tools.
+Let’s get to the last form of communication: fragment to fragment. 
+
+#### Fragment to fragment
+
+ Team Checkout wants to add a mini-cart to the product page to reduce the number of product returns. This way, customers always see what’s in their basket. Team
+Checkout provides the mini-cart as a new fragment for Team Decide to include on the
+bottom of the product page. The contract for including the mini-cart looks like this:
+
+Mini-Cart
+tag-name: checkout-minicart
+example: <checkout-minicart></checkout-minicart>
+
+It does not receive any attributes and emits no events. When added to the DOM, the
+mini-cart renders a list of all tractors that are in the cart. Later the team will fetch the state from its backend API. For now, the fragment holds that state in a local variable.
+
+ That’s all pretty straightforward, but the mini-cart also needs to be notified when the
+customer adds a new tractor to the cart via the Buy button. So an event in fragment A
+should lead to an update in fragment B. There are different ways of implementing this:
+
+**Direct communication**—A fragment finds the fragment it wants to talk to and
+directly calls a function on it. Since we are in the browser, a fragment has access
+to the complete DOM tree. It could search the DOM for the element it’s looking for and talk to it. Don’t do this. Directly referencing foreign DOM elements introduces tight coupling. A fragment should be self-contained and not know about
+other fragments on the page. Direct communication makes it hard to change
+the composition of fragments later on. Removing a fragment or duplicating
+one can lead to strange effects.
+
+**Orchestration via a parent**—We can combine the child-parent and parent-child
+mechanisms. In our case, Team Decide’s product page would listen to the
+item_added event from the Buy button and directly trigger an update to the
+mini-cart fragment. This is a clean solution. We’ve explicitly modeled the communication flow in the parent’s system. But to make a change in communication, two teams must adapt their software.
+
+**Event-Bus/broadcasting**—With this model, you introduce a global communication
+channel. Fragments can publish events to the channel. Other fragments can subscribe to these events and react to them. The publish/subscribe mechanism
+reduces coupling. The product page, in our example, wouldn’t have to know or care about the communication between the Buy button and the mini-basket fragment. You can implement this with Custom Events. Most browsers2
+ also support
+the new Broadcast Channel API,
+3
+ which creates a message bus that also spans across
+browser windows, tabs, and iframes.
+
+#### event-bus approach using Custom Events.
+
+1. User clicks the button.
+Item is added to the cart.
+2. Buy button emits event.
+checkout:item_added
+{fendt, standard}
+3. Event bubbles up the tree.
+Arrives at the window object.
+4. Mini-cart listens on window.
+Looks for item changes.
+5. Mini-cart receives event.
+Displays the new tractor.
+
+Not only does the mini-cart need to know if the user added a tractor, it also must know
+what tractor the user added. So we need to add the tractor information (sku, edition)
+as a payload to the checkout:item_added event. The updated contract for the Buy
+button looks like this:
+
+> Be careful with exchanging data structures through events. They introduce extra coupling. Keep payloads to a minimum. Use events primarily for notifications and not to transfer data.
+
+**Updated Buy button**
+```
+tag-name: checkout-buy
+attributes: sku=[sku], edition =[standard|platinum]
+emits event:
+    name: checkout:item_added
+    payload: {sku: [sku], edition: [standard|platinum]}
+```
+
+EVENT BUS VIA BROWSER EVENTS
+
+The Custom Events API also specifies a way to add a custom payload to your event. You
+can pass your payload to the constructor via the detail key in the options object.
+
+`team-checkout/static/fragment.js`
+```js
+...
+const event = new CustomEvent("checkout:item_added", {
+ bubbles: true, // enables event bubbling
+ detail: { sku, edition }
+}*);
+this.dispatchEvent(event);
+...
+```
+By default, Custom Events don’t bubble up the DOM tree. We need to enable this
+behavior to make the event rise to the window object.
+ That’s everything we needed to do to the Buy button. Let’s look at the mini-cart
+implementation. Team Checkout defines the custom element in the same fragment.js file as the Buy button
+
+`team-checkout/static/fragment.js`
+```
+...
+class CheckoutMinicart extends HTMLElement {
+connectedCallback() {
+this.items = [];
+window.addEventListener("checkout:item_added", e => {
+this.items.push(e.detail);
+this.render();
+});
+this.render();
+}
+render() {
+this.innerHTML = `
+You've picked ${this.items.length} tractors:
+${this.items.map(({ sku, edition }) =>
+`<img src="https://mi-fr.org/img/${sku}_${edition}.svg" />`
+).join("")}
+`;
+...
+}
+}
+window.customElements.define("checkout-minicart", CheckoutMinicart);
+```
+The component stores the basket items in the local this.items array. It registers an
+event listener for all checkout:item_added events. When an event occurs, it reads the
+payload (event.detail) and appends it to the list. Lastly, it triggers a refresh of the
+view by calling this.render().
+
+To see both fragments in action, Team Decide has to add the new mini-cart fragment to the bottom of the page. The team doesn’t have to know anything about the
+communication that’s going on between checkout-buy and checkout-minicart.
+
+`team-decide/product/fendt.html`
+```
+...
+<body>
+...
+<div class="decide_details">
+<checkout-buy sku="fendt" edition="standard"></checkout-buy>
+</div>
+<div class="decide_summary">
+<checkout-minicart></checkout-minicart>
+</div>
+<script src="http://localhost:3003/static/fragment.js" async></script>
+</body>
+...
+```
+
+DISPATCHING EVENTS DIRECTLY ON WINDOW
+
+It’s also possible to directly dispatch the Custom Event to the global window object:
+window.dispatchEvent instead of element.dispatchEvent. But dispatching it to the
+DOM element and letting it bubble up comes with a few benefits.
+ The origin of the event (event.target) is maintained. Knowing which DOM element emitted the event is helpful when you have multiple instances of a fragment on
+one page. Having this element reference avoids the need to create a separate naming
+or identification scheme yourself.
+
+ Parents can also cancel bubbling events on their way up to the window. You can use
+event.stopPropagation on Custom Events the same way you would with a standard click event. This can be helpful when you want an event to only be processed once.
+
+Publish/Subscribe with the Broadcast Channel API
+
+In the examples so far, we’ve leveraged the DOM for communication. The relatively
+new Broadcast Channel API provides another standards-based way to communicate. It’s
+a publish/subscribe system which enables communication across tabs, windows, and
+even iframes from the same domain. The API is pretty simple:
+
+ You can connect to a channel with `new BroadcastChannel("tractor_channel")`.
+ Send messages via `channel.postMessage(content)`.
+ Receive messages via `channel.onmessage = function(e) {…}`.
+
+In our case all micro frontends could open a connection to a central channel (like
+tractor_channel) and receive notifications from other micro frontends. Let’s look at
+a small example.
+
+`team-checkout.js`
+```
+const channel = new BroadcastChannel("tractor_channel");
+const buyButton = document.querySelector("button");
+/* They post an item_added message
+when someone clicks the Buy
+button. In this example we send an
+object, but you can also send plain
+strings or other types of data. */
+buyButton.addEventListener("click", () => {
+channel.postMessage(
+{type: "checkout:item_added", sku: "fendt"}
+);
+});
+```
+
+`team-decide.js`
+```
+// Team Decide also connects to the same channel.
+const channel = new BroadcastChannel("tractor_channel");
+channel.onmessage = function(e) {
+if (e.data.type === "checkout:item_added") {
+console.log(`tractor ${e.data.type} added`);
+// -> tractor fendt added
+}
+};
+```
+
+ The biggest benefit of this approach compared to the DOM-based Custom Events
+is the fact that **you can exchange messages across windows**. This can come in handy if
+you need to **sync state across multiple tabs** or **decide to use iframes**. You can also use
+the concept of **named channels to explicitly differentiate between team-internal** and
+**public communication**.
 
 Pre-requsites 
 

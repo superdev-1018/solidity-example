@@ -244,7 +244,7 @@ ax[1, 1].scatter(np.random.random(10), np.random.random(10));
 
 Although, pretty visualizations are pleasing to the eye, as a data scientist it's more important to create visualizations which are meaningful and conveys the data accurately.
 
-With that said, you're now a single step closer to creating to creating wonderful plots using `Matplotlib`.
+With that said, you're now a single step closer to creating wonderful plots using `Matplotlib`.
 
 ### Resources
 

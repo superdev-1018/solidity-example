@@ -79,6 +79,7 @@
 ## Youtube
 
 - [Conferences](https://www.youtube.com/c/GotoConferences)
+- [storytale](https://storytale.io/help/)
 
 ## License
 
