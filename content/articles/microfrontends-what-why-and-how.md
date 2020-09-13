@@ -825,7 +825,55 @@ res.status(200).podiumSend(`
 app.listen(3001);
 ```
 
-// ADD HERE
+Let’s switch teams and look at the code Team Inspire needs to write to implement
+their podlet. These are their dependencies.
+ 
+`team-inspire/package.json`
+```
+...
+"dependencies": {
+"@podium/podlet": "^4.3.2",
+"express": "^4.17.1",
+}
+...
+```
+ 
+And this is the application code.
+ 
+ 
+```js
+const express = require("express");
+const Podlet = require("@podium/podlet");
+/*Defining a podlet. name, version, and
+pathname are required parameters.*/
+const podlet = new Podlet({
+name: "recos",
+version: "1.0.2",
+pathname: "/recos",
+});
+ 
+const app = express();
+app.use("/recos", podlet.middleware());
+app.get("/recos/manifest.json", (req, res) => {
+res.status(200).json(podlet);
+});
+ 
+/*mplementing the route for the actual content.
+podiumSend is comparable to express’s normal
+send function, but adds an extra version header
+to the response. It also comes with a few
+features that make local development easier.*/
+app.get("/recos", (req, res) => {
+res.status(200).podiumSend(`
+<h2>Recommendations</h2>
+<img src=".../fendt.svg" />
+<img src=".../eicher.svg" />
+`);
+});
+ 
+app.listen(3002);
+```
+
 
 FALLBACKS AND TIMEOUTS
 The way Podium handles fallbacks is quite interesting. With the Nginx approach, we
@@ -1122,6 +1170,7 @@ Events behave differently when they bubble from the Shadow DOM into the regular 
 
 ### Communication patterns
 
+There are three forms of UI communications, 
 
 
 Pre-requsites 
@@ -1138,12 +1187,13 @@ https://github.blog/2018-09-06-removing-jquery-from-github-frontend/
 https://medium.com/@pistenprinz/large-scale-css-refactoring-at-trivago-4602113c4a26
 https://www.youtube.com/watch?v=qts9gPYoANU
 https://luigi-project.io/ - SAP published a framework11 to integrate different applications
-
+ 
 DAZN—Micro Frontend Architecture - https://www.youtube.com/watch?v=BuRB3djraeM
-
+ 
 https://engineering.atspotify.com/2014/03/27/spotify-engineering-culture-part-1/ - “Spotify engineering culture,
-
+ 
 https://www.infoq.com/news/2018/08/experiences-micro-frontends/ - uses Experiences Using Micro Frontends at IKEA,
+
 
 https://swagger.io/specification/
 https://mnot.github.io/I-D/json-home/
