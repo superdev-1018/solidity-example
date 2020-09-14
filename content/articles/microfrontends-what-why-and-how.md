@@ -1535,6 +1535,348 @@ you need to **sync state across multiple tabs** or **decide to use iframes**. Yo
 the concept of **named channels to explicitly differentiate between team-internal** and
 **public communication**.
 
+ In addition to the global tractor_channel, Team Checkout
+could open its own checkout_channel for communication between the team’s own
+micro frontends. This team-internal communication may also contain more complex
+data structures. Having a clear distinction between public and internal messages
+reduces the risk of unwanted coupling. 
+
+### Global context and authentication
+
+Each micro frontend addresses a particular use case. However, in a non-trivial application, these frontends need some context information to do their job.What language
+does the user speak, where do they live, and which currency do they prefer? Is the user logged in or
+anonymous? Is the application running in the staging or live environment? These necessary
+details are often called context information. They are read-only by nature. You can see
+context data as infrastructure boilerplate that you want to solve once and provide to
+all the teams in an easily consumable way. 
+
+Global context information
+provided via header, cookie, global API, …
+(e.g. lang, country, currency, auth status, env)
+
+PROVIDING CONTEXT INFORMATION TO ALL MICRO FRONTENDS
+We have to answer two questions when building a solution for providing context data:
+1 Delivery—How do we get the information to the teams’ micro frontends?
+2 Responsibility—Which team determines the data and implements the associated
+concepts?
+Let’s start with delivery. If you’re using server rendering, HTTP headers or cookies are
+a popular solution. A frontend proxy or composition service can set them to every
+incoming request. If you’re running an entirely client-side application, HTTP headers
+are not an option. As an alternative, you can provide a global JavaScript API, from
+which every team can retrieve this information. In the next chapter, we’ll introduce
+the concept of an application shell. When you decide to go that route, putting the context information into the application shell is a typical pattern
+
+ Let’s talk about responsibility. If you have a dedicated platform team, it’s also the
+perfect candidate to provide the context. In a decentralized scenario with no platform
+team, you’d pick one of the teams to do the job. If you already have a central infrastructure like a frontend proxy and an application shell, the owner of this infrastructure is a good candidate for also owning the context data. 
+
+AUTHENTICATION
+Managing language preferences or determining the origin country are tasks that
+don’t require much business logic. For topics like authenticating a user, it’s harder. You
+should answer the question, “Which team owns the login process?” by looking at the
+team’s mission statements.
+ From a technical integration standpoint, the team that owns the login process
+becomes the authentication provider for the other teams. It provides a login page or
+fragment that other teams can use to redirect an unauthenticated user towards. You
+can use standards like OAuth6
+ or JSON Web Tokens (JWT) to securely provide the
+authentication status to the teams that need it. 
+
+The browser only
+needs to rerender the parts of the page that changed. It doesn’t have to evaluate referenced assets like JavaScript and stylesheets again. We’ll use the terms hard navigation
+and soft navigation in this chapter:
+ Hard navigation describes a page transition where the browser loads the complete HTML for the next page from the server.
+ Soft navigation refers to a page transition that’s entirely client-side rendered, typically by using a client-side router. In this scenario the client fetches its data via
+an API from the server
+
+Unified Single-Page App
+Soft navigation between all pages
+App shell combines single page apps - is a shared infrastructure
+
+To remove hard navigations between the teams, we need to establish a new shared
+piece of infrastructure: an application shell, or app shell for short. Its job is to map URLs
+to the correct team. In this regard, the application shell is similar to the frontend
+proxy we covered in chapter 3. From a technology perspective, it’s different. We don’t
+need a dedicated server like Nginx. The application shell consists of an HTML document and a piece of JavaScript.
+
+### Anatomy of the app shell
+The four essential parts of a micro frontends app shell are
+1 Providing a shared HTML document
+2 Mapping URLs to team pages (client-side routing)
+3 Rendering the matching page
+4 (De)initializing the previous/next page on navigation
+
+`app-shell/index.html`
+```
+<html>
+<head>
+<title>The Tractor Store</title>
+<script src="https://unpkg.com/history@4.9.0"></script>
+<script src="http://localhost:3001/pages.js" async></script>
+<script src="http://localhost:3002/pages.js" async></script>
+<script src="http://localhost:3003/pages.js" async></script>
+</head>
+<body>
+<div id="app-content">
+<span>rendered page goes here<span>
+</div>
+<script type="module">
+/* routing code goes here */
+</script>
+</body>
+</html>
+```
+
+Now we have our HTML document. It references the JavaScript code of all teams.
+These files contain the code for the page components. The document also has a container for the actual content (#app-content). That’s pretty straightforward. Let’s get
+to the exciting part: the routing. 
+
+### Client-side routing
+
+There are many ways to build a client-side router. We could use a full-featured existing
+routing solution like vue-router. However, since we want to keep it simple, we’ll build
+our own that’s based on the history library.1
+ This library is a thin wrapper around the
+browser’s History API. Many higher-level routers like react-router use it under the
+hood. Don’t worry if you haven’t used history before. We’ll only use two features:
+listen and push.
+
+`app-shell/index.html`
+
+```js
+...
+const appContent = document.querySelector("#app-content");
+// Maps a URL path to the component name
+const routes = {
+"/": "inspire-home",
+"/product/porsche": "decide-product-porsche",
+"/product/fendt": "decide-product-fendt",
+"/product/eicher": "decide-product-eicher",
+"/checkout/cart": "checkout-cart",
+"/checkout/pay": "checkout-pay",
+"/checkout/success": "checkout-success"
+};
+
+// Looks up a component based on a pathname
+function findComponentName(pathname) {
+return routes[pathname] || "not found";
+}
+
+// Writes the component name into the content container
+function updatePageComponent(location) {
+appContent.innerHTML = findComponentName(location.pathname);
+}
+// Instantiates the history library
+const appHistory = window.History.createBrowserHistory();
+appHistory.listen(updatePageComponent);
+// Registers a history listener that’s called every time the URL changes either through a push/replace call or by clicking the browser’s Back/Forward controls
+updatePageComponent(window.location);
+
+/*Registers a global click listener
+that intercepts link clicks, passes
+the target URLs to the history,
+and prevents a hard navigation*/
+document.addEventListener("click", e => {
+if (e.target.nodeName === "A") {
+const href = e.target.getAttribute("href");
+appHistory.push(href);
+e.preventDefault();
+}
+});
+...
+```
+
+KEEPING URL AND CONTENT IN SYNC
+The central piece is the updatePageComponent(location) function. It keeps the displayed content in sync with the browser’s URL. It’s called once on initialization and
+every time the browser history changes (appHistory.listen). The change can be due
+to a navigation request through the JavaScript API via appHistory.push() or when
+the user clicks the Back or Forward button in the browser. The updatePageComponent
+function looks up the page component that matches the current URL. For now it puts
+the component name into the div#app-content element via innerHTML. This way, the
+browser shows one line of text which contains the matched name. The name acts as a
+placeholder for us. We’ll upgrade this to rendering a real component in a minute. 
+
+MAPPING URLS TO COMPONENTS
+The routes object is a simple pathname (key) to component name (value) mapping.
+Here is an excerpt from the code you saw before.
+
+`app-shell/index.html`
+...
+const routes = {
+"/": "inspire-home",
+"/product/porsche": "decide-product-porsche",
+...
+"/checkout/pay": "checkout-pay",
+"/checkout/success": "checkout-success"
+};
+...
+
+So every page is a component. The component’s name starts with the name of the
+responsible team. For the URL /checkout/success, the app shell should render the
+checkout-success component, which Team Checkout owns. 
+
+Hompage component
+`team-inspire/pages.js`
+```
+class InspireHome extends HTMLElement {
+connectedCallback() {
+this.innerHTML = `
+<h1>Welcome to The Tractor Store!</h1>
+<strong>Here are three tractors:</strong>
+<a href="/product/porsche">Porsche</a>
+<a href="/product/eicher">Eicher</a>
+<a href="/product/fendt">Fendt</a>
+`;
+}
+}
+// Adds the Custom Element to the global registry
+window.customElements.define("inspire-home", InspireHome);
+```
+
+Product page component
+
+`decide/pages.js`
+```
+class DecideProductPorsche extends HTMLElement {
+connectedCallback() {
+this.innerHTML = `
+<a href="/">&lt; home</a> -
+<a href="/checkout/cart">view cart &gt;</a>
+<h1>Porsche-Diesel Master 419</h1>
+<img src="https://mi-fr.org/img/porsche.svg" width="200">
+`;
+}
+}
+window.customElements.define(
+"decide-product-porsche",
+DecideProductPorsche
+);
+...
+```
+
+The structure is the same as with Team Inspire’s homepage. Only the content is different. Let’s enhance the `updatePageComponent` implementation so that it instantiates the correct Custom Element and doesn’t just display the component name.
+
+`app-shell/index.html`
+```
+
+...
+function updatePageComponent(location) {
+const next = findComponentName(location.pathname);
+const current = appContent.firstChild;
+const newComponent = document.createElement(next);
+appContent.replaceChild(newComponent, current);
+}
+...
+```
+
+LINKING BETWEEN MICRO FRONTENDS
+Let’s look at navigation. That’s the whole point of this exercise. We want to achieve
+fast client-rendered page transitions. You might have noticed that both pages have
+links that point to other teams. The app shell handles these links. It contains a global
+click listener. Here is an excerpt from the code you saw earlier.
+
+> This is a shortened version of a global click handler. In production, you’d also want to watch for modifier keys to make opening in a new tab possible. You might also want to detect external links. But you get the gist.
+`app-shell/index.html`
+```
+...
+document.addEventListener("click", e => {
+if (e.target.nodeName === "A") {
+const href = e.target.getAttribute("href");
+appHistory.push(href);
+e.preventDefault();
+}
+});
+...
+```
+
+ The target URL becomes the latest entry in the history stack (appHistory
+.push(href)).
+ The appHistory.listen(updatePageComponent) callback triggers.
+ updatePageComponent matches the new URL against the routing table to determine the new component name.
+ updatePageComponent replaces the existing component with the new one.
+ The disconnectedCallback of the old component triggers (if implemented).
+ The constructor and connectedCallback of the new component trigger.
+
+### Implementing the top-level router
+
+Hence we dont need to care about url changes,
+
+Here the app shell only routes between teams. Each team can have its own router that maps the incoming URL to a specific page. It’s the same concept you learned in chapter 3, but moved from the web server to JavaScript in the browser.
+
+The app shell script can stay the same. We only have to change the routing definitions.
+
+`app-shell/index.html`
+```
+...
+const routes = {
+"/product/": "decide-pages",
+"/checkout/": "checkout-pages",
+"/": "inspire-pages"
+};
+function findComponentName(pathname) {
+const prefix = Object.keys(routes).find(key =>
+pathname.startsWith(key)
+);
+return routes[prefix];
+}
+...
+```
+
+ Before, findComponentName did a simple object lookup via the pathname. Now it
+matches the incoming pathname against all prefixes and returns the first component
+name that matches. All URLs starting with /checkout/ trigger a render of component
+checkout-pages. It’s the job of Team Checkout to process the rest of the pathname
+and show the correct page.
+ That’s it. The other code we saw in the flat routing model can stay the same. 
+
+ ### Implementing team-level routing
+
+ Let’s look inside the checkout-pages component to see the second-level routing. This
+new component takes the role of the checkout-cart, checkout-pay, and checkoutsuccess components from the previous example. Here is Team Checkout’s code for
+handling the pages.
+
+`checkout/pages.js`
+
+```
+// Contains all of Team Checkout’s routes and maps then to templates
+const routes = {
+"/checkout/cart": () => `
+<a href="/">&lt; home</a> -
+<a href="/checkout/pay">pay &gt;</a>
+<h1> Cart</h1>
+<a href="/product/eicher">...</a>`,
+"/checkout/pay": () => `
+<a href="/checkout/cart">&lt; cart</a> -
+<a href="/checkout/success">buy now &gt;</a>
+<h1> Pay</h1>`,
+"/checkout/success": () => `
+<a href="/">home &gt;</a>
+<h1> Success</h1>`
+};
+class CheckoutPages extends HTMLElement {
+connectedCallback() {
+this.render(window.location);
+this.unlisten = window.appHistory.listen(location =>
+this.render(location)
+);
+}
+render(location) {
+const route = routes[location.pathname];
+this.innerHTML = route();
+}
+disconnectedCallback() {
+this.unlisten();
+}
+}
+window.customElements.define("checkout-pages", CheckoutPages);
+```
+This code contains the template of all three pages. The connectedCallback method
+triggers when the app shell appends the component to the DOM. It renders the pages
+based on the current URL. Then it listens for URL changes (window.appHistory
+.listen).
+
+
+
 Pre-requsites 
 
 Install Nginx on your machine. 
