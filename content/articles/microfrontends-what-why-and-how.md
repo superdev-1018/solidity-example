@@ -1875,6 +1875,127 @@ triggers when the app shell appends the component to the DOM. It renders the pag
 based on the current URL. Then it listens for URL changes (window.appHistory
 .listen).
 
+ In essence, it’s an application shell—similar to the application shell we
+just built. But it comes with some more advanced features. It has _built-in on-demand
+loading of application code_ and _comes with a broad ecosystem of framework bindings_. You can find examples and helper libraries to hook up a React, Vue.js, Angular, Svelte, or Cycle.js application with few efforts.
+
+ The teams want to take their prototype and migrate it to single-spa. To test out the
+limits, each team chooses another JavaScript framework for their part of the shop.
+Team Inspire implements the Homepage using Svelte.js, Team Decide renders the
+product pages using React, and Team Checkout opts for the Vue.js framework. 
+
+Single-spa acts as the application shell which routes between the applications.
+In our example, all teams have picked a different frontend framework for their application code
+
+### How single-spa works
+
+The basic concepts are the same as in our previous prototype. We have a single HTML
+file that acts as the starting point. It includes the single-spa JavaScript code and maps
+URL prefixes to the code of a specific application. The main difference is that it does
+not use Web Components as the component format. Instead, the teams expose their
+micro frontends as a JavaScript object that adheres to a specific interface. We’ll look at
+this in a minute. Let’s look at the initialization code first.
+
+`app-shell/index.html`
+```html
+<html>
+<head>
+<title>The Tractor Store</title>
+<!-- Imports the single-spa library -->
+<script src="/single-spa.js"></script>
+</head>
+<body>
+<!-- Each micro frontend has its own DOM element which acts as the mount point-->
+<div id="app-inspire"></div>
+<div id="app-decide"></div>
+<div id="app-checkout"></div>
+<script type="module">
+// Registers a micro frontend with single-spa
+singleSpa.registerApplication(
+"inspire",
+// Loading function for the application, which fetches the associated JavaScript code when needed
+() => import("http://localhost:3002/pages.min.js"),
+({ pathname }) => pathname === "/" //The activity function receives the location and determines if the micro frontend should be active or not.
+);
+singleSpa.registerApplication(
+"decide", // Name of the application, which makes debugging easier
+() => import("http://localhost:3001/pages.min.js"),
+({ pathname }) => pathname.startsWith("/product/")
+);
+singleSpa.registerApplication(
+"checkout",
+() => import("http://localhost:3003/pages.min.js"),
+({ pathname }) => pathname.startsWith("/checkout/")
+);
+singleSpa.start(); // Initializes single-spa, renders the first page, and starts listening for history changes
+</script>
+</body>
+</html>
+```
+
+In this example, the single-spa.js library gets included globally. Notice that you
+have to create a DOM element for every micro frontend (<div id="app-inspire"></
+div>). The application code of the micro frontend looks for this element in the DOM
+and mounts itself underneath this element.
+ The `singleSpa.registerApplication` function maps the application code to a
+specific URL. It takes three parameters:
+ name must be a unique string, which makes debugging easier.
+ `loadingFn` returns a promise that loads the application code. We are using the
+native `import()` function in the example
+ `activityFn` gets called on every URL change and receives the location. When
+it returns true, the micro frontend should be active.
+
+On start, single-spa matches the current URL against all registered micro frontends. It
+calls their activity functions to detect which micro frontends should be active. When an
+application becomes active for the first time, single-spa fetches the associated JavaScript
+code through the loading function and initializes it. When an active application
+becomes inactive, single-spa calls its unmount function, instructing it to deinitialize itself.
+
+More than one application may be active at the same time. A typical use case for
+this is global navigation. It can be a dedicated micro frontend that gets mounted at
+the top and is active on all routes.
+
+### JAVASCRIPT MODULES AS THE COMPONENT FORMAT
+In contrast to our Web Component-based prototype, single-spa uses a JavaScript interface as the contract between app shell and team application. An application has to
+provide three asynchronous functions. It looks like this.
+
+`team-a/pages.js`
+```
+export async function bootstrap() {...}
+export async function mount() {...}
+export async function unmount() {...}
+```
+
+These functions (bootstrap, mount, unmount) are similar to the Custom Elements lifecycle functions (constructor, connectedCallback, disconnectedCallback). Singlespa calls bootstrap when a micro frontend becomes active for the first time. It invokes
+(un)mount every time the application is (de)activated.
+ All lifecycle functions are asynchronous. This fact makes lazy loading and data
+fetching inside an application a lot easier. Single-spa ensures that mount is not called
+before bootstrap has completed.
+ The Custom Elements lifecycle methods are synchronous. Implementing asynchronous initialization with Custom Elements is possible. However, it requires some
+extra work on top of what the standard specifies.
+
+### FRAMEWORK ADAPTERS
+Single-spa comes with a list of framework adapters. Their job is to wire the three lifecycle methods to the appropriate framework calls for (de)initialization. Let’s look at the
+code for Team Inspire, which delivers the homepage. They’ve chosen the framework
+Svelte.js. Don’t worry if you’ve never used Svelte before. It’s a simple example.
+
+`team-inspire/pages.js`
+```js
+// Imports single-spa’s Svelte adapter
+import singleSpaSvelte from "single-spa-svelte";
+// Imports the Svelte component for rendering the homepage
+import Homepage from "./Homepage.svelte";
+
+// Calls the adapter with the root component and a function that retrieves the DOM element to render it in
+const svelteLifecycles = singleSpaSvelte({
+component: Homepage,
+domElementGetter: () => document.getElementById("app-inspire")
+});
+
+// Exports the lifecycle functions returned by the adapter call
+export const { bootstrap, mount, unmount } = svelteLifecycles;
+```
+
 
 
 Pre-requsites 
@@ -1907,3 +2028,5 @@ https://resilientwebdesign.com/chapter7/
 
 https://www.smashingmagazine.com/2019/04/mutationobserver-api-guide/
 https://podium-lib.io/docs/podium/conceptual_overview/
+
+https://single-spa.js.org.
