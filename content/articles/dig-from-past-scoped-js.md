@@ -1,11 +1,11 @@
 ---
-title: "Dig"
+title: "Dig from the Past: JavaScript"
 date: 2020-09-13T17:08:43+05:30
 draft: true
 emoji: ":call_me_hand:"
 description: "Subheading or a short description."
-slug: "Dig"
-url: "Dig"
+slug: "dig-from-past-scoped-js"
+url: "dig-from-past-scoped-js"
 tags: ["tag"]
 syndicate: "false"
 ---
