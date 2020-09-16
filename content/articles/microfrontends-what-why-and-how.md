@@ -1996,7 +1996,8 @@ domElementGetter: () => document.getElementById("app-inspire")
 export const { bootstrap, mount, unmount } = svelteLifecycles;
 ```
 
-
+First, we import the adapter library single-spa-svelte and the Homepage.svelte
+component containing the actual template.
 
 Pre-requsites 
 
