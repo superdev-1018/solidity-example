@@ -1999,6 +1999,96 @@ export const { bootstrap, mount, unmount } = svelteLifecycles;
 First, we import the adapter library single-spa-svelte and the Homepage.svelte
 component containing the actual template.
 
+
+### NAVIGATING BETWEEN MICRO FRONTENDS
+Let’s look at the homepage component.
+
+`team-inspire/Homepage.svelte`
+```
+<script>
+function navigate(e) {
+e.preventDefault();
+const href = e.target.getAttribute("href");
+window.history.pushState(null, null, href);
+}
+</script>
+<div>
+<pre>team inspire - svelte.js</pre>
+<h1>Welcome Home!</h1>
+<strong>Here are three tractors:</strong>
+<a on:click={navigate} href="/product/eicher">Eicher</a>
+<a on:click={navigate} href="/product/porsche">Porsche</a>
+<a on:click={navigate} href="/product/fendt">Fendt</a>
+</div>
+```
+
+In the example, you see three links to product pages. They have a navigate click handler attached that prevents hard navigation (e.preventDefault ()) and writes the
+URL to the native history API instead (window.history.pushState). Single-spa monitors the history and updates the micro frontends accordingly.
+ Clicking on this product link triggers the termination (unmount) of Team Inspire’s
+micro frontend. After that, single-spa loads Team Decide’s application and activates it
+(mount). This behavior is similar to the inter-team navigation scenario you saw in the
+previous section. 
+
+NESTING MICRO FRONTENDS
+In our current example, there is precisely one micro frontend active at a time. The
+app shell instantiates the micro frontends at the top level. This is how single-spa gets used most often. As I said before, it’s possible to implement some navigation micro
+frontend that is always present and sits next to the other applications. However, singlespa also allows nesting. This concept goes by the name portals. Portals are pretty much
+the same as what we called fragments in the last few chapters. 
+
+### Accessibility
+You almost always want to set a meaningful title for the individual pages. Providing a global appShell.setTitle() method would be one way of dealing with this.
+Each micro frontend could also directly alter the head section via DOM API.
+ However, if your site is accessible on the open web, the title is often not enough.
+You want to provide crawlers and preview generators like Facebook or Slack with
+machine-readable information like canonicals, href langs, schema.org tags, and indexing hints. Some of these might be the same for the complete site. Others are highly
+specific to one page type.
+ Coming up with a mechanism to effectively manage meta tags across all micro
+frontends requires some extra work and complexity. Think of Angular’s meta service,4
+vue-meta,5
+ or react-helmet6
+ but on an app shell level.
+
+ERROR BOUNDARIES
+If the code from different teams runs inside one document, it can sometimes be tricky
+to find out where an error originated. In the composition approach from the last
+chapter, we have the same problem. Code from inside a fragment has the potential to
+cause unwanted behavior on the complete page. However, the unified single-page app
+model widens the debugging area from page level to the complete application. A forgotten scroll listener from the homepage can introduce a bug on the confirmation
+page in the checkout. Since these pages are not owned by the same team, it can be
+hard to make the connection when looking for the error.
+ In practice, these types of problems are rather rare. Also, error reporting and
+browser debugging tools have gotten pretty good over the last years. Identifying which
+JavaScript file caused the error helps in finding the responsible team.
+
+MEMORY MANAGEMENT
+Finding memory leaks is more complicated than tracking down a JavaScript error. A
+common cause of memory leaks is inadequate cleanup: removing parts of the DOM
+without unregistering event listeners or writing something to a global location and then
+forgetting about it. Since the micro frontend applications get initialized and deinitialized regularly, even smaller problems in cleanup can accumulate into a bigger problem.
+ Single-spa has a plugin called single-spa-leaked-globals which tries to clean up
+global variables after a micro frontend is unmounted. However, there is no universal
+magic cleanup solution. It’s essential to raise awareness in your developer teams that
+proper unmounting is as important as proper mounting.
+
+SINGLE POINT OF FAILURE
+The app shell is, by its nature, the single first point of contact. Having a severe error in
+the app shell can bring down the complete application. That’s why your app shell
+code should be of high quality and well tested. Keeping it focused and lean helps in
+achieving this.
+
+COMMUNICATION
+Sometimes micro frontend A needs to know something that happened in micro frontend B. The same communication rules we discussed in chapter 6 also apply here:
+ Avoid inter-team communication when possible.
+ Transport context information via the URL.
+ Stick to simple notifications when needed.
+ Prefer API communication to your backend.
+Don’t move state to the app shell. It might sound like a good idea to not load the same
+information twice from the server. However, misusing the app shell as a state container creates strong coupling between the micro frontends. In the backend world, it’s
+a best practice that microservices don’t share a database. One change in a central
+database table has the potential to break another service. The same applies to micro
+frontends. Here your state container is equivalent to a database. 
+
+
 Pre-requsites 
 
 Install Nginx on your machine. 
