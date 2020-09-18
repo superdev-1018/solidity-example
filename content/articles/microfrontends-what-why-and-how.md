@@ -2088,6 +2088,30 @@ a best practice that microservices don’t share a database. One change in a cen
 database table has the potential to break another service. The same applies to micro
 frontends. Here your state container is equivalent to a database. 
 
+BOOT TIME
+Code splitting has become best practice in web development. When implementing an
+app shell, you should consider this as well. In the single-spa example, you saw how the
+library loads the actual micro frontend code on-demand. It’s crucial to think about
+optimizations to deliver an excellent overall performance. 
+
+
+ When does a unified single-page app make sense?
+This model plays to its strength when the user needs to switch frequently between user interfaces owned by different teams. In e-commerce, the jump between the search result and
+the product details page is a good example. The user looks at a list of products, clicks
+on one, jumps back to the list, and repeats the process until they find something they
+like. In this case, using a soft navigation makes a noticeable difference in the user
+experience.
+
+### Composition and universal rendering
+
+> Terminology: Universal, isomorphic, and SSR The terms universal rendering, a Isomorphic JavaScript, b and server-side rendering (SSR) essentially refer to the same concept: Having a single code-base that makes it possible to render and update markup on the server and in the browser. Their meaning or perspective varies in detail. However, in this book, we’ll go with the term universal rendering.
+
+NOTE In this chapter, we assume that you’re already familiar with the concept of universal rendering and know what [hydration](https://caffeinecoding.com/universal-javascript-server-client-rendering/) is. If not, I recommend
+reading this blog post for a quick introduction.1
+ If you want do dive deeper,
+you can also check out the book [Isomorphic Web Applications](https://www.manning.com/books/isomorphic-web-applications).
+
+
 
 Pre-requsites 
 
