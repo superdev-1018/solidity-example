@@ -2111,6 +2111,23 @@ reading this blog post for a quick introduction.1
  If you want do dive deeper,
 you can also check out the book [Isomorphic Web Applications](https://www.manning.com/books/isomorphic-web-applications).
 
+### Pre-rendering
+The preceding code of Team Decide’s product page now combines client- and serverside composition. The Nginx web server replaces the SSI directive with the <button>
+markup, which Team Checkout generates when calling the /checkout/fragment/
+buy/fendt endpoint. Our example simulates this by serving a static HTML file.
+
+In practice, you’d use a library with server-rendering capabilities to dynamically generate a response in a Node.js environment. For a React-based application, you’d call
+ReactDOMServer.renderToString (<CheckoutBuy />) and return its result. Here
+<CheckoutBuy /> would be the React-based micro frontend application. The assembled product page markup that reaches the browser looks like this:
+
+```
+...
+<checkout-buy sku="fendt">
+<button type="button">buy for $54</button>
+</checkout-buy>
+...
+```
+
 
 
 Pre-requsites 
