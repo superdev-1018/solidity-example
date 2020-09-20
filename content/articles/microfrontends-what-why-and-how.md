@@ -2128,7 +2128,271 @@ ReactDOMServer.renderToString (<CheckoutBuy />) and return its result. Here
 ...
 ```
 
+### Progressive enhancement
 
+You’ve noticed that the Buy button now appears even with JavaScript disabled. But
+clicking it does not perform any action. This is because we are attaching the actual
+add-to-cart mechanics via JavaScript. But it’s straightforward to make it work without
+JavaScript by wrapping the button inside an HTML form element like this:
+
+```
+<form action="/checkout/add-to-cart" method="POST">
+<input type="hidden" name="sku" value="fendt">
+<button type="submit">buy for $54</button>
+</form>
+```
+
+In the case of failed or pending JavaScript, the browser performs a standard POST to
+the specified endpoint provided by Team Checkout. After that, Team Checkout redirects the user back to the product page. On that page, the updated mini-cart presents
+the newly added item.
+Building an application with progressive enhancement principles in mind requires a
+little more thinking and testing than relying on the fact that JavaScript always works.
+But in practice, it boils down to a handful of patterns you can reuse throughout your
+application. This way of architecting creates a more robust and failsafe product. It’s
+good to work with the paradigms of the web and not reinvent your ones on top of it. 
+
+Let’s take a quick look at the contract for including a fragment from another team.
+Here is the definition Team Checkout provides:
+ Buy button
+Custom Element: <checkout-buy sku=[sku]></…>
+HTML endpoint: /checkout/fragment/buy/[sku]
+
+
+Since we are combining two integration techniques, the team offering the micro frontend needs to provide both: the Custom Element definition and the SSI endpoint,
+which delivers the server-side markup. The team using the micro frontend also needs
+to specify both. In our example Team Decide uses this code:
+
+```
+<checkout-buy sku="fendt">
+<!--#include virtual="/checkout/fragment/buy/fendt" -->
+</checkout-buy>
+```
+
+These three lines include a lot of redundancy. To reduce friction, it’s a good idea to
+establish a project-wide naming schema. This way, tag names and endpoints all look
+alike, and teams can use a generic template for including a fragment. Figure 8.5 shows
+how a schema might look.
+
+```
+<[TEAM]-[NAME] [PARAMS]>
+ <!--#include virtual="/[TEAM]/fragment/[NAME]?[PARAMS]" -->
+</[TEAM]-[NAME]>
+```
+
+Other solutions
+This is, of course, not the only way to build a universal integration. Instead of SSI and
+Web Components, you can also combine other techniques. Integrating server-side
+with ESI or Podium and adding your client-side initialization on top would also work.
+ Are you looking for a batteries-included solution? Then you could try the Ara
+Framework.4
+ `Ara` is a relatively young micro frontends framework, but it’s built with
+universal rendering in mind. It brings its own SSI-like server-side assembly engine written in Go. Client-side hydration works through custom initialization events. Examples
+for running a universal React, Vue.js, Angular, or Svelte application exist. 
+
+### When does universal composition make sense?
+Does your application need to have a fast first-page load? Your user interface should
+be highly interactive, and your use case requires communication between the different micro frontends. Then there is no way around a universal composition technique
+like you’ve seen in this chapter
+
+### Increased complexity
+Universal composition combines the benefits of server- and client rendering. But it
+also comes with a cost. Setting up, running, and debugging a universal application is
+more complicated than having a pure client- or server-side solution. Applying this
+concept on an architecture level with universal composition doesn’t make it easier.
+Every developer needs to understand how integration on the server and hydration on
+the client works. Modern web frameworks make building universal applications easier.
+Adding a new feature is usually not more complicated. But the initial setup of the system and onboarding of new developers takes extra time.
+
+### Universal unified single-page app?
+Is it possible to combine the application shell model from chapter 7 with universal
+rendering? Yes, in this chapter, we combined client- and server-side composition techniques to run multiple universal applications in one view. You could also combine client- and server-side routing mechanisms to create a universal application shell. However,
+this is not a trivial undertaking, and I haven’t seen production projects that are doing
+this right now.
+ The single-spa project plans to add server-side rendering support. But at the time
+of writing this book, this feature hasn’t been implemented yet
+
+The Documents-to-Applications Continuum
+What purpose does the project we are building serve? Do people come to our site to
+consume content, or do they want to use a specific functionality we provide? For better visualization, it helps to look at extreme examples:
+ Content-centric—Imagine a simple blog. A user can browse the list of posts and
+read the complete content on a dedicated article page.
+ Behavior-centric—Imagine an online drawing application. People can go to the
+site and draw beautiful sketches with their fingers and export them as an image.
+The first one is a prototypical web site where the content is essential. The second one
+is a pure application. It does not bring any content. It’s all about the functionality it
+provides to the user.
+ In a non-trivial project, it’s typically not that black and white. This is where the
+Documents-to-Applications Continuum1
+ comes in. The idea is that both examples are
+at different ends on a spectrum,
+
+### Asset referencing strategies
+We’ll start with some techniques to integrate the assets into a page. For simplicity, we
+will stick to traditional <link> and <script> tags in the following scenarios. Module
+loaders like RequireJS1
+ (AMD) or CommonJS2
+ are popular and `provide programmatic loading functionality`. But nowadays, ES Modules are supported in all significant
+browsers.3
+ They are a web standard that solves most of our JavaScript loading needs
+without needing an extra library or a custom module format
+
+ Challenge: Cache-busting and independent deployments
+One day CEO Ferdinand walks into Team Decide’s office space, laptop under his arm.
+He grabs a chair, opens his laptop, and points at his screen. “I’ve read an article about
+the importance of web performance in e-commerce. I ran a tool called Lighthouse5
+on our product pages. It measures performance and checks if our site uses best practices. We score 94 points. This score is way better than our competitors! However,
+Lighthouse shows one piece of advice. We seem to use an inefficient cache policy on
+static assets.”6
+ The current best practice for performant asset loading is to ship static assets (JavaScript, CSS) in separate files with a one-year cache header. This way, you ensure that the
+browser does not redownload the same file twice. Adding this cache header is not complicated. In most applications, web servers, or CDNs, it’s a simple configuration entry.
+However, you need a cache invalidation strategy. If you’ve deployed a new CSS file, you
+want all users to stop using their cached version and download the updated one. An
+effective invalidation strategy is adding a fingerprint to the filename of the asset. The
+fingerprint is a checksum based on the contents of the file. A filename could look like
+this—fragment.49.css. The fingerprint only changes when the file is modified.
+ We call this cache busting. Most frontend build tools like Webpack, Parcel, or Rollup
+support it. They generate fingerprinted filenames at build time and provide a way to
+
+use these filenames in your HTML markup. You might already see the issue. Cache
+busting does not play nice with our distributed micro frontend setup.
+ In our earlier example, Team Decide needed to know the path to Team Checkout’s JavaScript and CSS files. Yes, Team Checkout could update their documentation:
+Required assets—/checkout/fragment.a62c71.js, /checkout/fragment.a98749
+.css
+But with the current process, Team Decide would have to manually update these references in their product page’s markup every time Team Checkout deploys a new version. In this scenario, a team is not able to deploy without coordinating with another
+team. This coordination is the kind of coupling we want to avoid. Let’s explore some
+better alternatives. 
+
+### Challenge: Synchronizing markup and asset versions
+
+A load balancer routes an incoming request randomly to one of the 10 application
+servers to distribute the work load evenly. Imagine the freshly deployed instance
+serves the registration fragment (/checkout/register_styles) but the actual asset
+request (/checkout/static/fragment.[new-fingerprint].css) reaches an old
+instance which only knows the file with an old fingerprint. This scenario results in a
+404 error and an unhappy user who’s looking at a page with an unstyled Buy button.
+Figure 10.4 illustrates this.
+
+There are two quick fixes to avoid this issue:
+1 Enable sticky sessions in the load balancer to ensure that all requests from one
+user go to the same application server.8
+2 Serve all assets from a CDN. Teams push new assets to the CDN before an application deployment. The CDN contains new and old assets.
+These fixes reduce the likelihood of the previously described error, but they aren’t
+perfect mitigations. Sticky sessions are not a guarantee. When an application server goes
+down due to a fault or redeployment, users must switch to another application.
+
+Aligning systems and teams
+If you have ever explored the concept of microservices before, you’ve probably come
+across Conway’s Law.
+1
+ In the 1960s, computer programmer Melvin Conway formulated
+the hypothesis that the communication structures of an organization are reflected in
+the technical systems they create.
+ This means that if you let one team build a product, it will likely produce a more
+monolithic system. If you give the same task to four teams, they’ll probably come up
+with a more modular solution.
+ The importance of keeping the structure of the organization and its technical systems in sync has been well researched2
+ and understood in modern software development. Here’s a quote from the book Organizational Patterns of Agile Software Development,
+published in 2004:
+If the parts of an organization (e.g., teams, departments, or subdivisions) do not closely
+reflect the essential parts of the product […], then the project will be in trouble…
+Therefore: Make sure the organization is compatible with the product architecture.
+James O. Coplien and Neil Harrison
+
+
+### Identifying team boundaries
+Ok, understood! We should keep team and software structure aligned. But how do we
+find out what structure is beneficial for the product we want to create? How do we
+identify sound boundaries? Here are three methods that can help you.
+
+### DOMAIN-DRIVEN DESIGN (DDD)
+Domain-driven design is a popular approach for structuring software. It acknowledges
+the fact that it’s hard to create a consistent model for a project of a specific size. It provides patterns to handle this complexity by creating smaller sub-models that have an
+explicit relationship with each other.
+ DDD provides a set of concepts and tools to identify and isolate areas in your project. It introduces the idea of analyzing the language of different experts and departments in a company: ubiquitous language.
+ By analyzing differences in vocabulary, it’s possible to identify bounded contexts, one
+of DDD’s core concepts. You can see a bounded context as a group of business processes
+that are related to each other. A checkout process could be viewed as a bounded context. It consists of different sub-topics like delivery and payment which are closely
+related to each other. We won’t go into more detail on DDD in this book. Still, there’s
+a lot of great content3
+ you can check out if you want to learn about it. A bounded context is an excellent candidate to become its own micro frontend application and team.
+
+### USER-CENTERED DESIGN
+Let’s set aside our IT glasses and put on our product management scarf for a minute.
+A critical task in product design is to pinpoint user needs. In day-to-day business, it’s
+easy to get lost in optimizing our current products.
+ If we want a sustainable relationship with our customers, it’s essential to understand their real motivations. What do they want when they come to us? How can we
+make their life easier?
+ Techniques like design thinking 4
+ or jobs to be done 5
+ provide solid mental models to
+reason about a user’s motivation. A famous quote6
+ from Theodore Levitt highlights
+the difference between our current offers and the users' needs:
+People don’t want to buy a quarter-inch drill. They want a quarter-inch hole!
+Theodore Levitt
+Modeling your teams and systems around your customers needs can be a valid choice.
+It gives the teams a clear goal that’s focused on what matters most: your user.
+ In the example of Tractor Models, Inc., we’ve structured the teams and systems
+along the typical buying process of our customers. A customer goes through different
+phases like “browsing the site for interesting products” (Team Inspire), “considering if
+a specific product would be a good choice” (Team Decide), and finally “doing everything that’s necessary to acquire the desired product” (Team Checkout). The customer has different needs in these three phases and the individual teams can
+specialize in addressing them.
+ You can apply these phases and user needs to other business areas. Let’s look at
+another business. You have a company that sells Internet of Things devices like smart
+bulbs and sensors. Here you might have a “Which devices do I need?” phase, followed
+by a “How do I set it up?” phase. In the third phase, everything is running and the user
+wants to interact with the devices—checking measurements or switching the light.
+These three phases are good candidates to structure your software around. They don’t
+have too much overlap and the user has very different needs in them.
+EXAMINING EXISTING PAGE STRUCTURES
+A more hands-on method for identifying boundaries is to look at the page structure of
+your current project. This method works when you already have a functioning business model. Print out all page types on a piece of paper. Gather a group of experienced colleagues and group the pages by using your intuitions.
+ In most cases, a page represents a specific use case or task your user needs to do.
+Looking at pages is not a perfect solution. Some pages might have more than one purpose. Print a copy of your page and use scissors to cut out parts from it. These cutouts
+
+are candidates to become fragments. This method is an excellent entry to start more
+in-depth discussions.
+ If you’ve established groups, you can try to verify your hypotheses by looking at analytics data you’ve gathered in the past. Do the usage patterns align with your page groups?
+ Now that we have an idea of how to structure the teams, let’s talk about who should
+be on the teams. 
+
+Frontend blueprint
+When a new team starts fresh, it has to do a lot of setup work, creating its basic application, build process, and other tedious tasks that are necessary before it can become
+productive.
+ We’ve been using the concept of a shared frontend blueprint to ease this pain. The
+blueprint is an example project that includes all significant aspects a micro frontend
+application needs. We can divide these aspects into two groups: technical and projectspecific.
+TECHNICAL ASPECTS
+ Directory structure
+ Testing (unit, end-to-end)
+ Linting and formatting rules
+ Code formatting rules
+ API communication
+ Performance best practices (optimizing assets)
+ Build tool configuration
+
+These general topics are necessary to have, but they are not that interesting. Most
+major JavaScript frameworks have a scaffolding tool that generates an example project
+for you. But a stock frontend setup will not be sufficient for a team to get going.
+PROJECT-SPECIFIC ASPECTS
+Your frontend needs to integrate with the other teams and must adhere to the highlevel architecture guidelines. A new frontend must also cover project-specific aspects.
+That’s why our frontend blueprint also includes
+ Composition examples
+– Including another micro frontend
+– Providing an includable micro frontend
+ Communication examples
+ Team prefixing for CSS and URLs
+ Template for documenting your micro frontends
+ Integration with the central pattern library
+ Setup for the local pattern library
+ Wiring for shared services like error tracking or analytics
+ CI/CD pipeline
+New teams will copy the blueprint over to their project and adjust it to their needs.
+Building on the existing work reduces setup time noticeably. But for us, the blueprint
+has another, even more, important role. It’s the reference implementation for the
+macro architecture decisions.
+ It includes running examples of integration patterns and communication strategies. This example code helps all developers to understand high-level topics by seeing
+them in action in a real application. 
 
 Pre-requsites 
 
@@ -2162,3 +2426,7 @@ https://www.smashingmagazine.com/2019/04/mutationobserver-api-guide/
 https://podium-lib.io/docs/podium/conceptual_overview/
 
 https://single-spa.js.org.
+
+https://designsystemsrepo.com/design-systems/
+
+https://samnewman.io/patterns/architectural/bff/
