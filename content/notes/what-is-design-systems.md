@@ -1,4 +1,14 @@
-
+---
+title: "what-is-design-systems"
+date: 2020-09-22T00:22:21+05:30
+draft: true
+emoji: ":call_me_hand:"
+description: "Subheading or a short description."
+slug: "what-is-design-systems"
+url: "what-is-design-systems"
+tags: ["tag"]
+syndicate: "false"
+---
 Why a design system?
 Creating an overarching design that different teams can use is far from specific to
 micro frontends. The term design system has become popular in software development
