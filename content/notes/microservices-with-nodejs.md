@@ -52,7 +52,57 @@ Next, will look two methodologies to implement `Service D`;
 
 ### Sync Communication Between Services
 
+There are two communication strategies between services,
+1. Sync
+2. Async
+
+> These words don't mean what they mean in the Javascript world.
+
+### Synchronous
+
+> One service communicate with each other services using direct request.
+
+There are some upsides and downsides to this,
+
+#### Pros
+
+1. Conceptually easy to understand
+2. Service D wont need a database
+
+
+#### Cons
+
+1. Introduces a dependency between services
+2. If any inter-service request fails, the overall request fails
+3. The entire request is only as fast as the slowest request
+4. Can easily introduce webs of requests.
+
+### Asynchronous
+
+> Services communicate with each other using events
+
+### Two ways of using Async Communication
+
 ### Event-Based Communication
+
+Event bus handles the notification of each services which are like nodes. Each service can either emit events or receive events from the event bus. But we only get a single point of failure which is the` Event Bus`. i.e. A service would emit an event, with the service type and data, then the other service would emit an event back like `UserQueryResult` and then sent the data back to Service D.
+
+There is a very good reason why this model isn't used in the projects, because it has all the downsides of a synchronous communication and additional downsides.
+
+### The second way (Recommended)
+
+This would be similar to database-per-service pattern, async communication is going to seem bizarre and inefficient.
+
+1. Lets refine the exact goal of Service D. i.e. `code to show products ordered by a particular user` -> `Given the ID of a user, show the tile and image for every product they have ever ordered`
+2. We can solve this by introducing a database (can be SQL or NoSQL) with two tables, `Products` and `Users`, with only the fields they need, `Products` -> `id, title, image` and `Users` -> `id, product ids`
+3. Now, the challenge is how do we generate this database and sticks these information. 
+4. Every time, a request comes to any of the A, B, C services we would emit a event to the service bus, if anybody care this the product that I created. Then any service which has subscribed to this event would get the information and then updates the Service D database.
+
+### Pros
+
+### Cons
+
+
 
 ### A crazy way of storing data
 
