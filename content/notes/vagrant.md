@@ -1,3 +1,14 @@
+---
+title: "Vagrant"
+date: 2020-09-25T00:08:47+05:30
+draft: true
+emoji: ":call_me_hand:"
+description: "Subheading or a short description."
+slug: "vagrant"
+url: "vagrant"
+tags: ["tag"]
+syndicate: "false"
+---
 Solomon Hykes, the author of Docker, gives his take:
 
 If you want to manage machines, you should use Vagrant… If you want to build and run application environments, you should use Docker.
