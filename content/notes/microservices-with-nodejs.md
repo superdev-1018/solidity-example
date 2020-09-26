@@ -100,10 +100,12 @@ This would be similar to database-per-service pattern, async communication is go
 
 ### Pros
 
+1. Service D has zero dependencies on other services.
+2. Service D will be extremely fast
+
+
 ### Cons
 
+1. Data duplication, Paying for extra storage + extra DB
+2. Harder to understand
 
-
-### A crazy way of storing data
-
-### Pros and Cons of Async Communication
