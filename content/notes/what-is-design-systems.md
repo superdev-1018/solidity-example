@@ -1,5 +1,5 @@
 ---
-title: "what-is-design-systems"
+title: "What is design systems"
 date: 2020-09-22T00:22:21+05:30
 draft: true
 emoji: ":call_me_hand:"
