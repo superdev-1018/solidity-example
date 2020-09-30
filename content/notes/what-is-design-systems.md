@@ -9,7 +9,8 @@ url: "what-is-design-systems"
 tags: ["tag"]
 syndicate: "false"
 ---
-Why a design system?
+
+### Why a design system?
 Creating an overarching design that different teams can use is far from specific to
 micro frontend. The term design system has become popular in software development
 in recent years. It provides a way to systematically tackle design in an era of growing
