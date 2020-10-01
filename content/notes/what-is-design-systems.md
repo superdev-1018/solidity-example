@@ -81,9 +81,7 @@ This quote highlights the fact that a design system is never a finished product.
 infrastructure. The usable components and formalized design rules are the result of
 discussions between user experience (UX) and design experts as well as developers
 and product owners from the teams. It should be the single source of truth when it
-comes to design questions. 
-
-
+comes to design questions.
 
 We’ll go through the diagram line by line.
 PURE CSS
@@ -200,12 +198,11 @@ control. The middle ground around molecules and organisms is fuzzy
 
 The central and local pattern libraries could also use the same tool to develop and
 generate the design system documentation site. Popular tools for this are Storybook,21
-Pattern Lab,22 and UIengine.23 Using the same tool has the advantage that moving a
+Pattern Lab,22 and UIengine.Using the same tool has the advantage that moving a
 component from the central to the local pattern library (or the other way around) is
 as easy as moving a component folder.
 
-
-References
+### References
 
 https://designsystemsrepo.com/design-systems/
 See Vitaly Friedman, “Taking The Pattern Library To The Next Level,” Smashing Magazine, http://mng.bz/
