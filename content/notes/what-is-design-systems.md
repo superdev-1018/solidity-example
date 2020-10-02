@@ -37,9 +37,9 @@ excellent blog posts,2
  and even hands-on checklists4
  to get deeper into this
 topic. Instead, we’ll focus on the design system aspects that are crucial to get right for
-running a successful micro frontends architecture.
+running a successful micro frontend architecture.
 12.1.1 Purpose and role
-In a micro frontends project, all features the product teams create are directly targeted
+In a micro frontend project, all features the product teams create are directly targeted
 to the end user. These features make the user’s life more enjoyable and thus create
 value for the company. A centralized design system does not fit into this model.
  No user signs up for Microsoft Office 365 because they think that Microsoft’s Fluent UI Design System is the best. But there’s no question that the existence of the
