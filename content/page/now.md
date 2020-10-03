@@ -38,6 +38,10 @@ I’m in Colombo, on lockdown due to the Covid-19 Coronavirus outbreak. I’m we
 - German (this one might be here for a while)
 - [Microservices with Nodejs and React]()(this one might be here for a while too)
 
+### Current Exams
+
+- [Cisco CCNA 200-301](https://www.cisco.com/c/en/us/training-events/training-certifications/training/training-services/courses/implementing-and-administering-cisco-solutions-ccna.html) by Cisco to get up-to-date with networking.
+
 <p class="mt-32"><strong>Last Updated:</strong> April 22, 2020.</p>
 
 <p class="mt-32"><strong>Page inspired by:</strong> <a href="https://zenhabits.net/now/" target="_blank">Zen Habits</a> and <a href="https://nownownow.com/about" target="_blank">Derek Sivers</a>.</p>
