@@ -16,6 +16,7 @@ I’m in Colombo, on lockdown due to the Covid-19 Coronavirus outbreak. I’m we
 - [Wild Fermentation](https://www.goodreads.com/book/show/109800.Wild_Fermentation?ac=1&from_search=true&qid=lMMKTFuhua&rank=1) by Sandor Ellix Katz
 - [Pro Git](https://www.goodreads.com/book/show/6518085-pro-git) by Scott Chacon
 - [Don’t make me think](https://www.goodreads.com/book/show/41009404-dont-make-me-think) by Steve Krug
+ 
 
 ### Current Projects
 
@@ -27,6 +28,7 @@ I’m in Colombo, on lockdown due to the Covid-19 Coronavirus outbreak. I’m we
   in response to the Covid-19 outbreak.
 - [Ed](https://twitter.com/Ed_Stephens_1) and I have been working on [AIN Jobs](https://www.jobs.angelinvestmentnetwork.co.uk/), a simple Gatsby powered jobsboard which uses
   Netlify Forms, Zapier, Airtable and Mailchimp to process data
+- [Okta Authentication](https://www.okta.com/) read about its standards and flow.
 
 ### Currently Studying
 
