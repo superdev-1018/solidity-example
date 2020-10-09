@@ -9,3 +9,4 @@ draft = "true"
 +++
 
 - Create an ticket booking app with microservices
+- Do the exam Cisco 200-301
