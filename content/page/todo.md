@@ -67,9 +67,6 @@ draft = "true"
 
 [ ] Learn about Design UI/UX (Advance)
 
-
 [ ] Hussein Nasser
 [ ] Rachit Jain
 [ ] Gaurav Sen about Scalability
-
-
