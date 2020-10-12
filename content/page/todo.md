@@ -62,11 +62,11 @@ draft = "true"
 [ ] Read Galshir book on Inspirations
 
 [ ] Java Spring
-[ ] Java Hibernete
+[ ] Java Hibernate
 [ ] Learn Dino
 
 [ ] Learn about Design UI/UX (Advance)
 
-[ ] Hussein Nasser - Scalability and more
+[ ] [Hussein Nasser](https://www.youtube.com/watch?v=4NsWnT_-FoE) - Scalability and more
 [ ] Rachit Jain - Interview 
 [ ] Gaurav Sen about Scalability
