@@ -9,6 +9,7 @@ url: "vagrant"
 tags: ["tag"]
 syndicate: "false"
 ---
+
 Solomon Hykes, the author of Docker, gives his take:
 
 If you want to manage machines, you should use Vagrant… If you want to build and run application environments, you should use Docker.
@@ -38,7 +39,6 @@ So let’s bring everything together. What’s similar between Vagrant’s virtu
 ```
 https://github.com/Charnnarong/oauthsandbox
 ```
-
 
 To up the virtual machine
 ```

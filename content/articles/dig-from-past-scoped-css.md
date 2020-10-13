@@ -12,7 +12,7 @@ tags: ["tag"]
 syndicate: "false"
 ---
 
-ISOLATING STYLES
+### ISOLATING STYLES
 
 Let’s look at CSS first. Sadly, browsers don’t offer much help here. The deprecated
 Scoped CSS specification would have been an excellent fit for our use case. It allowed
