@@ -50,6 +50,6 @@ does not matter which tool a team chooses, as long as all selectors are prefixed
 
 ### References
 
-[](https://css-tricks.com/saving-the-day-with-scoped-css/)
-[](https://caniuse.com/shadowdomv1)
-[](http://getbem.com/naming/)
+[https://css-tricks.com/saving-the-day-with-scoped-css/](https://css-tricks.com/saving-the-day-with-scoped-css/)
+[https://caniuse.com/shadowdomv1](https://caniuse.com/shadowdomv1)
+[http://getbem.com/naming/](http://getbem.com/naming/)
