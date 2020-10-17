@@ -24,6 +24,7 @@ never leak out. This specification did not last long, and browsers which already
 Some frameworks like Vue.js still use the scoped syntax to achieve this isolation. But they use automatic selector prefixing under the hood to make this work in the browser.
 
 ## NOTE In modern browsers2
+
 it’s possible to get strong style scoping today via JavaScript and the ShadowDOM API, which is part of the Web Components specification. We’ll talk about this in chapter 5.
 
 Since CSS rules are global by nature, the most practical solution is to namespace all
@@ -45,8 +46,7 @@ NOTE To keep the CSS and HTML size small, we like to use two-letter prefixes lik
 When every team follows these naming conventions and only uses class-name-based
 selectors, the issue of overwriting styles should be solved. Prefixing does not have to be done manually. Some tools can help here. CSS Modules, PostCSS, or SASS are a good
 start. You can configure most CSS-in-JS solutions to add a prefix to each class name. It
-does not matter which tool a team chooses, as long as all selectors are prefixed. 
-
+does not matter which tool a team chooses, as long as all selectors are prefixed.
 
 ### References
 
