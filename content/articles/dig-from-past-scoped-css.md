@@ -31,11 +31,13 @@ Since CSS rules are global by nature, the most practical solution is to namespac
 CSS selectors. Many CSS methodologies like BEM3 use strict naming rules to avoid
 unwanted style leaking between components. But two different teams might come up
 with the same component name independently, like the headline component in our
-example. That’s why it’s a good idea to introduce an extra team-level prefix. Table 3.1
-shows what this namespacing might look like
+example. That’s why it’s a good idea to introduce an extra team-level prefix. 
+
+Table 3.1 shows what this namespacing might look like
 
 
 Table 3.1 Namespacing all CSS selectors with a team prefix
+
 Team name Team prefix Example selectors
 Decide decide .decide_headline .decide_recos
 Inspire inspire .inspire_headline .inspire_recommendation__item
