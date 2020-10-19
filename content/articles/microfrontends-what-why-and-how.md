@@ -880,8 +880,8 @@ The way Podium handles fallbacks is quite interesting. With the Nginx approach, 
 had to define the fallback in the template of the page. With ESI and Tailor, the page
 owner can provide a second URL that’s tried when the actual URL does not work. In
 Podium it’s a bit different:
- The team that owns the fragment provides the fallback.
- The team including the fragment caches this fallback locally.
+The team that owns the fragment provides the fallback.
+- The team including the fragment caches this fallback locally.
 These two properties make it much easier to create a meaningful fallback. Team
 Inspire could, for example, define a list of "evergreen recommendations" that look
 similar to dynamic recommendations. Team Decide caches it and can show it if Team
@@ -1275,7 +1275,7 @@ Team Checkout must notify Team Decide when a user has successfully added an item
 to the cart. Team Decide can trigger its animation in response to that.
  The teams agree on implementing this notification via an event on the Buy button.
 The updated contract for the Buy-button fragment looks like this:
- Updated Buy button
+- Updated Buy button
 tag-name: checkout-buy
 attributes: sku=[sku], edition=[standard|platinum]
 emits event: checkout:item_added
@@ -1329,13 +1329,13 @@ to a click event. Select the element you want to listen on (<checkout-buy>) and 
 Run the following command to start the example:
 
 Using the browser’s event mechanism has multiple benefits:
- Custom Events can have high-level names that reflect your domain language.
+- Custom Events can have high-level names that reflect your domain language.
 Good event names are easier to understand than technical names like click or
 touch.
- Fragments don’t need to know their parents.
- All major libraries and frameworks support browser events.
- It gives access to all native event features like .stopPropagation or .target.
- It’s easy to debug via browser developer tools.
+- Fragments don’t need to know their parents.
+- All major libraries and frameworks support browser events.
+- It gives access to all native event features like .stopPropagation or .target.
+- It’s easy to debug via browser developer tools.
 Let’s get to the last form of communication: fragment to fragment. 
 
 #### Fragment to fragment
@@ -1493,9 +1493,9 @@ new Broadcast Channel API provides another standards-based way to communicate. I
 a publish/subscribe system which enables communication across tabs, windows, and
 even iframes from the same domain. The API is pretty simple:
 
- You can connect to a channel with `new BroadcastChannel("tractor_channel")`.
- Send messages via `channel.postMessage(content)`.
- Receive messages via `channel.onmessage = function(e) {…}`.
+- You can connect to a channel with `new BroadcastChannel("tractor_channel")`.
+- Send messages via `channel.postMessage(content)`.
+- Receive messages via `channel.onmessage = function(e) {…}`.
 
 In our case all micro frontends could open a connection to a central channel (like
 tractor_channel) and receive notifications from other micro frontends. Let’s look at
@@ -1585,8 +1585,8 @@ authentication status to the teams that need it.
 The browser only
 needs to rerender the parts of the page that changed. It doesn’t have to evaluate referenced assets like JavaScript and stylesheets again. We’ll use the terms hard navigation
 and soft navigation in this chapter:
- Hard navigation describes a page transition where the browser loads the complete HTML for the next page from the server.
- Soft navigation refers to a page transition that’s entirely client-side rendered, typically by using a client-side router. In this scenario the client fetches its data via
+- Hard navigation describes a page transition where the browser loads the complete HTML for the next page from the server.
+- Soft navigation refers to a page transition that’s entirely client-side rendered, typically by using a client-side router. In this scenario the client fetches its data via
 an API from the server
 
 Unified Single-Page App
@@ -1789,13 +1789,13 @@ e.preventDefault();
 ...
 ```
 
- The target URL becomes the latest entry in the history stack (appHistory
+- The target URL becomes the latest entry in the history stack (appHistory
 .push(href)).
- The appHistory.listen(updatePageComponent) callback triggers.
- updatePageComponent matches the new URL against the routing table to determine the new component name.
- updatePageComponent replaces the existing component with the new one.
- The disconnectedCallback of the old component triggers (if implemented).
- The constructor and connectedCallback of the new component trigger.
+- The appHistory.listen(updatePageComponent) callback triggers.
+- updatePageComponent matches the new URL against the routing table to determine the new component name.
+- updatePageComponent replaces the existing component with the new one.
+- The disconnectedCallback of the old component triggers (if implemented).
+- The constructor and connectedCallback of the new component trigger.
 
 ### Implementing the top-level router
 
@@ -1939,10 +1939,10 @@ div>). The application code of the micro frontend looks for this element in the 
 and mounts itself underneath this element.
  The `singleSpa.registerApplication` function maps the application code to a
 specific URL. It takes three parameters:
- name must be a unique string, which makes debugging easier.
- `loadingFn` returns a promise that loads the application code. We are using the
+- name must be a unique string, which makes debugging easier.
+- `loadingFn` returns a promise that loads the application code. We are using the
 native `import()` function in the example
- `activityFn` gets called on every URL change and receives the location. When
+- `activityFn` gets called on every URL change and receives the location. When
 it returns true, the micro frontend should be active.
 
 On start, single-spa matches the current URL against all registered micro frontends. It
@@ -2078,10 +2078,10 @@ achieving this.
 
 COMMUNICATION
 Sometimes micro frontend A needs to know something that happened in micro frontend B. The same communication rules we discussed in chapter 6 also apply here:
- Avoid inter-team communication when possible.
- Transport context information via the URL.
- Stick to simple notifications when needed.
- Prefer API communication to your backend.
+- Avoid inter-team communication when possible.
+- Transport context information via the URL.
+- Stick to simple notifications when needed.
+- Prefer API communication to your backend.
 Don’t move state to the app shell. It might sound like a good idea to not load the same
 information twice from the server. However, misusing the app shell as a state container creates strong coupling between the micro frontends. In the backend world, it’s
 a best practice that microservices don’t share a database. One change in a central
@@ -2153,7 +2153,7 @@ good to work with the paradigms of the web and not reinvent your ones on top of 
 
 Let’s take a quick look at the contract for including a fragment from another team.
 Here is the definition Team Checkout provides:
- Buy button
+- Buy button
 Custom Element: <checkout-buy sku=[sku]></…>
 HTML endpoint: /checkout/fragment/buy/[sku]
 
@@ -2214,9 +2214,9 @@ of writing this book, this feature hasn’t been implemented yet
 The Documents-to-Applications Continuum
 What purpose does the project we are building serve? Do people come to our site to
 consume content, or do they want to use a specific functionality we provide? For better visualization, it helps to look at extreme examples:
- Content-centric—Imagine a simple blog. A user can browse the list of posts and
+- Content-centric—Imagine a simple blog. A user can browse the list of posts and
 read the complete content on a dedicated article page.
- Behavior-centric—Imagine an online drawing application. People can go to the
+- Behavior-centric—Imagine an online drawing application. People can go to the
 site and draw beautiful sketches with their fingers and export them as an image.
 The first one is a prototypical web site where the content is essential. The second one
 is a pure application. It does not bring any content. It’s all about the functionality it
@@ -2363,13 +2363,13 @@ productive.
 blueprint is an example project that includes all significant aspects a micro frontend
 application needs. We can divide these aspects into two groups: technical and projectspecific.
 TECHNICAL ASPECTS
- Directory structure
- Testing (unit, end-to-end)
- Linting and formatting rules
- Code formatting rules
- API communication
- Performance best practices (optimizing assets)
- Build tool configuration
+- Directory structure
+- Testing (unit, end-to-end)
+- Linting and formatting rules
+- Code formatting rules
+- API communication
+- Performance best practices (optimizing assets)
+- Build tool configuration
 
 These general topics are necessary to have, but they are not that interesting. Most
 major JavaScript frameworks have a scaffolding tool that generates an example project
@@ -2377,16 +2377,16 @@ for you. But a stock frontend setup will not be sufficient for a team to get goi
 PROJECT-SPECIFIC ASPECTS
 Your frontend needs to integrate with the other teams and must adhere to the highlevel architecture guidelines. A new frontend must also cover project-specific aspects.
 That’s why our frontend blueprint also includes
- Composition examples
+- Composition examples
 – Including another micro frontend
 – Providing an includable micro frontend
- Communication examples
- Team prefixing for CSS and URLs
- Template for documenting your micro frontends
- Integration with the central pattern library
- Setup for the local pattern library
- Wiring for shared services like error tracking or analytics
- CI/CD pipeline
+- Communication examples
+- Team prefixing for CSS and URLs
+- Template for documenting your micro frontends
+- Integration with the central pattern library
+- Setup for the local pattern library
+- Wiring for shared services like error tracking or analytics
+- CI/CD pipeline
 New teams will copy the blueprint over to their project and adjust it to their needs.
 Building on the existing work reduces setup time noticeably. But for us, the blueprint
 has another, even more, important role. It’s the reference implementation for the
@@ -2394,14 +2394,14 @@ macro architecture decisions.
  It includes running examples of integration patterns and communication strategies. This example code helps all developers to understand high-level topics by seeing
 them in action in a real application. 
 
-Pre-requsites 
+### Pre-requsites 
 
 Install Nginx on your machine. 
 ```
 brew install nginx
 ```
 
-References
+### References
 https://the-tractor.store/
 https://github.com/naltatis/micro-frontends-in-action-code
 https://github.blog/2018-09-06-removing-jquery-from-github-frontend/
