@@ -2214,14 +2214,16 @@ of writing this book, this feature hasn’t been implemented yet
 The Documents-to-Applications Continuum
 What purpose does the project we are building serve? Do people come to our site to
 consume content, or do they want to use a specific functionality we provide? For better visualization, it helps to look at extreme examples:
+
 - Content-centric—Imagine a simple blog. A user can browse the list of posts and
 read the complete content on a dedicated article page.
+
 - Behavior-centric—Imagine an online drawing application. People can go to the
 site and draw beautiful sketches with their fingers and export them as an image.
 The first one is a prototypical web site where the content is essential. The second one
-is a pure application. It does not bring any content. It’s all about the functionality it
-provides to the user.
- In a non-trivial project, it’s typically not that black and white. This is where the
+is a pure application. It does not bring any content. It’s all about the functionality itprovides to the user.
+
+- In a non-trivial project, it’s typically not that black and white. This is where the
 Documents-to-Applications Continuum1
  comes in. The idea is that both examples are
 at different ends on a spectrum,
