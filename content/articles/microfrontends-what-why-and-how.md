@@ -2238,31 +2238,31 @@ browsers.3
  They are a web standard that solves most of our JavaScript loading needs
 without needing an extra library or a custom module format
 
- Challenge: Cache-busting and independent deployments
+Challenge: Cache-busting and independent deployments
 One day CEO Ferdinand walks into Team Decide’s office space, laptop under his arm.
 He grabs a chair, opens his laptop, and points at his screen. “I’ve read an article about
 the importance of web performance in e-commerce. I ran a tool called Lighthouse5
 on our product pages. It measures performance and checks if our site uses best practices. We score 94 points. This score is way better than our competitors! However,
 Lighthouse shows one piece of advice. We seem to use an inefficient cache policy on
 static assets.”6
- The current best practice for performant asset loading is to ship static assets (JavaScript, CSS) in separate files with a one-year cache header. This way, you ensure that the
+The current best practice for performant asset loading is to ship static assets (JavaScript, CSS) in separate files with a one-year cache header. This way, you ensure that the
 browser does not redownload the same file twice. Adding this cache header is not complicated. In most applications, web servers, or CDNs, it’s a simple configuration entry.
 However, you need a cache invalidation strategy. If you’ve deployed a new CSS file, you
 want all users to stop using their cached version and download the updated one. An
 effective invalidation strategy is adding a fingerprint to the filename of the asset. The
 fingerprint is a checksum based on the contents of the file. A filename could look like
 this—fragment.49.css. The fingerprint only changes when the file is modified.
- We call this cache busting. Most frontend build tools like Webpack, Parcel, or Rollup
+We call this cache busting. Most frontend build tools like Webpack, Parcel, or Rollup
 support it. They generate fingerprinted filenames at build time and provide a way to
 
 use these filenames in your HTML markup. You might already see the issue. Cache
 busting does not play nice with our distributed micro frontend setup.
- In our earlier example, Team Decide needed to know the path to Team Checkout’s JavaScript and CSS files. Yes, Team Checkout could update their documentation:
+
+In our earlier example, Team Decide needed to know the path to Team Checkout’s JavaScript and CSS files. Yes, Team Checkout could update their documentation:
 Required assets—/checkout/fragment.a62c71.js, /checkout/fragment.a98749
 .css
-But with the current process, Team Decide would have to manually update these references in their product page’s markup every time Team Checkout deploys a new version. In this scenario, a team is not able to deploy without coordinating with another
-team. This coordination is the kind of coupling we want to avoid. Let’s explore some
-better alternatives. 
+
+But with the current process, Team Decide would have to manually update these references in their product page’s markup every time Team Checkout deploys a new version. In this scenario, a team is not able to deploy without coordinating with another team. This coordination is the kind of coupling we want to avoid. Let’s explore some better alternatives.
 
 ### Challenge: Synchronizing markup and asset versions
 
