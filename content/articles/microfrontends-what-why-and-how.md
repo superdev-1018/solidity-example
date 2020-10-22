@@ -2240,8 +2240,7 @@ without needing an extra library or a custom module format
 
 Challenge: Cache-busting and independent deployments
 One day CEO Ferdinand walks into Team Decide’s office space, laptop under his arm.
-He grabs a chair, opens his laptop, and points at his screen. “I’ve read an article about
-the importance of web performance in e-commerce. I ran a tool called Lighthouse5
+He grabs a chair, opens his laptop, and points at his screen. “I’ve read an article about the importance of web performance in e-commerce. I ran a tool called Lighthouse5
 on our product pages. It measures performance and checks if our site uses best practices. We score 94 points. This score is way better than our competitors! However,
 Lighthouse shows one piece of advice. We seem to use an inefficient cache policy on
 static assets.”6
@@ -2354,17 +2353,21 @@ Looking at pages is not a perfect solution. Some pages might have more than one 
 
 are candidates to become fragments. This method is an excellent entry to start more
 in-depth discussions.
- If you’ve established groups, you can try to verify your hypotheses by looking at analytics data you’ve gathered in the past. Do the usage patterns align with your page groups?
- Now that we have an idea of how to structure the teams, let’s talk about who should
+
+If you’ve established groups, you can try to verify your hypotheses by looking at analytics data you’ve gathered in the past. Do the usage patterns align with your page groups?
+
+Now that we have an idea of how to structure the teams, let’s talk about who should
 be on the teams. 
 
 Frontend blueprint
 When a new team starts fresh, it has to do a lot of setup work, creating its basic application, build process, and other tedious tasks that are necessary before it can become
 productive.
- We’ve been using the concept of a shared frontend blueprint to ease this pain. The
+
+We’ve been using the concept of a shared frontend blueprint to ease this pain. The
 blueprint is an example project that includes all significant aspects a micro frontend
 application needs. We can divide these aspects into two groups: technical and projectspecific.
-TECHNICAL ASPECTS
+
+### TECHNICAL ASPECTS
 - Directory structure
 - Testing (unit, end-to-end)
 - Linting and formatting rules
@@ -2376,9 +2379,12 @@ TECHNICAL ASPECTS
 These general topics are necessary to have, but they are not that interesting. Most
 major JavaScript frameworks have a scaffolding tool that generates an example project
 for you. But a stock frontend setup will not be sufficient for a team to get going.
-PROJECT-SPECIFIC ASPECTS
+
+### PROJECT-SPECIFIC ASPECTS
+
 Your frontend needs to integrate with the other teams and must adhere to the highlevel architecture guidelines. A new frontend must also cover project-specific aspects.
 That’s why our frontend blueprint also includes
+
 - Composition examples
 – Including another micro frontend
 – Providing an includable micro frontend
