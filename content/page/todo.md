@@ -8,7 +8,7 @@ emoji = ":microbe:"
 draft = "true"
 +++
 
-[ ] Create an ticket booking app with microservices
+[ ] Create an ticket booking app with micro-services
 [ ] Do the exam Cisco 200-301 (CCNA)
 
 [ ] Angular + C# by Mosh Hamedani
@@ -56,6 +56,12 @@ draft = "true"
 
 [ ] Background Job Processing (Oban, Sidekiq, ...)
 [ ] Message Queue (Pubsub/ Kafka)
+[ ] Learn about Full-text Search (Solr, ElasticSearch, Lucene)
+[ ] Learn about manage access control by role with Node.js, TypeORM and PostgreSQL
+[ ] Serverless auction service developed with Serverless Framework (AWS) and Node.js.
+[ ] SaaS application developed with Adonis (a NodeJS framework), Multitenancy, ReactJS and React Native.
+[ ] https://www.youtube.com/watch?v=4Xe4DUHka1o
+[ ]
 
 [ ] Do AWS Solution Associate Exam
 [ ] Learn about OpenId Connect and IAM Identity Server
