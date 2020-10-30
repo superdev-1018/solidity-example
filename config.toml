@@ -75,20 +75,22 @@ enableEmoji = true
 [[menu.main]]
   name = "Articles"
   url = "/articles/"
-  pre = "📝"
   weight = 5
 
 [[menu.main]]
   name = "Notes"
-  pre = "📚"
   url = "/notes/"
   weight = 10
 
 [[menu.main]]
   name = "Tags"
-  pre = "🔖"
   url = "/tags/"
   weight = 15
+
+[[menu.main]]
+  name = "Likes"
+  url = "/likes/"
+  weight = 20
 
 
 [[menu.footer]]
@@ -105,3 +107,8 @@ enableEmoji = true
   name = "Tags"
   url = "/tags/"
   weight = 15
+
+[[menu.footer]]
+  name = "Likes"
+  url = "/likes/"
+  weight = 20

@@ -2,9 +2,11 @@
 {{- $cloudinary := resources.Get "js/cloudinary-core-shrinkwrap.min.js" -}}
 {{- $lazysizes := resources.Get "js/lazysizes.js" -}}
 {{- $codeblock := resources.Get "js/copy-code-block.js" -}}
+{{- $likes := resources.Get "js/likes.js" -}}
 
 <!-- Concat JS, generate default app.js and app-likes -->
-{{- $defaultJS := slice $cloudinary $lazysizes $codeblock | resources.Concat "app.js" -}}
+
+{{- $defaultJS := slice $cloudinary $lazysizes $codeblock $likes | resources.Concat "app.js" -}}
 <!-- Set default -->
 {{- $script := $defaultJS -}}
 <!-- Assign script to global, minify and fingerprint -->

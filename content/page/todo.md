@@ -8,8 +8,15 @@ emoji = ":microbe:"
 draft = "true"
 +++
 
-[ ] Create an ticket booking app with micro-services
+[x] Create an ticket booking app with micro-services
 [ ] Do the exam Cisco 200-301 (CCNA)
+[ ] Do all the [8 certifications](https://bradshaw.cloud/2018/03/20/aws-certifications/).
+[ ] Do AWS Solution Architect - Associate
+[ ] Learn About Svelte
+[ ] Learn about Sapper
+[ ] Learn about Strapi
+[ ] Next.js or Gatsby, Prismic as the headless CMS and running on Vercel.
+
 
 [ ] Angular + C# by Mosh Hamedani
 [ ] Learn about OAuth2.0 patterns
@@ -61,9 +68,7 @@ draft = "true"
 [ ] Serverless auction service developed with Serverless Framework (AWS) and Node.js.
 [ ] SaaS application developed with Adonis (a NodeJS framework), Multitenancy, ReactJS and React Native.
 [ ] https://www.youtube.com/watch?v=4Xe4DUHka1o
-[ ]
 
-[ ] Do AWS Solution Associate Exam
 [ ] Learn about OpenId Connect and IAM Identity Server
 [ ] Read Galshir book on Inspirations
 
@@ -71,7 +76,7 @@ draft = "true"
 [ ] Java Hibernate
 [ ] Learn Dino
 
-[ ] Learn about Design UI/UX (Advance)
+[x] Learn about Design UI/UX (Advance)
 
 [ ] [Hussein Nasser](https://www.youtube.com/watch?v=4NsWnT_-FoE) - Scalability and more
 [ ] Rachit Jain - Interview 
