@@ -10,13 +10,7 @@ draft = "true"
 
 [x] Create an ticket booking app with micro-services
 [ ] Do the exam Cisco 200-301 (CCNA)
-[ ] Do all the [8 certifications](https://bradshaw.cloud/2018/03/20/aws-certifications/).
-[ ] Do AWS Solution Architect - Associate
-[ ] Learn About Svelte
-[ ] Learn about Sapper
-[ ] Learn about Strapi
-[ ] Next.js or Gatsby, Prismic as the headless CMS and running on Vercel.
-
+[ ] Do all the [8 certifications](https://bradshaw.cloud/2018/03/20/aws-certifications/)
 
 [ ] Angular + C# by Mosh Hamedani
 [ ] Learn about OAuth2.0 patterns
@@ -36,6 +30,15 @@ draft = "true"
 [ ] Machine Learning with Python
 [ ] NPM package | publish | build
 [ ] Learn about Vue and Vue Visualization
+
+[ ] Do AWS Solution Architect - Associate
+[ ] Learn About Svelte
+[ ] Learn about Sapper
+[ ] Learn about Strapi
+[ ] Next.js or Gatsby, Prismic as the headless CMS and running on Vercel.
+[ ] Look at the Presentation and [read the book](https://docs.google.com/presentation/d/e/2PACX-1vQK6I1AF4lM5t0EsDKcAJvBW1dlLOhmrftPz1UsroQd3TYfLQv1j1ecGYhTh622X8kn8ojYpyvkr_AL/pub?start=false&loop=false&delayms=3000&slide=id.p) - Building Serverless Applications with Google Cloud Run: A Real-World Guide to Building Production-Ready Services by Wietse Venema
+
+
 
 [ ] Algorithm by Goal Kicker
 [ ] Learn Data Structures

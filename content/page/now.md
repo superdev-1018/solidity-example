@@ -39,6 +39,7 @@ I’m in Colombo, on lockdown due to the Covid-19 Coronavirus outbreak. I’m we
 - [Sanity.io](https://www.sanity.io/), an API based CMS
 - German (this one might be here for a while)
 - [Microservices with Nodejs and React]()(this one might be here for a while too)
+- Learning [Svelte](https://svelte-workshop.netlify.app/) compiler.
 
 ### Current Exams
 
