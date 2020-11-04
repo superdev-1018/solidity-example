@@ -64,7 +64,8 @@
 - [Google Tag Manager](https://chartio.com/learn/marketing-analytics/how-to-add-google-analytics-tracking-to-a-website/)
 - [Plotly Hover Text Formatting](https://plotly.com/python/hover-text-and-formatting/)
 - [Plotly All Varialbes](https://plotly.com/python/reference/layout/#layout-hoverlabel)
-- 
+- Add 3d card effect for profile picture
+- Add [Hotjar](https://hotjar.com) integration
 
 ## Massive
 
