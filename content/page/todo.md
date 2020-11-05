@@ -63,6 +63,7 @@ draft = "true"
 [ ] Phoenix and Ruby on Rails
 [ ] Graph Databases
 [ ] Read the Book on Databases
+[ ] Learn about Recommendation System w/Python
 
 [ ] Background Job Processing (Oban, Sidekiq, ...)
 [ ] Message Queue (Pubsub/ Kafka)
