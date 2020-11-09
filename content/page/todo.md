@@ -72,6 +72,7 @@ draft = "true"
 [ ] Serverless auction service developed with Serverless Framework (AWS) and Node.js.
 [ ] SaaS application developed with Adonis (a NodeJS framework), Multitenancy, ReactJS and React Native.
 [ ] https://www.youtube.com/watch?v=4Xe4DUHka1o
+[ ] Learn machine learning [recommendation system](https://www.youtube.com/playlist?list=PLYU7hR8tUkqRWCeTUjHDHfYwGGOQXHGHt)
 
 [ ] Learn about OpenId Connect and IAM Identity Server
 [ ] Read Galshir book on Inspirations
