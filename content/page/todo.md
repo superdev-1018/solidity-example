@@ -39,7 +39,6 @@ draft = "true"
 [ ] Look at the Presentation and [read the book](https://docs.google.com/presentation/d/e/2PACX-1vQK6I1AF4lM5t0EsDKcAJvBW1dlLOhmrftPz1UsroQd3TYfLQv1j1ecGYhTh622X8kn8ojYpyvkr_AL/pub?start=false&loop=false&delayms=3000&slide=id.p) - Building Serverless Applications with Google Cloud Run: A Real-World Guide to Building Production-Ready Services by Wietse Venema
 
 
-
 [ ] Algorithm by Goal Kicker
 [ ] Learn Data Structures
 [ ] Do design system exercises ( xmruibi | andiamogosood )
@@ -75,7 +74,7 @@ draft = "true"
 [ ] Learn machine learning [recommendation system](https://www.youtube.com/playlist?list=PLYU7hR8tUkqRWCeTUjHDHfYwGGOQXHGHt)
 
 [ ] Learn about OpenId Connect and IAM Identity Server
-[ ] Read Galshir book on Inspirations
+[ ] Read `Galshir` book on Inspirations
 
 [ ] Java Spring
 [ ] Java Hibernate
