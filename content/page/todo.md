@@ -38,7 +38,6 @@ draft = "true"
 [ ] Next.js or Gatsby, Prismic as the headless CMS and running on Vercel.
 [ ] Look at the Presentation and [read the book](https://docs.google.com/presentation/d/e/2PACX-1vQK6I1AF4lM5t0EsDKcAJvBW1dlLOhmrftPz1UsroQd3TYfLQv1j1ecGYhTh622X8kn8ojYpyvkr_AL/pub?start=false&loop=false&delayms=3000&slide=id.p) - Building Serverless Applications with Google Cloud Run: A Real-World Guide to Building Production-Ready Services by Wietse Venema
 
-
 [ ] Algorithm by Goal Kicker
 [ ] Learn Data Structures
 [ ] Do design system exercises ( xmruibi | andiamogosood )
@@ -47,6 +46,7 @@ draft = "true"
 [ ] Do all exercises on leet code
 [ ] Learn about SOLID principles -> Dep. Injection
 [ ] Finish creating the dialogflow chatbot
+[ ] Finish the project index page
 
 [ ] Learn Flutter
 [ ] Learn Kotlin
