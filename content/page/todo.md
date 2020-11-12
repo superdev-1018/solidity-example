@@ -47,6 +47,7 @@ draft = "true"
 [ ] Learn about SOLID principles -> Dep. Injection
 [ ] Finish creating the Dialogflow chatbot
 [ ] Finish the project index page
+[ ] Learn machine learning models from kaggle
 
 [ ] Learn Flutter
 [ ] Learn Kotlin
