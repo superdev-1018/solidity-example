@@ -45,7 +45,7 @@ draft = "true"
 [ ] Do all exercises on project euler
 [ ] Do all exercises on leet code
 [ ] Learn about SOLID principles -> Dep. Injection
-[ ] Finish creating the dialogflow chatbot
+[ ] Finish creating the Dialogflow chatbot
 [ ] Finish the project index page
 
 [ ] Learn Flutter
