@@ -48,7 +48,7 @@ draft = "true"
 [ ] Finish creating the Dialogflow chatbot
 [ ] Finish the project index page
 [ ] Learn machine learning models from kaggle
-
+[ ] Finish the Learning Management System
 
 [ ] Learn Flutter
 [ ] Learn Kotlin
