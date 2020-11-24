@@ -53,25 +53,24 @@ The reason that we have many database options available today is due to the CAP 
 - Consistency means that any read request will return the most recent write.Every node returns the most recent state, or doesnt provide a state at all.
  
 - Availability means that the non-responding node must respond in a reasonable amount of time. Every node in the network has a constant read and write access. This state liveness, what must happen.
-- Partition Tolerance means that the system will continue to operate despite network or node failures. If a node crashes/ communiation fails, service still perfoms as expected.
+- Partition Tolerance means that the system will continue to operate despite network or node failures. If a node crashes/ communication fails, service still performs as expected.
  
-- CA - Single sitr cluster, therefore all nodes are always in contact. When a particion occurs, the system blocks. When you shard/partition the database, we need to write a layer on top to manage service the request of the customer.
-- CP - Some data may not be accessible, but the rest is still consistent/accurate. We will use the master/slave architecture but when the master fails the system breaks. To negate this we can have multiple masters, but still it doesnt solve the problem. Slave are useless without the master.
-- AP - System is still available under partitioning but some of the data returned may be inaccurate. Lets say one node relays the update to all other nodes. These are `eventual consistency` model, if we have three different users accessng the same index, they might see different states of the data. But cassandra and voldermort provides something called Immediate consistency: is having the identical data on all replica nodes at any given point in time. This is with the cost of performance, if we opt for a strong consistency then the performance of it would be worse than a RDMS database.
- 
+- CA - Single site cluster, therefore all nodes are always in contact. When a partition occurs, the system blocks. When you shard/partition the database, we need to write a layer on top to manage service the request of the customer.
+- CP - Some data may not be accessible, but the rest is still consistent/accurate. We will use the master/slave architecture but when the master fails the system breaks. To negate this we can have multiple masters, but still it doesn't solve the problem. Slave are useless without the master.
+- AP - System is still available under partitioning but some of the data returned may be inaccurate. Lets say one node relays the update to all other nodes. These are `eventual consistency` model, if we have three different users accessing the same index, they might see different states of the data. But cassandra and voldermort provides something called Immediate consistency: is having the identical data on all replica nodes at any given point in time. This is with the cost of performance, if we opt for a strong consistency then the performance of it would be worse than a RDMS database.
+
 Immediate consistency: is having the identical data on all replica nodes at any given point in time.
 Eventual consistency: by controlling our read and write consistencies, we can allow our data to be different on our replica nodes, but our queries will still return the most correct version of the partition data.
 What this means is that because we can choose between immediate and eventual consistency, we end up with a system that has tunable consistency
- 
+
 Tunable Consistency means that you can set the CL for each read and write request. So, Cassandra gives you a lot of control over how consistent your data is. You can allow some queries to be immediately consistent and other queries to be eventually consistent. That means, in your application, the data that requires immediate consistency, you can create your queries accordingly and the data for which immediate consistency is not required, you can optimize for performance and choose eventual consistency. It is an inevitability that the network sometimes fails due to complexities both physical and logical. We are used to failing networks due to physical issues such as poor wiring, but there are other logical issues such as garbage collection, which can cause problems for networks. Quite inevitably, networks, therefore, are partitioned into multiple groups due to network failures. In the CAP theorem, partition tolerance is defined as the capability to account for any loss of a message between partitions. In other words, if there are two clusters G1 and G2 (partitions), we can assume, in the worst case, that the communication link between G1 and G2 has failed. The system should be able to account for it.
- 
-> At any given time, only two of these 3 requirements can be satisfied at once. Ex: In order to get both `availability` and `partition tolerance`, you have to give up consistency.Partition is when node A caannot receive messages from node B then they have a partition between them. That means we have an unbounded network latency, meaning the message wont get back to the user. Partition tolerance means the ability to function inspite the partition within the network..
- 
-Every reasonable system thinks the choice of P is one of the given and might occur (though we might have unbreakable partition in your system but network latency might cause discrepencies) anad we need to think it might appear so we only have two choices so it often ends in a dilemma between consistency and availability.The choirce is to whether to return a simple and outdated value or to not return a value at all.
- 
- 
+
+> At any given time, only two of these 3 requirements can be satisfied at once. Ex: In order to get both `availability` and `partition tolerance`, you have to give up consistency.Partition is when node A cannot receive messages from node B then they have a partition between them. That means we have an unbounded network latency, meaning the message wont get back to the user. Partition tolerance means the ability to function inspite the partition within the network..
+
+Every reasonable system thinks the choice of P is one of the given and might occur (though we might have unbreakable partition in your system but network latency might cause discrepancies) and we need to think it might appear so we only have two choices so it often ends in a dilemma between consistency and availability.The choice is to whether to return a simple and outdated value or to not return a value at all.
+
 ### References
- 
+
 - [How to choose the right type of database for your enterprise](https://www.infoworld.com/article/3268871/how-to-choose-the-right-type-of-database-for-your-enterprise.html)
 - [Choosing The Right Database](https://towardsdatascience.com/choosing-the-right-database-c45cd3a28f77)
 - [Data Consistency in Apache Cassandra — Part 1](https://medium.com/dugglabs/data-consistency-in-apache-cassandra-part-1-7aee6b472fb4#:~:text=Eventual%20Consistency,any%20given%20point%20in%20time.)
