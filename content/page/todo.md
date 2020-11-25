@@ -31,6 +31,7 @@ draft = "true"
 [ ] NPM package | publish | build
 [ ] Learn about Vue and Vue Visualization
 
+
 [ ] Do AWS Solution Architect - Associate
 [x] Learn About Svelte
 [x] Learn about Sapper
