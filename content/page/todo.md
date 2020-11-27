@@ -13,7 +13,7 @@ draft = "true"
 [ ] Do all the [8 certifications](https://bradshaw.cloud/2018/03/20/aws-certifications/)
 
 [ ] Angular + C# by Mosh Hamedani
-[ ] Learn about OAuth2.0 patterns
+[x] Learn about OAuth2.0 patterns
 [ ] PM2
 [ ] RabbitMQ by Hussein Nasser
 [ ] Elastic Search | Kibana | ELK
