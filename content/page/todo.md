@@ -80,6 +80,7 @@ draft = "true"
 
 [x] Learn about OpenId Connect and IAM Identity Server
 [ ] Read `Galshir` book on Inspirations
+[ ] Read about Apache JMeter book 
 
 [ ] Java Spring
 [ ] Java Hibernate
