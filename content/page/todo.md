@@ -57,6 +57,7 @@ draft = "true"
 [ ] Expo + Firebase (app Udemy)
 [ ] Learn C w/ Make files
 [ ] Look for Multi-tenancy https://www.youtube.com/watch?v=ZmlEJaOd0mc&t=125s
+[ ] Look for Geo partitioning and sharding
 
 [ ] Learn Go Language
 [ ] Create a Python API w/ FastAPI (CoronaVirus API) - Udemy - Complete Python API development
