@@ -27,7 +27,7 @@ draft = "true"
 [ ] Docker Swarm
 [ ] Kubernetes
 
-[ ] Machine Learning with Python
+[x] Machine Learning with Python
 [ ] NPM package | publish | build
 [ ] Learn about Vue and Vue Visualization
 
@@ -48,7 +48,7 @@ draft = "true"
 [ ] Learn about SOLID principles -> Dep. Injection
 [ ] Finish creating the Dialogflow chatbot
 [ ] Finish the project index page
-[ ] Learn machine learning models from kaggle
+[ ] Learn machine learning models from Kaggle
 [ ] Finish the Learning Management System
 
 [ ] Learn Flutter
@@ -66,7 +66,7 @@ draft = "true"
 [ ] Learn about Distributed System
 [ ] Phoenix and Ruby on Rails
 [x] Graph Databases
-[ ] Graph Databases - Neo4j, Graphdb 
+[ ] Graph Databases - Neo4j, Graphdb
 [ ] Read the Book on Databases
 [ ] Learn about Recommendation System w/Python
 
@@ -81,7 +81,7 @@ draft = "true"
 
 [x] Learn about OpenId Connect and IAM Identity Server
 [ ] Read `Galshir` book on Inspirations
-[ ] Read about Apache JMeter book 
+[ ] Read about Apache JMeter book
 
 [ ] Java Spring
 [ ] Java Hibernate
