@@ -38,6 +38,7 @@ draft = "true"
 [x] Learn about Strapi
 [ ] Next.js or Gatsby, Prismic as the headless CMS and running on Vercel.
 [ ] Look at the Presentation and [read the book](https://docs.google.com/presentation/d/e/2PACX-1vQK6I1AF4lM5t0EsDKcAJvBW1dlLOhmrftPz1UsroQd3TYfLQv1j1ecGYhTh622X8kn8ojYpyvkr_AL/pub?start=false&loop=false&delayms=3000&slide=id.p) - Building Serverless Applications with Google Cloud Run: A Real-World Guide to Building Production-Ready Services by Wietse Venema
+[ ] Distributed Systems [Watch the playlist](https://www.youtube.com/watch?v=l9JSK9OBzA4) 
 
 [ ] Algorithm by Goal Kicker
 [ ] Learn Data Structures
