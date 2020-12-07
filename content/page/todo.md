@@ -41,7 +41,7 @@ draft = "true"
 [ ] Distributed Systems [Watch the playlist](https://www.youtube.com/watch?v=l9JSK9OBzA4) 
 [x] Sharding [video](https://www.youtube.com/watch?v=dkhOZOmV7Fo) and this [playlist](https://www.youtube.com/playlist?list=PLAwxTw4SYaPlLXUhUNt1wINWrrH9axjcI)
 
-
+[ ] Look into MongoDb
 [ ] Algorithm by Goal Kicker
 [ ] Learn Data Structures
 [ ] Do design system exercises ( xmruibi | andiamogosood )
@@ -95,3 +95,10 @@ draft = "true"
 [ ] [Hussein Nasser](https://www.youtube.com/watch?v=4NsWnT_-FoE) - Scalability and more
 [ ] Rachit Jain - Interview
 [ ] Gaurav Sen about Scalability
+
+
+### ML Path
+
+[ ] Intro to machine learning Udacity
+[ ] Udacity - Deep learning - build Leaning Models Today
+[ ] Deep Work Book
