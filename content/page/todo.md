@@ -102,3 +102,8 @@ draft = "true"
 [ ] Intro to machine learning Udacity
 [ ] Udacity - Deep learning - build Leaning Models Today
 [ ] Deep Work Book
+[ ] https://www.kaggle.com/sripaadsrinivasan/fish-species-image-data/discussion
+[ ] [Suz hinton](https://www.youtube.com/watch?v=RLynSisNTQs)
+[ ] [MongoDB Topology Design: Scalability, Security, and Compliance on a Global Scale](https://www.apress.com/gp/book/9781484258163)
+[ ] [Data Management at Scale](https://www.oreilly.com/library/view/data-management-at/9781492054771/)
+[ ] [Sweep Start to end](https://www.youtube.com/playlist?list=PL1tAUB8uBIKdOFIsXfYZV-MHYagMc0Oog)
