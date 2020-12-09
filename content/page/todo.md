@@ -36,7 +36,7 @@ draft = "true"
 [x] Learn About Svelte
 [x] Learn about Sapper
 [x] Learn about Strapi
-[ ] Next.js or Gatsby, Prismic as the headless CMS and running on Vercel.
+[x] Next.js or Gatsby, Prismic as the headless CMS and running on Vercel.
 [ ] Look at the Presentation and [read the book](https://docs.google.com/presentation/d/e/2PACX-1vQK6I1AF4lM5t0EsDKcAJvBW1dlLOhmrftPz1UsroQd3TYfLQv1j1ecGYhTh622X8kn8ojYpyvkr_AL/pub?start=false&loop=false&delayms=3000&slide=id.p) - Building Serverless Applications with Google Cloud Run: A Real-World Guide to Building Production-Ready Services by Wietse Venema
 [ ] Distributed Systems [Watch the playlist](https://www.youtube.com/watch?v=l9JSK9OBzA4) 
 [x] Sharding [video](https://www.youtube.com/watch?v=dkhOZOmV7Fo) and this [playlist](https://www.youtube.com/playlist?list=PLAwxTw4SYaPlLXUhUNt1wINWrrH9axjcI)
@@ -72,6 +72,7 @@ draft = "true"
 [ ] Graph Databases - Neo4j, Graphdb
 [ ] Read the Book on Databases
 [ ] Learn about Recommendation System w/Python
+[ ] Learn about System Design
 
 [ ] Background Job Processing (Oban, Sidekiq, ...)
 [ ] Message Queue (Pubsub/ Kafka)
@@ -107,3 +108,7 @@ draft = "true"
 [ ] [MongoDB Topology Design: Scalability, Security, and Compliance on a Global Scale](https://www.apress.com/gp/book/9781484258163)
 [ ] [Data Management at Scale](https://www.oreilly.com/library/view/data-management-at/9781492054771/)
 [ ] [Sweep Start to end](https://www.youtube.com/playlist?list=PL1tAUB8uBIKdOFIsXfYZV-MHYagMc0Oog)
+
+[ ] [My Learning Path]() - to add your learning path so that others can follow your path
+[ ] [Saas](https://www.youtube.com/watch?v=0N4KknY_zdU)
+[ ] [Video on Promethius](https://www.youtube.com/watch?v=h4Sl21AKiDg)
