@@ -112,3 +112,6 @@ draft = "true"
 [ ] [My Learning Path]() - to add your learning path so that others can follow your path
 [ ] [Saas](https://www.youtube.com/watch?v=0N4KknY_zdU)
 [ ] [Video on Promethius](https://www.youtube.com/watch?v=h4Sl21AKiDg)
+[ ] [Learn about Terraform and Ansiable](https://www.youtube.com/watch?v=l5k1ai_GBDE)
+[ ] [Selecting a Database AWS](https://www.youtube.com/watch?v=KWOSGVtHWqA)
+[ ] [Terraform tutorial](https://www.youtube.com/watch?v=SLB_c_ayRMo)
