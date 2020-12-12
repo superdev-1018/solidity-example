@@ -31,7 +31,6 @@ draft = "true"
 [ ] NPM package | publish | build
 [ ] Learn about Vue and Vue Visualization
 
-
 [ ] Do AWS Solution Architect - Associate
 [x] Learn About Svelte
 [x] Learn about Sapper
@@ -41,7 +40,7 @@ draft = "true"
 [ ] Distributed Systems [Watch the playlist](https://www.youtube.com/watch?v=l9JSK9OBzA4) 
 [x] Sharding [video](https://www.youtube.com/watch?v=dkhOZOmV7Fo) and this [playlist](https://www.youtube.com/playlist?list=PLAwxTw4SYaPlLXUhUNt1wINWrrH9axjcI)
 
-[ ] Look into MongoDb
+[x] Look into MongoDb
 [ ] Algorithm by Goal Kicker
 [ ] Learn Data Structures
 [ ] Do design system exercises ( xmruibi | andiamogosood )
