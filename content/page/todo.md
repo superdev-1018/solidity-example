@@ -52,6 +52,8 @@ draft = "true"
 [ ] Finish the project index page
 [ ] Learn machine learning models from Kaggle
 [ ] Finish the Learning Management System
+[ ] Look for ACM Red belt coder website algorithms [algozenith](https://algozenith.com/) and [Journey of a Red Coder from IIT Kharagpur | International Master(2300+) Codeforces | 7 star Codechef](https://www.youtube.com/watch?v=n2t47V5Z56U&t=393s)
+[ ] [How to become a good backend engineer](https://www.youtube.com/watch?v=V3ZPPPKEipA)
 
 [ ] Learn Flutter
 [ ] Learn Kotlin
