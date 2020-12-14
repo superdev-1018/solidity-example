@@ -18,6 +18,7 @@ draft = "true"
 [ ] RabbitMQ by Hussein Nasser
 [ ] Elastic Search | Kibana | ELK
 [ ] Ngnix
+[ ] Scaling Your Node.js Apps Fernando Doglio
 
 [ ] GraphQL + Apollo (Client and Server)
 [ ] Hasura
@@ -27,8 +28,9 @@ draft = "true"
 [ ] Docker Swarm
 [ ] Kubernetes
 
+
 [x] Machine Learning with Python
-[ ] NPM package | publish | build
+[x] NPM package | publish | build
 [ ] Learn about Vue and Vue Visualization
 
 [ ] Do AWS Solution Architect - Associate
@@ -101,6 +103,8 @@ draft = "true"
 
 ### ML Path
 
+[ ] Skiena The Data Science Design Manual
+[ ] Springer Getting Your First Data Science Job
 [ ] Intro to machine learning Udacity
 [ ] Udacity - Deep learning - build Leaning Models Today
 [ ] Deep Work Book
@@ -116,3 +120,8 @@ draft = "true"
 [ ] [Learn about Terraform and Ansiable](https://www.youtube.com/watch?v=l5k1ai_GBDE)
 [ ] [Selecting a Database AWS](https://www.youtube.com/watch?v=KWOSGVtHWqA)
 [ ] [Terraform tutorial](https://www.youtube.com/watch?v=SLB_c_ayRMo)
+[ ] [Path for Software Architect](https://github.com/justinamiller/SoftwareArchitect) and [Github star](https://github.com/murshidazher?tab=stars)
+
+### Goge Africa
+
+[x] Signup
