@@ -125,5 +125,5 @@ draft = "true"
 ### Goge Africa
 
 [x] Signup
-[ ] Login
+[x] Login
 [x] Index
