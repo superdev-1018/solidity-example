@@ -124,8 +124,22 @@ draft = "true"
 
 ### Goge Africa
 
-[x] Signup
-[x] Login
-[x] Index
-[ ] Flow & SCSS
-
+- [x] Signup
+- [x] Login
+- [x] Index
+- [ ] Flow & SCSS
+- [ ] Homepage
+- [ ] Index - Home Page
+- [ ] Login
+- [ ] Sign up
+- [ ] Consultant Search
+- [ ] Consult list
+- [ ] Consultant details
+- [ ] Account - User - Profile Page
+- [ ] Checkout Pages - Required Consultancy Hours
+- [ ] Checkout Pages - Consultant Available Time Slots (Booking Calendar)
+- [ ] Checkout Pages - Payment Complete
+- [ ] Checkout Pages - Order Complete
+- [ ] User Review Feedback Page
+- [ ] Consultant Review Feedback Page
+- [ ] Contact Us Page
