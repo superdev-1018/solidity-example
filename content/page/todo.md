@@ -127,7 +127,7 @@ draft = "true"
 - [x] Signup
 - [x] Login
 - [x] Index
-- [ ] Flow & SCSS
+- [x] Flow & SCSS
 - [ ] Consultant Search
 - [ ] Consult list
 - [ ] Consultant details
