@@ -124,7 +124,7 @@ draft = "true"
 
 ### Goge Africa
 
-- [x] Signup
+- [x] Sign up
 - [x] Login
 - [x] Index
 - [x] Flow & SCSS
