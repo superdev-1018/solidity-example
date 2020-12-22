@@ -122,7 +122,7 @@ draft = "true"
 [ ] [Terraform tutorial](https://www.youtube.com/watch?v=SLB_c_ayRMo)
 [ ] [Path for Software Architect](https://github.com/justinamiller/SoftwareArchitect) and [Github star](https://github.com/murshidazher?tab=stars)
 
-### Goge Africa
+### Consultancy App
 
 - [x] Sign up
 - [x] Login
