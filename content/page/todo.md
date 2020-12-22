@@ -139,6 +139,8 @@ draft = "true"
 - [ ] Consultant Review Feedback Page
 - [ ] Contact Us Page
 
+## Freelance Management Books
+ 
 - [ ] The Nuclear Effect: The 6 Pillars of Building a 7+ Figure Online Business
 - [ ] Working for Yourself: Law & Taxes for Independent Contractors, Freelancers & Gig Workers of All Types
 - [ ] Starting Your Career as a Freelance Web Designer
