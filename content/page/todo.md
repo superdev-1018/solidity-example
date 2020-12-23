@@ -127,7 +127,6 @@ draft = "true"
 - [x] Sign up
 - [x] Login
 - [x] Index
-- [x] Flow & SCSS
 - [ ] Consultant Search
 - [ ] Consult list
 - [ ] Consultant details
@@ -139,3 +138,10 @@ draft = "true"
 - [ ] User Review Feedback Page
 - [ ] Consultant Review Feedback Page
 - [ ] Contact Us Page
+
+- [ ] The Nuclear Effect: The 6 Pillars of Building a 7+ Figure Online Business
+- [ ] Working for Yourself: Law & Taxes for Independent Contractors, Freelancers & Gig Workers of All Types
+- [ ] Starting Your Career as a Freelance Web Designer
+- [ ] Freelance Business Bootcamp: How to Launch, Earn, and Grow into a Well-Paid Freelancer (Freelance Writers Den Book 4) 
+- [ ] https://ui8.net/drawer-design/products/mary-animated-illustrations
+- [ ] https://ui8.net/lordicon/products/500-animated-icons
