@@ -43,6 +43,7 @@ draft = "true"
 [x] Sharding [video](https://www.youtube.com/watch?v=dkhOZOmV7Fo) and this [playlist](https://www.youtube.com/playlist?list=PLAwxTw4SYaPlLXUhUNt1wINWrrH9axjcI)
 
 [x] Look into MongoDb
+[ ] Look into Stich
 [ ] Algorithm by Goal Kicker
 [ ] Learn Data Structures
 [ ] Do design system exercises ( xmruibi | andiamogosood )
@@ -144,6 +145,6 @@ draft = "true"
 - [ ] The Nuclear Effect: The 6 Pillars of Building a 7+ Figure Online Business
 - [ ] Working for Yourself: Law & Taxes for Independent Contractors, Freelancers & Gig Workers of All Types
 - [ ] Starting Your Career as a Freelance Web Designer
-- [ ] Freelance Business Bootcamp: How to Launch, Earn, and Grow into a Well-Paid Freelancer (Freelance Writers Den Book 4) 
+- [ ] Freelance Business Bootcamp: How to Launch, Earn, and Grow into a Well-Paid Freelancer (Freelance Writers Den Book 4)
 - [ ] https://ui8.net/drawer-design/products/mary-animated-illustrations
 - [ ] https://ui8.net/lordicon/products/500-animated-icons
