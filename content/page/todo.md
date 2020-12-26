@@ -43,7 +43,8 @@ draft = "true"
 [x] Sharding [video](https://www.youtube.com/watch?v=dkhOZOmV7Fo) and this [playlist](https://www.youtube.com/playlist?list=PLAwxTw4SYaPlLXUhUNt1wINWrrH9axjcI)
 
 [x] Look into MongoDb
-[ ] Look into Stich
+[x] Look into Stich
+[ ] Look into MongoDB Database Administrator Course
 [ ] Algorithm by Goal Kicker
 [ ] Learn Data Structures
 [ ] Do design system exercises ( xmruibi | andiamogosood )
@@ -101,6 +102,9 @@ draft = "true"
 [ ] Rachit Jain - Interview
 [ ] Gaurav Sen about Scalability
 
+[ ] Laravel
+[ ] Vue and Nuxt
+
 
 ### ML Path
 
@@ -148,3 +152,9 @@ draft = "true"
 - [ ] Freelance Business Bootcamp: How to Launch, Earn, and Grow into a Well-Paid Freelancer (Freelance Writers Den Book 4)
 - [ ] https://ui8.net/drawer-design/products/mary-animated-illustrations
 - [ ] https://ui8.net/lordicon/products/500-animated-icons
+
+
+- [ ] [AWS: The Most Complete Guide to Amazon Web Services from Beginner to Advanced Level](https://www.amazon.com/dp/B082LN63MT/ref=sspa_dk_crr_aax_0?psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUEzME5YTExMQ0JRRU4yJmVuY3J5cHRlZElkPUEwODU3MjkyMUpaSTFONkpLRjhJRCZlbmNyeXB0ZWRBZElkPUEwMTU4NjM3M05OMU4xNzEyOTdBUiZ3aWRnZXROYW1lPXNwX2Nycl9zaGFyZWQmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl)
+- [ ] [Mastering AWS Cost Optimization: Real-world technical and operational cost-saving best practices (Second Edition)](https://www.amazon.com/Mastering-AWS-Cost-Optimization-operational-ebook/dp/B087TG6YMN/ref=sr_1_1?dchild=1&keywords=experience+and+tips+aws&qid=1609025069&s=books&sr=1-1)
+- [ ] [Become an Awesome Software Architect: Book 1: Foundation 2019](https://www.amazon.com/Become-Awesome-Software-Architect-Foundation/dp/1697271065/ref=pd_sbs_29?pd_rd_w=H00ci&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=X4PKKWZT954EJMCQEB6A&pd_rd_r=19783537-95d2-4121-9e45-9126375c1063&pd_rd_wg=M4j63&pd_rd_i=1697271065&psc=1)
+- [ ] [Foundations for Architecting Data Solutions: Managing Successful Data Projects](https://www.amazon.com/Foundations-Architecting-Data-Solutions-Successful/dp/1492038741/ref=pd_bxgy_img_2/134-1703537-9354241?_encoding=UTF8&pd_rd_i=1492038741&pd_rd_r=46770ca6-c81a-4dbd-babc-637d3f15866e&pd_rd_w=TT4LO&pd_rd_wg=9JxQ0&pf_rd_p=f325d01c-4658-4593-be83-3e12ca663f0e&pf_rd_r=SQTF1CSSDECRTYEG3FX2&psc=1&refRID=SQTF1CSSDECRTYEG3FX2)
