@@ -21,6 +21,9 @@ draft = "true"
 [ ] Scaling Your Node.js Apps Fernando Doglio
 
 [ ] GraphQL + Apollo (Client and Server)
+[ ] GraphQL Server
+[ ] [GraphQL Client](https://frontendmasters.com/courses/client-graphql-react/)
+[ ] [Advanced GraphQL, v2](https://frontendmasters.com/courses/advanced-graphql-v2/)
 [ ] Hasura
 [ ] SQL with Mosh
 
@@ -46,7 +49,9 @@ draft = "true"
 [x] Look into Stich
 [ ] Look into MongoDB Database Administrator Course
 [ ] Algorithm by Goal Kicker
-[ ] Learn Data Structures
+[ ] Learn Data Structures by ZtoM
+[ ] Learn Data Structures by Mosh
+[ ] Learn Data Structures by ZtoM - FANG
 [ ] Do design system exercises ( xmruibi | andiamogosood )
 [ ] Update and finish the trostcss repository
 [ ] Do all exercises on project euler
@@ -158,3 +163,26 @@ draft = "true"
 - [ ] [Mastering AWS Cost Optimization: Real-world technical and operational cost-saving best practices (Second Edition)](https://www.amazon.com/Mastering-AWS-Cost-Optimization-operational-ebook/dp/B087TG6YMN/ref=sr_1_1?dchild=1&keywords=experience+and+tips+aws&qid=1609025069&s=books&sr=1-1)
 - [ ] [Become an Awesome Software Architect: Book 1: Foundation 2019](https://www.amazon.com/Become-Awesome-Software-Architect-Foundation/dp/1697271065/ref=pd_sbs_29?pd_rd_w=H00ci&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=X4PKKWZT954EJMCQEB6A&pd_rd_r=19783537-95d2-4121-9e45-9126375c1063&pd_rd_wg=M4j63&pd_rd_i=1697271065&psc=1)
 - [ ] [Foundations for Architecting Data Solutions: Managing Successful Data Projects](https://www.amazon.com/Foundations-Architecting-Data-Solutions-Successful/dp/1492038741/ref=pd_bxgy_img_2/134-1703537-9354241?_encoding=UTF8&pd_rd_i=1492038741&pd_rd_r=46770ca6-c81a-4dbd-babc-637d3f15866e&pd_rd_w=TT4LO&pd_rd_wg=9JxQ0&pf_rd_p=f325d01c-4658-4593-be83-3e12ca663f0e&pf_rd_r=SQTF1CSSDECRTYEG3FX2&psc=1&refRID=SQTF1CSSDECRTYEG3FX2)
+
+
+### Testing 
+
+[ ] Implement a Testing Framework
+[ ] Look into JMeter
+[ ] [Cheatsheet Master The Coding Interview ](https://github.com/chesterheng/master-coding-interview)
+
+
+- Start learning a new language this week. Always programmed in the
+same old language? Try Clojure, Elixir, Elm, F#, Go, Haskell,
+Python, R, ReasonML, Ruby, Rust, Scala, Swift, TypeScript, or
+anything else that appeals and/or looks as if you might like it.
+
+- Start reading a new book (but finish this one first!). If you are doing
+very detailed implementation and coding, read a book on design
+and architecture. If you are doing high-level design, read a book on
+coding techniques.
+
+- Get out and talk technology with people who aren’t involved in your
+current project, or who don’t work for the same company. Network
+in your company cafeteria, or maybe seek out fellow enthusiasts at
+a local meetup.
