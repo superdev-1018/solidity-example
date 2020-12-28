@@ -12,7 +12,7 @@ draft = "true"
 [ ] Do the exam Cisco 200-301 (CCNA)
 [ ] Do all the [8 certifications](https://bradshaw.cloud/2018/03/20/aws-certifications/)
 
-[ ] Angular + C# by Mosh Hamedani
+[x] Angular + C# by Mosh Hamedani
 [x] Learn about OAuth2.0 patterns
 [ ] PM2
 [ ] RabbitMQ by Hussein Nasser
