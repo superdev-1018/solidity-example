@@ -65,6 +65,8 @@ draft = "true"
 [ ] [How to become a good backend engineer](https://www.youtube.com/watch?v=V3ZPPPKEipA)
 [ ] Read SCIP and [Do all the exercise there](https://github.com/ivanjovanovic/sicp) and [Read this](https://hackernoon.com/my-sicp-structure-and-interpretation-of-computer-programs-challenge-c6a12dff4f11)
 [ ] Competitive Programming [CP3](https://www.amazon.com/Competitive-Programming-3rd-Steven-Halim/dp/B00FG8MNN8) and [Skiena](https://www.amazon.com/Programming-Challenges-Contest-Training-Computer/dp/0387001638/ref=pd_sbs_2?pd_rd_w=6fIBf&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=1TVFNCEAS4J81G8CHEFW&pd_rd_r=03074057-9e3c-4125-9e30-791439ebdcf0&pd_rd_wg=Z1efz&pd_rd_i=0387001638&psc=1)
+[ ] Document using OpenAPI
+[ ] https://blog.checklyhq.com/building-a-multi-tenant-saas-data-model/
 
 [ ] Learn Flutter
 [ ] Learn Kotlin
