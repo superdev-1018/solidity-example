@@ -41,9 +41,50 @@ draft = "true"
 [x] Learn about Sapper
 [x] Learn about Strapi
 [x] Next.js or Gatsby, Prismic as the headless CMS and running on Vercel.
-[ ] Look at the Presentation and [read the book](https://docs.google.com/presentation/d/e/2PACX-1vQK6I1AF4lM5t0EsDKcAJvBW1dlLOhmrftPz1UsroQd3TYfLQv1j1ecGYhTh622X8kn8ojYpyvkr_AL/pub?start=false&loop=false&delayms=3000&slide=id.p) - Building Serverless Applications with Google Cloud Run: A Real-World Guide to Building Production-Ready Services by Wietse Venema
+[ ] Look at the Presentation and [read the book](https://docs.google.com/presentation/d/e/2PACX-1vQK6I1AF4lM5t0EsDKcAJvBW1dlLOhmrftPz1UsroQd3TYfLQv1j1ecGYhTh622X8kn8ojYpyvkr_AL/pub?start=false&loop=false&delayms=3000&slide=id.p) - Building Serverless Applications with [Google Cloud Run: A Real-World Guide to Building Production-Ready Services by Wietse Venema](https://www.amazon.com/gp/product/1492057096/)
 [ ] Distributed Systems [Watch the playlist](https://www.youtube.com/watch?v=l9JSK9OBzA4) 
 [x] Sharding [video](https://www.youtube.com/watch?v=dkhOZOmV7Fo) and this [playlist](https://www.youtube.com/playlist?list=PLAwxTw4SYaPlLXUhUNt1wINWrrH9axjcI)
+[ ] [Distributed Systems with Node.js: Building Enterprise-Ready Backend Services](https://www.amazon.com/Distributed-Systems-Node-js-Building-Enterprise-Ready/dp/1492077291/ref=pd_sbs_14_31?_encoding=UTF8&pd_rd_i=1492077291&pd_rd_r=76ea9201-0f5e-4d07-992e-0b0084115b1d&pd_rd_w=aexNf&pd_rd_wg=UKTkK&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
+[ ] [Full Stack Serverless: Modern Application Development with React, AWS, and GraphQL](https://www.amazon.com/Full-Stack-Serverless-Application-Development/dp/1492059897/ref=pd_sbs_14_4/134-1703537-9354241?_encoding=UTF8&pd_rd_i=1492059897&pd_rd_r=76ea9201-0f5e-4d07-992e-0b0084115b1d&pd_rd_w=aexNf&pd_rd_wg=UKTkK&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
+[ ] [Microservices: Up and Running: A Step-by-Step Guide to Building a Microservices Architecture](https://www.amazon.com/Microservices-Step-Step-Microservice-Architecture/dp/1492075450/ref=pd_sbs_14_6/134-1703537-9354241?_encoding=UTF8&pd_rd_i=1492075450&pd_rd_r=76ea9201-0f5e-4d07-992e-0b0084115b1d&pd_rd_w=aexNf&pd_rd_wg=UKTkK&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
+[ ] [Node-Cookbook-techniques](https://www.amazon.com/Node-Cookbook-techniques-server-side-development/dp/1838558756/ref=pd_sbs_14_17?_encoding=UTF8&pd_rd_i=1838558756&pd_rd_r=76ea9201-0f5e-4d07-992e-0b0084115b1d&pd_rd_w=aexNf&pd_rd_wg=UKTkK&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&
+pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
+- https://www.amazon.com/Monolith-Microservices-Evolutionary-Patterns-Transform/dp/1492047848/ref=pd_sbs_14_17?_encoding=UTF8&pd_rd_i=1492047848&pd_rd_r=7615a5f5-f7ae-474d-9d5b-a6d9b4bf7a51&pd_rd_w=1sr0H&pd_rd_wg=EC88b&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=6AM6H0QQC4HAF6J8VPTT&psc=1&refRID=6AM6H0QQC4HAF6J8VPTT
+- [ ] [Kubernetes for Developers](https://www.oreilly.com/library/view/kubernetes-for-developers/9781788834759/)
+- [ ] [Mastering Kubernetes](https://www.oreilly.com/library/view/mastering-kubernetes-/9781839211256/)
+- [ ] [TypeScript Microservices](https://www.oreilly.com/library/view/typescript-microservices/9781788830751/)
+
+- https://developers.redhat.com/blog/2019/01/03/leveraging-openshift-or-kubernetes-for-automated-performance-tests-part-2/
+- [*** SAAS based multitenant application which has different organizations and we need to configure Single Sign-On with these organization's Active Directory or their identity provider, In this case, we can use Passport’s MultiSAML](https://medium.com/brightlab-techblog/implement-single-sign-on-saml-strategy-with-node-js-passport-js-e8b01ff79cc3)
+- https://docs.microsoft.com/en-us/microsoft-365/security/office-365-security/use-dmarc-to-validate-email?view=o365-worldwide
+- https://www.sparkpost.com/academy/email-technical/introduction-email-authentication/
+- https://stackoverflow.com/questions/55030681/extracting-all-the-txt-records-of-a-particular-domain
+- We need to create a [TXT record](https://en.wikipedia.org/wiki/TXT_record#cite_note-4) like and [how to extract TXT records](https://stackoverflow.com/questions/55030681/extracting-all-the-txt-records-of-a-particular-domain)`google-site-verification=6P08Ow5E-8Q0m6vQ7FMAqAYIDprkVV8fUf_7hZ4Qvc8` used for site verification - https://support.google.com/webmasters/answer/9008080?hl=en
+
+[ ] [Infrastructure as Code](https://www.amazon.com/Infrastructure-Code-Dynamic-Systems-Cloud/dp/1098114671/ref=pd_sbs_14_5/134-1703537-9354241?_encoding=UTF8&pd_rd_i=1098114671&pd_rd_r=76ea9201-0f5e-4d07-992e-0b0084115b1d&pd_rd_w=aexNf&pd_rd_wg=UKTkK&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
+[ ] [Building-Event-Driven-Microservices](https://www.amazon.com/Building-Event-Driven-Microservices-Leveraging-Organizational/dp/1492057894/ref=pd_sbs_14_20?_encoding=UTF8&pd_rd_i=1492057894&pd_rd_r=76ea9201-0f5e-4d07-992e-0b0084115b1d&pd_rd_w=aexNf&pd_rd_wg=UKTkK&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
+[ ] https://www.amazon.com/Kafka-Streams-Action-Real-time-microservices/dp/1617294470/ref=pd_sbs_14_56?_encoding=UTF8&pd_rd_i=1617294470&pd_rd_r=d07299e3-d5d2-4836-a32b-cd92265e56c8&pd_rd_w=IIDcT&pd_rd_wg=pzyeM&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=3ZX4Z24WXM5EMA0YBN1K&psc=1&refRID=3ZX4Z24WXM5EMA0YBN1K
+[ ] [Zookeepeer](https://www.amazon.com/ZooKeeper-Distributed-Coordination-Flavio-Junqueira/dp/1449361307/ref=pd_sbs_14_29?_encoding=UTF8&pd_rd_i=1449361307&pd_rd_r=d1a42bba-add2-4454-a386-95de70ce78ad&pd_rd_w=wnOuC&pd_rd_wg=hgr5u&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=FGEQBGBNMP2KB9ZAJV11&psc=1&refRID=FGEQBGBNMP2KB9ZAJV11)
+[ ] [Solution architect handbook](https://www.amazon.com/Solutions-Architects-Handbook-Kick-start-architecture/dp/1838645640/ref=pd_sbs_14_41?_encoding=UTF8&pd_rd_i=1838645640&pd_rd_r=d1a42bba-add2-4454-a386-95de70ce78ad&pd_rd_w=wnOuC&pd_rd_wg=hgr5u&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=FGEQBGBNMP2KB9ZAJV11&psc=1&refRID=FGEQBGBNMP2KB9ZAJV11)
+[ ] [Database-Internals-Deep-Distributed-Systems](https://www.amazon.com/Database-Internals-Deep-Distributed-Systems/dp/1492040347/ref=pd_sbs_14_7?_encoding=UTF8&pd_rd_i=1492040347&pd_rd_r=d1a42bba-add2-4454-a386-95de70ce78ad&pd_rd_w=wnOuC&pd_rd_wg=hgr5u&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=FGEQBGBNMP2KB9ZAJV11&psc=1&refRID=FGEQBGBNMP2KB9ZAJV11)
+[ ] [Seven Databases in Seven Weeks: ](https://www.amazon.com/Seven-Databases-Weeks-Modern-Movement/dp/1680502530/ref=pd_sbs_14_12?_encoding=UTF8&pd_rd_i=1680502530&pd_rd_r=4f2b5f44-2442-4119-a1ca-1c0ce5d7e0c6&pd_rd_w=WMRxT&pd_rd_wg=3ky6s&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=K84AH17YZC3P4J017NGE&psc=1&refRID=K84AH17YZC3P4J017NGE)
+[ ] [Building-Secure-Reliable-Systems-Implementing](https://www.amazon.com/Building-Secure-Reliable-Systems-Implementing/dp/1492083127/ref=pd_sbs_14_15?_encoding=UTF8&pd_rd_i=1492083127&pd_rd_r=4f2b5f44-2442-4119-a1ca-1c0ce5d7e0c6&pd_rd_w=WMRxT&pd_rd_wg=3ky6s&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=K84AH17YZC3P4J017NGE&psc=1&refRID=K84AH17YZC3P4J017NGE)
+[ ] [40 Algorithms-Every-Programmer-Should-Know](https://www.amazon.com/Algorithms-Every-Programmer-Should-Know/dp/1789801214/ref=pd_sbs_14_28?_encoding=UTF8&pd_rd_i=1789801214&pd_rd_r=07ed77c9-b7d1-4475-8aa8-8030a1f01a02&pd_rd_w=7XrM9&pd_rd_wg=EPpHU&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=N7NSQ4Y7JWWFEC6H5CQ9&psc=1&refRID=N7NSQ4Y7JWWFEC6H5CQ9)
+[ ] [Must read - Scalability-Startup-Engineers-Artur-Ejsmont](https://www.amazon.com/Scalability-Startup-Engineers-Artur-Ejsmont/dp/0071843655/ref=pd_sbs_14_19?_encoding=UTF8&pd_rd_i=0071843655&pd_rd_r=4f2b5f44-2442-4119-a1ca-1c0ce5d7e0c6&pd_rd_w=WMRxT&pd_rd_wg=3ky6s&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=K84AH17YZC3P4J017NGE&psc=1&refRID=K84AH17YZC3P4J017NGE)
+[ ] [designing-apis-with-swagger-and-openapi](https://www.manning.com/books/designing-apis-with-swagger-and-openapi)
+[ ] [Web API Security](https://livebook.manning.com/book/api-security-in-action/chapter-1/12)
+
+- https://livebook.manning.com/book/secure-by-design/chapter-3/8
+- https://www.amazon.com/Seven-Concurrency-Models-Weeks-Programmers/dp/1937785653/ref=pd_sim_nf_14_2/134-1703537-9354241?_encoding=UTF8&pd_rd_i=1937785653&pd_rd_r=07ed77c9-b7d1-4475-8aa8-8030a1f01a02&pd_rd_w=CX2tW&pd_rd_wg=EPpHU&pf_rd_p=90765e8c-a52e-4c61-b338-0577ef37d819&pf_rd_r=N7NSQ4Y7JWWFEC6H5CQ9&psc=1&refRID=N7NSQ4Y7JWWFEC6H5CQ9
+- https://www.amazon.com/Seven-More-Languages-Weeks-Shaping/dp/1941222153/ref=pd_sim_nf_14_6/134-1703537-9354241?_encoding=UTF8&pd_rd_i=1941222153&pd_rd_r=07ed77c9-b7d1-4475-8aa8-8030a1f01a02&pd_rd_w=CX2tW&pd_rd_wg=EPpHU&pf_rd_p=90765e8c-a52e-4c61-b338-0577ef37d819&pf_rd_r=N7NSQ4Y7JWWFEC6H5CQ9&psc=1&refRID=N7NSQ4Y7JWWFEC6H5CQ9
+- https://www.amazon.com/Angular-Enterprise-Ready-Web-Applications-production-grade/dp/1838648801/ref=sr_1_49?dchild=1&keywords=secure+api&qid=1609544233&s=books&sr=1-49
+- [API style like gRPC and graphql](https://www.amazon.com/Design-Build-Great-Web-APIs/dp/1680506803/ref=sr_1_7?dchild=1&keywords=secure+api&qid=1609544161&s=books&sr=1-7)
+- [Enterprise API Management: Design and deliver valuable business APIs](https://www.amazon.com/Enterprise-Management-Luis-Augusto-Weir/dp/1787284433/ref=pd_sbs_14_5/134-1703537-9354241?_encoding=UTF8&pd_rd_i=1787284433&pd_rd_r=6e18d517-eac9-4511-890a-e2a1b9a84199&pd_rd_w=NrIjF&pd_rd_wg=1eiWB&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=ZM8E8W0YVN49S3634J7M&psc=1&refRID=ZM8E8W0YVN49S3634J7M)
+- [Continuous API Management: Making the Right Decisions in an Evolving Landscape](https://www.amazon.com/Continuous-API-Management-Decisions-Landscape/dp/1492043559/ref=pd_sbs_14_7?_encoding=UTF8&pd_rd_i=1492043559&pd_rd_r=6e18d517-eac9-4511-890a-e2a1b9a84199&pd_rd_w=NrIjF&pd_rd_wg=1eiWB&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=ZM8E8W0YVN49S3634J7M&psc=1&refRID=ZM8E8W0YVN49S3634J7M)
+- https://www.amazon.com/RESTful-API-Design-API-University-3/dp/1514735164/ref=pd_sbs_14_3/134-1703537-9354241?_encoding=UTF8&pd_rd_i=1514735164&pd_rd_r=6e18d517-eac9-4511-890a-e2a1b9a84199&pd_rd_w=NrIjF&pd_rd_wg=1eiWB&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=ZM8E8W0YVN49S3634J7M&psc=1&refRID=ZM8E8W0YVN49S3634J7M
+- https://www.amazon.com/Designing-Web-APIs-Building-Developers/dp/1492026921/ref=pd_sbs_14_2/134-1703537-9354241?_encoding=UTF8&pd_rd_i=1492026921&pd_rd_r=6e18d517-eac9-4511-890a-e2a1b9a84199&pd_rd_w=NrIjF&pd_rd_wg=1eiWB&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=ZM8E8W0YVN49S3634J7M&psc=1&refRID=ZM8E8W0YVN49S3634J7M
+- https://www.amazon.com/AWS-Solutions-Architecture-Fault-Tolerant-Scalable-ebook/dp/B079JZCLWD/ref=sr_1_36?dchild=1&keywords=secure+api&qid=1609544199&s=books&sr=1-36
+
 
 [x] Look into MongoDb
 [x] Look into Stich
@@ -67,6 +108,7 @@ draft = "true"
 [ ] Competitive Programming [CP3](https://www.amazon.com/Competitive-Programming-3rd-Steven-Halim/dp/B00FG8MNN8) and [Skiena](https://www.amazon.com/Programming-Challenges-Contest-Training-Computer/dp/0387001638/ref=pd_sbs_2?pd_rd_w=6fIBf&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=1TVFNCEAS4J81G8CHEFW&pd_rd_r=03074057-9e3c-4125-9e30-791439ebdcf0&pd_rd_wg=Z1efz&pd_rd_i=0387001638&psc=1)
 [ ] Document using OpenAPI
 [ ] https://blog.checklyhq.com/building-a-multi-tenant-saas-data-model/
+[ ] [best train ner for spacy](https://towardsdatascience.com/train-ner-with-custom-training-data-using-spacy-525ce748fab7)
 
 [ ] Learn Flutter
 [ ] Learn Kotlin
