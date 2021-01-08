@@ -14,14 +14,14 @@ draft = "true"
 
 [x] Angular + C# by Mosh Hamedani
 [x] Learn about OAuth2.0 patterns
-[ ] PM2
+[x] PM2 - Process Manager - for node cluster management
 [ ] RabbitMQ by Hussein Nasser
 [ ] Elastic Search | Kibana | ELK
 [ ] Ngnix
 [ ] Scaling Your Node.js Apps Fernando Doglio
 
-[ ] GraphQL + Apollo (Client and Server)
-[ ] GraphQL Server
+[x] GraphQL + Apollo (Client and Server)
+[x] GraphQL Server
 [ ] [GraphQL Client](https://frontendmasters.com/courses/client-graphql-react/)
 [ ] [Advanced GraphQL, v2](https://frontendmasters.com/courses/advanced-graphql-v2/)
 [ ] Hasura
@@ -35,6 +35,8 @@ draft = "true"
 [x] Machine Learning with Python
 [x] NPM package | publish | build
 [ ] Learn about Vue and Vue Visualization
+[ ] [Mongodb Topology Design - Must read](https://www.amazon.com/MongoDB-Topology-Design-Scalability-Compliance-ebook-dp-B08HT313RY/dp/B08HT313RY/ref=mt_other?_encoding=UTF8&me=&qid=)
+[ ] [react ismorphic web architecture](https://github.com/afteracademy/react-app-architecture)
 
 [ ] Do AWS Solution Architect - Associate
 [x] Learn About Svelte
@@ -60,6 +62,9 @@ pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
 - https://www.sparkpost.com/academy/email-technical/introduction-email-authentication/
 - https://stackoverflow.com/questions/55030681/extracting-all-the-txt-records-of-a-particular-domain
 - We need to create a [TXT record](https://en.wikipedia.org/wiki/TXT_record#cite_note-4) like and [how to extract TXT records](https://stackoverflow.com/questions/55030681/extracting-all-the-txt-records-of-a-particular-domain)`google-site-verification=6P08Ow5E-8Q0m6vQ7FMAqAYIDprkVV8fUf_7hZ4Qvc8` used for site verification - https://support.google.com/webmasters/answer/9008080?hl=en
+- [ner spacy](https://www.youtube.com/watch?v=HJy11kOlgvk)
+- https://towardsdatascience.com/train-ner-with-custom-training-data-using-spacy-525ce748fab7
+- https://towardsdatascience.com/custom-named-entity-recognition-using-spacy-7140ebbb3718
 
 [ ] [Infrastructure as Code](https://www.amazon.com/Infrastructure-Code-Dynamic-Systems-Cloud/dp/1098114671/ref=pd_sbs_14_5/134-1703537-9354241?_encoding=UTF8&pd_rd_i=1098114671&pd_rd_r=76ea9201-0f5e-4d07-992e-0b0084115b1d&pd_rd_w=aexNf&pd_rd_wg=UKTkK&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
 [ ] [Building-Event-Driven-Microservices](https://www.amazon.com/Building-Event-Driven-Microservices-Leveraging-Organizational/dp/1492057894/ref=pd_sbs_14_20?_encoding=UTF8&pd_rd_i=1492057894&pd_rd_r=76ea9201-0f5e-4d07-992e-0b0084115b1d&pd_rd_w=aexNf&pd_rd_wg=UKTkK&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
@@ -232,3 +237,7 @@ coding techniques.
 current project, or who don’t work for the same company. Network
 in your company cafeteria, or maybe seek out fellow enthusiasts at
 a local meetup.
+
+#Dom
+- name.com - murshid.studio
+- dot tech - devstaging.tech
