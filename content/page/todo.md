@@ -24,7 +24,7 @@ draft = "true"
 [x] GraphQL Server
 [ ] [GraphQL Client](https://frontendmasters.com/courses/client-graphql-react/)
 [ ] [Advanced GraphQL, v2](https://frontendmasters.com/courses/advanced-graphql-v2/)
-[ ] Hasura
+[x] Hasura
 [ ] SQL with Mosh
 
 [ ] Docker
@@ -134,7 +134,7 @@ pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
 [ ] Read the Book on Databases
 [ ] Learn about Recommendation System w/Python
 [ ] Learn about System Design
-
+[ ] Read Articles of System Design from [stackshare](https://stackshare.io/mixmax/how-mixmax-uses-node-and-go-to-process-250m-events-a-day)
 [ ] Background Job Processing (Oban, Sidekiq, ...)
 [ ] Message Queue (Pubsub/ Kafka)
 [ ] Learn about Full-text Search (Solr, ElasticSearch, Lucene)
@@ -201,7 +201,7 @@ pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
 - [ ] Contact Us Page
 
 ## Freelance Management Books
- 
+
 - [ ] The Nuclear Effect: The 6 Pillars of Building a 7+ Figure Online Business
 - [ ] Working for Yourself: Law & Taxes for Independent Contractors, Freelancers & Gig Workers of All Types
 - [ ] Starting Your Career as a Freelance Web Designer
@@ -215,8 +215,7 @@ pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
 - [ ] [Become an Awesome Software Architect: Book 1: Foundation 2019](https://www.amazon.com/Become-Awesome-Software-Architect-Foundation/dp/1697271065/ref=pd_sbs_29?pd_rd_w=H00ci&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=X4PKKWZT954EJMCQEB6A&pd_rd_r=19783537-95d2-4121-9e45-9126375c1063&pd_rd_wg=M4j63&pd_rd_i=1697271065&psc=1)
 - [ ] [Foundations for Architecting Data Solutions: Managing Successful Data Projects](https://www.amazon.com/Foundations-Architecting-Data-Solutions-Successful/dp/1492038741/ref=pd_bxgy_img_2/134-1703537-9354241?_encoding=UTF8&pd_rd_i=1492038741&pd_rd_r=46770ca6-c81a-4dbd-babc-637d3f15866e&pd_rd_w=TT4LO&pd_rd_wg=9JxQ0&pf_rd_p=f325d01c-4658-4593-be83-3e12ca663f0e&pf_rd_r=SQTF1CSSDECRTYEG3FX2&psc=1&refRID=SQTF1CSSDECRTYEG3FX2)
 
-
-### Testing 
+### Testing
 
 [ ] Implement a Testing Framework
 [ ] Look into JMeter
@@ -238,6 +237,6 @@ current project, or who don’t work for the same company. Network
 in your company cafeteria, or maybe seek out fellow enthusiasts at
 a local meetup.
 
-#Dom
+# Development Mode
 - name.com - murshid.studio
 - dot tech - devstaging.tech
