@@ -90,9 +90,8 @@ pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
 - https://www.amazon.com/Designing-Web-APIs-Building-Developers/dp/1492026921/ref=pd_sbs_14_2/134-1703537-9354241?_encoding=UTF8&pd_rd_i=1492026921&pd_rd_r=6e18d517-eac9-4511-890a-e2a1b9a84199&pd_rd_w=NrIjF&pd_rd_wg=1eiWB&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=ZM8E8W0YVN49S3634J7M&psc=1&refRID=ZM8E8W0YVN49S3634J7M
 - https://www.amazon.com/AWS-Solutions-Architecture-Fault-Tolerant-Scalable-ebook/dp/B079JZCLWD/ref=sr_1_36?dchild=1&keywords=secure+api&qid=1609544199&s=books&sr=1-36
 
-
 [x] Look into MongoDb
-[x] Look into Stich
+[x] Look into Stich like firebase for atlas serverless
 [ ] Look into MongoDB Database Administrator Course
 [ ] Algorithm by Goal Kicker
 [ ] Learn Data Structures by ZtoM
@@ -105,7 +104,7 @@ pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
 [ ] Learn about SOLID principles -> Dep. Injection
 [ ] Finish creating the Dialogflow chatbot
 [ ] Finish the project index page
-[ ] Learn machine learning models from Kaggle
+[ ] Finish the end-to-end fish species project
 [ ] Finish the Learning Management System
 [ ] Look for ACM Red belt coder website algorithms [algozenith](https://algozenith.com/) and [Journey of a Red Coder from IIT Kharagpur | International Master(2300+) Codeforces | 7 star Codechef](https://www.youtube.com/watch?v=n2t47V5Z56U&t=393s)
 [ ] [How to become a good backend engineer](https://www.youtube.com/watch?v=V3ZPPPKEipA)
@@ -147,6 +146,7 @@ pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
 [x] Learn about OpenId Connect and IAM Identity Server
 [ ] Read `Galshir` book on Inspirations
 [ ] Read about Apache JMeter book
+[ ] More on ELK stack
 
 [ ] Java Spring
 [ ] Java Hibernate
@@ -160,6 +160,7 @@ pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
 
 [ ] Laravel
 [ ] Vue and Nuxt
+[ ] Read Your Next Five Moves: Master the Art of Business Strategy
 
 
 ### ML Path
