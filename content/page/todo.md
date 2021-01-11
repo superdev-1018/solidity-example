@@ -162,8 +162,7 @@ pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
 [ ] Vue and Nuxt
 [ ] Read Your Next Five Moves: Master the Art of Business Strategy
 
-
-### ML Path
+## ML Path
 
 [ ] Skiena The Data Science Design Manual
 [ ] Springer Getting Your First Data Science Job
@@ -238,6 +237,7 @@ current project, or who don’t work for the same company. Network
 in your company cafeteria, or maybe seek out fellow enthusiasts at
 a local meetup.
 
-# Development Mode
+## Development Mode
+
 - name.com - murshid.studio
 - dot tech - devstaging.tech
