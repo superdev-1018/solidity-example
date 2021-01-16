@@ -241,3 +241,7 @@ a local meetup.
 
 - name.com - murshid.studio
 - dot tech - devstaging.tech
+
+# University of Westminister
+
+- [Readings and Books](https://westminster.rl.talis.com/schools/comeng.html)
