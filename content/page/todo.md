@@ -247,3 +247,4 @@ a local meetup.
 - [Readings and Books](https://westminster.rl.talis.com/schools/comeng.html)
 - [Look into the module performa]()
 - Look into Elaticsearch, Kafka, Redis, ELKB, Ngninx stack
+- [https://frontendmasters.com/courses/xstate-react/?utm_source=email&utm_medium=course-announce&utm_campaign=xstate-react](https://frontendmasters.com/courses/xstate-react/?utm_source=email&utm_medium=course-announce&utm_campaign=xstate-react)
