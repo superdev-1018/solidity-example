@@ -246,3 +246,4 @@ a local meetup.
 
 - [Readings and Books](https://westminster.rl.talis.com/schools/comeng.html)
 - [Look into the module performa]()
+- Look into Elaticsearch, Kafka, Redis, ELKB, Ngninx stack
