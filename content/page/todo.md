@@ -249,3 +249,4 @@ a local meetup.
 - Look into Elaticsearch, Kafka, Redis, ELKB, Ngninx stack
 - [https://frontendmasters.com/courses/xstate-react/?utm_source=email&utm_medium=course-announce&utm_campaign=xstate-react](https://frontendmasters.com/courses/xstate-react/?utm_source=email&utm_medium=course-announce&utm_campaign=xstate-react)
 - gmelius - collaborative email for gmail
+- [Hands-On Microservices with Spring Boot and Spring Cloud: Build and deploy Java microservices using Promethius, Grafana, EKF, Spring Cloud, Istio, and Kubernetes](https://www.amazon.com/Hands-Microservices-Spring-Boot-Cloud-ebook/dp/B07T1Y2JRJ/ref=pd_sim_351_14?_encoding=UTF8&pd_rd_i=B07T1Y2JRJ&pd_rd_r=394d8999-04c6-4e9b-9b60-30e76c9a4864&pd_rd_w=ZbD4z&pd_rd_wg=CCtM6&pf_rd_p=dde9b612-c71c-4550-8f12-758d90eade9e&pf_rd_r=X3CE2Q0K78TR5XJ300JD&psc=1&refRID=X3CE2Q0K78TR5XJ300JD)
