@@ -183,23 +183,6 @@ pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
 [ ] [Terraform tutorial](https://www.youtube.com/watch?v=SLB_c_ayRMo)
 [ ] [Path for Software Architect](https://github.com/justinamiller/SoftwareArchitect) and [Github star](https://github.com/murshidazher?tab=stars)
 
-### Consultancy App
-
-- [x] Sign up
-- [x] Login
-- [x] Index
-- [ ] Consultant Search
-- [ ] Consult list
-- [ ] Consultant details
-- [ ] Account - User - Profile Page
-- [ ] Checkout Pages - Required Consultancy Hours
-- [ ] Checkout Pages - Consultant Available Time Slots (Booking Calendar)
-- [ ] Checkout Pages - Payment Complete
-- [ ] Checkout Pages - Order Complete
-- [ ] User Review Feedback Page
-- [ ] Consultant Review Feedback Page
-- [ ] Contact Us Page
-
 ## Freelance Management Books
 
 - [ ] The Nuclear Effect: The 6 Pillars of Building a 7+ Figure Online Business
@@ -250,3 +233,12 @@ a local meetup.
 - [https://frontendmasters.com/courses/xstate-react/?utm_source=email&utm_medium=course-announce&utm_campaign=xstate-react](https://frontendmasters.com/courses/xstate-react/?utm_source=email&utm_medium=course-announce&utm_campaign=xstate-react)
 - gmelius - collaborative email for gmail
 - [Hands-On Microservices with Spring Boot and Spring Cloud: Build and deploy Java microservices using Promethius, Grafana, EKF, Spring Cloud, Istio, and Kubernetes](https://www.amazon.com/Hands-Microservices-Spring-Boot-Cloud-ebook/dp/B07T1Y2JRJ/ref=pd_sim_351_14?_encoding=UTF8&pd_rd_i=B07T1Y2JRJ&pd_rd_r=394d8999-04c6-4e9b-9b60-30e76c9a4864&pd_rd_w=ZbD4z&pd_rd_wg=CCtM6&pf_rd_p=dde9b612-c71c-4550-8f12-758d90eade9e&pf_rd_r=X3CE2Q0K78TR5XJ300JD&psc=1&refRID=X3CE2Q0K78TR5XJ300JD)
+
+
+Dissertation materials
+- https://www.overleaf.com/latex/templates/university-of-stuttgart-computer-science-thesis/yxgghkmqkrmr
+- https://www.westminster.ac.uk/sites/default/public-files/general-documents/research-degree-handbook.pdf
+- https://libguides.westminster.ac.uk/Dissertation
+- https://www.westminster.ac.uk/study/postgraduate/research-degrees/entry-requirements/how-to-write-your-research-proposal
+- https://libguides.westminster.ac.uk/Dissertation/literature-reviews
+- https://www.westminster.ac.uk/study/postgraduate/research-degrees/mode-of-study/phd-by-published-work/how-to-write-your-phd-by-published-work-research-proposal
