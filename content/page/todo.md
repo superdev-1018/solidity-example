@@ -17,7 +17,8 @@ draft = "true"
 [x] PM2 - Process Manager - for node cluster management
 [ ] RabbitMQ by Hussein Nasser
 [ ] Elastic Search | Kibana | ELK
-[ ] Ngnix
+[x] Ngnix
+[ ] https everywhere Varnish Cache + Nginx by Sashingmagazine
 [ ] Scaling Your Node.js Apps Fernando Doglio
 
 [x] GraphQL + Apollo (Client and Server)
@@ -25,7 +26,7 @@ draft = "true"
 [ ] [GraphQL Client](https://frontendmasters.com/courses/client-graphql-react/)
 [ ] [Advanced GraphQL, v2](https://frontendmasters.com/courses/advanced-graphql-v2/)
 [x] Hasura
-[ ] SQL with Mosh
+[x] SQL with Mosh
 
 [ ] Docker
 [ ] Docker Swarm
@@ -35,7 +36,7 @@ draft = "true"
 [x] Machine Learning with Python
 [x] NPM package | publish | build
 [ ] Learn about Vue and Vue Visualization
-[ ] [Mongodb Topology Design - Must read](https://www.amazon.com/MongoDB-Topology-Design-Scalability-Compliance-ebook-dp-B08HT313RY/dp/B08HT313RY/ref=mt_other?_encoding=UTF8&me=&qid=)
+[x] [Mongodb Topology Design - Must read](https://www.amazon.com/MongoDB-Topology-Design-Scalability-Compliance-ebook-dp-B08HT313RY/dp/B08HT313RY/ref=mt_other?_encoding=UTF8&me=&qid=)
 [ ] [react ismorphic web architecture](https://github.com/afteracademy/react-app-architecture)
 
 [ ] Do AWS Solution Architect - Associate
