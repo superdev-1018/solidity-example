@@ -8,6 +8,16 @@ emoji = ":microbe:"
 draft = "true"
 +++
 
+[ ] https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/
+[ ] https://github.com/ahmedhammad97/Software-Architecture-Patterns-Notes
+[ ] https://medium.com/omarelgabrys-blog/plug-in-architecture-dec207291800
+[ ] https://levelup.gitconnected.com/software-architecture-the-important-architectural-patterns-you-need-to-know-a1f5ea7e4e3d
+[ ] https://medium.com/@volodymyrfrolov/pluggable-microservices-734457c3a3b3
+[ ] https://github.com/adaltas/node-plug-and-play
+[ ] https://www.adaltas.com/en/2020/08/28/node-js-plugin-architecture/
+[ ] https://courses.cognitiveclass.ai/courses/course-v1:Lightbend+LB0101ENv1+2018/course/
+
+
 [x] Create an ticket booking app with micro-services
 [ ] Do the exam Cisco 200-301 (CCNA)
 [ ] Do all the [8 certifications](https://bradshaw.cloud/2018/03/20/aws-certifications/)
