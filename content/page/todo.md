@@ -255,9 +255,14 @@ Dissertation materials
 - https://libguides.westminster.ac.uk/Dissertation/literature-reviews
 - https://www.westminster.ac.uk/study/postgraduate/research-degrees/mode-of-study/phd-by-published-work/how-to-write-your-phd-by-published-work-research-proposal
 
-### How to Send Email like Craiglist
+### How to Send Email like Craiglist Email Piping
 
 - http://www.postfix.org/STANDARD_CONFIGURATION_README.html
 - [stack overflow k86wt-47XXXXXXXXX@pers.craigslist.org](https://stackoverflow.com/questions/26520991/how-to-dynamically-generate-emails-like-doing-in-craiglist)
-
-
+- [Best way to send anonymous email like craigslist](https://stackoverflow.com/questions/745124/best-way-to-send-anonymous-email-like-craigslist)
+- [Email piping on IIS](https://stackoverflow.com/questions/926345/pipe-incoming-email-to-a-script-on-windows-iis-smtp)
+- [See this too](https://stackoverflow.com/questions/6078885/email-forwarding-like-craigslist-rails)
+- [postfix relay](http://www.postfix.org/STANDARD_CONFIGURATION_README.html)
+- [How set up a 2-way email anonymizer in nodejs](https://stackoverflow.com/questions/48272926/how-set-up-a-2-way-email-anonymizer-in-nodejs)
+- [Configuring server to relay email through Amazon SES (Simple Email Service)](https://www.tothenew.com/blog/configuring-server-to-relay-email-through-amazon-ses/)
+- [Anonymized email relaying is very useful for creating a safe space for users to contact privately](https://elasticemail.com/blog/marketing_tips/how-to-build-an-anonymized-email-relaying-feature-using-elastic-email)
