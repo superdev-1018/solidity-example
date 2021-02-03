@@ -266,3 +266,10 @@ Dissertation materials
 - [How set up a 2-way email anonymizer in nodejs](https://stackoverflow.com/questions/48272926/how-set-up-a-2-way-email-anonymizer-in-nodejs)
 - [Configuring server to relay email through Amazon SES (Simple Email Service)](https://www.tothenew.com/blog/configuring-server-to-relay-email-through-amazon-ses/)
 - [Anonymized email relaying is very useful for creating a safe space for users to contact privately](https://elasticemail.com/blog/marketing_tips/how-to-build-an-anonymized-email-relaying-feature-using-elastic-email)
+
+
+### API Gateway and Kong
+
+- https://medium.com/@far3ns/kong-the-microservice-api-gateway-526c4ca0cfa6
+- https://stackoverflow.com/jobs/475359/frontend-engineer-tessian
+- https://www.udemy.com/user/timotius-pamungkas/
