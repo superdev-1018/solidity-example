@@ -255,7 +255,7 @@ Dissertation materials
 - https://libguides.westminster.ac.uk/Dissertation/literature-reviews
 - https://www.westminster.ac.uk/study/postgraduate/research-degrees/mode-of-study/phd-by-published-work/how-to-write-your-phd-by-published-work-research-proposal
 
-### How to Send Email like Craiglist Email Piping
+### How to Send Email like Craiglist Email Piping and anonymous email
 
 - http://www.postfix.org/STANDARD_CONFIGURATION_README.html
 - [stack overflow k86wt-47XXXXXXXXX@pers.craigslist.org](https://stackoverflow.com/questions/26520991/how-to-dynamically-generate-emails-like-doing-in-craiglist)
