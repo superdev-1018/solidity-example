@@ -273,3 +273,9 @@ Dissertation materials
 - https://medium.com/@far3ns/kong-the-microservice-api-gateway-526c4ca0cfa6
 - https://stackoverflow.com/jobs/475359/frontend-engineer-tessian
 - https://www.udemy.com/user/timotius-pamungkas/
+
+### GRPC
+
+- https://techblog.fexcofts.com/2018/07/20/grpc-nodejs-chat-example/
+- https://techblog.fexcofts.com/2018/07/03/no-rest-for-us-new-api-architectures/
+- https://techblog.fexcofts.com/2018/02/23/angular5-grpc-i/
