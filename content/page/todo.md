@@ -279,3 +279,9 @@ Dissertation materials
 - https://techblog.fexcofts.com/2018/07/20/grpc-nodejs-chat-example/
 - https://techblog.fexcofts.com/2018/07/03/no-rest-for-us-new-api-architectures/
 - https://techblog.fexcofts.com/2018/02/23/angular5-grpc-i/
+- https://blog.logrocket.com/scalable-websockets-with-nestjs-and-redis/
+- https://medium.com/@gurayy/set-up-a-vpn-server-with-docker-in-5-minutes-a66184882c45
+
+### hapi.js
+
+- [https://hapi.dev/resources/list/](https://hapi.dev/resources/list/)
