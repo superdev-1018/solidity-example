@@ -285,3 +285,5 @@ Dissertation materials
 ### hapi.js
 
 - [https://hapi.dev/resources/list/](https://hapi.dev/resources/list/)
+- Look into electron
+- 
