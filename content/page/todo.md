@@ -227,11 +227,6 @@ very detailed implementation and coding, read a book on design
 and architecture. If you are doing high-level design, read a book on
 coding techniques.
 
-- Get out and talk technology with people who aren’t involved in your
-current project, or who don’t work for the same company. Network
-in your company cafeteria, or maybe seek out fellow enthusiasts at
-a local meetup.
-
 ## Development Mode
 
 - name.com - murshid.studio
