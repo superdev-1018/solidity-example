@@ -31,13 +31,6 @@ draft = "true"
 [ ] https everywhere Varnish Cache + Nginx by Sashingmagazine
 [ ] Scaling Your Node.js Apps Fernando Doglio
 
-[x] GraphQL + Apollo (Client and Server)
-[x] GraphQL Server
-[ ] [GraphQL Client](https://frontendmasters.com/courses/client-graphql-react/)
-[ ] [Advanced GraphQL, v2](https://frontendmasters.com/courses/advanced-graphql-v2/)
-[x] Hasura
-[x] SQL with Mosh
-
 [ ] Docker
 [ ] Docker Swarm
 [ ] Kubernetes
