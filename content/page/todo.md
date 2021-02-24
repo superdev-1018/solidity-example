@@ -281,3 +281,10 @@ Dissertation materials
 - [Windows IIS](https://dev.to/petereysermans/hosting-a-node-js-application-on-windows-with-iis-as-reverse-proxy-397b)
 - [Build a file upload service with NodeJS, Typescript, Clean Architecture and AWS S3](https://github.com/joaosczip/photo-upload-ms)
 - https://dev.to/joaosczip/build-a-file-upload-service-with-nodejs-typescript-clean-architecture-and-aws-s3-3h9b
+
+
+## Languages to Look into
+
+- R
+- Scala
+- Ballerina
