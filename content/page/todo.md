@@ -281,6 +281,11 @@ Dissertation materials
 - [Windows IIS](https://dev.to/petereysermans/hosting-a-node-js-application-on-windows-with-iis-as-reverse-proxy-397b)
 - [Build a file upload service with NodeJS, Typescript, Clean Architecture and AWS S3](https://github.com/joaosczip/photo-upload-ms)
 - https://dev.to/joaosczip/build-a-file-upload-service-with-nodejs-typescript-clean-architecture-and-aws-s3-3h9b
+- https://www.amazon.com/dp/1838648801?tag=uuid10-20
+- https://www.amazon.com/Mastering-Node-js-server-side-applications-efficiently/dp/178588896X/ref=pd_sbs_7?pd_rd_w=EsFAt&pf_rd_p=c52600a3-624a-4791-b4c4-3b112e19fbbc&pf_rd_r=6KFREAE8FFWYP0X946YN&pd_rd_r=ffa1e531-838a-4376-9b37-e64d46d4e1cd&pd_rd_wg=Zgb8c&pd_rd_i=178588896X&psc=1
+- https://www.amazon.com/Distributed-Systems-Node-js-Building-Enterprise-Ready/dp/1492077291/ref=pd_sbs_5?pd_rd_w=GNGUM&pf_rd_p=c52600a3-624a-4791-b4c4-3b112e19fbbc&pf_rd_r=98PGC7EY9KX8141G9R5N&pd_rd_r=dea47910-47d1-4e80-97c0-f555b07b53d6&pd_rd_wg=y9OPu&pd_rd_i=1492077291&psc=1
+- https://www.amazon.com/dp/171802150X?tag=uuid10-20
+- https://www.amazon.com/dp/1484210530?tag=uuid10-20
 
 
 ## Languages to Look into
