@@ -49,7 +49,7 @@ draft = "true"
 [x] Learn about Strapi
 [x] Next.js or Gatsby, Prismic as the headless CMS and running on Vercel.
 [ ] Look at the Presentation and [read the book](https://docs.google.com/presentation/d/e/2PACX-1vQK6I1AF4lM5t0EsDKcAJvBW1dlLOhmrftPz1UsroQd3TYfLQv1j1ecGYhTh622X8kn8ojYpyvkr_AL/pub?start=false&loop=false&delayms=3000&slide=id.p) - Building Serverless Applications with [Google Cloud Run: A Real-World Guide to Building Production-Ready Services by Wietse Venema](https://www.amazon.com/gp/product/1492057096/)
-[ ] Distributed Systems [Watch the playlist](https://www.youtube.com/watch?v=l9JSK9OBzA4) 
+[ ] Distributed Systems [Watch the playlist](https://www.youtube.com/watch?v=l9JSK9OBzA4)
 [x] Sharding [video](https://www.youtube.com/watch?v=dkhOZOmV7Fo) and this [playlist](https://www.youtube.com/playlist?list=PLAwxTw4SYaPlLXUhUNt1wINWrrH9axjcI)
 [ ] [Distributed Systems with Node.js: Building Enterprise-Ready Backend Services](https://www.amazon.com/Distributed-Systems-Node-js-Building-Enterprise-Ready/dp/1492077291/ref=pd_sbs_14_31?_encoding=UTF8&pd_rd_i=1492077291&pd_rd_r=76ea9201-0f5e-4d07-992e-0b0084115b1d&pd_rd_w=aexNf&pd_rd_wg=UKTkK&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
 [ ] [Full Stack Serverless: Modern Application Development with React, AWS, and GraphQL](https://www.amazon.com/Full-Stack-Serverless-Application-Development/dp/1492059897/ref=pd_sbs_14_4/134-1703537-9354241?_encoding=UTF8&pd_rd_i=1492059897&pd_rd_r=76ea9201-0f5e-4d07-992e-0b0084115b1d&pd_rd_w=aexNf&pd_rd_wg=UKTkK&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
@@ -292,3 +292,5 @@ Dissertation materials
 - R
 - Scala
 - Ballerina
+- https://www.youtube.com/c/CodePulse/videos
+- [Look for GDPR compliance application](https://www.udemy.com/course/build-eu-gdpr-data-protection-compliance-from-scratch-cipt/)
