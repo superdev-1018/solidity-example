@@ -25,7 +25,7 @@ You only need to press `Command(⌘) + Control(⌃) + Spacebar` to bring up the 
 ## Markdown and Shortcode
 
 As you might've seen most of my main sections have a unique emoji to visually communicate its purpose. I am obsessed with them and since I mostly developed this site using `MacOS`
-I wasn't aware of how it looked on `Windows` until I recently got to know that the emojis looked different on `Windows`. Most important;y, how it was drastically different when
+I wasn't aware of how it looked on `Windows` until I recently got to know that the emojis looked different on `Windows`. Most importantly, how it was drastically different when
 using a `Samsung` device, to read more on this look at [Samsung’s Bizarre Emojis](https://medium.com/hackernoon/samsungs-bizarre-emojis-6be568a3b7d9) by Jackson.
 
 This is where my 24 hour journey began, I had the following priorities in this brief endeavor
