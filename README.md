@@ -23,7 +23,6 @@
     - [Building](#building)
     - [Deploying / Publishing](#deploying--publishing)
   - [TODO](#todo)
-  - [Keep in Mind](#keep-in-mind)
   - [Links](#links)
   - [License](#license)
 
@@ -100,11 +99,6 @@ And again you'd need to tell what the previous code actually does.
 - [ ] Add service worker for offline capabilities.
 - [x] Add Sitemap and robots.txt .
 - [ ] Next and Prev. inside a single blog post.
-
-## Keep in Mind
-
-- **Syntax** - syntax highlight isn't working as it's expected to work.
-- Plotly
 
 ## Links
 
