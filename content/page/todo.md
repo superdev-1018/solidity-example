@@ -1,7 +1,7 @@
 +++
-title = "To Do"
+title = "Bucket list"
 date = 2020-12-26T13:29:21+05:30
-description = "To Do list"
+description = "Bucket list"
 slug = "todo"
 url = "todo"
 emoji = ":microbe:"
