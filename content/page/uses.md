@@ -11,11 +11,7 @@ My office setup, and the tools I use from day to day.
 
 ## Hardware
 
-- Apple 15-inch MacBook Pro 2015
-- [Apple Magic Keyboard](https://www.apple.com/uk/shop/product/MLA22B/A/magic-keyboard-british-english)
-- [Apple Magic Trackpad 2](https://www.apple.com/uk/shop/product/MJ2R2Z/A/magic-trackpad-2-silver)
-- [Apple AirPods Pro](https://www.apple.com/airpods-pro/)
-- Apple iPhone X
+- Apple 13-inch M1 MacBook Pro 2020
 - [Dell P2415Q Monitor](https://www.amazon.co.uk/inch-Dell-P2415Q-IPS-Monitor/dp/B00QAJ2MOM/ref=sr_1_1?dchild=1&keywords=Dell+P2415Q&qid=1584572080&sr=8-1)
 - [Roost Laptop Stand](https://www.therooststand.com/)
 - [606 Universal Shelving System Desk shelf](https://www.vitsoe.com/gb/606/components#desk-shelf)
