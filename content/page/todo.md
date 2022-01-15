@@ -79,9 +79,9 @@ draft = "false"
 - [ ] [Node-Cookbook-techniques](https://www.amazon.com/Node-Cookbook-techniques-server-side-development/dp/1838558756/ref=pd_sbs_14_17?_encoding=UTF8&pd_rd_i=1838558756&pd_rd_r=76ea9201-0f5e-4d07-992e-0b0084115b1d&pd_rd_w=aexNf&pd_rd_wg=UKTkK&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&
 pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
 - https://www.amazon.com/Monolith-Microservices-Evolutionary-Patterns-Transform/dp/1492047848/ref=pd_sbs_14_17?_encoding=UTF8&pd_rd_i=1492047848&pd_rd_r=7615a5f5-f7ae-474d-9d5b-a6d9b4bf7a51&pd_rd_w=1sr0H&pd_rd_wg=EC88b&pf_rd_p=ed1e2146-ecfe-435e-b3b5-d79fa072fd58&pf_rd_r=6AM6H0QQC4HAF6J8VPTT&psc=1&refRID=6AM6H0QQC4HAF6J8VPTT
-- - [ ] [Kubernetes for Developers](https://www.oreilly.com/library/view/kubernetes-for-developers/9781788834759/)
-- - [ ] [Mastering Kubernetes](https://www.oreilly.com/library/view/mastering-kubernetes-/9781839211256/)
-- - [ ] [TypeScript Microservices](https://www.oreilly.com/library/view/typescript-microservices/9781788830751/)
+- [ ] [Kubernetes for Developers](https://www.oreilly.com/library/view/kubernetes-for-developers/9781788834759/)
+- [ ] [Mastering Kubernetes](https://www.oreilly.com/library/view/mastering-kubernetes-/9781839211256/)
+- [ ] [TypeScript Microservices](https://www.oreilly.com/library/view/typescript-microservices/9781788830751/)
 
 - https://developers.redhat.com/blog/2019/01/03/leveraging-openshift-or-kubernetes-for-automated-performance-tests-part-2/
 - [*** SAAS based multitenant application which has different organizations and we need to configure Single Sign-On with these organization's Active Directory or their identity provider, In this case, we can use Passport’s MultiSAML](https://medium.com/brightlab-techblog/implement-single-sign-on-saml-strategy-with-node-js-passport-js-e8b01ff79cc3)
@@ -309,3 +309,4 @@ Dissertation materials
 - Ballerina
 - https://www.youtube.com/c/CodePulse/videos
 - [Look for GDPR compliance application](https://www.udemy.com/course/build-eu-gdpr-data-protection-compliance-from-scratch-cipt/)
+- [ ] Take inspirations from [stopa.io](https://stopa.io/) for musings sections.
