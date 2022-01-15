@@ -5,7 +5,7 @@ description = "To Do list"
 slug = "todo"
 url = "todo"
 emoji = ":microbe:"
-draft = "true"
+draft = "false"
 +++
 
 [ ] https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/
