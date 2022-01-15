@@ -9,8 +9,7 @@ draft: false
 I write [articles on design and code](/articles/) and curate [a weekly newsletter](/newsletter/) for designers and front-end web developers. I also keep
 [notes on things I’m learning](/notes/) from books, courses and interesting things I find from various places on the internet.
 
-Currently I live between London and Hamburg, where I work with a handful of clients. In my free time I enjoy running, climbing, hiking and skiing. I practice yoga and meditation
-most mornings.
+Currently I live in Sri Lanka, where I work with a handful of clients. In my free time I enjoy running, climbing, hiking and skiing. I practice yoga and meditation most mornings.
 
 ## Where to go next
 
@@ -21,4 +20,4 @@ If you’re more interested in [how I buit this site](/build/), I’ve tried my 
 more about my office setup and the tools I use most days.
 
 Find me on [Github](https://github.com/murshidazher), [Codepen](https://codepen.io/murshidazher) and [Twitter](https://twitter.com/murshidazher) if you have questions. Very
-occassionally I check my [LinkedIn](https://uk.linkedin.com/in/murshidazher), but I’m not very good at responding.
+occasionally I check my [LinkedIn](https://linkedin.com/in/murshidazher), but I’m not very good at responding.
