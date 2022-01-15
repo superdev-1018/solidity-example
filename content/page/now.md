@@ -16,7 +16,6 @@ I’m in Colombo, on lockdown due to the Covid-19 Coronavirus outbreak. I’m we
 - [Wild Fermentation](https://www.goodreads.com/book/show/109800.Wild_Fermentation?ac=1&from_search=true&qid=lMMKTFuhua&rank=1) by Sandor Ellix Katz
 - [Pro Git](https://www.goodreads.com/book/show/6518085-pro-git) by Scott Chacon
 - [Don’t make me think](https://www.goodreads.com/book/show/41009404-dont-make-me-think) by Steve Krug
- 
 
 ### Current Projects
 
