@@ -12,7 +12,7 @@ draft = "false"
 
 ## Week 2
 
-- [ ] Complete 15 Sections of Stephane Maarek's [AWS Solutions Architect Associate](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02)
+- [x] Complete 15 Sections of Stephane Maarek's [AWS Solutions Architect Associate](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02)
 
 ## Week 3
 
@@ -313,3 +313,4 @@ Dissertation materials
 - [Look for GDPR compliance application](https://www.udemy.com/course/build-eu-gdpr-data-protection-compliance-from-scratch-cipt/)
 - [ ] Take inspirations from [stopa.io](https://stopa.io/) for musings sections.
 - [ ] Finish the [recommendation systems](https://www.udemy.com/course/building-recommender-systems-with-machine-learning-and-ai/) course by Frank Kane
+- [ ] Complete [CKAD](https://www.udemy.com/course/mastering-certified-kubernetes-application-developer/?src=sac&kw=Certified+Kubernetes+Application+Developer) certifications.
