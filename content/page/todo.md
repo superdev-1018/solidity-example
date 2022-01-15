@@ -41,7 +41,7 @@ draft = "false"
 [x] [Better Github Workflow](https://www.youtube.com/watch?v=f1wnYdLEpgI)
 [ ] Learn about Vue and Vue Visualization
 [x] [Mongodb Topology Design - Must read](https://www.amazon.com/MongoDB-Topology-Design-Scalability-Compliance-ebook-dp-B08HT313RY/dp/B08HT313RY/ref=mt_other?_encoding=UTF8&me=&qid=)
-[ ] [react ismorphic web architecture](https://github.com/afteracademy/react-app-architecture)
+[ ] [react isomorphic web architecture](https://github.com/afteracademy/react-app-architecture)
 
 [ ] Do AWS Solution Architect - Associate
 [x] Learn About Svelte
