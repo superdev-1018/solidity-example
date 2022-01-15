@@ -150,6 +150,7 @@ pf_rd_r=Y6CFYAXKF43YEQF4KGCK&psc=1&refRID=Y6CFYAXKF43YEQF4KGCK)
 
 [x] Learn about OpenId Connect and IAM Identity Server
 [ ] Read `Galshir` book on Inspirations
+[ ] Read [The Minimalist Entrepreneur: How Great Founders Do More with Less](https://www.amazon.com/Minimalist-Entrepreneur-Great-Founders-More/dp/0593192397) by Sahil Lavingia
 [ ] Read about Apache JMeter book
 [ ] More on ELK stack
 
