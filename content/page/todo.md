@@ -8,6 +8,26 @@ emoji = ":microbe:"
 draft = "false"
 +++
 
+## January 2022
+
+## Week 2
+
+- [ ] Complete 15 Sections of Stephane Maarek's [AWS Solutions Architect Associate](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02)
+
+## Week 3
+
+- [ ] Finish Stephane Maarek's [6 Practice Test Exams](https://www.udemy.com/course/practice-exams-aws-certified-solutions-architect-associate/)
+
+## Week 4
+
+- [ ] Complete the AWS SAA02 Exams
+
+## February 2022
+
+- TBA
+
+## Full Bucket List
+
 - [ ] https://www.oreilly.com/library/view/software-architecture-patterns/9781491971437/
 - [ ] https://github.com/ahmedhammad97/Software-Architecture-Patterns-Notes
 - [ ] https://medium.com/omarelgabrys-blog/plug-in-architecture-dec207291800
