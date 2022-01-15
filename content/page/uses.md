@@ -33,7 +33,8 @@ My office setup, and the tools I use from day to day.
 - [Mailchimp](https://mailchimp.com/)
 - [Numi](https://numi.app/)
 - [Google Calendar](https://www.google.com/calendar/about/)
-- [Google Chrome](https://www.google.lk/)
+- [Google Chrome](https://www.google.com/chrome/)
+- [Brave Browser](https://brave.com/)
 - [Pitch](https://pitch.com/)
 
 ## Development
