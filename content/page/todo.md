@@ -16,6 +16,8 @@ draft = "false"
 
 ## Week 3
 
+- [ ] Complete 20 Sections of Stephane Maarek's [AWS Solutions Architect Associate](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02)
+- [ ] Complete 25 Sections of Stephane Maarek's [AWS Solutions Architect Associate](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02)
 - [ ] Complete Whole of Stephane Maarek's [AWS Solutions Architect Associate](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02)
 - [ ] Read Jayendra Patil's blog on [AWS SAA02 Exams](https://jayendrapatil.com/)
 - [ ] Finish Stephane Maarek's [6 Practice Test Exams](https://www.udemy.com/course/practice-exams-aws-certified-solutions-architect-associate/)
@@ -310,3 +312,4 @@ Dissertation materials
 - https://www.youtube.com/c/CodePulse/videos
 - [Look for GDPR compliance application](https://www.udemy.com/course/build-eu-gdpr-data-protection-compliance-from-scratch-cipt/)
 - [ ] Take inspirations from [stopa.io](https://stopa.io/) for musings sections.
+- [ ] Finish the [recommendation systems](https://www.udemy.com/course/building-recommender-systems-with-machine-learning-and-ai/) course by Frank Kane
