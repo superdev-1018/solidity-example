@@ -16,7 +16,7 @@ draft = "false"
 
 ## Week 3
 
-- [ ] Complete 20 Sections of Stephane Maarek's [AWS Solutions Architect Associate](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02)
+- [x] Complete 20 Sections of Stephane Maarek's [AWS Solutions Architect Associate](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02)
 - [ ] Complete 25 Sections of Stephane Maarek's [AWS Solutions Architect Associate](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02)
 - [ ] Complete Whole of Stephane Maarek's [AWS Solutions Architect Associate](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02)
 - [ ] Read Jayendra Patil's blog on [AWS SAA02 Exams](https://jayendrapatil.com/)
