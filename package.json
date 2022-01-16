@@ -30,7 +30,7 @@
   },
   "dependencies": {
     "autoprefixer": "^10.0.0",
-    "postcss": "~8.4.5",
+    "postcss": "8.4.5",
     "postcss-cli": "^9.0.0"
   },
   "devDependencies": {
