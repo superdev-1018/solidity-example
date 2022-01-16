@@ -29,8 +29,8 @@
     ]
   },
   "dependencies": {
-    "autoprefixer": "^9.7.1",
-    "postcss-cli": "^7.0.0"
+    "autoprefixer": "^10.0.0",
+    "postcss-cli": "^8.0.0"
   },
   "devDependencies": {
     "husky": "7.0.4",
