@@ -43,6 +43,12 @@ If you need to run it locally,
 npm run start
 ```
 
+To update browser supports
+
+```shell
+npx browserslist@latest --update-db
+```
+
 ## TODO
 
 - [ ] Add table of contents

@@ -7,3 +7,5 @@ site/public
 
 # hugo binaries
 hugo.*
+
+.tool-versions
