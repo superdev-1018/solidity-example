@@ -54,24 +54,17 @@ npx browserslist@latest --update-db
 - [ ] Add table of contents
 - [x] SEO the website.
 - [ ] Add quick link navigation in a single blog post.
-- [x] Add apple-emoji font.
 - [x] Show the code language in syntax hightlight js.
 - [ ] Add resume for the site.
-- [x] Add node-arctic code colors.
-- [x] Add custom theme colors.
 - [x] Change logo hover colors according to the theme.
 - [ ] Add search functionality for blog.
-- [x] Add `RSS` feed for the blog.
-- [x] Add a way to display a collection of liked posts (`IFTTT` trigger `Pocket` feed).
 - [ ] Add detailed projects section.
 - [ ] Include pagination.
-- [x] Check footer copyright responsiveness.
-- [x] Add preload functionality for the site.
 - [ ] Add a separate about me section for the site.
 - [ ] Add a work with me section for the site.
 - [ ] Add service worker for offline capabilities.
-- [x] Add Sitemap and robots.txt .
 - [ ] Next and Prev. inside a single blog post.
+- [ ] Add `stylelint` for SCSS style linting.
 
 ## Links
 
