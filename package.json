@@ -8,7 +8,7 @@
   "scripts": {
     "build": "hugo --verbose",
     "clean": "rm -rf public",
-    "format": "npm run format:scss & npm run format:html",
+    "format": "npm run format:scss && npm run format:html",
     "format:scss": "prettier --single-quote --print-width 180 --write '**/*.scss'",
     "format:html": "prettier --write '**/*.html'",
     "lint:md": "npx markdownlint-cli --config ./.markdown-lint.yml ./content/**/*.md",
