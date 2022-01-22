@@ -4,7 +4,7 @@
 
 ![GitHub package.json version](https://img.shields.io/github/package-json/v/murshidazher/murshid?style=flat-square)
 ![Netlify](https://img.shields.io/netlify/5bb22eef-8559-4079-be63-e42c63f63770?logo=netlify&style=flat-square)
-![Github Workflow](https://img.shields.io/github/workflow/status/murshidazher/murshid/murshid-codeql-analysis/master?label=%F0%9F%9B%A1%EF%B8%8F%20analysis&style=flat-square)
+![Github Workflow](https://img.shields.io/github/workflow/status/murshidazher/murshid/murshid-codeql-analysis/master?label=codeql-analysis&style=flat-square)
 ![GitHub](https://img.shields.io/github/license/murshidazher/murshid?style=flat-square)
 ![Blazing Fast](https://img.shields.io/badge/speed-blazing%20%F0%9F%94%A5-brightgreen.svg?style=flat-square)
 ![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)
