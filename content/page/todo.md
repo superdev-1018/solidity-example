@@ -10,25 +10,27 @@ draft = "false"
 
 ## January 2022
 
-## Week 2
+### Week 2
 
 - [x] Complete 15 Sections of Stephane Maarek's [AWS Solutions Architect Associate](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02)
 
-## Week 3
+### Week 3
 
 - [x] Complete 20 Sections of Stephane Maarek's [AWS Solutions Architect Associate](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02)
 - [x] Complete 25 Sections of Stephane Maarek's [AWS Solutions Architect Associate](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02)
 - [x] Complete Whole of Stephane Maarek's [AWS Solutions Architect Associate](https://www.udemy.com/course/aws-certified-solutions-architect-associate-saa-c02)
+- [x] Finish Stephane Maarek's [6 Practice Test Exams](https://www.udemy.com/course/practice-exams-aws-certified-solutions-architect-associate/)
+
+### Week 4
+
 - [ ] Read Jayendra Patil's blog on [AWS SAA02 Exams](https://jayendrapatil.com/)
-- [ ] Finish Stephane Maarek's [6 Practice Test Exams](https://www.udemy.com/course/practice-exams-aws-certified-solutions-architect-associate/)
-
-## Week 4
-
-- [ ] Complete the AWS SAA02 Exams
 
 ## February 2022
 
-- TBA
+### Week 2
+
+- [ ] Complete the AWS SAA02 Exams Practice Dumps
+- [ ] Complete the AWS SAA02 Exams
 
 ## Full Bucket List
 
@@ -49,27 +51,21 @@ draft = "false"
 - [x] Angular + C# by Mosh Hamedani
 - [x] Learn about OAuth2.0 patterns
 - [x] PM2 - Process Manager - for node cluster management
-- [ ] RabbitMQ by Hussein Nasser
 - [ ] Elastic Search | Kibana | ELK
 - [x] Ngnix
 - [ ] https everywhere Varnish Cache + Nginx by Sashingmagazine
 - [ ] Scaling Your Node.js Apps Fernando Doglio
-
 - [ ] Docker
 - [ ] Docker Swarm
 - [ ] Kubernetes
-
-
 - [x] Machine Learning with Python
 - [x] NPM package | publish | build
 - [x] [Better Github Workflow](https://www.youtube.com/watch?v=f1wnYdLEpgI)
 - [ ] Learn about Vue and Vue Visualization
 - [x] [Mongodb Topology Design - Must read](https://www.amazon.com/MongoDB-Topology-Design-Scalability-Compliance-ebook-dp-B08HT313RY/dp/B08HT313RY/ref=mt_other?_encoding=UTF8&me=&qid=)
 - [ ] [react isomorphic web architecture](https://github.com/afteracademy/react-app-architecture)
-
-- [ ] Do AWS Solution Architect - Associate
 - [x] Learn About Svelte
-- [x] Learn about Sapper
+- [x] Learn about Sapper -  server-side rendering for svelete
 - [x] Learn about Strapi
 - [x] Next.js or Gatsby, Prismic as the headless CMS and running on Vercel.
 - [ ] Look at the Presentation and [read the book](https://docs.google.com/presentation/d/e/2PACX-1vQK6I1AF4lM5t0EsDKcAJvBW1dlLOhmrftPz1UsroQd3TYfLQv1j1ecGYhTh622X8kn8ojYpyvkr_AL/pub?start=false&loop=false&delayms=3000&slide=id.p) - Building Serverless Applications with [Google Cloud Run: A Real-World Guide to Building Production-Ready Services by Wietse Venema](https://www.amazon.com/gp/product/1492057096/)
