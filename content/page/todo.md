@@ -42,6 +42,21 @@ draft = "false"
 - [ ] https://github.com/adaltas/node-plug-and-play
 - [ ] https://www.adaltas.com/en/2020/08/28/node-js-plugin-architecture/
 - [ ] https://courses.cognitiveclass.ai/courses/course-v1:Lightbend+LB0101ENv1+2018/course/
+- [ ] <https://www.udemy.com/course/database-engines-crash-course/> - hussein nasser on db
+- [ ] <https://www.udemy.com/course/multitenantapp-k8s-istio-ansible-operatorsdk/>
+- [ ] <https://www.udemy.com/course/architect-saas-applications-unique-challenges-solutions/>
+- [ ] <https://www.mongodb.com/presentations/securing-mongodb-to-serve-an-aws-based-multi-tenant-security-fanatic-saas-application>
+- [ ] <https://www.reddit.com/r/node/comments/jsb7s5/two_strategies_for_implementing_multitenant/>
+- [ ] <https://dev.to/przpiw/nodejs-mongodb-multi-tenant-app-by-example-435n>
+- [ ] Learn XState Finite State Machine
+- [ ] Look into Pirhana and How to automate feature flag removal.
+
+### Research
+
+- [ ] machine learning model to look into logs and find if a certain code block has been hit
+- [ ] develop a ast tool like pirhana to check these lines of feature flag and usage frequency
+- [ ] create a PR to remove the feature flag if they are likely not hitting the first if condition.
+- [ ] <https://towardsdatascience.com/how-to-debug-machine-learning-models-to-catch-issues-early-and-often-5663f2b4383b>
 
 
 - [x] Create an ticket booking app with micro-services
