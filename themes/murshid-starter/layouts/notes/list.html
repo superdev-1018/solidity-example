@@ -1,51 +1,47 @@
 {{ define "main" }}
 
-<header id="notes" class="row-nm m-32 center intro-sm">
-  <div class="column center w-full">
-    <div class="header__wrapper">
-      <h1 class="align-center">
-        I sometimes take-down notes&nbsp; 📚
-      </h1>
+  <header id="notes" class="row-nm m-32 center intro-sm">
+    <div class="column center w-full">
+      <div class="header__wrapper">
+        <h1 class="align-center">I sometimes take-down notes&nbsp; 📚</h1>
+      </div>
     </div>
-  </div>
-</header>
-<section class="row-nm align-center j-center">
-  <div class="column-nm-sm w-full mx-60 ">
-    <h2 class="font-circular-book center">
-      Notes on interesting things I’m learning from courses, books, talks and articles on the internet.
-    </h2>
-  </div>
-</section>
-<section id="notes_list" class="row-nm m-120 mb-80 j-end">
-  {{ range .Data.Pages }}
+  </header>
+  <section class="row-nm align-center j-center">
+    <div class="column-nm-sm w-full mx-60 ">
+      <h2 class="font-circular-book center">Notes on interesting things I’m learning from courses, books, talks and articles on the internet.</h2>
+    </div>
+  </section>
+  <section id="notes_list" class="row-nm m-120 mb-80 j-start">
+    {{ range .Data.Pages }}
 
-  <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="articles_list--item">
-    <div class="articles_list--item__body">
-      <div class="hs-featured-image-wrapper">
-        <!-- <time itemprop="datePublished" class="post-date-inner">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>  -->
-        <div alt="" class="hs-featured-image-link">
-          <span
-            style="background:url({{ .Site.Params.cloudinary_url }}/w_600,dpr_1.0,c_scale,f_webp,fl_awebp.progressive.progressive:semi,f_auto,q_90/articles/banners/banner_{{ .Params.cover }}) no-repeat;"
-            class="hs-featured-image"
-          >
-          </span>
+      <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="articles_list--item">
+        <div class="articles_list--item__body">
+          <div class="hs-featured-image-wrapper">
+            <!-- <time itemprop="datePublished" class="post-date-inner">{{ .Date.Format "Mon, Jan 2, 2006" }}</time>  -->
+            <div alt="" class="hs-featured-image-link">
+              <span
+                style="background:url({{ .Site.Params.cloudinary_url }}/w_600,dpr_1.0,c_scale,f_webp,fl_awebp.progressive.progressive:semi,f_auto,q_90/articles/banners/banner_{{ .Params.cover }}) no-repeat;"
+                class="hs-featured-image"
+              >
+              </span>
+            </div>
+          </div>
+          <!-- <hr /> -->
+          {{ partial "post/tags.html" . }}
+
+
+          <div class="articles_list--item__body--title">{{ .Title }}</div>
+          <p class="articles_list--item__body--desc">
+            {{ .Description | markdownify }}
+
+          </p>
+          <div class="articles_list--item__link">
+            <a href="{{ .Permalink }}" rel="noopener" class="learn-more-button w-inline-block filter-none" alt="{{ .Title }}">Read more</a>
+          </div>
         </div>
-      </div>
-      <!-- <hr /> -->
-      {{ partial "post/tags.html" . }}
+      </article>
+    {{ end }}
 
-      <div class="articles_list--item__body--title">{{ .Title }}</div>
-      <p class="articles_list--item__body--desc">
-        {{ .Description | markdownify }}
-
-      </p>
-      <div class="articles_list--item__link">
-        <a href="{{ .Permalink }}" rel="noopener" class="learn-more-button w-inline-block filter-none" alt="{{ .Title }}">Read more</a>
-      </div>
-    </div>
-  </article>
-  {{ end }}
-
-</section>
-
+  </section>
 {{ end }}

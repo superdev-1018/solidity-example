@@ -1,40 +1,41 @@
 {{ define "main" }}
 
-<header id="tags" class="row-nm m-32 center intro-sm">
-  <div class="column center w-full">
-    <span class="u-visually-hidden">Posts tagged with</span>
-    <h1 class="align-center">“{{ .Title }}”</h1>
-  </div>
-</header>
-
-<section id="articles_list" class="row-nm m-120 mb-80 j-end">
-  {{ range .Data.Pages }}
-
-  <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="articles_list--item">
-    <div class="articles_list--item__body">
-      <div class="hs-featured-image-wrapper">
-        <div alt="" class="hs-featured-image-link">
-          <span
-            style="background:url(https://images.unsplash.com/photo-1534293507278-19b2539423f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80) no-repeat;"
-            class="hs-featured-image"
-          >
-          </span>
-        </div>
-      </div>
-      <!-- <hr /> -->
-      {{ partial "post/tags.html" . }}
-
-      <div class="articles_list--item__body--title">{{ .Title }}</div>
-      <p class="articles_list--item__body--desc">
-        {{ .Description | markdownify }}
-
-      </p>
-      <div class="articles_list--item__link">
-        <a href="{{ .Permalink }}" rel="noopener" class="learn-more-button w-inline-block filter-none" alt="{{ .Title }}">Read more</a>
-      </div>
+  <header id="tags" class="row-nm m-32 center intro-sm">
+    <div class="column center w-full">
+      <span class="u-visually-hidden">Posts tagged with</span>
+      <h1 class="align-center">“{{ .Title }}”</h1>
     </div>
-  </article>
-  {{ end }}
+  </header>
 
-</section>
+  <section id="articles_list" class="row-nm m-120 mb-80 j-start">
+    {{ range .Data.Pages }}
+
+      <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="articles_list--item">
+        <div class="articles_list--item__body">
+          <div class="hs-featured-image-wrapper">
+            <div alt="" class="hs-featured-image-link">
+              <span
+                style="background:url(https://images.unsplash.com/photo-1534293507278-19b2539423f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80) no-repeat;"
+                class="hs-featured-image"
+              >
+              </span>
+            </div>
+          </div>
+          <!-- <hr /> -->
+          {{ partial "post/tags.html" . }}
+
+
+          <div class="articles_list--item__body--title">{{ .Title }}</div>
+          <p class="articles_list--item__body--desc">
+            {{ .Description | markdownify }}
+
+          </p>
+          <div class="articles_list--item__link">
+            <a href="{{ .Permalink }}" rel="noopener" class="learn-more-button w-inline-block filter-none" alt="{{ .Title }}">Read more</a>
+          </div>
+        </div>
+      </article>
+    {{ end }}
+
+  </section>
 {{ end }}

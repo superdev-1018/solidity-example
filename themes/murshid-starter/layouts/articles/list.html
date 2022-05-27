@@ -1,64 +1,60 @@
 {{ define "main" }}
 
-<header id="tags" class="row-nm m-32 center intro-sm">
-  <div class="column center w-full">
-    <div class="header__wrapper">
-      <h1 class="align-center">
-        I publish my thoughts occasionally&nbsp; 📝
-      </h1>
+  <header id="tags" class="row-nm m-32 center intro-sm">
+    <div class="column center w-full">
+      <div class="header__wrapper">
+        <h1 class="align-center">I publish my thoughts occasionally&nbsp; 📝</h1>
+      </div>
     </div>
-  </div>
-</header>
-<section class="row-nm align-center j-center">
-  <div class="column-nm-sm w-full mx-60 ">
-    <h2 class="font-circular-book center">
-      Here are some of my recent ideas I've published on how to design and code things for the web.
-    </h2>
-  </div>
-</section>
+  </header>
+  <section class="row-nm align-center j-center">
+    <div class="column-nm-sm w-full mx-60 ">
+      <h2 class="font-circular-book center">Here are some of my recent ideas I've published on how to design and code things for the web.</h2>
+    </div>
+  </section>
 
-<section id="articles_list" class="row-nm m-120 mb-80 j-end">
-  {{ range .Data.Pages }}
+  <section id="articles_list" class="row-nm m-120 mb-80 j-start">
+    {{ range .Data.Pages }}
 
-  <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="articles_list--item">
-    <!-- <img class="" srcset="
+      <article itemscope="itemscope" itemtype="http://schema.org/CreativeWork" class="articles_list--item">
+        <!-- <img class="" srcset="
       ../img/1.png 1x,
       ../img/1@2x.png 2x,
       ../img/1@3x.png 3x" alt="Latest work samples on Dribbble" caption="">-->
-    <div class="articles_list--item__body">
-      <div class="hs-featured-image-wrapper">
-        <!-- <time itemprop="datePublished"
+        <div class="articles_list--item__body">
+          <div class="hs-featured-image-wrapper">
+            <!-- <time itemprop="datePublished"
           class="post-date-inner">{{ .Date.Format "Mon, Jan 2, 2006" }}
         </time> -->
-        <!-- <span class="post-date-inner">May 15, 2020</span> -->
-        <div alt="" class="hs-featured-image-link">
-          <span
-            style="background:url(https://images.unsplash.com/photo-1534293507278-19b2539423f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80) no-repeat;"
-            class="hs-featured-image"
-          >
-          </span>
-        </div>
-      </div>
+            <!-- <span class="post-date-inner">May 15, 2020</span> -->
+            <div alt="" class="hs-featured-image-link">
+              <span
+                style="background:url(https://images.unsplash.com/photo-1534293507278-19b2539423f2?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&h=500&q=80) no-repeat;"
+                class="hs-featured-image"
+              >
+              </span>
+            </div>
+          </div>
 
-      <!-- <hr /> -->
-      {{ partial "post/tags.html" . }}
+          <!-- <hr /> -->
+          {{ partial "post/tags.html" . }}
 
-      <div class="articles_list--item__body--title">{{ .Title }}</div>
-      <!-- <time itemprop="datePublished"
+
+          <div class="articles_list--item__body--title">{{ .Title }}</div>
+          <!-- <time itemprop="datePublished"
           class="inline-block mt-8 text-xs font-bold tracking-widest uppercase text-zenith">{{ .Date.Format "Mon, Jan 2, 2006" }}
         </time> -->
 
-      <p class="articles_list--item__body--desc">
-        {{ .Description | markdownify }}
+          <p class="articles_list--item__body--desc">
+            {{ .Description | markdownify }}
 
-      </p>
-      <div class="articles_list--item__link">
-        <a href="{{ .Permalink }}" rel="noopener" class="learn-more-button w-inline-block filter-none" alt="{{ .Title }}">Read more</a>
-      </div>
-    </div>
-  </article>
-  {{ end }}
+          </p>
+          <div class="articles_list--item__link">
+            <a href="{{ .Permalink }}" rel="noopener" class="learn-more-button w-inline-block filter-none" alt="{{ .Title }}">Read more</a>
+          </div>
+        </div>
+      </article>
+    {{ end }}
 
-</section>
-
+  </section>
 {{ end }}
