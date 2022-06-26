@@ -29,7 +29,7 @@
     ]
   },
   "dependencies": {
-    "autoprefixer": "10.4.4",
+    "autoprefixer": "10.4.7",
     "postcss-cli": "9.1.0"
   },
   "devDependencies": {
