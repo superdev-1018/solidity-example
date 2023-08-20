@@ -9,7 +9,7 @@
 ![Blazing Fast](https://img.shields.io/badge/speed-blazing%20%F0%9F%94%A5-brightgreen.svg?style=flat-square)
 ![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat-square)
 
-> ⚠️ This website is deprecated, check out the new [website\(https://github.com/murshidazher/zen)
+> ⚠️ This website is deprecated, check out the new [website](https://github.com/murshidazher/zen)
 
 - A simple performant personal website made with [hugo](https://gohugo.io/).
 - Personal website made using world's fastest static-site generator.
